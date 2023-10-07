@@ -1,0 +1,22 @@
+on: [push]
+
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Publish Logseq Graph
+    steps:
+      - name: Fetch Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Logseq Publishing Script
+        uses: logseq/publish-spa@v0.2.0
+
+      - name: Add .nojekyll
+        run: touch $GITHUB_WORKSPACE/www/.nojekyll
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: www
