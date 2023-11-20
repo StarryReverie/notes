@@ -418,6 +418,6 @@
  :ui/show-brackets? false
  :feature/enable-flashcards? false
  :feature/enable-whiteboards? false
- :feature/enable-journals? false
+ :feature/enable-journals? true
  :default-home {:page "Start"}
  :publishing/all-pages-public? true}
