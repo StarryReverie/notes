@@ -83,6 +83,12 @@ tags:: Programming, MATLAB, Linear Algebra, Calculus
 		- MATLAB 中多项式用行[[向量]]表示。
 		- 对于多项式 $a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0$，行向量则是多项式的系数 $\begin{bmatrix}a_n & a_{n-1} & \cdots & a_1 & a_0\end{bmatrix}$。
 	- **运算**
+		- **求值**
+			- ```matlab
+			  p = [1 -3 2]; % p(x) = x^2 - 3*x + 2
+			  v = polyval(p, 3) % 求 p(3)
+			  % v = 
+			  ```
 		- **特征多项式**
 			- ```matlab
 			  A = [[16, 2, 3, 13]; [5, 11, 10, 8]; [9, 7, 6, 12]; [4, 14, 15, 1]]
@@ -121,4 +127,46 @@ tags:: Programming, MATLAB, Linear Algebra, Calculus
 			  der_f = polyder(f); % 对 f(x) 求导
 			  % der_f = [4, 6, -2, 4]
 			  ```
--
+		- **拟合**
+			- ```matlab
+			  x = [1, 3.51, 6.4, 9.92, 8.76];
+			  y = [0.48, 1.03, 2.31, 6.48, 4.49];
+			  p = polyfit(x, y, 2); % 用二次多项式拟合
+			  % p = [0.0865, -0.3067, 0.8058]
+			  ```
+- **微积分**
+	- **极限**
+		- ```matlab
+		  syms x;
+		  f = sin(x)/x;
+		  l = limit(f) % 默认求自变量为 x 时 f(x) 在 x = 0 的极限
+		  % l = 1
+		  l = limit(f, x, pi/2) % 求 f(x) 在 x = 1 的极限
+		  % l = 2/pi
+		  ```
+		- ```matlab
+		  syms x;
+		  f = abs(x)/x;
+		  l = limit(f, x, 0, 'Left'); % 求左极限
+		  % l = -1
+		  l = limit(f, x, 0, 'Right'); % 求右极限
+		  % l = 1
+		  ```
+	- **求导**
+		- ```matlab
+		  syms x;
+		  f = sin(x);
+		  d1 = diff(f); % 默认以 x 为自变量求 f'
+		  % d1 = 2*x*cos(x^2)
+		  d2 = diff(f, x, 2); % 求 f''(x)
+		  d2 = 2*cos(x^2) - 4*x^2*sin(x^2)
+		  ```
+	- **积分**
+		- ```matlab
+		  syms x;
+		  f = f = x^(1/2)/(1 + x^(1/3));
+		  intf = int(f) % 求 f(x) 的不定积分
+		  % intf = 6*atan(x^(1/6)) + 2*x^(1/2) - 6*x^(1/6) - (6*x^(5/6))/5 + (6*x^(7/6))/7
+		  intf = int(f, 0, 1) % 求 f(x) 在 [0, 1] 上的定积分
+		  % intf = (3*pi)/2 - 152/35
+		  ```
