@@ -1,5 +1,8 @@
-type:: note
-tags:: Programming, MATLAB
+---
+tags:
+  - programming
+  - matlab
+---
 
 - **常用基础函数**
 	- `whos`：列出工作空间中的变量名及其具体信息

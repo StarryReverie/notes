@@ -1,5 +1,11 @@
-type:: note
-tags:: Artificial Intelligence, Machine Learning, Supervised Learning, Regression, Classification
+---
+tags:
+  - artificial-intelligence
+  - machine-learning
+  - supervised-learning
+  - regression
+  - classification
+---
 
 - **定义**
 	- 设 $g(z)=\frac{1}{1+e^{-z}}$，$g(z)$ 被称为 Sigmoid 函数。

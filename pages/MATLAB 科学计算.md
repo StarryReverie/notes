@@ -1,5 +1,10 @@
-type:: note
-tags:: Programming, MATLAB, Linear Algebra, Calculus
+---
+tags:
+  - programming
+  - matlab
+  - linear-algebra
+  - calculus
+---
 
 - **符号运算**
 	- **定义**
