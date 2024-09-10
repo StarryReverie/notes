@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "80f58901975d96f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "7308cb172eb70597",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "301fcd1e21a67ab9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c93e1014bef8363c",
+    "type": "split",
+    "children": [
+      {
+        "id": "30b6b2a4eb616826",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7a2c43528e03711",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cea88693cff4a209",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "34d0c7c4f10112f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 253.5
+  },
+  "right": {
+    "id": "7f6722367d115533",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f7bac7a17236b28",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1a2c94387aafc70",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d913b5a3969b0c35",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e459b91b6e22689c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce1ad03d1caf89a0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "cea88693cff4a209",
+  "lastOpenFiles": [
+    "pages/数学/微积分/导数.md",
+    "pages/数学/微积分/函数.md",
+    "pages/计算机科学/MATLAB/MATLAB 语言基础.md",
+    "pages/计算机科学/MATLAB/MATLAB 科学计算.md",
+    "pages/计算机科学/MATLAB",
+    "pages/计算机科学/数值分析/数值计算误差.md",
+    "pages/计算机科学/数值分析",
+    "pages/计算机科学",
+    "pages/数学/离散数学/命题逻辑.md",
+    "pages/数学/离散数学",
+    "pages/数值计算误差.md",
+    "pages/数学/常用公式与不等式.md",
+    "pages/数学/2.md",
+    "pages/2.md",
+    "pages/工程制图/投影法.md",
+    "pages/工程制图/数值计算误差.md",
+    "pages/工程制图/正投影.md",
+    "pages/工程制图",
+    "pages/物理/热学/循环过程.md",
+    "pages/物理/热学/热力学第一定律.md",
+    "pages/物理/热学/热力学第二定律.md",
+    "pages/物理/热学/理想气体.md",
+    "pages/物理/波动与光学/简谐振动.md",
+    "pages/物理/力学/质点运动学.md",
+    "pages/物理/力学/质点系和质心.md",
+    "pages/物理/力学/牛顿运动定律.md",
+    "pages/物理/力学/动量和角动量.md",
+    "pages/物理/力学/功和能.md",
+    "pages/物理/力学/刚体的定轴转动.md",
+    "pages/物理/波动与光学/光的干涉.md",
+    "pages/物理/波动与光学/光学基础.md",
+    "pages/物理/电磁学",
+    "pages/物理/波动与光学",
+    "pages/物理/热学",
+    "pages/物理/力学",
+    "pages/物理/电路分析",
+    "未命名.canvas"
+  ]
+}

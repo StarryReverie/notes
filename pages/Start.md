@@ -1,1 +1,0 @@
-- {{query (page-property :type "note")}}
