@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0a2ade8fc1c857ae",
+        "id": "89002f1e3d252749",
         "type": "tabs",
         "children": [
           {
-            "id": "b37d0813dff2bb8b",
+            "id": "59c6f1165549864e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pages/物理/电磁学/静电场.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/物理/电磁学/静电场.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/物理/电磁学/静电场.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,9 +107,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "pages/物理/电磁学/静电场.md"
-          }
+          "state": {}
         }
       }
     ],
@@ -131,20 +123,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b37d0813dff2bb8b",
+  "active": "59c6f1165549864e",
   "lastOpenFiles": [
+    "pages/数学/概率论/随机变量.md",
+    "pages/数学/微积分/函数.md",
+    "pages/物理/电磁学/静电场.md",
     "pages/数学/离散数学/命题逻辑推理.md",
     "pages/数学/离散数学/命题逻辑等值演算.md",
-    "pages/物理/电磁学/静电场.md",
     "pages/数学/常用公式与不等式.md",
     "pages/未命名 1.md",
     "pages/未命名.md",
     "pages/计算机科学/数值分析/方程的迭代解法.md",
     "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/数学/微积分/导数.md",
-    "pages/数学/微积分/函数.md",
     "pages/数学/线性代数/线性方程组.md",
-    "pages/数学/概率论/随机变量.md",
     "pages/数学/概率论/概率基础.md",
     "未命名.canvas",
     "pages/2024-09-20.md",
