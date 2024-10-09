@@ -11,8 +11,12 @@
             "id": "406e0bbc7949eeba",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "pages/物理/电磁学/静电场.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "pages/物理/电磁学/静电场.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "pages/物理/电磁学/静电场.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/计算机科学/数值分析/线性方程组的直接解法.md"
+                "file": "pages/物理/电磁学/静电场.md"
               }
             }
           }
@@ -140,12 +146,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d7a2c43528e03711",
+  "active": "406e0bbc7949eeba",
   "lastOpenFiles": [
+    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
     "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/计算机科学/数值分析/方程组的迭代解法.md",
     "pages/计算机科学/数值分析/方程的迭代解法.md",
-    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
     "pages/数学/线性代数/向量.md",
     "pages/物理/波动与光学/光学基础.md",
     "pages/物理/波动与光学/光的干涉.md",
