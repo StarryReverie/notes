@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7308cb172eb70597",
+        "id": "7fdbff1b2c89b4b9",
         "type": "tabs",
         "children": [
           {
-            "id": "301fcd1e21a67ab9",
+            "id": "406e0bbc7949eeba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pages/数学/线性代数/矩阵.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 242.5
   },
   "right": {
     "id": "7f6722367d115533",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pages/数学/线性代数/矩阵.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pages/数学/线性代数/矩阵.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/数学/线性代数/矩阵.md"
+                "file": "pages/计算机科学/数值分析/线性方程组的直接解法.md"
               }
             }
           }
@@ -148,12 +142,20 @@
   },
   "active": "d7a2c43528e03711",
   "lastOpenFiles": [
+    "pages/计算机科学/数值分析/数值计算误差.md",
+    "pages/计算机科学/数值分析/方程组的迭代解法.md",
+    "pages/计算机科学/数值分析/方程的迭代解法.md",
+    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
+    "pages/数学/线性代数/向量.md",
+    "pages/物理/波动与光学/光学基础.md",
+    "pages/物理/波动与光学/光的干涉.md",
+    "assets/光学基础/lens-imaging.png",
+    "pages/数学/线性代数/矩阵.md",
     "pages/数学/微积分/导数.md",
     "pages/数学/微积分/函数.md",
     "pages/计算机科学/MATLAB/MATLAB 语言基础.md",
     "pages/计算机科学/MATLAB/MATLAB 科学计算.md",
     "pages/计算机科学/MATLAB",
-    "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/计算机科学/数值分析",
     "pages/计算机科学",
     "pages/数学/离散数学/命题逻辑.md",
@@ -172,13 +174,6 @@
     "pages/物理/热学/理想气体.md",
     "pages/物理/波动与光学/简谐振动.md",
     "pages/物理/力学/质点运动学.md",
-    "pages/物理/力学/质点系和质心.md",
-    "pages/物理/力学/牛顿运动定律.md",
-    "pages/物理/力学/动量和角动量.md",
-    "pages/物理/力学/功和能.md",
-    "pages/物理/力学/刚体的定轴转动.md",
-    "pages/物理/波动与光学/光的干涉.md",
-    "pages/物理/波动与光学/光学基础.md",
     "pages/物理/电磁学",
     "pages/物理/波动与光学",
     "pages/物理/热学",

@@ -1,5 +1,6 @@
 {
   "readableLineLength": false,
   "newFileLocation": "folder",
-  "newFileFolderPath": "pages"
+  "newFileFolderPath": "pages",
+  "vimMode": false
 }
