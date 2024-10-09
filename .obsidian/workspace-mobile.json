@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "89002f1e3d252749",
+        "id": "23ca70e68013f8e3",
         "type": "tabs",
         "children": [
           {
-            "id": "59c6f1165549864e",
+            "id": "9e7b0416d85c11cc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -123,7 +123,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "59c6f1165549864e",
+  "active": "9e7b0416d85c11cc",
   "lastOpenFiles": [
     "pages/数学/概率论/随机变量.md",
     "pages/数学/微积分/函数.md",
