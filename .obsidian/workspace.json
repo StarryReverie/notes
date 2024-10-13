@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7fdbff1b2c89b4b9",
+        "id": "3412b1547840d2d6",
         "type": "tabs",
         "children": [
           {
-            "id": "406e0bbc7949eeba",
+            "id": "e78347e22c32ac08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/物理/电磁学/静电场.md",
+                "file": "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 285.5
   },
   "right": {
     "id": "7f6722367d115533",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pages/物理/电磁学/静电场.md",
+                "file": "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pages/物理/电磁学/静电场.md",
+                "file": "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/物理/电磁学/静电场.md"
+                "file": "pages/数学/离散数学/一阶逻辑等值演算与推理.md"
               }
             }
           }
@@ -146,8 +146,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "406e0bbc7949eeba",
+  "active": "e78347e22c32ac08",
   "lastOpenFiles": [
+    "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
+    "pages/数学/离散数学/命题逻辑.md",
+    "pages/数学/概率论/随机变量.md",
+    "pages/数学/概率论/概率基础.md",
+    "pages/数学/离散数学/命题逻辑等值演算.md",
+    "pages/数学/离散数学/命题逻辑推理.md",
+    "pages/数学/离散数学/一阶逻辑.md",
+    "pages/物理/电磁学/静电场.md",
     "pages/计算机科学/数值分析/线性方程组的直接解法.md",
     "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/计算机科学/数值分析/方程组的迭代解法.md",
@@ -164,7 +172,6 @@
     "pages/计算机科学/MATLAB",
     "pages/计算机科学/数值分析",
     "pages/计算机科学",
-    "pages/数学/离散数学/命题逻辑.md",
     "pages/数学/离散数学",
     "pages/数值计算误差.md",
     "pages/数学/常用公式与不等式.md",
@@ -172,14 +179,7 @@
     "pages/2.md",
     "pages/工程制图/投影法.md",
     "pages/工程制图/数值计算误差.md",
-    "pages/工程制图/正投影.md",
     "pages/工程制图",
-    "pages/物理/热学/循环过程.md",
-    "pages/物理/热学/热力学第一定律.md",
-    "pages/物理/热学/热力学第二定律.md",
-    "pages/物理/热学/理想气体.md",
-    "pages/物理/波动与光学/简谐振动.md",
-    "pages/物理/力学/质点运动学.md",
     "pages/物理/电磁学",
     "pages/物理/波动与光学",
     "pages/物理/热学",
