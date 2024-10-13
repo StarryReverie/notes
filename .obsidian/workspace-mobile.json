@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "23ca70e68013f8e3",
+        "id": "c3d4ec017a855c3d",
         "type": "tabs",
         "children": [
           {
-            "id": "9e7b0416d85c11cc",
+            "id": "1bd95ed29d63a322",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "pages/数学/离散数学/一阶逻辑.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "pages/数学/离散数学/一阶逻辑.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "pages/数学/离散数学/一阶逻辑.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "pages/数学/离散数学/一阶逻辑.md"
+          }
         }
       }
     ],
@@ -123,13 +131,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9e7b0416d85c11cc",
+  "active": "1bd95ed29d63a322",
   "lastOpenFiles": [
+    "pages/数学/离散数学/命题逻辑推理.md",
+    "pages/数学/离散数学/一阶逻辑.md",
+    "pages/数学/离散数学/命题逻辑等值演算.md",
     "pages/数学/概率论/随机变量.md",
     "pages/数学/微积分/函数.md",
     "pages/物理/电磁学/静电场.md",
-    "pages/数学/离散数学/命题逻辑推理.md",
-    "pages/数学/离散数学/命题逻辑等值演算.md",
     "pages/数学/常用公式与不等式.md",
     "pages/未命名 1.md",
     "pages/未命名.md",
