@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c3d4ec017a855c3d",
+        "id": "18403fb4060c6597",
         "type": "tabs",
         "children": [
           {
-            "id": "1bd95ed29d63a322",
+            "id": "183ea7dcda6e3fb9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/数学/离散数学/一阶逻辑.md",
+                "file": "pages/物理/电磁学/静电场.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/数学/离散数学/一阶逻辑.md",
+            "file": "pages/物理/电磁学/静电场.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/数学/离散数学/一阶逻辑.md",
+            "file": "pages/物理/电磁学/静电场.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/数学/离散数学/一阶逻辑.md"
+            "file": "pages/物理/电磁学/静电场.md"
           }
         }
       }
@@ -131,10 +131,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1bd95ed29d63a322",
+  "active": "183ea7dcda6e3fb9",
   "lastOpenFiles": [
-    "pages/数学/离散数学/命题逻辑推理.md",
+    "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
+    "pages/计算机科学/数值分析/方程的迭代解法.md",
+    "pages/计算机科学/数值分析/方程组的迭代解法.md",
+    "pages/数学/线性代数/范数.md",
     "pages/数学/离散数学/一阶逻辑.md",
+    "pages/数学/离散数学/命题逻辑推理.md",
     "pages/数学/离散数学/命题逻辑等值演算.md",
     "pages/数学/概率论/随机变量.md",
     "pages/数学/微积分/函数.md",
@@ -142,7 +146,6 @@
     "pages/数学/常用公式与不等式.md",
     "pages/未命名 1.md",
     "pages/未命名.md",
-    "pages/计算机科学/数值分析/方程的迭代解法.md",
     "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/数学/微积分/导数.md",
     "pages/数学/线性代数/线性方程组.md",
