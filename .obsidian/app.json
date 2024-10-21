@@ -4,6 +4,6 @@
   "newFileFolderPath": "pages",
   "vimMode": false,
   "strictLineBreaks": true,
-  "useTab": false,
+  "useTab": true,
   "showRibbon": true
 }
