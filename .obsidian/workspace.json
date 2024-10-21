@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "614fa66821fb8ad0",
+        "id": "7f988b7b78de411c",
         "type": "tabs",
         "children": [
           {
-            "id": "359bfd37f1addd1f",
+            "id": "e0d9c3c2587f3f09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/计算机科学/数值分析/线性方程组的直接解法.md",
-                "mode": "preview",
-                "source": true
-              }
+                "file": "pages/数学/概率论/多维随机变量.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "多维随机变量"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "线性方程组的直接解法 的反向链接列表"
             }
           },
           {
@@ -105,7 +115,9 @@
                 "file": "pages/计算机科学/数值分析/线性方程组的直接解法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "线性方程组的直接解法 的出链列表"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -126,7 +140,9 @@
               "type": "outline",
               "state": {
                 "file": "pages/计算机科学/数值分析/线性方程组的直接解法.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "线性方程组的直接解法 的大纲"
             }
           }
         ]
@@ -146,10 +162,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "359bfd37f1addd1f",
+  "active": "e0d9c3c2587f3f09",
   "lastOpenFiles": [
-    "pages/未命名.md",
+    "pages/数学/概率论/随机变量.md",
+    "pages/数学/概率论/多维随机变量.md",
+    "pages/数学/离散数学/集合代数.md",
     "pages/计算机科学/数值分析/线性方程组的直接解法.md",
+    "pages/未命名.md",
     "pages/数学/离散数学/命题逻辑.md",
     "pages/数学/离散数学/命题逻辑等值演算.md",
     "pages/数学/离散数学/命题逻辑推理.md",
@@ -159,7 +178,6 @@
     "pages/计算机科学/数值分析/方程组的迭代解法.md",
     "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/数学/线性代数/范数.md",
-    "pages/数学/概率论/随机变量.md",
     "pages/数学/概率论/概率基础.md",
     "pages/物理/电磁学/静电场.md",
     "pages/数学/线性代数/向量.md",
@@ -177,7 +195,6 @@
     "pages/数学/离散数学",
     "pages/数值计算误差.md",
     "pages/数学/常用公式与不等式.md",
-    "pages/数学/2.md",
     "pages/工程制图",
     "pages/物理/电磁学",
     "pages/物理/波动与光学",
