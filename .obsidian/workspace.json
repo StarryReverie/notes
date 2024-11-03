@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "efccc36386fa3783",
+        "id": "7c859e4437d0f349",
         "type": "tabs",
         "children": [
           {
-            "id": "9f7c611ba2082800",
+            "id": "06d6c127d96c8a8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/物理/电磁学/静电场.md",
-                "mode": "source",
-                "source": false
+                "file": "pages/计算机科学/数值分析/线性方程组的迭代解法.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "静电场"
+              "title": "线性方程组的迭代解法"
             }
           }
         ]
@@ -162,12 +162,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9f7c611ba2082800",
+  "active": "06d6c127d96c8a8d",
   "lastOpenFiles": [
+    "pages/数学/线性代数/矩阵.md",
+    "pages/计算机科学/数值分析/线性方程组的迭代解法.md",
+    "pages/物理/电磁学/静电场.md",
     "pages/物理/电磁学/电介质.md",
     "pages/数学/微积分/曲面积分.md",
     "pages/物理/电磁学/导体.md",
-    "pages/物理/电磁学/静电场.md",
     "pages/未命名.md",
     "pages/数学/离散数学/二元关系.md",
     "pages/数学/概率论/多维随机变量.md",
@@ -188,9 +190,7 @@
     "pages/物理/波动与光学/光学基础.md",
     "pages/物理/波动与光学/光的干涉.md",
     "assets/光学基础/lens-imaging.png",
-    "pages/数学/线性代数/矩阵.md",
     "pages/数学/微积分/导数.md",
-    "pages/数学/微积分/函数.md",
     "pages/计算机科学/MATLAB",
     "pages/计算机科学/数值分析",
     "pages/计算机科学",
