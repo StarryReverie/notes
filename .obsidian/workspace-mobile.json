@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cb973c01d9c76836",
+        "id": "938f62b272c08761",
         "type": "tabs",
         "children": [
           {
-            "id": "9d5c665a8bb63640",
+            "id": "b56b4c4988afbee1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/数学/常用公式与不等式.md",
+                "file": "pages/数学/离散数学/二元关系.md",
                 "mode": "preview",
                 "source": true
               }
@@ -97,7 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/数学/常用公式与不等式.md",
+            "file": "pages/数学/离散数学/二元关系.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/数学/常用公式与不等式.md",
+            "file": "pages/数学/离散数学/二元关系.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/数学/常用公式与不等式.md"
+            "file": "pages/数学/离散数学/二元关系.md"
           }
         }
       }
@@ -143,14 +143,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9d5c665a8bb63640",
+  "active": "b56b4c4988afbee1",
   "lastOpenFiles": [
-    "pages/数学/离散数学/二元关系.md",
-    "pages/数学/离散数学/集合代数.md",
+    "pages/数学/概率论/数字特征.md",
     "pages/数学/概率论/多维随机变量.md",
+    "pages/数学/微积分/曲面积分.md",
+    "pages/数学/微积分/曲线积分.md",
+    "pages/数学/离散数学/二元关系.md",
+    "pages/数学/线性代数/范数.md",
+    "pages/数学/常用公式与不等式.md",
+    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
+    "pages/数学/离散数学/集合代数.md",
     "pages/数学/离散数学/命题逻辑等值演算.md",
     "pages/未命名.md",
-    "pages/数学/线性代数/范数.md",
     "pages/数学/线性代数/特征值与特征向量.md",
     "pages/数学/线性代数/矩阵.md",
     "pages/数学/线性代数/向量.md",
@@ -163,15 +168,10 @@
     "pages/数学/离散数学/一阶逻辑.md",
     "pages/数学/离散数学/命题逻辑推理.md",
     "pages/数学/微积分/函数.md",
-    "pages/数学/常用公式与不等式.md",
     "pages/未命名 1.md",
     "pages/计算机科学/数值分析/数值计算误差.md",
     "pages/数学/微积分/导数.md",
-    "pages/数学/线性代数/线性方程组.md",
     "未命名.canvas",
-    "pages/2024-09-20.md",
-    "pages/数学/微积分/泰勒公式.md",
-    "pages/数学/离散数学/命题逻辑.md",
     "pages/物理/电磁学"
   ]
 }
