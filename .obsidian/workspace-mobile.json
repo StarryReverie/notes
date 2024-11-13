@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/数学/离散数学/二元关系.md",
+                "file": "pages/数学/离散数学/群.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/数学/离散数学/二元关系.md",
+            "file": "pages/数学/离散数学/群.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/数学/离散数学/二元关系.md",
+            "file": "pages/数学/离散数学/群.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/数学/离散数学/二元关系.md"
+            "file": "pages/数学/离散数学/群.md"
           }
         }
       }
@@ -145,6 +145,9 @@
   },
   "active": "7aaaf695106efa47",
   "lastOpenFiles": [
+    "pages/数学/离散数学/代数系统.md",
+    "pages/数学/离散数学/群.md",
+    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
     "pages/数学/概率论/数字特征.md",
     "pages/数学/离散数学/二元关系.md",
     "pages/数学/概率论/多维随机变量.md",
@@ -152,8 +155,7 @@
     "pages/数学/微积分/曲线积分.md",
     "pages/数学/线性代数/范数.md",
     "pages/数学/常用公式与不等式.md",
-    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
-    "pages/数学/离散数学/集合代数.md",
+    "pages/数学/离散数学/集合.md",
     "pages/数学/离散数学/命题逻辑等值演算.md",
     "pages/未命名.md",
     "pages/数学/线性代数/特征值与特征向量.md",
@@ -169,8 +171,6 @@
     "pages/数学/离散数学/命题逻辑推理.md",
     "pages/数学/微积分/函数.md",
     "pages/未命名 1.md",
-    "pages/计算机科学/数值分析/数值计算误差.md",
-    "pages/数学/微积分/导数.md",
     "未命名.canvas",
     "pages/物理/电磁学"
   ]
