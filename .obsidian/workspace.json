@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/数学/概率论/数理统计基础.md",
+                "file": "pages/数学/离散数学/群.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数理统计基础"
+              "title": "群"
             }
           }
         ]
@@ -164,8 +164,10 @@
   },
   "active": "141a5df1ebbf0d2c",
   "lastOpenFiles": [
-    "pages/数学/概率论/随机变量.md",
+    "pages/数学/离散数学/代数系统.md",
+    "pages/数学/离散数学/群.md",
     "pages/数学/概率论/数理统计基础.md",
+    "pages/数学/概率论/随机变量.md",
     "pages/数学/概率论/概率基础.md",
     "pages/计算机科学/数值分析/插值.md",
     "assets/插值",
@@ -191,8 +193,6 @@
     "pages/数学/离散数学/命题逻辑推理.md",
     "pages/数学/离散数学/一阶逻辑.md",
     "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
-    "pages/计算机科学/数值分析/方程的迭代解法.md",
-    "pages/计算机科学/数值分析/方程组的迭代解法.md",
     "assets/光学基础/lens-imaging.png",
     "pages/计算机科学/MATLAB",
     "pages/计算机科学/数值分析",
