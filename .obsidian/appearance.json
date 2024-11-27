@@ -3,5 +3,6 @@
   "interfaceFontFamily": "思源黑体 CN",
   "monospaceFontFamily": "Cascadia Mono",
   "baseFontSizeAction": true,
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "baseFontSize": 16
 }

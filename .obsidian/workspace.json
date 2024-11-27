@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/计算机科学/数值分析/数值积分.md",
+                "file": "pages/数学/概率论/参数估计.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "数值积分"
+              "title": "参数估计"
             }
           }
         ]
@@ -164,14 +164,17 @@
   },
   "active": "141a5df1ebbf0d2c",
   "lastOpenFiles": [
+    "pages/数学/概率论/数字特征.md",
+    "pages/数学/概率论/随机变量.md",
+    "pages/数学/概率论/数理统计基础.md",
     "pages/数学/概率论/参数估计.md",
+    "pages/数学/概率论/概率基础.md",
+    "pages/计算机科学/数值分析/方程的迭代解法.md",
+    "pages/数学/离散数学/群.md",
+    "pages/物理/电磁学/磁场.md",
     "pages/计算机科学/数值分析/数值积分.md",
     "pages/数学/概率论/大数定律和中心极限定理.md",
-    "pages/数学/概率论/数理统计基础.md",
-    "pages/数学/离散数学/群.md",
     "pages/数学/离散数学/代数系统.md",
-    "pages/数学/概率论/随机变量.md",
-    "pages/数学/概率论/概率基础.md",
     "pages/计算机科学/数值分析/插值.md",
     "assets/插值",
     "未命名",
@@ -180,7 +183,6 @@
     "pages/数学/离散数学/二元关系.md",
     "pages/数学/离散数学/集合代数.md",
     "pages/数学/离散数学/映射.md",
-    "pages/数学/概率论/数字特征.md",
     "pages/数学/概率论/多维随机变量.md",
     "pages/计算机科学/数值分析/线性方程组的迭代解法.md",
     "pages/数学/线性代数/矩阵.md",
@@ -191,8 +193,6 @@
     "pages/未命名.md",
     "pages/计算机科学/数值分析/线性方程组的直接解法.md",
     "pages/数学/离散数学/命题逻辑.md",
-    "pages/数学/离散数学/命题逻辑等值演算.md",
-    "pages/数学/离散数学/命题逻辑推理.md",
     "assets/光学基础/lens-imaging.png",
     "pages/计算机科学/MATLAB",
     "pages/计算机科学/数值分析",
