@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f0f578397c5f115e",
+        "id": "d8766d3d5a51d2ef",
         "type": "tabs",
         "children": [
           {
-            "id": "7aaaf695106efa47",
+            "id": "543b7f6e27fc3b1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/数学/离散数学/群.md",
+                "file": "pages/数学/离散数学/图论基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/数学/离散数学/群.md",
+            "file": "pages/数学/离散数学/图论基础.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/数学/离散数学/群.md",
+            "file": "pages/数学/离散数学/图论基础.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +126,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/数学/离散数学/群.md"
+            "file": "pages/数学/离散数学/图论基础.md"
           }
         }
       }
@@ -143,10 +143,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7aaaf695106efa47",
+  "active": "f579d315d73b8e92",
   "lastOpenFiles": [
-    "pages/数学/概率论/数字特征.md",
+    "pages/数学/离散数学/图论基础.md",
+    "pages/计算机科学/数值分析/数值积分.md",
+    "pages/计算机科学/数值分析/方程的迭代解法.md",
+    "pages/计算机科学/数值分析/插值.md",
+    "pages/物理/近代物理/狭义相对论.md",
+    "pages/物理/近代物理",
+    "pages/计算机科学/数值分析/线性方程组的迭代解法.md",
     "pages/数学/离散数学/群.md",
+    "pages/数学/概率论/数字特征.md",
     "pages/数学/离散数学/代数系统.md",
     "pages/计算机科学/数值分析/线性方程组的直接解法.md",
     "pages/数学/离散数学/二元关系.md",
@@ -165,12 +172,6 @@
     "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
     "pages/数学/概率论/概率基础.md",
     "pages/物理/电磁学/静电场.md",
-    "pages/计算机科学/数值分析/方程的迭代解法.md",
-    "pages/计算机科学/数值分析/方程组的迭代解法.md",
-    "pages/数学/离散数学/一阶逻辑.md",
-    "pages/数学/离散数学/命题逻辑推理.md",
-    "pages/数学/微积分/函数.md",
-    "pages/未命名 1.md",
     "未命名.canvas",
     "pages/物理/电磁学"
   ]
