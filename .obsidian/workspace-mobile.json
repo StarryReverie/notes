@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d8766d3d5a51d2ef",
+        "id": "576c1454c35150d1",
         "type": "tabs",
         "children": [
           {
-            "id": "543b7f6e27fc3b1c",
+            "id": "572e5652457d5bc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/数学/离散数学/图论基础.md",
+                "file": "pages/数学/离散数学/群.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,8 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 0,
+    "pinned": true
   },
   "right": {
     "id": "cb5a9670a40723b6",
@@ -97,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/数学/离散数学/图论基础.md",
+            "file": "pages/数学/离散数学/群.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/数学/离散数学/图论基础.md",
+            "file": "pages/数学/离散数学/群.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -126,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/数学/离散数学/图论基础.md"
+            "file": "pages/数学/离散数学/群.md"
           }
         }
       }
@@ -143,36 +144,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "543b7f6e27fc3b1c",
+  "active": "572e5652457d5bc7",
   "lastOpenFiles": [
-    "pages/数学/离散数学/图论基础.md",
-    "pages/计算机科学/数值分析/数值积分.md",
-    "pages/计算机科学/数值分析/方程的迭代解法.md",
-    "pages/计算机科学/数值分析/插值.md",
-    "pages/物理/近代物理/狭义相对论.md",
-    "pages/物理/近代物理",
-    "pages/计算机科学/数值分析/线性方程组的迭代解法.md",
-    "pages/数学/离散数学/群.md",
-    "pages/数学/概率论/数字特征.md",
-    "pages/数学/离散数学/代数系统.md",
-    "pages/计算机科学/数值分析/线性方程组的直接解法.md",
-    "pages/数学/离散数学/二元关系.md",
-    "pages/数学/概率论/多维随机变量.md",
-    "pages/数学/微积分/曲面积分.md",
-    "pages/数学/微积分/曲线积分.md",
-    "pages/数学/线性代数/范数.md",
-    "pages/数学/常用公式与不等式.md",
-    "pages/数学/离散数学/集合.md",
-    "pages/数学/离散数学/命题逻辑等值演算.md",
-    "pages/未命名.md",
-    "pages/数学/线性代数/特征值与特征向量.md",
-    "pages/数学/线性代数/矩阵.md",
-    "pages/数学/线性代数/向量.md",
-    "pages/数学/概率论/随机变量.md",
-    "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
-    "pages/数学/概率论/概率基础.md",
-    "pages/物理/电磁学/静电场.md",
+    "pages/数学/离散数学/欧拉图和哈密顿图.md",
+    "pages/数学/离散数学/平面图.md",
+    "pages/数学/离散数学/树.md",
     "未命名.canvas",
+    "pages/数学/离散数学/图论基础.md",
+    "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
+    "pages/数学/离散数学/命题逻辑等值演算.md",
+    "pages/数学/离散数学/格.md",
+    "pages/数学/离散数学/群.md",
+    "pages/数学/离散数学/代数系统.md",
+    "pages/数学/离散数学/二元关系.md",
+    "pages/数学/离散数学/集合.md",
+    "pages/数学/离散数学/一阶逻辑.md",
+    "pages/数学/离散数学/命题逻辑推理.md",
+    "pages/数学/离散数学/命题逻辑.md",
+    "pages/物理/电磁学/磁场.md",
+    "pages/物理/电磁学/电介质.md",
+    "pages/物理/电磁学/导体.md",
+    "pages/物理/电磁学/静电场.md",
+    "pages/物理/近代物理/狭义相对论.md",
+    "pages/数学/概率论/概率基础.md",
+    "pages/数学/概率论/参数估计.md",
+    "pages/数学/概率论/数字特征.md",
+    "pages/数学/概率论/随机变量.md",
+    "pages/数学/概率论/多维随机变量.md",
+    "pages/计算机科学/数值分析/数值积分.md",
+    "pages/物理/近代物理",
     "pages/物理/电磁学"
   ]
 }
