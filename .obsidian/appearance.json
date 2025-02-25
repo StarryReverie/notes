@@ -4,5 +4,6 @@
   "monospaceFontFamily": "Cascadia Mono",
   "baseFontSizeAction": true,
   "theme": "obsidian",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "showRibbon": true
 }
