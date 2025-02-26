@@ -1,4 +1,5 @@
 {
+  "showRibbon": true,
   "readableLineLength": false,
   "newFileLocation": "folder",
   "newFileFolderPath": "pages",
@@ -28,5 +29,6 @@
     "editor:configure-toolbar",
     "editor:toggle-inline-math"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
 }
