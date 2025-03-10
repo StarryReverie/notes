@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/计算机科学/数据库/数据模型.md",
+                "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/计算机科学/数据库/数据模型.md",
+            "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/计算机科学/数据库/数据模型.md",
+            "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/计算机科学/数据库/数据模型.md"
+            "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md"
           }
         }
       }
@@ -146,10 +146,15 @@
   },
   "active": "00bd21c2fd5f6b5a",
   "lastOpenFiles": [
-    "pages/计算机科学/数据库/数据库基本概念.md",
+    "pages/数学/离散数学/命题逻辑等值演算.md",
+    "pages/计算机科学/数字逻辑/组合逻辑电路.md",
+    "assets/组合逻辑电路",
+    "assets/组合逻辑电路/gates.png",
+    "pages/数学/离散数学/格.md",
     "pages/计算机科学/数据库/数据模型.md",
-    "pages/计算机科学/数据库/未命名",
     "pages/计算机科学/数字逻辑/数字系统.md",
+    "pages/计算机科学/数据库/数据库基本概念.md",
+    "pages/计算机科学/数据库/未命名",
     "pages/计算机科学/数据库/数据库系统概论.md",
     "pages/计算机科学/数据库",
     "pages/计算机科学/面向对象",
@@ -159,8 +164,6 @@
     "未命名.canvas",
     "pages/数学/离散数学/图论基础.md",
     "pages/数学/离散数学/一阶逻辑等值演算与推理.md",
-    "pages/数学/离散数学/命题逻辑等值演算.md",
-    "pages/数学/离散数学/格.md",
     "pages/数学/离散数学/群.md",
     "pages/数学/离散数学/代数系统.md",
     "pages/数学/离散数学/二元关系.md",
@@ -174,8 +177,6 @@
     "pages/物理/电磁学/静电场.md",
     "pages/物理/近代物理/狭义相对论.md",
     "pages/数学/概率论/概率基础.md",
-    "pages/数学/概率论/参数估计.md",
-    "pages/数学/概率论/数字特征.md",
     "pages/物理/近代物理",
     "pages/物理/电磁学"
   ]
