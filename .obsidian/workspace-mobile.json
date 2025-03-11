@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9fec1b707d9f184f",
+        "id": "68a75fafd1334742",
         "type": "tabs",
         "children": [
           {
-            "id": "00bd21c2fd5f6b5a",
+            "id": "2140bfb8f8a1a8a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md",
+                "file": "pages/计算机科学/数据库/关系数据库.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md",
+            "file": "pages/计算机科学/数据库/关系数据库.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md",
+            "file": "pages/计算机科学/数据库/关系数据库.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "pages/计算机科学/数字逻辑/组合逻辑电路.md"
+            "file": "pages/计算机科学/数据库/关系数据库.md"
           }
         }
       }
@@ -144,10 +144,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "00bd21c2fd5f6b5a",
+  "active": "2140bfb8f8a1a8a3",
   "lastOpenFiles": [
-    "pages/数学/离散数学/命题逻辑等值演算.md",
+    "pages/数学/离散数学/集合.md",
+    "pages/计算机科学/数据库/关系数据库.md",
     "pages/计算机科学/数字逻辑/组合逻辑电路.md",
+    "pages/数学/离散数学/命题逻辑等值演算.md",
     "assets/组合逻辑电路",
     "assets/组合逻辑电路/gates.png",
     "pages/数学/离散数学/格.md",
@@ -167,7 +169,6 @@
     "pages/数学/离散数学/群.md",
     "pages/数学/离散数学/代数系统.md",
     "pages/数学/离散数学/二元关系.md",
-    "pages/数学/离散数学/集合.md",
     "pages/数学/离散数学/一阶逻辑.md",
     "pages/数学/离散数学/命题逻辑推理.md",
     "pages/数学/离散数学/命题逻辑.md",
