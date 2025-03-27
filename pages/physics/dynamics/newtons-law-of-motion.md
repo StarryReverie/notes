@@ -7,7 +7,7 @@ tags:
 - **牛顿运动定律**
 	- **牛顿第一定律**
 		- 任何物体，如果没有力作用在它上面，都将保持静止或匀速直线运动状态不变，这个定律也称为惯性定律。
-	- **牛顿第二定律** ^29cc9r
+	- **牛顿第二定律** <span id="t9cc9r"></span>
 		- 力与运动关系：
 		  $$
 		  \boldsymbol F=\frac{\mathrm d\boldsymbol p}{\mathrm dt}=m\boldsymbol a

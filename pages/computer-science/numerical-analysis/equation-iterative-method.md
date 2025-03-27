@@ -7,7 +7,7 @@ tags:
 - **确定初值**
 	- **画图法**
 	- **扫描法**
-		- 在有根区间中，选定一个步长 $h$，用[零点定理](函数#^4kxb1e)确定当前区间 $[x_0,x_0 + h]$ 内是否有根，并令 $x_0 \longleftarrow x_0 + h$，判断下一个区间。
+		- 在有根区间中，选定一个步长 $h$，用[零点定理](/pages/mathematics/calculus/function.md#fkxb1e)确定当前区间 $[x_0,x_0 + h]$ 内是否有根，并令 $x_0 \longleftarrow x_0 + h$，判断下一个区间。
 		- 如果 $h$ 过大可能漏掉根，如果过小则计算量大。
 	- **二分法**
 		- 不断切分当前区间 $[a,b]$，进入有根的子区间，并继续寻找。
@@ -16,7 +16,7 @@ tags:
 		- 二分法无法求复根以及偶重根。
 - **迭代方法**
 	- **迭代计算**
-		- 已知方程 $f(x) = 0$，则将其变换为 $x = \varphi(x)$，则 $x_{n + 1} = \varphi(x_n)$ 是迭代公式。 ^hx4z72
+		- 已知方程 $f(x) = 0$，则将其变换为 $x = \varphi(x)$，则 $x_{n + 1} = \varphi(x_n)$ 是迭代公式。 <span id="hx4z72"></span>
 		- 从初值 $x_0$ 开始，得到 $x_1 = \varphi(x_0),x_2 = \varphi(x_1),\dots$，则 $x_0,x_1,x_2,\dots$ 是迭代序列。
 		- 如果 $\lim\limits_{n \to +\infty} x_n = \alpha$ 存在，则 $\alpha$ 就是方程的根。如果发散，则这种迭代法失效。
 	- **收敛性**
@@ -24,7 +24,7 @@ tags:
 			- 大范围收敛：任意位置都可以收敛。
 			- 局部收敛：收敛速度更块，但需要初值接近根。
 		- **收敛的充分条件**
-			- $\varphi(x)$ 在 $[a, b]$ 上[可导](导数#^ri73aj)，且满足 $|\varphi'(x)| \le q < 1$，则迭代过程收敛。
+			-  如果在 $[a, b]$ 上 $\varphi(x)$ [可导](/pages/mathematics/calculus/derivative.md#ri73aj)，且满足 $|\varphi'(x)| \le q < 1$，则迭代过程收敛。
 			- $q$ 在此处保证 $|\varphi'(x)|$ 不是收敛于 $1$。
 			- $q$ 越小则收敛越快。
 			- 实际应用中，$[a,b]$ 长度较小，$|\varphi'(x)|$ 变化较小，所以只判断 $|\varphi(x_0)|<1$。
@@ -37,8 +37,8 @@ tags:
 			- $|x_n - \alpha| \le \dfrac{q^n}{1 - q}|x_1 - x_0|$，该公式可以估计 $n$。
 			- $|x_n - \alpha| \le \dfrac{|\varphi(x_n)|}{m},m \le |\varphi'(x)|$。
 	- **误差分析**
-		- 上界公式确定[截断误差](数值计算误差#^fmii73)。
-		- 迭代方法的[舍入误差](数值计算误差#^7lzgdw)只计算最后一次迭代产生的误差。
+		- 上界公式确定[截断误差](/pages/computer-science/numerical-analysis/numerical-compution-error.md#fmii73)。
+		- 迭代方法的[舍入误差](/pages/computer-science/numerical-analysis/numerical-compution-error.md#slzgdw)只计算最后一次迭代产生的误差。
 - **常用迭代公式**
 	- **构造迭代公式**
 		- **构造法 1**

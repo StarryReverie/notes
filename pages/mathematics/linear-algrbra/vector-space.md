@@ -12,7 +12,7 @@ tags:
 			- 对 $\forall \boldsymbol a\in V,k\in F$，都有 $k\boldsymbol a\in V$
 		- 从定义可以看出，向量空间中[向量线性运算](向量#^qhvnyd)都是封闭的。
 	- **性质**
-		- 零[[向量]]在任何向量空间中。
+		- 零[向量](/pages/mathematics/linear-algrbra/vector.md)在任何向量空间中。
 		- 只有零向量的集合也是向量空间。
 		- 向量空间的交空间、和空间也是向量空间。但并空间不一定是是向量空间。
 	- **关系**
@@ -20,7 +20,7 @@ tags:
 			- 设 $V,W$ 是 $\mathrm F^n$ 的两个子空间，若对于 $\forall \boldsymbol a\in V,\boldsymbol b\in W$，都有 $\boldsymbol a\perp\boldsymbol b$，则 $V$ 与 $W$ 正交。
 			- $V\cap W=\{0\}$
 			- $\dim V+\dim W=\dim (V+W)$
-- **基** ^sohrgj
+- **基** <span id="sohrgj"></span>
 	- **定义**
 		- 设 $\mathrm F^n$ 的非空子集 $V$ 是 $\mathrm F$ 上的向量空间。如果 $V$ 中的[向量组](向量#^0067dr) $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 满足以下两个条件，则 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 是 $V$ 的一个基：
 			- $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 线性无关；
@@ -60,7 +60,7 @@ tags:
 			- $\operatorname{span}(\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_s)=\operatorname{span}(\boldsymbol b_1,\boldsymbol b_2,\dots,\boldsymbol b_t) \iff \{\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_s\}\cong\{\boldsymbol b_1,\boldsymbol b_2,\dots,\boldsymbol b_t\}$
 	- **列空间**
 		- **定义**
-			- 由 $m\times n$ [[矩阵]] $A$ 的列生成的子空间，称为 $A$ 的列空间，记作 $C(A)$。
+			- 由 $m\times n$ [矩阵](/pages/mathematics/linear-algrbra/matrix.md) $A$ 的列生成的子空间，称为 $A$ 的列空间，记作 $C(A)$。
 		- **性质**
 			- $A\boldsymbol x=\boldsymbol b$ 有解 $\iff \boldsymbol b \in C(A)$
 			- $\dim C(A)=r(A)$

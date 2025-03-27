@@ -8,7 +8,7 @@ tags:
 ---
 - **定义**
 	- **带皮亚诺余项的泰勒公式**
-		- 设[[函数]] $f(x)$ 在 $x_0$ 的某邻域有 $n-1$ 阶导数， $x_0$ 处有 $n$ 阶导数，则 $f(x)=\sum\limits_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)$。
+		- 设[函数](/pages/mathematics/calculus/function.md) $f(x)$ 在 $x_0$ 的某邻域有 $n-1$ 阶导数， $x_0$ 处有 $n$ 阶导数，则 $f(x)=\sum\limits_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)$。
 		- 等号右边称为 $f(x)$ 在 $x_0$ 处的带皮亚诺余项的 $n$ 阶泰勒公式。
 		- $o((x-x_0)^n)$ 是皮亚诺余项。
 		- 求和项称为 $f(x)$ 在 $x_0$ 处的 $n$ 阶泰勒多项式。
@@ -31,11 +31,11 @@ tags:
 	- 如果余项为皮亚诺余项，可以对求解的函数中各个部分分别求解泰勒公式，再利用四则运算或复合运算得到整体答案，如 $xe^{-x^2}$ 的麦克劳林公式、$\ln(2+x)$ 在 $-1$ 处的泰勒公式。
 - **多元函数的泰勒公式**
 	- **拉格朗日余项**
-		- 设[[多元函数]] $f(x,y)$ 在 $(x_0,y_0)$ 的某邻域有 $n+1$ 阶连续[[偏导数]]。
+		- 设[多元函数](/pages/mathematics/calculus/multivariate-function.md) $f(x,y)$ 在 $(x_0,y_0)$ 的某邻域有 $n+1$ 阶连续[偏导数](/pages/mathematics/calculus/partial-derivative.md)。
 		- $f(x,y)=\sum\limits_{k=0}^n \frac{1}{k!}\left[(x-x_0)\frac{\partial}{\partial x}+(y-y_0)\frac{\partial}{\partial y}\right]^k f(x,y)+R_n$。
 		- 其中 $R_n=\frac{1}{(n+1)!}\left[(x-x_0)\frac{\partial}{\partial x}+(y-y_0)\frac{\partial}{\partial y}\right]^{n+1} f(x_0+\theta(x-x_0),y_0+\theta(y-y_0))$ 是拉格朗日余项。
 	- **皮亚诺余项**
-		- 设[[多元函数]] $f(x,y)$ 在 $(x_0,y_0)$ 的某邻域有 $n+1$ 阶连续[[偏导数]]。
+		- 设[多元函数](/pages/mathematics/calculus/multivariate-function.md) $f(x,y)$ 在 $(x_0,y_0)$ 的某邻域有 $n+1$ 阶连续[偏导数](/pages/mathematics/calculus/partial-derivative.md)。
 		- $f(x,y)=\sum\limits_{k=0}^n \frac{1}{k!}\left[(x-x_0)\frac{\partial}{\partial x}+(y-y_0)\frac{\partial}{\partial y}\right]^k f(x,y)+o(\rho^n)$。
 		- 其中 $\rho=\sqrt{(x-x_0)^2+(y-y_0)^2}$，$o(\rho^n)$ 是皮亚诺余项。
 - **应用**
@@ -43,7 +43,7 @@ tags:
 		- 已知函数 $f(x)$ 在 $x_0$ 处的函数值与各阶导数值，则可以应用泰勒公式，利用多项式近似计算。
 		- 误差分析利用拉格朗日余项 $\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$。
 	- **求极限**
-		- 求[[极限]]时如果无法运用常见等价无穷小，则可以将计算式中的复杂函数展开。
+		- 求[极限](/pages/mathematics/calculus/limit.md)时如果无法运用常见等价无穷小，则可以将计算式中的复杂函数展开。
 		- 求极限的分式中，对分母一般展开到出现非高阶无穷小项，对分子的展开的阶数一般为分母的最低次数。
 		- 如 $\lim\limits_{x\to 0}\frac{x^2-\sin x+x}{x-\ln(1+x)}$。
 			- 对于分母，展开 $\ln(1+x)$ 到 $2$ 阶，分母等于 $x-(x-\frac{x^2}{2}+o(x^2))=\frac{x^2}{2}+o(x^2)$，已经足够。

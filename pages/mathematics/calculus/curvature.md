@@ -6,8 +6,8 @@ tags:
   - differentiation
   - function
 ---
-- **弧微分** ^lkfh2a
-	- 对曲线的一段弧的长度的[[微分]]称为弧微分 $\mathrm ds$。
+- **弧微分** <span id="lkfh2a"></span>
+	- 对曲线的一段弧的长度的[微分](/pages/mathematics/calculus/differential.md)称为弧微分 $\mathrm ds$。
 	- 对平面直角坐标系下的函数 $y=y(x)$：
 		- $\mathrm ds=\sqrt{1+(y')^2}\mathrm dx$
 	- 对平面直角坐标系下的参数方程确定的函数 $\left\{\begin{matrix}x=\varphi(t) \\y=\psi(t)\end{matrix}\right.$：
@@ -27,7 +27,7 @@ tags:
 			- $K=\frac{|\varphi'(t)\psi''(t)-\varphi''(t)\psi'(t)|}{[(\varphi'(t))^2+(\psi'(t))]^{\frac{3}{2}}}$
 		- 对极坐标下的方程确定的函数 $\rho=\rho(\theta)$：
 			- $K=\frac{|\rho^2(\theta)+2(\rho'(\theta))^2-\rho(\theta)\rho''(\theta)|}{[(\rho'(\theta))^2+\rho^2(\theta)]^{\frac{3}{2}}}$
-		- 对于后面两种情况，都可以利用[参数方程求导](导数#^fus26w)的办法求出平面直角坐标系下的 $y',y''$，再代入到第一个公式里。
+		- 对于后面两种情况，都可以利用[参数方程求导](/pages/mathematics/calculus/derivative.md#fus26w)的办法求出平面直角坐标系下的 $y',y''$，再代入到第一个公式里。
 - **曲率圆**
 	- **定义**
 		- 若曲线某处 $K\ne 0$，则称 $R=\frac{1}{K}$ 为该点处的曲率半径。

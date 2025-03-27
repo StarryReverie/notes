@@ -6,9 +6,9 @@ tags:
 ---
 - **欧拉图**
 	- **定义**
-		- 欧拉通路：经过[图](图论基础#^xknur9)中每条边恰好一次且仅一次行遍所有顶点的通路。
+		- 欧拉通路：经过[图](/pages/mathematics/discrete-mathematics/graph-basis.md#xknur9)中每条边恰好一次且仅一次行遍所有顶点的通路。
 		- 欧拉回路：经过图中每条边恰好一次且仅一次行遍所有顶点的回路。
-		- 欧拉图：具有欧拉回路的图。规定[平凡图](图论基础#^hc99ie)为欧拉图。
+		- 欧拉图：具有欧拉回路的图。规定[平凡图](/pages/mathematics/discrete-mathematics/graph-basis.md#hc99ie)为欧拉图。
 		- 半欧拉图：具有欧拉通路而无欧拉回路的图。
 	- **性质**
 		- 环不影响图的欧拉性。

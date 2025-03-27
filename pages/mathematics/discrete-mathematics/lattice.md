@@ -7,10 +7,10 @@ tags:
 - **格**
 	- **定义**
 		- 偏序格：
-			- 设 $<S,\preceq>$ 是[偏序](二元关系#^kynj0r)集，若 $\forall x,y \in S$ 满足 $\{x,y\}$ 都在 $S$ 存在最小上界和最大下界，则 $S$ 是偏序格。
+			- 设 $<S,\preceq>$ 是[偏序](/pages/mathematics/discrete-mathematics/binary-relationship.md#kynj0r)集，若 $\forall x,y \in S$ 满足 $\{x,y\}$ 都在 $S$ 存在最小上界和最大下界，则 $S$ 是偏序格。
 			- 定义保交 $x \lor y$ 为取 $x,y$ 的最小上界，保联 $x \land y$ 为取 $x,y$ 的最大下界。
 		- 代数格：
-			- 设 $<S,\star,\circ>$ 为[[代数系统]]，$\star,\circ$ 具有交换律、结合律、吸收律，则 $S$ 是代数格。
+			- 设 $<S,\star,\circ>$ 为[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md)，$\star,\circ$ 具有交换律、结合律、吸收律，则 $S$ 是代数格。
 			- 可以定义 $S$ 中的偏序关系 $\preceq$：$x \preceq y \iff x \circ y = y$。
 			- $\land,\lor$ 满足 $x\land y = x \star y,x\lor y = x \circ y$。
 		- 偏序格和代数格的定义是等价的，统称为格。
@@ -46,7 +46,7 @@ tags:
 		- $b$ 是 $a$ 的补元 $\iff$ $a$ 是 $b$ 的补元，称为 $a,b$ 互补。
 		- $0,1$ 总是互补，其他元素不一定有补，补元也不一定唯一。
 		- 对于有界分配格，若存在补元，则补元唯一。
-- **布尔代数** ^17caho
+- **布尔代数** <span id="l7cahh"></span>
 	- **定义**
 		- 定义 1：
 			- 若 $L$ 是有补分配格，则 $L$ 是布尔代数。

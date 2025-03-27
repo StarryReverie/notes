@@ -6,7 +6,7 @@ tags:
 ---
 - **幂级数**
 	- **定义**
-		- [[级数]] $\sum\limits_{n=0}^{+\infty}a_n(x-x_0)^n$ 被称为幂级数。
+		- [级数](/pages/mathematics/calculus/series.md) $\sum\limits_{n=0}^{+\infty}a_n(x-x_0)^n$ 被称为幂级数。
 		- 一般情况下研究 $\sum\limits_{n=0}^{+\infty}a_n x^n$。
 	- **收敛域**
 		- **阿贝尔定理**
@@ -29,7 +29,7 @@ tags:
 			- 对于收敛域的边界，敛散性需要特殊考虑。
 		- **可导性**
 			- $\sum\limits_{n=0}^{+\infty}a_n x^n$ 的和函数 $s(x)$ 在其收敛域上可导。
-			- 积分等于每一项的[[导数]]之和，收敛半径不变。
+			- 积分等于每一项的[导数](/pages/mathematics/calculus/derivative.md)之和，收敛半径不变。
 			- 对于收敛域的边界，敛散性需要特殊考虑。
 - **泰勒级数**
 	- **定义**
@@ -43,4 +43,4 @@ tags:
 		- 在 $U(x_0)$ 内，$f(x)$ 的泰勒级数收敛到 $f(x)$ $\iff$ $\lim\limits_{n\to+\infty}R_n(x)=0$。
 		- 在 $U(x_0)$ 内，若 $f(x)$ 的任意阶导数有界，则 $f(x)$ 的泰勒级数收敛到 $f(x)$。
 	- **计算**
-		- 类似[[泰勒公式]]。
+		- 类似[泰勒公式](/pages/mathematics/calculus/taylor-formula.md)。

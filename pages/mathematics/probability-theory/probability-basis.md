@@ -29,7 +29,7 @@ tags:
 		- 非负性：$P(A) \ge 0$
 		- 归一性：$P(S) = 1$
 		- 可加性：若 $A_1, A_2, \dots, A_m$ 互斥，则 $P\left(\bigcup\limits_{i = 1}^m A_i\right)=\sum\limits_{i = 1}^m P(A_i)$
-- **几何概型** ^v4un1v
+- **几何概型** <span id="v4un1v"></span>
 	- **定义**
 		- 随机试验向可度量区域 $G$ 投一点，点落在 $G$ 中任意可度量区域 $g$ 的可能性只与 $g$ 的度量成正比。
 		- $S=G$，样本点为 $G$ 中的点，$A$ 对应 $g$，则 $P(A) = \dfrac{m(g)}{m(G)}$，$m(\cdot)$ 表示度量（如长度、面积）。
@@ -58,7 +58,7 @@ tags:
 		- $P(A) = \sum\limits_{i = 1}^n P(B_i)P(A|B_i)$
 	- **贝叶斯公式**
 		- $P(A_i|B) = \dfrac{P(A_i)P(B|A_i)}{P(B)} = \dfrac{P(A_i)P(B|A_i)}{\sum\limits_{j = 1}^n P(A_j)P(B|A_j)}$
-- **独立性** ^b59tln
+- **独立性** <span id="b59tln"></span>
 	- **定义**
 		- 对任意事件 $A,B$，若$P(AB)=P(A)P(B)$，则 $A$ 和 $B$ 独立。
 		- 对任意 $n$ 个事件 $A_1, A_2, \dots, A_n$

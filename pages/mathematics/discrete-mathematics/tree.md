@@ -6,7 +6,7 @@ tags:
 ---
 - **无向树**
 	- **定义**
-		- 无向树：连通无回路的无向[图](图论基础#^xknur9)。
+		- 无向树：连通无回路的无向[图](/pages/mathematics/discrete-mathematics/graph-basis.md#xknur9)。
 		- 平凡树：平凡图。
 		- 森林：至少由两个树组成。
 		- 树叶：度数为 $1$。

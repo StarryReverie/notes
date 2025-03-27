@@ -6,7 +6,7 @@ tags:
 ---
 - **群**
 	- **定义**
-		- 已知[[代数系统]] $V=<A,\circ>$
+		- 已知[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md) $V=<A,\circ>$
 			- 若 $\circ$ 满足结合律，则 $V$ 是半群。
 			- 若 $V$ 中存在单位元，则 $V$ 是幺半群 / 独异点。
 			- 若 $A$ 中每个元素都有逆元在 $A$ 中，则 $V$ 是群。
@@ -14,7 +14,7 @@ tags:
 	- **分类**
 		- 若群 $G$ 是有穷集，则 $G$ 是有限群，否则是无限群。
 		- 若群 $G$ 只包含单位元，则 $G$ 是平凡群。
-		- 若群 $G$ 的[二元运算](代数系统#^krwh8o)有交换律，则 $G$ 是交换群 / 阿贝尔群。
+		- 若群 $G$ 的[二元运算](/pages/mathematics/discrete-mathematics/algebraic-system.md#krwh8o)有交换律，则 $G$ 是交换群 / 阿贝尔群。
 	- **性质**
 		- 群的运算满足消去律。
 	- **乘幂**
@@ -65,7 +65,7 @@ tags:
 			- $\forall a,b \in G$，$a \in bH \iff b^{-1}a \in H \iff aH = bH$
 			- $H$ 在 $G$ 中的左陪集与右陪集数量相等，都记作 $[G:H]$。
 		- 陪集中的任何元素都可以作为其代表元素。
-		- 已知 $G$ 为群，$a,b\in G$，定义[[二元关系]] $R$ 满足 $\langle a,b\rangle \in R \iff ab^{-1} \in H$。则 $[a]_R = Ha$。
+		- 已知 $G$ 为群，$a,b\in G$，定义[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md) $R$ 满足 $\langle a,b\rangle \in R \iff ab^{-1} \in H$。则 $[a]_R = Ha$。
 			- $\forall a,b\in G$，$Ha = Hb \lor Ha \cap Hb = \varnothing$
 			- $\displaystyle\bigcup_{a\in G} Ha = G$
 			- $\forall a \in G$，$H \approx Ha$
@@ -110,7 +110,7 @@ tags:
 		- 所有 $n$ 元偶置换构成的群称为 $n$ 元交错群。
 - **环**
 	- **定义**
-		- 设 $<R,+,\cdot>$ 为[[代数系统]]，若 $<R,+>$ 构成交换群，$<R,\cdot>$ 构成半群，$\cdot$ 关于 $+$ 有分配律，则 $R$ 是环。
+		- 设 $<R,+,\cdot>$ 为[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md)，若 $<R,+>$ 构成交换群，$<R,\cdot>$ 构成半群，$\cdot$ 关于 $+$ 有分配律，则 $R$ 是环。
 		- $+$ 称为环中的加法，$\cdot$ 称为环中的乘法。
 		- 环中 $+$ 的单位元记作 $0$，$\cdot$ 的单位元记作 $1$。
 		- 环中 $x$ 的加法逆元称为负元，记作 $-x$。

@@ -8,13 +8,13 @@ tags:
 ---
 - **数列的极限**
 	- **定义**
-		- 设数列 $\{a_n\}$，$A$ 是一常数，如果对于任意给定的正数 $\varepsilon$，都存在正数 $N$，使得当 $n>N$ 时，恒有 $|a_n-A|<\varepsilon$ 成立，则称数列 $\{a_n\}$ 以 $A$ 为极限，或者称数列 $\{a_n\}$ 收敛于 $A$，记作 $\lim\limits_{n\to \infty} a_n=A$ 或 $a_n\to A(n\to \infty$)。如果数列 $\{a_n\}$ 没有极限，则称数列 $\{a_n\}$ 是发散的。
+		- 设数列 $\{a_n\}$，$A$ 是一常数，如果对于任意给定的正数 $\varepsilon$，都存在正数 $N$，使得当 $n>N$ 时，恒有 $|a_n-A|<\varepsilon$ 成立，则称数列 $\{a_n\}$ 以 $A$ 为极限，或者称数列 $\{a_n\}$ 收敛于 $A$，记作 $\lim\limits_{n\to \infty} a_n=A$ 或 $a_n\to A(n\to \infty)$。如果数列 $\{a_n\}$ 没有极限，则称数列 $\{a_n\}$ 是发散的。
 		- $N$ 与一般给定的 $\varepsilon$ 有关。
 		- $\varepsilon-N$ 语言：若 $\forall \varepsilon>0$，$\exists N>0$，当 $n>N$ 时，恒有 $|a_n-A|<A$，则 $\lim\limits_{n\to \infty}a_n=A$。
 	- **数列极限与子列极限的关系**
 		- 如果 $\lim\limits_{n\to \infty} a_n=A$，则对于任意 $\{a_n\}$ 的子列 $\{y_{n_k}\}$，$\lim\limits_{k\to \infty} y_{n_k}=A$。
 		- 由逆否命题可知，如果某个数列的子列发散或两个子列收敛于不同的极限，则该数列发散。
-- **[[函数]]的极限** ^ishaoc
+- **[函数](/pages/mathematics/calculus/function.md)的极限** <span id="ishaoc"></span>
 	- **定义**
 		- （$x\to \infty$）设函数 $f(x)$ 在区间 $(-\infty,b]\cup [a,+\infty)$ 上有定义，$A$ 是一常数，如果对于任意给定的正数 $\varepsilon$，都存在正数 $N$，使得当 $|x|>N$ 时，恒有 $|f(x)-A|<\varepsilon$ 成立，则 $A$ 叫做函数 $f(x)$ 当 $x\to \infty$ 时的极限，记作 $\lim\limits_{x\to \infty} = A$，或 $f(x)\to A(x\to \infty)$。
 		- 同理还有 $x\to +\infty$ 和 $x\to -\infty$ 时的情况，这三种情况都是 $x$ 趋于无穷大时的情况，不同之处仅在 $x$ 的趋势。

@@ -5,7 +5,7 @@ tags:
   - random-variable
 ---
 - **切比雪夫不等式**
-	- 对于任意[[随机变量]] $X$ 和 $\varepsilon > 0$，有
+	- 对于任意[随机变量](/pages/mathematics/probability-theory/random-variable.md) $X$ 和 $\varepsilon > 0$，有
 		- $P(|X - E(X)| \ge \varepsilon) \le \dfrac{D(X)}{\varepsilon^2}$。
 		- $P(|X - E(X)| < \varepsilon) \ge 1 - \dfrac{D(X)}{\varepsilon^2}$。
 - **依概率收敛**

@@ -14,7 +14,7 @@ tags:
 			- 对其进行初等行变换，化为 $\begin{bmatrix} I_n & A^{-1}\end{bmatrix}$
 			- 得到结果
 	- **行列式与伴随矩阵**
-		- $A^{-1}=\frac{1}{|A|}A^{*}$，其中 $A^{*}$ 表示 $A$ 的[伴随矩阵](行列式#^hyrjhx)。
+		- $A^{-1}=\frac{1}{|A|}A^{*}$，其中 $A^{*}$ 表示 $A$ 的[伴随矩阵](/pages/mathematics/linear-algrbra/determinant.md#hyrjhx)。
 	- **分块矩阵**
 		- 将矩阵拆分成比较简单的几个子块，然后对分块矩阵和部分子块求逆，得出结果。
 - **常用求逆公式** ^7v68w4

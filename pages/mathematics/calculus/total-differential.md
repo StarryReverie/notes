@@ -20,13 +20,13 @@ tags:
 	  $$
 	  \mathrm dz=A\Delta x+B\Delta y=A\mathrm dx+B\mathrm dy
 	  $$
-	- [[多元函数]]有类似定义。
+	- [多元函数](/pages/mathematics/calculus/multivariate-function.md)有类似定义。
 - **定理**
 	- **可微与连续性关系**
 		- 如果 $z=f(x,y)$ 在 $(x,y)$ 可微，则 $z=f(x,y)$ 在 $(x,y)$ 连续。
 		- 可微 $\implies$ 连续，连续 $\nRightarrow$ 可微。
 	- **可微与偏导数关系**
-		- 如果 $z=f(x,y)$ 在 $(x,y)$ 可微，则 $z=f(x,y)$ 在 $(x,y)$ 的[[偏导数]]都存在，且
+		- 如果 $z=f(x,y)$ 在 $(x,y)$ 可微，则 $z=f(x,y)$ 在 $(x,y)$ 的[偏导数](/pages/mathematics/calculus/partial-derivative.md)都存在，且
 		  $$
 		  \frac{\partial z}{\partial x}=A,\frac{\partial z}{\partial y}=B
 		  $$
@@ -40,12 +40,12 @@ tags:
 		- 可微 $\implies$ 偏导数连续，偏导数连续 $\nRightarrow$ 可微。
 - **应用**
 	- **近似计算**
-		- 参考一元函数微分的[近似计算](微分#^gl6e5p)。
+		- 参考一元函数微分的[近似计算](/pages/mathematics/calculus/differential.md#gl6e5p)。
 		- $$
 		  f(x,y)\approx f(x_0,y_0)+f_x'(x_0,y_0)(x-x_0)+f_y'(x_0,y_0)(y-y_0)
 		  $$
 	- **误差估计**
-		- 参考一元函数微分的[误差估计](微分#^3288al)。
+		- 参考一元函数微分的[误差估计](/pages/mathematics/calculus/differential.md#e288al)。
 		- 对于 $z=f(x,y)$，$x,y,z$ 误差限为 $\varepsilon(x),\varepsilon(y),\varepsilon(z)$，则
 		  $$
 		  \varepsilon(z_0)=|f_x'(x_0,y_0)|\varepsilon(x_0)+|f_y'(x_0,y_0)|\varepsilon(y_0)

@@ -30,7 +30,7 @@ tags:
 	- **枢轴量法**
 		- 对于 $\theta$ 的点估计 $\hat\theta$，若 $P(a\le \theta\le b) \ge 1-\alpha$，则 $[a,b]$ 为 $\theta$ 的置信水平为 $1-\alpha$ 的置信区间。
 		- 枢轴量法用于解决区间估计：
-			- 定义[[随机变量]]函数 $G(T,\theta)$ 为枢轴量，其中 $T$ 为与 $\theta$ 有关的点估计。对于特定样本可以求出 $T$。
+			- 定义[随机变量](/pages/mathematics/probability-theory/random-variable.md)函数 $G(T,\theta)$ 为枢轴量，其中 $T$ 为与 $\theta$ 有关的点估计。对于特定样本可以求出 $T$。
 			- $G(T,\theta)$ 一般服从一些易于求解分位数的分布，根据置信水平 $1-\alpha$ 确定 $G$ 的置信区间。
 			- $T$ 已知情况下，解出 $G$ 置信区间端点对应的 $\theta$，得到 $\theta$ 的置信区间。
 	- **正态分布参数**

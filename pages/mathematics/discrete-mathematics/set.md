@@ -15,7 +15,7 @@ tags:
 	- **幂集 $P(A)$**
 		- $P(A) = \{x | x \subseteq A\}$，即 $A$ 的所有子集。
 - **集合运算**
-	- **基本运算** ^g6tiqk
+	- **基本运算** <span id="g6tiqk"></span>
 	    - 并 $A \cup B = \{x | x \in A \lor x \in B \}$
 	    - 交 $A \cap B = \{x | x \in A \land x \in B \}$
 	    - 差 / 相对补集 $A - B = \{x | x \in A \land x \notin B\}$
@@ -34,7 +34,7 @@ tags:
 	    - $A \oplus \varnothing = A$
 	    - $A \oplus A = \varnothing$
 	    - $\cup \varnothing = \varnothing$
-	    - 运算律：类比[命题逻辑](命题逻辑等值演算#^sts2pd)
+	    - 运算律：类比[命题逻辑](/pages/mathematics/discrete-mathematics/proposition-logic-calculation.md#sts2pd)
 - **容斥原理**
 	- 设集合 $S$ 定义了 $n$ 条性质，具有第 $i$ 条性质的集合为 $A_i$。
 	- 不具有性质的集合个数为 $\left|\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}\right| = |S| - \displaystyle\sum\limits_{i = 1}^n (-1)^n \sum_{p_{k} < p_{k+1}} \left|\bigcap_{j=1}^i A_{p_j}\right|$。
@@ -46,7 +46,7 @@ tags:
 			- 如果存在从 $A$ 到 $B$ 的单射，则 $B$ 优势于 $A$，记作 $A \preceq\cdot B$。
 			- 如果 $B \preceq\cdot A \land A \not\approx B$，则 $B$ 真优势于 $A$，记作 $A \prec\cdot B$。
 	- **性质**
-		- 等势是[等价关系](二元关系#^zwakul)，优势是[偏序关系](二元关系#^kynj0r)。
+		- 等势是[等价关系](/pages/mathematics/discrete-mathematics/binary-relationship.md#zwakul)，优势是[偏序关系](/pages/mathematics/discrete-mathematics/binary-relationship.md#kynj0r)。
 		- $\mathrm Q \approx \mathrm Z \approx \mathrm N \approx \mathrm N \times \mathrm N$。
 		- $\mathrm R \approx [0,1] \approx (0,1) \approx \{0,1\}^{\mathrm N} \approx P(N) \approx$ 任意实数区间。
 		- $\{0,1\}^A \approx P(A)$。

@@ -25,7 +25,7 @@
 		- [导数](/pages/mathematics/calculus/derivative.md)
 		- [微分](/pages/mathematics/calculus/differential.md)
 		- [曲率](/pages/mathematics/calculus/curvature.md)
-		- [微分中值定理](/pages/mathematics/calculus/differential-mean-heorem.md)
+		- [微分中值定理](/pages/mathematics/calculus/differential-mean-theorem.md)
 		- [洛必达法则](/pages/mathematics/calculus/lhopitals-law.md)
 		- [泰勒公式](/pages/mathematics/calculus/taylor-formula.md)
 		- [不定积分](/pages/mathematics/calculus/indefinite-integral.md)

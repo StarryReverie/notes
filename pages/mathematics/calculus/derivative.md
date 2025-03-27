@@ -5,8 +5,8 @@ tags:
   - derivative
   - function
 ---
-- **定义** ^u884j8
-	- 设[[函数]] $y=f(x)$ 在点 $x_0$ 的某邻域内有定义，当自变量在 $x_0$ 处取得增量 $\Delta x$ 时，函数取得相应的增量 $\Delta y=f(x_0+\Delta x)-f(x_0)$，如果[[极限]] $\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$ 存在，则称 $f(x)$ 在 $x_0$ 处可导，且称此极限值为 $f(x_0)$ 在点 $x_0$ 处的导数，记作 $f'(x_0)$，或 $y'\Big|_{x=x_0},\frac{\mathrm dy}{\mathrm dx}\Big|_{x=x_0},\frac{\mathrm df}{\mathrm dx}\Big|_{x=x_0}$。 ^ri73aj
+- **定义** <span id="u884j8"></span>
+	- 设[函数](/pages/mathematics/calculus/function.md) $y=f(x)$ 在点 $x_0$ 的某邻域内有定义，当自变量在 $x_0$ 处取得增量 $\Delta x$ 时，函数取得相应的增量 $\Delta y=f(x_0+\Delta x)-f(x_0)$，如果[极限](/pages/mathematics/calculus/limit.md) $\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$ 存在，则称 $f(x)$ 在 $x_0$ 处可导，且称此极限值为 $f(x_0)$ 在点 $x_0$ 处的导数，记作 $f'(x_0)$，或 $y'\Big|_{x=x_0},\frac{\mathrm dy}{\mathrm dx}\Big|_{x=x_0},\frac{\mathrm df}{\mathrm dx}\Big|_{x=x_0}$。 <span id="ri73aj"></span>
 	- $f'(x_0)$ 也可以写成 $\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}$。
 	- 如果以上极限不存在，则 $f(x)$ 在 $x_0$ 不可导。
 	- 与极限类似，可以定义左导数 $f'_-(x_0)$ 和右导数 $f'_+(x_0)$。
@@ -14,7 +14,7 @@ tags:
 	- 如果 $f(x)$ 在 $(a,b)$ 上的每一点都可导，则 $f(x)$ 在 $(a,b)$ 上可导。
 	- 如果 $f(x)$ 在 $(a,b)$ 上的每一点都可导，在 $a$ 右可导，在 $b$ 左可导，则 $f(x)$ 在 $[a,b]$ 上可导。
 - **性质**
-	- **与[连续性](函数#^vhnj4q)的关系**
+	- **与[连续性](/pages/mathematics/calculus/function.md#vhnj4q)的关系**
 		- 如果 $f(x)$ 在 $x_0$ 处可导，则 $f(x)$ 在 $x_0$ 处连续。
 			- 逆命题不一定成立。
 			- 如果 $f(x)$ 在 $x_0$ 处不连续，则 $f(x)$ 在 $x_0$ 处不可导。
@@ -48,7 +48,7 @@ tags:
 			- 即 $\frac{\mathrm dy}{\mathrm dx}=\frac{\mathrm dy}{\mathrm du}\cdot\frac{\mathrm du}{\mathrm dx}$
 	- **隐函数**
 		- 对方程 $F(x,y)=0$ 确定的函数，只需要把 $y$ 看作函数 $y(x)$，然后对等号两边求导，最后整理表达式。
-	- **参数方程** ^fus26w
+	- **参数方程** <span id="fus26w"></span>
 		- 已知 $\left\{\begin{matrix} x=\varphi(t) \\ y=\psi(t) \end{matrix}\right.$，则 $\frac{\mathrm dy}{\mathrm dx}=\frac{\frac{\mathrm dy}{\mathrm dt}}{\frac{\mathrm dx}{\mathrm dt}}=\frac{\psi '(t)}{\varphi '(t)}$
 		- 如果 $x,y$ 与 $t$ 的关系是隐函数，则可以使用隐函数求导的方法解出 $\frac{\mathrm dx}{\mathrm dt},\frac{\mathrm dy}{\mathrm dt}$，写成 $\frac{\mathrm dy}{\mathrm dx}$ 后再联立 $\varphi(t,x)=0,\psi(t,y)=0$，一起写出即可表达导函数。
 	- **极坐标**
@@ -76,8 +76,8 @@ tags:
 		- $(uv)^{(n)}=\sum\limits_{k=0}^{n}C_{n}^{k}u^{(n-k)}v^{(k)}$
 - **应用**
 	- **微分中值定理**
-		- 详见[[微分中值定理]]页面。
-	- **研究函数单调性、极值、最值** ^8rqbub
+		- 详见[微分中值定理](/pages/mathematics/calculus/differential-mean-theorem.md)页面。
+	- **研究函数单调性、极值、最值** <span id="erqbub"></span>
 		- **单调的充分条件**
 			- 设函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导：
 				- 如果在 $(a,b)$ 内，$f'(x)>0$，则 $f(x)$ 在 $[a,b]$ 上单调递增；
@@ -100,7 +100,7 @@ tags:
 				- 当 $f''(x_0)>0$ 时，$f(x)$ 在 $x_0$ 处取得极小值。
 		- **最值求解**
 			- 设 $f(x)$ 在区间 $[a,b]$ 上连续，则最大值为区间端点值与区间内所有极大值的最大值，最小值为区间端点值与区间内所有极小值的最小值。
-	- **研究函数凹凸性** ^tc59gd
+	- **研究函数凹凸性** <span id="tc59gd"></span>
 		- **定义**
 			- 设函数 $y=f(x)$ 在 $(a,b)$ 内可导：
 				- 若对 $\forall x_1,x_2\in(a,b)(x_1\ne x_2)$，恒有 $f(\frac{x_1+x_2}{2})<\frac{f(x_1)+f(x_2)}{2}$，则 $f(x)$ 在 $(a,b)$ 上是凹弧；
@@ -124,4 +124,4 @@ tags:
 				- 得出 $f''(x)>0$；
 				- 证明完毕。
 		- **曲率**
-			- 详见[[曲率]]页面。
+			- 详见[曲率](/pages/mathematics/calculus/curvature.md)页面。

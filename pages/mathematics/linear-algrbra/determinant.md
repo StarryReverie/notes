@@ -29,7 +29,7 @@ tags:
 		- 按行展开：$|A|=a_{i1}A_{i1}+a_{i2}A_{i2}+\cdots+a_{in}A_{in}=\sum\limits_{j=1}^{n}a_{ij}A_{ij}$
 		- 按列展开：$|A|=a_{1j}A_{1j}+a_{2j}A_{2j}+\cdots+a_{nj}A_{nj}=\sum\limits_{i=1}^{n}a_{ij}A_{ij}$
 - **行列式与秩的关系**
-	- **子式** ^pqct6z
+	- **子式** <span id="pqct6z"></span>
 		- 任取矩阵 $A$ 的 $i_1,i_2,\dots,i_k$ 行与 $j_1,j_2,\dots,j_k$ 列的交叉点处元素，按照原来的顺序组成新方阵，该方阵的行列式称为 $A$ 的一个子式。
 		- 若 $i_1=j_1,i_2=j_2,\dots,i_k=j_k$，则子式称为主子式。
 		- 若 $i_1=j_1=1,i_2=j_2=2,\dots,i_k=j_k=k$，则子式称为顺序主子式。
@@ -38,7 +38,7 @@ tags:
 		- 矩阵 $A$ 的秩为 $A$ 的所有非零子式的最大阶数。
 		- 若 $r(A)=r$，则必定存在一个子式为 $r$ 阶行列式不等于 $0$，所有的 $r+1,r+2,\dots$ 阶子式都等于 $0$。
 		- 这实际上是秩的另一个定义。
-- **伴随矩阵** ^hyrjhx
+- **伴随矩阵** <span id="hyrjhx"></span>
 	- **定义**
 		- 对于方阵 $A=  \begin{bmatrix}    a_{11}& a_{12}& \cdots  & a_{1n} \\    a_{21}& a_{22}& \cdots  & a_{2n} \\    \vdots & \vdots & \ddots & \vdots \\    a_{n1}& a_{n2}& \cdots  & a_{nn}  \end{bmatrix}$，则其伴随矩阵 $A^*=\begin{bmatrix}A_{11}  & A_{21} & \cdots & A_{n1}\\A_{12}  & A_{22} & \cdots & A_{n2}\\\vdots & \vdots & \ddots & \vdots\\ A_{1n} & A_{2n} & \cdots & A_{nn}\end{bmatrix}=\begin{bmatrix}A_{11}  & A_{12} & \cdots & A_{1n}\\A_{21}  & A_{22} & \cdots & A_{2n}\\\vdots & \vdots & \ddots & \vdots\\ A_{n1} & A_{n2} & \cdots & A_{nn}\end{bmatrix}^{\mathrm T}$。
 		- 注意元素的位置排列。
@@ -53,6 +53,6 @@ tags:
 			- $r(A)=n\implies r(A^*)=n$
 			- $r(A)=n-1\implies r(A^*)=1$
 			- $r(A)\le n-2\implies r(A^*)=0$
-- **克拉默法则** ^yd927p
-	- 对于[[线性方程组]] $A\boldsymbol x=\boldsymbol b$，若 $|A|\ne 0$，则该方程组的解为 $\boldsymbol x=\frac{1}{|A|}\begin{bmatrix}D_1\\D_2\\\vdots\\D_n\end{bmatrix}$，其中 $D_i$ 表示把 $A$ 的第 $i$ 列替换为 $\boldsymbol b$ 的矩阵的行列式。
+- **克拉默法则** <span id="yd927p"></span>
+	- 对于[线性方程组](/pages/mathematics/linear-algrbra/linear-equation-system.md) $A\boldsymbol x=\boldsymbol b$，若 $|A|\ne 0$，则该方程组的解为 $\boldsymbol x=\frac{1}{|A|}\begin{bmatrix}D_1\\D_2\\\vdots\\D_n\end{bmatrix}$，其中 $D_i$ 表示把 $A$ 的第 $i$ 列替换为 $\boldsymbol b$ 的矩阵的行列式。
 	- 克拉默法则只能用于求解 $n$ 个 $n$ 元方程组成的方程组，即 $A$ 是方阵。

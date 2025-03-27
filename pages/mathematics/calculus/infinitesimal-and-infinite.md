@@ -10,7 +10,7 @@ tags:
 		- 若 $\lim\limits_{n\to \infty} a_n = 0$，则称数列 $\{a_n\}$ 为无穷小。
 		- 若 $\lim\limits_{x\to x_0} f(x)=0$，则称 $f(x)$ 为 $x\to x_0$ 时的无穷小。
 		- 其他情况类似。
-	- **无穷小和[函数极限](极限#^ishaoc)的关系**
+	- **无穷小和[函数极限](/pages/mathematics/calculus/limit.md#ishaoc)的关系**
 		- $\lim f(x)=A \iff f(x)=A+\alpha(x)$，其中 $\lim \alpha(x)=0$。
 	- **性质**
 		- 有限个无穷小的代数和是无穷小。
@@ -44,7 +44,7 @@ tags:
 	- **定理**
 		- $\alpha\sim\beta$  的充要条件是 $\alpha-\beta=o(\beta)$，即 $\alpha=\beta+o(\beta)$。
 			- 这个定理也说明两个等价无穷小相减会得到更高阶的无穷小。
-		- 设在 $x$ 的同一趋向下，$\alpha,\alpha',\beta,\beta'$ 都是等价无穷小，$\alpha\sim\alpha'$，$\beta\sim\beta'$，则 $\lim\frac{\alpha}{\beta}f(x)=\lim\frac{\alpha'}{\beta'}f(x)$。 ^2buz72
+		- 设在 $x$ 的同一趋向下，$\alpha,\alpha',\beta,\beta'$ 都是等价无穷小，$\alpha\sim\alpha'$，$\beta\sim\beta'$，则 $\lim\frac{\alpha}{\beta}f(x)=\lim\frac{\alpha'}{\beta'}f(x)$。 <span id="tbuz72"></span>
 			- 求极限时乘除可以使用等价无穷小代换，不可用于加减。
 			- 具体来说，被代换的部分不能是其中一个项，而应当是与整体相乘，比如 $\lim\limits_{x\to 0}\frac{\tan x-\sin x}{x^3}$ 就不可以代换 $\tan x$ 和 $\sin x$，$\lim\limits_{x\to 0}\frac{x\sin x}{\tan^2 x}$ 就可以代换 $\sin x$。
 			- 存在加减时用等价无穷小代换导致错误的本质是出现误差，以 $\lim\limits_{x\to 0}\frac{\tan x-\sin x}{x^3}$ 为例，若使用 $\tan x\sim x$ 和 $\sin x\sim x$ 代换，原式等于 $\lim\limits_{x\to 0}\frac{(x+o(x))-(x+o(x))}{x^3}=\lim\limits_{x\to 0}\frac{o(x)}{x^3}$，在这里无法确定 $o(x)$ 相对于 $x^3$ 的阶数，出现误差。

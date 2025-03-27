@@ -5,7 +5,7 @@ tags:
   - set-theory
 ---
 - **定义**
-	- 如果一个[集合](集合.md)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
+	- 如果一个[集合](/pages/mathematics/discrete-mathematics/set.md)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
 	- $\langle x,y \rangle \in R$ 记作 $xRy$，$\langle x, y \rangle \notin R$ 记作 $x \not R y$。
 	- $A \times B$ 的任何子集定义的二元关系称为 $A$ 到 $B$ 的二元关系，$A=B$ 时称为 $A$ 上的二元关系。
 - **表示**
@@ -81,7 +81,7 @@ tags:
 		- 若 $R$ 自反，则 $s(R),t(R)$ 自反。
 		- 若 $R$ 对称，则 $r(R),t(R)$ 对称。
 		- 若 $R$ 传递，则 $r(R)$ 传递。
-- **等价关系** ^zwakul
+- **等价关系** <span id="zwakul"></span>
 	- **定义**
 		- 如果关系自反、对称、传递，则为等价关系。
 	- **等价类**
@@ -98,7 +98,7 @@ tags:
 			- 如果 $\pi$ 是 $A$ 的覆盖，$\forall x\forall y(x,y\in A \land x \neq y \to x \cap y = \varnothing)$，则 $\pi$ 是 $A$ 的划分。
 		- 最大划分是集合本身，最小划分是集合中的每个元素为子集组成。
 		- $R$ 是 $A$ 上等价关系，则 $A/R$ 是 $A$ 的一个划分。
-- **偏序关系** ^kynj0r
+- **偏序关系** <span id="kynj0r"></span>
 	- **定义**
 		- 如果关系自反、反对称、传递，则为偏序关系。记作 $x \preceq y$。
 		- 如果 $x \preceq y \lor y \preceq x$，则 $x,y$ 可比。
@@ -125,7 +125,7 @@ tags:
 		- 上下界都可能不存在。
 -  **映射**
 	- **定义**
-		- 设 $F$ 为[[二元关系]]，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[[函数]]。
+		- 设 $F$ 为[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md)，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[函数](/pages/mathematics/calculus/function.md)。
 		- 如果 $\operatorname{dom}f=A,\operatorname{ran}f \subseteq B$，则 $f$ 为从 $A$ 到 $B$ 的映射，记作 $f:A \to B$。
 		- 从 $A$ 到 $B$ 的所有映射的集合记作 $B^A = \{f \mid f: A \to B\}$。
 		- $f(A_1) = \{f(x) \mid x \in A_1 \}$ 为 $A_1$ 在 $f$ 的像，$f^{-1}(B_1) = \{ x \mid x \in A \land f(x) \in B_1\}$ 为 $B_1$ 在 $f$ 下的完全原像。

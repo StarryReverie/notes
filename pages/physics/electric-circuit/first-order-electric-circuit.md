@@ -13,8 +13,8 @@ tags:
 	- 分解法是解决一阶电路的重要方法，使求解更加模式化。
 	- 一般将一阶电路分解为两个单口网络，其中一个是动态元件，另外一个则是剩下的部分。
 	- 根据动态元件的类型，分解后的对剩下的部分的等效处理方式不同：
-		- 电容：剩下部分用[戴维南定理](等效电路#^x67b2w)等效。
-		- 电感：剩下部分用[诺顿定理](等效电路#^nifovy)等效。
+		- 电容：剩下部分用[戴维南定理](/pages/physics/electric-circuit/equivalent-electric-circuit.md#x67b2w)等效。
+		- 电感：剩下部分用[诺顿定理](/pages/physics/electric-circuit/equivalent-electric-circuit.md#nifovy)等效。
 	- 如果动态元件有非零的初始状态变量，则也需要进行等效处理：
 		- 电容 $C$：$u_C(0)\ne 0$，则等效为 $C$（零初值）与 $u_C(0)$ 的电压源串联。
 		- 电感 $L$：$i_L(0)\ne 0$，则等效为 $L$（零初值）与 $i_L(0)$ 的电流源并联。
@@ -154,7 +154,7 @@ tags:
 		  \int_{-\infty}^{+\infty}\delta(t)\mathrm dt=1
 		  $$
 		- 可以定义单位冲激函数为 $\delta(t-t_0)$。
-		- 单位冲激函数是单位阶跃函数的[[导数]]，即
+		- 单位冲激函数是单位阶跃函数的[导数](/pages/mathematics/calculus/derivative.md)，即
 		  $$
 		  \delta(t)=\frac{\mathrm d\varepsilon(t)}{\mathrm dt}
 		  $$
@@ -168,4 +168,4 @@ tags:
 	  $$
 	  y_{\mathrm h}(t)=(y(0^+)-y_{\mathrm p}(0^+))\exp\left(-\frac{t}{\tau}\right)
 	  $$
-	- 稳态响应使用[[相量]]求解。
+	- 稳态响应使用[相量](/pages/physics/electric-circuit/phasor.md)求解。

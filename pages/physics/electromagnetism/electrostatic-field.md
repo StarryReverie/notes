@@ -23,7 +23,7 @@ tags:
 		- 对任何电荷都有作用力。
 		- 具有能量。
 		- 静电感应和极化现象。
-	- **电场强度** ^dkqgis
+	- **电场强度** <span id="dkqgis"></span>
 		- 试探电荷：电量充分小的点电荷。
 		- 电场强度定义为 $\boldsymbol E = \dfrac{\boldsymbol F}{q}$，$\boldsymbol F$ 为试探电荷收到的电场力，单位为 $\mathrm {N/C}$ 或 $\mathrm{V/m}$。
 		- 点电荷 $q$ 的场强公式：$\boldsymbol E = \dfrac{q}{4\pi\varepsilon_0 r^2}\boldsymbol e_r$，$\boldsymbol e_r = \dfrac{\boldsymbol r}{r}$ 为从 $q$ 指向场点的单位矢量（$\boldsymbol E$ 的方向由 $q$ 的符号体现）。

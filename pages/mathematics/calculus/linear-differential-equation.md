@@ -18,7 +18,7 @@ tags:
 			- 先求出对应齐次方程的通解 $\bar y = C_1y_1+C_2y_2$，再用常数变易法求原方程特解 $y^*=c_1(x)y_1+c_2(x)y_2$。
 			- 令 $v(y_1,y_2)=\begin{vmatrix} y_1 & y_2\\ y'_1 & y'_2\end{vmatrix}$，则 $c_1(x)=-\int\frac{y_2 f(x)}{v(y_1,y_2)}\mathrm dx$，$c_2(x)=\int\frac{y_1 f(x)}{v(y_1,y_2)}\mathrm dx$
 			- 原方程通解为 $y=C_1y_1+C_2y_2-y_1\int\frac{y_2 f(x)}{v(y_1,y_2)}\mathrm dx+y_2\int\frac{y_1 f(x)}{v(y_1,y_2)}\mathrm dx$。
-	- **常系数线性微分方程** ^xp7c9l
+	- **常系数线性微分方程** <span id="xp7c9l"></span>
 		- **齐次方程** $y^{(n)}+a_1y^{(n-1)}+\cdots+a_{n-1}y'+a_ny=0$
 			- 特解的形式应当为 $y=e^{rx}$。
 			- 将 $y^{(n)}$ 换成 $r^n$，得到特征方程 $r^n+a_1r^{n-1}+\cdots+a_{n-1}r+a_n=0$，解出特征根。

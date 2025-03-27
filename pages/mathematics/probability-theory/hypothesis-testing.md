@@ -15,7 +15,7 @@ tags:
 - **参数检验**
 	- 检验参数 $\theta$，已知其分布形式 $f(x;\theta)$，$\theta$ 未知：
 		- 确定 $H_0,H_1$。
-		- 基于 $\theta$ 的[[参数估计]] $\hat\theta$ 选择检验统计量 $T$，确定 $T$ 的分布。
+		- 基于 $\theta$ 的[参数估计](/pages/mathematics/probability-theory/parameter-estimation.md) $\hat\theta$ 选择检验统计量 $T$，确定 $T$ 的分布。
 		- 根据 $H_0$ 确定 $T$ 的拒绝域形式，与一个临界点有关。
 		- 根据显著性水平 $\alpha$，确定临界点。
 		- 根据样本检验。

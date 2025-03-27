@@ -6,9 +6,9 @@ tags:
 ---
 - **等值式**
 	- **定义**
-		- 类似[命题逻辑](命题逻辑等值演算#^ysze9u)中的定义。
+		- 类似[命题逻辑](/pages/mathematics/discrete-mathematics/proposition-logic-calculation.md#ysze9u)中的定义。
 	- **常用等值式**
-		- [命题逻辑的等值式](命题逻辑等值演算#^sts2pd)
+		- [命题逻辑的等值式](/pages/mathematics/discrete-mathematics/proposition-logic-calculation.md#sts2pd)
 		- 消去量词
 			- 设 $D = \{a_1,a_2,\dots,a_n\}$。
 			- $\forall xA(x) \Leftrightarrow A(a_1) \land A(a_2) \land \cdots \land A(a_n)$

@@ -23,7 +23,7 @@ tags:
 		- $\tan\alpha-\tan\beta=\frac{\sin(\alpha-\beta)}{\cos\alpha\cos\beta}$
 	- **辅助角公式**
 		- $a\sin x+b\cos x=\sqrt{a^2+b^2}\sin\left(x+\arctan\frac{b}{a}\right)$
-- **不定积分表** ^wdue40
+- **不定积分表** <span id="wdue40"></span>
 	- $\int k\mathrm dx=kx+C$
 	- $\int x^\mu\mathrm dx=\frac{1}{\mu+1}x^{\mu+1}+C\ (\mu\ne -1)$
 	- $\int \frac{1}{x}\mathrm dx=\ln|x|+C$

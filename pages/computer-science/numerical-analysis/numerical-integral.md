@@ -6,7 +6,7 @@ tags:
 ---
 - **牛顿-柯特斯求积公式**
 	- **定义**
-		- 已知积分区间 $[a,b]$ 和被积[[函数]] $f(x)$ 在 $[a,b]$ 上等距的 $n+1$ 个[[插值]]节点 $x_0,x_1,\dots,x_n$ 和函数值。
+		- 已知积分区间 $[a,b]$ 和被积[函数](/pages/mathematics/calculus/function.md) $f(x)$ 在 $[a,b]$ 上等距的 $n+1$ 个[插值](/pages/computer-science/numerical-analysis/interpolation.md)节点 $x_0,x_1,\dots,x_n$ 和函数值。
 		- $I=\displaystyle\int_a^b f(x) \mathrm dx \approx \sum_{i=0}^n \int_a^b a_i(x)f(x_i) \mathrm dx = \sum_{i=0}^n c_i f(x_i) = (b-a) \sum_{i=0}^n C_i^{(n)} f(x_i)$。
 		- 最后 $I \approx (b-a) \displaystyle\sum_{i=0}^n C_i^{(n)} f(x_i)$ 称牛顿-柯特斯求积公式.
 		- 定义 $C_i^{(n)}$ 为柯特斯系数，只与插值节点数和下标有关。

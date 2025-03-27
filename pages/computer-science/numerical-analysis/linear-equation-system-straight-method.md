@@ -6,7 +6,7 @@ tags:
 ---
 - **消元法**
 	- **通用过程**
-		- 规定[[线性方程组]]为 $A\boldsymbol x = \boldsymbol b$，有 $n$ 个 $n$ 元方程。
+		- 规定[线性方程组](/pages/mathematics/linear-algrbra/linear-equation-system.md)为 $A\boldsymbol x = \boldsymbol b$，有 $n$ 个 $n$ 元方程。
 		- 消元法的通用过程就是将 $A$ 分解为下三角矩阵 $L$ 和上三角矩阵 $U$ 相乘，再回代求解。
 		- 对第 $i$ 行：
 			- 选定 $l_{ii}$。
@@ -29,4 +29,4 @@ tags:
 		- 为减小误差，消元进行到第 $i$ 行时，选定第 $i$ 列系数绝对值最大的一个为主元，交换主元行与当前行。
 		- 交换后，选择 $l_{ii} = 1$。
 	- **全主元法**
-		- 在 $a_{(i\sim n)(i \sim n)}$ 子[[矩阵]]中选择主元，需要交换行和未知数的顺序。
+		- 在 $a_{(i\sim n)(i \sim n)}$ 子[矩阵](/pages/mathematics/linear-algrbra/matrix.md)中选择主元，需要交换行和未知数的顺序。

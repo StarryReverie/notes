@@ -5,7 +5,7 @@ tags:
 ---
 - **二值逻辑和逻辑门**
 	- **二值逻辑**
-		- 参考[[命题逻辑]]和[布尔代数](格#^17caho)。
+		- 参考[命题逻辑](/pages/mathematics/discrete-mathematics/proposition-logic.md)和[布尔代数](/pages/mathematics/discrete-mathematics/lattice.md#l7cahh)。
 		- 数字逻辑中的表示与记号：
 			- 与：$AB$
 			- 或：$A+B$
@@ -23,7 +23,7 @@ tags:
 			- 利用德摩根律。
 			- 求原函数的对偶式再将每个变量取反。
 	- **标准形式**
-		- 标准形式是最小项 / [极小项](命题逻辑等值演算#^nh6buf)的和或最大项 / [极大项](命题逻辑等值演算#^nh6buf)的积。
+		- 标准形式是最小项 / [极小项](/pages/mathematics/discrete-mathematics/proposition-logic-calculation.md#nh6buf)的和或最大项 / [极大项](/pages/mathematics/discrete-mathematics/proposition-logic-calculation.md#nh6buf)的积。
 		- 最小项之和可以记作 $\sum m(x_1,x_2,\dots)$，最大项之积可以记作 $\prod m(x_1,x_2,\dots)$。
 		- 对标准形式进行化简，可以得到积之和和和之积。
 - **卡诺图和两级电路优化**

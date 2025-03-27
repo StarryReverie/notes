@@ -6,8 +6,8 @@ tags:
 ---
 - **等值式**
 	- **定义**
-		- 若 $A \leftrightarrow B$ 是[重言式](命题逻辑#^0anp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 ^ysze9u
-	- **常用等值式** ^sts2pd
+		- 若 $A \leftrightarrow B$ 是[重言式](命题逻辑#^0anp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 <span id="ysze9u"></span>
+	- **常用等值式** <span id="sts2pd"></span>
 		- 双重否定律：$\neg \neg A \Leftrightarrow A$
 		- 幂等律：$A \land A \Leftrightarrow A$，$A \lor A \Leftrightarrow A$
 		- 交换律：$A \land B \Leftrightarrow B \land A$，$A \lor B \Leftrightarrow B \lor A$

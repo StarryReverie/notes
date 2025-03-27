@@ -5,7 +5,7 @@ tags:
   - matrix
 ---
 - **初等变换**
-	- **初等行变换** ^kso3bg
+	- **初等行变换** <span id="kso3bg"></span>
 		- 互换矩阵中的第 $i$ 行和第 $j$ 行：$R_i \leftrightarrow R_j$
 		- 将矩阵中的第 $i$ 行乘上一个非零常数 $h$：$hR_i$
 		- 将矩阵中的第 $i$ 行的 $k$ 倍加到第 $j$ 行：$kR_i+R_j$
@@ -19,10 +19,10 @@ tags:
 	- **等价**
 		- 若矩阵 $A$ 可以通过初等变换化为 $B$，则 $A$ 与 $B$ 等价，记作 $A\cong B$。
 	- **相似**
-		- 详见[[矩阵相似]]页面。
-	- **合同** ^rkhrjq
+		- 详见[矩阵相似](/pages/mathematics/linear-algrbra/similar-matrix.md)页面。
+	- **合同** <span id="rkhrjq"></span>
 		- 对于 $n$ 阶方阵 $A,B$，若存在可逆矩阵 $P$ 使得 $P^{\mathrm T}AP=B$，则 $A$ 与 $B$ 合同，记作 $A\simeq B$。
-		- 合同主要与[[二次型]]有比较大的联系，二次型 $\boldsymbol x^{\mathrm T}A\boldsymbol x$ 经过非退化线性替换 $\boldsymbol x=P\boldsymbol y$ 得到 $\boldsymbol y^{\mathrm T}B\boldsymbol y$，则 $A\simeq B$。
+		- 合同主要与[二次型](/pages/mathematics/linear-algrbra/quadratic-form.md)有比较大的联系，二次型 $\boldsymbol x^{\mathrm T}A\boldsymbol x$ 经过非退化线性替换 $\boldsymbol x=P\boldsymbol y$ 得到 $\boldsymbol y^{\mathrm T}B\boldsymbol y$，则 $A\simeq B$。
 - **运算**
 	- **加法**
 		- 设 $A$ 与 $B$ 都是 $m\times n$ 矩阵，则 $A$ 与 $B$ 可以相加，记作 $A+B$。设 $C=A+B$，则 $c_{ij}=a_{ij}+b_{ij}$。
@@ -54,7 +54,7 @@ tags:
 				- 一类证明矩阵可逆的题目通常会给出一个等式和一个要证明可逆的矩阵，此时通常会将等号左边进行因式分解，其中一个为要证明的矩阵，剩下一些无法被分解的，一般是单位矩阵的数乘，移到等号右边。
 				- 如已知 $A^2-2A-3I=0$，证明 $A-4I$ 可逆，则分解为 $(A-4I)(A+2I)=-5I$。
 		- **求解**
-			- 见[[矩阵求逆]]。
+			- 见[矩阵求逆](/pages/mathematics/linear-algrbra/matrix-inverse.md)。
 	- **秩**
 		- **定义**
 			- 矩阵 $A$ 的阶梯形的非零行个数称为 $A$ 的秩，记作 $r(A)$。
@@ -74,7 +74,7 @@ tags:
 			- 若 $r(A_{m\times n})=1$，则 $A$ 可以拆分成一个 $m\times 1$ 矩阵乘 $1\times n$ 矩阵。
 		- **极限**
 			- 对于矩阵序列 $\{A_n\}$，如果 $\lim\limits_{n \to +\infty} ||A_n - A|| = 0$，则 $\boldsymbol x_n$ 收敛于 $A$，记作 $\lim\limits_{n \to +\infty} A_n = A$。
-			- 此处[[范数]]种类任意。
+			- 此处[范数](/pages/mathematics/linear-algrbra/norm.md)种类任意。
 			- $\lim\limits_{n \to +\infty} A_n = A \iff A_n$ 各分量收敛于 $A$ 各分量。
 - **特殊矩阵**
 	- **行矩阵**
@@ -83,7 +83,7 @@ tags:
 		- 只有一列的矩阵称为列矩阵，常用于表示列向量。
 	- **零矩阵**
 		- 全部元素均为零的矩阵称为零矩阵，记为 $0$。
-	- **方阵** ^8tm5r3
+	- **方阵** <span id="xtm5r3"></span>
 		- **定义**
 			- 行数与列数相等的矩阵称为方阵。若行数与列数为 $n$，则将该方阵称为 $n$ 阶矩阵 / $n$ 阶方阵。
 			- $1$ 阶方阵可视为数。
@@ -107,7 +107,7 @@ tags:
 			- 对矩阵 $A$ 做一次初等列变换得到 $B$，对单位矩阵做一次相同的初等列变换得到的初等矩阵 $E$，则 $B=AE$。
 			- $A\cong B\iff$ 存在初等矩阵 $P_1,P_2,\dots,P_s,Q_1,Q_2,\dots,Q_t$，使得 $P_s\cdots P_2P_1AQ_1Q_2\cdots Q_t=B$。
 			- 如果 $P$ 是初等矩阵，则存在同阶初等矩阵 $Q$，使得 $PQ=QP=I$，即 $Q=P^{-1}$。
-	- **行阶梯形矩阵** ^3smjx5
+	- **行阶梯形矩阵** <span id="tsmjx5"></span>
 		- **定义**
 			- 满足以下条件的矩阵被称为行阶梯形矩阵：
 				- 零行全部在下方；

@@ -5,7 +5,7 @@ tags:
   - rigid-body-mechanics
 ---
 - **转动惯量**
-	- **定义** ^essly2
+	- **定义** <span id="essly2"></span>
 		- 转动惯量衡量刚体绕某一轴转动的惯性大小。
 		- 转动惯量定义为
 		  $$

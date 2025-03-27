@@ -5,10 +5,10 @@ tags:
   - graph-theory
   - matrix
 ---
-- **图** ^xknur9
+- **图** <span id="xknur9"></span>
 	- **定义**
 		- **基本内容**
-			- 定义[[集合]] $A,B$ 的无序积为 $A\operatorname{\&}B=\{ (a,b) \mid a \in A \land b \in B \}$。
+			- 定义[集合](/pages/mathematics/discrete-mathematics/set.md) $A,B$ 的无序积为 $A\operatorname{\&}B=\{ (a,b) \mid a \in A \land b \in B \}$。
 			- 定义无向图 $G=\langle V,E \rangle$，满足
 				- $V$ 为非空有穷集，称为点集，元素称为结点，记作 $V(G)$。
 				- $E$ 为 $V\operatorname{\&}V$ 的有穷多重子集，称为边集，元素称为无向边，记作 $E(G)$。
@@ -42,7 +42,7 @@ tags:
 			- 悬挂边：与悬挂结点关联的边
 			- 奇 / 偶度结点：度数为奇 / 偶数的结点
 		- **特殊图**
-			- 零图：边集为空的图，$n$ 阶零图记作 $N_n$，$N_1$ 称为平凡图。 ^hc99ie
+			- 零图：边集为空的图，$n$ 阶零图记作 $N_n$，$N_1$ 称为平凡图。 <span id="hc99ie"></span>
 			- 空图：点集为空的图，记作 $\varnothing$。
 			- 标定图：图的结点和边都有编号的图，否则为非标定图。
 			- 基图：将有向图的边都修改为无向后得到的图。
@@ -112,7 +112,7 @@ tags:
 			- 设 $D=\langle V,E\rangle$ 为有向图，若从 $u$ 到 $v$ 存在通路，则 $u$ 到 $v$ 可达，记作 $u \to v$。
 				- 若 $u\to v$ 且 $v \to u$，则 $u,v$ 相互可达，记作 $u \leftrightarrow v$。
 				- 规定 $u \to u$。
-			- $\to$ 和 $\leftrightarrow$ 都是[[二元关系]]，其中 $\leftrightarrow$ 是等价关系。
+			- $\to$ 和 $\leftrightarrow$ 都是[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md)，其中 $\leftrightarrow$ 是等价关系。
 			- $u$ 到 $v$ 的最短路径的长度为距离 $d\langle u,v\rangle$。$d\langle u,v\rangle$ 相比 $d(u,v)$ 没有对称性。
 		- **性质**
 			- 对 $D=\langle V,E\rangle$
@@ -129,7 +129,7 @@ tags:
 			- 若 $V_1$ 中任意结点都与 $V_2$ 中结点相邻，则 $G$ 为完全二分图，记作 $K_{r,s}$，其中 $|V_1|=r,|V_2|=s$。
 		- **性质**
 			- $n\ (n\ge 2)$ 阶无向图 $G$ 是二分图 $\iff$ $G$ 中无奇圈。
-- **图的[[矩阵]]表示**
+- **图的[矩阵](/pages/mathematics/linear-algrbra/matrix.md)表示**
 	- **无向图的关联矩阵**
 		- **定义**
 			- 已知无向图 $G=\langle V,E\rangle$，$V = \{v_1,v_2,\dots,v_n\}$，$E=\{e_1,e_2,\dots,e_m\}$。

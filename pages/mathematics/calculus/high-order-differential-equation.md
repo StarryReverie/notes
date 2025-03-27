@@ -16,4 +16,4 @@ tags:
 		- 该方程中没有出现 $x$，则可以把 $y$ 看成自变量，则 $y'$ 和 $y''$ 与 $y$ 之间也存在函数关系。
 		- 令 $p(y)=y'$，则 $y''=p\frac{\mathrm dp}{\mathrm dy}$
 - **线性微分方程**
-	- 部分高阶的线性微分方程也可以求解，详见[[线性微分方程]]。
+	- 部分高阶的线性微分方程也可以求解，详见[线性微分方程](/pages/mathematics/calculus/linear-differential-equation.md)。

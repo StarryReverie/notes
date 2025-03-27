@@ -7,7 +7,7 @@ tags:
 ---
 - **向量范数**
 	- **定义**
-		- [[向量]] $\boldsymbol x$ 的范数记作 $||\boldsymbol x||$，满足
+		- [向量](/pages/mathematics/linear-algrbra/vector.md) $\boldsymbol x$ 的范数记作 $||\boldsymbol x||$，满足
 			- $||\boldsymbol x||\ge 0$，$||\boldsymbol x|| = 0$ 当且仅当 $\boldsymbol x=\boldsymbol 0$
 			- $||a\boldsymbol x||=a||\boldsymbol x||$
 			- $||\boldsymbol x + \boldsymbol y|| \le ||\boldsymbol x|| + ||\boldsymbol y||$
@@ -15,9 +15,9 @@ tags:
 		- $1$-范数：$||\boldsymbol x||_1 = \displaystyle\sum_{i = 1}^n |x_i|$
 		- $2$-范数：$||\boldsymbol x||_2 = \displaystyle\sqrt{\sum_{i = 2}^n |x_i|^2}$
 		- $\infty$-范数：$||\boldsymbol x||_{\infty} = \displaystyle\max_{i = 1}^n \{x_i\}$
-- **矩阵范数** ^8uxoty
+- **矩阵范数** <span id="xuxoty"></span>
 	- **定义**
-		- [[矩阵]] $A$ 的范数记作 $||\boldsymbol A||$，满足
+		- [矩阵](/pages/mathematics/linear-algrbra/matrix.md) $A$ 的范数记作 $||\boldsymbol A||$，满足
 			- $||A||\ge 0$，$||A|| = 0$ 当且仅当 $A=0$
 			- $||aA||=a||A||$
 			- $||A + B|| \le ||A|| + ||B||$

@@ -7,7 +7,7 @@ tags:
 ---
 - **二重积分**
 	- **定义**
-		- 设[[多元函数]] $f(x,y)$ 在平面有界区域 $D$ 上有定义，将 $D$ 划分为 $\Delta \sigma_i$，设 $\lambda$ 为 $\Delta\sigma_i$ 的直径的最大值，任取 $(\xi_i,\eta_i)\in \Delta\sigma_i$。
+		- 设[多元函数](/pages/mathematics/calculus/multivariate-function.md) $f(x,y)$ 在平面有界区域 $D$ 上有定义，将 $D$ 划分为 $\Delta \sigma_i$，设 $\lambda$ 为 $\Delta\sigma_i$ 的直径的最大值，任取 $(\xi_i,\eta_i)\in \Delta\sigma_i$。
 		- 如果无论 $D$ 如何划分，以及 $(\xi_i,\eta_i)$ 如何选取，以下极限均存在，则 $f(x,y)$ 在 $D$ 上可积。
 		  $$
 		  \lim_{\lambda\to 0} \sum_{\Delta\sigma_i\in D} f(\xi_i,\eta_i)\Delta\sigma_i
@@ -21,7 +21,7 @@ tags:
 		- 如果 $f(x,y)$ 在平面有界区域 $D$ 上的有限个分片内分别连续，则 $f(x,y)$ 在 $D$ 上可积。
 	- **几何意义**
 		- $f(x,y)$ 在 $D$ 上的重积分等于 $D$ 为底，$z=f(x,y)$ 为顶的曲顶柱体的体积。如果曲面在 $D$ 下，则记负数。
-	- **性质** ^c6nt3c
+	- **性质** <span id="c6nt3c"></span>
 		- 线性性质：
 		  $$
 		  \iint_D \left(C_1f_1(x,y)+C_2f_2(x,y)\right)\mathrm d\sigma=C_1\iint_D f_1(x,y)\mathrm d\sigma+C_2\iint_D f_2(x,y)\mathrm d\sigma
@@ -68,7 +68,7 @@ tags:
 		  $$
 - **三重积分**
 	- **定义**
-		- 设[[多元函数]] $f(x,y,z)$ 在空间有界区域 $\Omega$ 上有定义，将 $\Omega$ 划分为 $\Delta v_i$，设 $\lambda$ 为 $\Delta v_i$ 的直径的最大值，任取 $(\xi_i,\eta_i)\in \Delta v_i$。
+		- 设[多元函数](/pages/mathematics/calculus/multivariate-function.md) $f(x,y,z)$ 在空间有界区域 $\Omega$ 上有定义，将 $\Omega$ 划分为 $\Delta v_i$，设 $\lambda$ 为 $\Delta v_i$ 的直径的最大值，任取 $(\xi_i,\eta_i)\in \Delta v_i$。
 		- 如果无论 $\Omega$ 如何划分，以及 $(\xi_i,\eta_i,\zeta_i)$ 如何选取，以下极限均存在，则 $f(x,y)$ 在 $\Omega$ 上可积。
 		  $$
 		  \lim_{\lambda\to 0} \sum_{\Delta v_i\in \Omega} f(\xi_i,\eta_i,\zeta_i)\Delta v_i
@@ -120,9 +120,9 @@ tags:
 			  $$
 			- 同理可以对其他平面投影计算，结果不变。
 		- **质心**
-			- 参考[质心](质点系和质心#^pmrdyk)。
+			- 参考[质心](/pages/physics/dynamics/mass-point-system-and-centor-of-mass.md#pmrdyk)。
 		- **转动惯量**
-			- 参考[转动惯量](刚体的定轴转动#^essly2)。
+			- 参考[转动惯量](/pages/physics/dynamics/rigid-body-fixed-axis-rotation.md#essly2)。
 		- **引力**
 			- 设空间立体 $V$ 和 $V$ 外的一个在 $(a,b,c)$ 的质点 $m$，$V$ 的密度为 $\rho(x,y,z)$。
 			- 设
@@ -135,7 +135,7 @@ tags:
 			  $$
 - **换元法**
 	- 设 $f(x,y)$ 在 $xOy$ 上的闭区域 $D$ 连续，$x=x(u,v),y=y(u,v)$，$D$ 对应 $uOv$ 上的闭区域 $D'$。
-	- 若 $x(u,v),y(u,v)$ 在 $D'$ 上有一阶连续[[偏导数]]，在 $D'$ 上雅可比行列式 $\frac{\partial(x,y)}{\partial(u,v)}\ne 0$，$D$ 与 $D'$上的点一一对应，则
+	- 若 $x(u,v),y(u,v)$ 在 $D'$ 上有一阶连续[偏导数](/pages/mathematics/calculus/partial-derivative.md)，在 $D'$ 上雅可比行列式 $\frac{\partial(x,y)}{\partial(u,v)}\ne 0$，$D$ 与 $D'$上的点一一对应，则
 	  $$
 	  \iint_D f(x,y)\mathrm dx\mathrm dy=\iint_{D'} f(x(u,v),y(u,v))\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\mathrm du\mathrm dv
 	  $$

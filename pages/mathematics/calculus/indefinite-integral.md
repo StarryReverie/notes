@@ -7,12 +7,12 @@ tags:
   - derivative
 ---
 - **定义**
-	- 若 $F(x)$ 是 $f(x)$ 的一个原[[函数]]，则 $F(x)+C$ 也是 $f(x)$ 的原函数。
+	- 若 $F(x)$ 是 $f(x)$ 的一个原[函数](/pages/mathematics/calculus/function.md)，则 $F(x)+C$ 也是 $f(x)$ 的原函数。
 	- $f(x)$ 在区间 $I$ 上的所有原函数一般表达式 $F(x)+C$ 称为 $f(x)$ 在区间 $I$ 上的不定积分，记作 $\int f(x)\mathrm dx=F(x)+C$。
-	- 不定积分与[[导数]]为互逆运算。
+	- 不定积分与[导数](/pages/mathematics/calculus/derivative.md)为互逆运算。
 - **求解**
 	- **不定积分表**
-		- 参考[不定积分表](常用公式与不等式#^wdue40)。
+		- 参考[不定积分表](/pages/mathematics/formula-and-inequality.md#wdue40)。
 	- **线性性质**
 		- 如果 $f_1(x),f_2(x)$ 在区间 $I$ 有原函数，则 $\int(C_1f_1(x)+C_2f_2(x))\mathrm dx=C_1\int f_1(x)\mathrm dx+C_2\int f_2(x)\mathrm dx$。
 		- 利用线性性质可以计算多项式函数的不定积分。

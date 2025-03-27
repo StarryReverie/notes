@@ -8,7 +8,7 @@ tags:
 	- 个体词：常项或变项，变项的取值范围称为个体域或论域。
 	- 谓词
 		- 表示个体词性质或关系的词。记作 $P(x),P(x_1,x_2,\dots)$ 等。
-		- 对于某个个体域，谓词中变量取遍所有个体，如果谓词的值不同，则谓词不是[命题](命题逻辑#^e9ee8d)，如果值相同，则为命题。
+		- 对于某个个体域，谓词中变量取遍所有个体，如果谓词的值不同，则谓词不是[命题](/pages/mathematics/discrete-mathematics/proposition-logic.md#e9ee8d)，如果值相同，则为命题。
 	- 量词
 		- 全称量词 $\forall$：$\forall x F(x)$ 表示个体域中所有 $x$ 具有 $F(x)$ 性质。
 - **一阶公式**
@@ -23,7 +23,7 @@ tags:
 			- 如果 $f(x_1,x_2,\dots,x_n)$ 是函数，$t_1,t_2,\dots,t_n$ 是项，则 $f(t_1,t_2,\dots,t_n)$ 是项。
 			- 按照以上规则组合有限次得到的是项。
 		- 定义 $\mathcal L$ 的原子公式：$P(x_1,x_2,\dots,x_n)$ 是谓词，$t_1,t_2,\dots,t_n$ 是项，则 $P(t_1,t_2,\dots,t_n)$ 是原子公式。
-		- 定义 $\mathcal L$ 的合式公式：类似[命题逻辑](命题逻辑#^ilw96h)定义。
+		- 定义 $\mathcal L$ 的合式公式：类似[命题逻辑](/pages/mathematics/discrete-mathematics/proposition-logic.md#ilw96h)定义。
 		- 定义辖域：
 			- 在公式 $\forall x A$ 和 $\exists xA$ 中，$x$ 是指导变元，$A$ 是对应量词的辖域，表示 $x$ 的作用范围。
 			- $A$ 中的所有 $x$ 的出现都是约束出现，$A$ 中的其他不是约束出现的个体变项是自由出现。

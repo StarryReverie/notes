@@ -48,7 +48,7 @@ tags:
 		  \iint_S X\mathrm dy\mathrm dz+Y\mathrm dz\mathrm dx+Z\mathrm dx\mathrm dy=\iint_S (X\cos\alpha+Y\cos\beta+Z\cos\gamma)\mathrm dS
 		  $$
 - **高斯公式**
-	- 设空间闭区域 $\Omega$ 由分片光滑的闭曲面 $S$ 围成，$X,Y,Z$ 在 $\Omega$ 上有一阶连续[[偏导数]]，则：
+	- 设空间闭区域 $\Omega$ 由分片光滑的闭曲面 $S$ 围成，$X,Y,Z$ 在 $\Omega$ 上有一阶连续[偏导数](/pages/mathematics/calculus/partial-derivative.md)，则：
 	  $$
 	  \oiint_{S^+} X\mathrm dy\mathrm dz+Y\mathrm dz\mathrm dx+Z\mathrm dx\mathrm dy=\iiint_\Omega\left(\frac{\partial X}{\partial x}+\frac{\partial Y}{\partial y}+\frac{\partial Z}{\partial z}\right)\mathrm dx\mathrm dy\mathrm dz
 	  $$
@@ -79,7 +79,7 @@ tags:
 		  $$
 - **斯托克斯公式**
 	- 设 $L$ 为分片光滑的空间有向闭曲线，$S$ 是以 $L$ 为边界的分片光滑的有向曲面，$L$ 的正向与 $S$ 的侧符合右手螺旋定则。
-		- 设 $X,Y,Z$ 在包含 $S$ 内的空间区域内有一阶连续[[偏导数]]，则
+		- 设 $X,Y,Z$ 在包含 $S$ 内的空间区域内有一阶连续[偏导数](/pages/mathematics/calculus/partial-derivative.md)，则
 		  $$
 		  \oint_L X\mathrm dx+Y\mathrm dy+Z\mathrm dz=
 		  \iint_S\begin{vmatrix}
