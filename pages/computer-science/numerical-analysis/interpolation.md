@@ -10,7 +10,7 @@ tags:
 		- 差商中任意几个点的顺序可以随意交换，即 $f[\dots,x_i,\dots,x_j,\dots] = [\dots,x_j,\dots,x_i,\dots]$。
 		- 差商可以看作[导数](/pages/mathematics/calculus/derivative.md)的离散形式。
 	- **差商表**
-		- ![](difference-quotient-table.png)
+		- ![](assets-interpolation/difference-quotient-table.png)
 	- **公式**
 		- 牛顿基本差商公式为 $P_n(x) = \displaystyle\sum_{i=0}^{n} f[x_0,\dots,x_i] \prod_{j=0}^{i-1} (x - x_j)$。原函数为 $f(x) = P_n(x) + R_n(x)$。
 		- 展开形式：$P_n(x) = f(x_0) + (x - x_0)f[x_0,x_1] + (x - x_0)(x - x_1)f[x_0,x_1,x_2] + \cdots$。
