@@ -3,6 +3,7 @@
 		- [数据库基本概念](/pages/computer-science/database/database-basic-concept.md)
 		- [数据模型](/pages/computer-science/database/data-model.md)
 		- [关系数据库](/pages/computer-science/database/relational-database.md)
+		- [SQL 语言](/pages/computer-science/database/sql.md)
 	- 数字逻辑
 		- [数字系统](/pages/computer-science/digital-logic/digital-system.md)
 		- [组合逻辑电路](/pages/computer-science/digital-logic/combinational-logic-circuit.md)
