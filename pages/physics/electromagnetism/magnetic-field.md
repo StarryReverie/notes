@@ -4,47 +4,47 @@ tags:
   - electromagnetism
 ---
 - **毕奥-萨伐尓定律**
-	- **定义**
-		- 取电流元 $I\mathrm d\boldsymbol l$，则其在某出产生 $\mathrm d\boldsymbol B = \dfrac{\mu_0}{4\pi}\dfrac{I\mathrm d\boldsymbol l \times \boldsymbol e_r}{r^2}$。
-		- $\mu_0$ 为真空磁导率，$\mu_0 = 4\pi\times 10^{-7} \mathrm{N/A^2}$。
-	- **常用公式**
-		- 与直导线共线：$B=0$
-		- 无限长直导线 $I$，距离导线 $r$ 处：$B = \dfrac{\mu_0 I}{2\pi r}$
-		- 半无限长直导线 $I$，在端点点距离导线 $r$ 处：$B = \dfrac{\mu_0I}{4\pi r}$
-		- 无限大平面 $j$（面电流密度，单位长度的电流为 $j$），两侧任意位置：$B = \dfrac{\mu_0j}{2}$
-		- 载流线圈 $I$，半径 $r$，在中心：$B = \dfrac{\mu_0I}{2r}$
-		- 载流圆弧 $I$，半径 $r$，圆心角 $\theta$，在中心：$B =  \dfrac{\theta}{2\pi}\dfrac{\mu_0I}{2r}$
-		- 无限长载流直螺线管 $I$，单位长度 $n$ 匝，在螺线管内部：$B= \mu_0 nI$
-		- 无限长载流直螺线管，在螺线管外部：$B = 0$
-		- 总共 $N$ 匝螺绕环 $I$，轴线半径 $R$，在管内部：$B = \dfrac{\mu_0NI}{2\pi R}$
-		- 螺绕环，在管外部：$B = 0$
-	- **运动电荷产生的磁场**
-		- 对载流子 $q$，产生 $\boldsymbol B = \dfrac{\mu_0}{4\pi} \dfrac{q \boldsymbol v\times \boldsymbol e_r}{r^2}$。
+    - **定义**
+        - 取电流元 $I\mathrm d\boldsymbol l$，则其在某出产生 $\mathrm d\boldsymbol B = \dfrac{\mu_0}{4\pi}\dfrac{I\mathrm d\boldsymbol l \times \boldsymbol e_r}{r^2}$。
+        - $\mu_0$ 为真空磁导率，$\mu_0 = 4\pi\times 10^{-7} \mathrm{N/A^2}$。
+    - **常用公式**
+        - 与直导线共线：$B=0$
+        - 无限长直导线 $I$，距离导线 $r$ 处：$B = \dfrac{\mu_0 I}{2\pi r}$
+        - 半无限长直导线 $I$，在端点点距离导线 $r$ 处：$B = \dfrac{\mu_0I}{4\pi r}$
+        - 无限大平面 $j$（面电流密度，单位长度的电流为 $j$），两侧任意位置：$B = \dfrac{\mu_0j}{2}$
+        - 载流线圈 $I$，半径 $r$，在中心：$B = \dfrac{\mu_0I}{2r}$
+        - 载流圆弧 $I$，半径 $r$，圆心角 $\theta$，在中心：$B =  \dfrac{\theta}{2\pi}\dfrac{\mu_0I}{2r}$
+        - 无限长载流直螺线管 $I$，单位长度 $n$ 匝，在螺线管内部：$B= \mu_0 nI$
+        - 无限长载流直螺线管，在螺线管外部：$B = 0$
+        - 总共 $N$ 匝螺绕环 $I$，轴线半径 $R$，在管内部：$B = \dfrac{\mu_0NI}{2\pi R}$
+        - 螺绕环，在管外部：$B = 0$
+    - **运动电荷产生的磁场**
+        - 对载流子 $q$，产生 $\boldsymbol B = \dfrac{\mu_0}{4\pi} \dfrac{q \boldsymbol v\times \boldsymbol e_r}{r^2}$。
 - **安培环路定理**
-	- **磁场的高斯定理**
-		- 磁场是无源场，则 $\displaystyle\oint_S \boldsymbol B \cdot \mathrm d\boldsymbol S = 0$。
-	- **定义**
-		- 恒定电流磁场中，对闭合路径 $L$，有 $\displaystyle\oint_L \boldsymbol B \cdot \mathrm d\boldsymbol l = \mu_0\sum I$。
-		- $I$ 为穿过路径内的闭合恒定电流，正方向由对 $L$ 应用安培定则确定。可多次穿入。
-		- $I$ 不能是恒定电流回路中的某一段，只能整个回路一起考虑。
+    - **磁场的高斯定理**
+        - 磁场是无源场，则 $\displaystyle\oint_S \boldsymbol B \cdot \mathrm d\boldsymbol S = 0$。
+    - **定义**
+        - 恒定电流磁场中，对闭合路径 $L$，有 $\displaystyle\oint_L \boldsymbol B \cdot \mathrm d\boldsymbol l = \mu_0\sum I$。
+        - $I$ 为穿过路径内的闭合恒定电流，正方向由对 $L$ 应用安培定则确定。可多次穿入。
+        - $I$ 不能是恒定电流回路中的某一段，只能整个回路一起考虑。
 - **磁场中的载流导线**
-	- **安培力**
-		- **定义**
-			- 在 $\boldsymbol B$ 中，$I\mathrm d\boldsymbol l$ 受安培力 $\mathrm d\boldsymbol F = I\mathrm d\boldsymbol l\times \boldsymbol B$。
-		- **性质**
-			- 均匀磁场中闭合回路受安培力为 $0$。
-	- **载流线圈**
-		- 对于载流 $I$ 的面积为 $S$ 的平面线圈，定义磁矩 $\boldsymbol m=I\boldsymbol S=IS\boldsymbol e_n$。若有 $N$ 匝，则 $\boldsymbol m = NIS\boldsymbol e_n$。
-		- 均匀磁场 $\boldsymbol B$ 中，线圈 $\boldsymbol m$ 受力矩 $\boldsymbol M = \boldsymbol m\times \boldsymbol B$。
-		- 对于圆盘，需要把圆盘分为若干线圈进行积分。
+    - **安培力**
+        - **定义**
+            - 在 $\boldsymbol B$ 中，$I\mathrm d\boldsymbol l$ 受安培力 $\mathrm d\boldsymbol F = I\mathrm d\boldsymbol l\times \boldsymbol B$。
+        - **性质**
+            - 均匀磁场中闭合回路受安培力为 $0$。
+    - **载流线圈**
+        - 对于载流 $I$ 的面积为 $S$ 的平面线圈，定义磁矩 $\boldsymbol m=I\boldsymbol S=IS\boldsymbol e_n$。若有 $N$ 匝，则 $\boldsymbol m = NIS\boldsymbol e_n$。
+        - 均匀磁场 $\boldsymbol B$ 中，线圈 $\boldsymbol m$ 受力矩 $\boldsymbol M = \boldsymbol m\times \boldsymbol B$。
+        - 对于圆盘，需要把圆盘分为若干线圈进行积分。
 - **磁场中的运动电荷**
-	- **洛伦兹力**
-		- $\boldsymbol F = q\boldsymbol v \times \boldsymbol B$
+    - **洛伦兹力**
+        - $\boldsymbol F = q\boldsymbol v \times \boldsymbol B$
 - **磁介质**
-	- **定义**
-		- 有磁介质时 $\boldsymbol B=\mu_r \boldsymbol B_0$。
-		- 顺磁质：$\mu_r>1$，逆磁质：$\mu_r<1$，铁磁质：$\mu_r$ 远大于 $1$。
-	- **磁介质中的安培环路定理**
-		- 类似电极化强度，定义磁化强度 $\boldsymbol M=\dfrac{\sum \boldsymbol m}{\Delta V}$，单位 $\mathrm{A\cdot m}$。
-		- 定义磁场强度 $\boldsymbol H = \dfrac{\boldsymbol B}{\mu_0}-\boldsymbol M$。
-		- 有安培环路定理 $\displaystyle\oint_L \boldsymbol H \cdot \mathrm d\boldsymbol l = I'$。
+    - **定义**
+        - 有磁介质时 $\boldsymbol B=\mu_r \boldsymbol B_0$。
+        - 顺磁质：$\mu_r>1$，逆磁质：$\mu_r<1$，铁磁质：$\mu_r$ 远大于 $1$。
+    - **磁介质中的安培环路定理**
+        - 类似电极化强度，定义磁化强度 $\boldsymbol M=\dfrac{\sum \boldsymbol m}{\Delta V}$，单位 $\mathrm{A\cdot m}$。
+        - 定义磁场强度 $\boldsymbol H = \dfrac{\boldsymbol B}{\mu_0}-\boldsymbol M$。
+        - 有安培环路定理 $\displaystyle\oint_L \boldsymbol H \cdot \mathrm d\boldsymbol l = I'$。

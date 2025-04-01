@@ -4,62 +4,62 @@ tags:
   - electromagnetism
 ---
 - **电荷**
-	- 分为正、负电荷。
-	- 电荷量用 $Q$ 或 $q$ 表示，单位为 $\mathrm C$。
-	- 电荷量是元电荷 $e$ 的整数倍。
-	- 电荷的电荷量与运动状态无关。
+    - 分为正、负电荷。
+    - 电荷量用 $Q$ 或 $q$ 表示，单位为 $\mathrm C$。
+    - 电荷量是元电荷 $e$ 的整数倍。
+    - 电荷的电荷量与运动状态无关。
 - **库仑定律**
-	- **内容**
-		- 两个静止点电荷之间的作用力与两电荷的电荷量成正版，与距离平方成反比。
-		- $\boldsymbol F_{12} = k \dfrac{q_1q_2}{r_{12}^2} \boldsymbol e_{12} = \dfrac{q_1q_2}{4\pi\varepsilon_0 r_{12}^2} \boldsymbol e_{12}$
-		- $k=8.99 \times 10^9\ \mathrm{N \cdot m^2 / C^2}$
-	- **条件**
-		- 库仑定律只对静止点电荷成立。
-	- **叠加原理**
-		- 两个点电荷之间的作用力与其他电荷无关，多个力可以叠加。
-		- 对于 $q_0,q_1,q_2,\dots,q_n$，$\boldsymbol F_0 = \sum\limits_{i = 1}^{n} \boldsymbol F_{i0}$。
+    - **内容**
+        - 两个静止点电荷之间的作用力与两电荷的电荷量成正版，与距离平方成反比。
+        - $\boldsymbol F_{12} = k \dfrac{q_1q_2}{r_{12}^2} \boldsymbol e_{12} = \dfrac{q_1q_2}{4\pi\varepsilon_0 r_{12}^2} \boldsymbol e_{12}$
+        - $k=8.99 \times 10^9\ \mathrm{N \cdot m^2 / C^2}$
+    - **条件**
+        - 库仑定律只对静止点电荷成立。
+    - **叠加原理**
+        - 两个点电荷之间的作用力与其他电荷无关，多个力可以叠加。
+        - 对于 $q_0,q_1,q_2,\dots,q_n$，$\boldsymbol F_0 = \sum\limits_{i = 1}^{n} \boldsymbol F_{i0}$。
 - **电场**
-	- **性质**
-		- 对任何电荷都有作用力。
-		- 具有能量。
-		- 静电感应和极化现象。
-	- **电场强度** <span id="dkqgis"></span>
-		- 试探电荷：电量充分小的点电荷。
-		- 电场强度定义为 $\boldsymbol E = \dfrac{\boldsymbol F}{q}$，$\boldsymbol F$ 为试探电荷收到的电场力，单位为 $\mathrm {N/C}$ 或 $\mathrm{V/m}$。
-		- 点电荷 $q$ 的场强公式：$\boldsymbol E = \dfrac{q}{4\pi\varepsilon_0 r^2}\boldsymbol e_r$，$\boldsymbol e_r = \dfrac{\boldsymbol r}{r}$ 为从 $q$ 指向场点的单位矢量（$\boldsymbol E$ 的方向由 $q$ 的符号体现）。
-		- 点电荷系的场强由各点电荷的场强叠加。
-	- **常用结论**
-		- 相距 $l$ 的 $-q,q$ 组成的电偶极子 $\boldsymbol p = q\boldsymbol l$
-			- 中垂线上距离连线 $y$ 处：$\boldsymbol E = \dfrac{-\boldsymbol p}{4\pi\varepsilon_0 (y^2 + \frac{l^2}{4})^3}$
-		- 无限均匀带电直线 $\lambda_e$
-			- 距离直线 $a$ 处：$E = \dfrac{\lambda_e}{2\pi\varepsilon_0 a}$
-		- 无限均匀带电平面 $\sigma_e$
-			- 距离平面 $a$ 处：$E = \dfrac{\sigma_e}{2\varepsilon_0}$
+    - **性质**
+        - 对任何电荷都有作用力。
+        - 具有能量。
+        - 静电感应和极化现象。
+    - **电场强度** <span id="dkqgis"></span>
+        - 试探电荷：电量充分小的点电荷。
+        - 电场强度定义为 $\boldsymbol E = \dfrac{\boldsymbol F}{q}$，$\boldsymbol F$ 为试探电荷收到的电场力，单位为 $\mathrm {N/C}$ 或 $\mathrm{V/m}$。
+        - 点电荷 $q$ 的场强公式：$\boldsymbol E = \dfrac{q}{4\pi\varepsilon_0 r^2}\boldsymbol e_r$，$\boldsymbol e_r = \dfrac{\boldsymbol r}{r}$ 为从 $q$ 指向场点的单位矢量（$\boldsymbol E$ 的方向由 $q$ 的符号体现）。
+        - 点电荷系的场强由各点电荷的场强叠加。
+    - **常用结论**
+        - 相距 $l$ 的 $-q,q$ 组成的电偶极子 $\boldsymbol p = q\boldsymbol l$
+            - 中垂线上距离连线 $y$ 处：$\boldsymbol E = \dfrac{-\boldsymbol p}{4\pi\varepsilon_0 (y^2 + \frac{l^2}{4})^3}$
+        - 无限均匀带电直线 $\lambda_e$
+            - 距离直线 $a$ 处：$E = \dfrac{\lambda_e}{2\pi\varepsilon_0 a}$
+        - 无限均匀带电平面 $\sigma_e$
+            - 距离平面 $a$ 处：$E = \dfrac{\sigma_e}{2\varepsilon_0}$
 - **电通量**
-	- 场强大小等于电场线的数密度，则电场中通过任意曲面的电场线数量称为通过该面的电通量，记作 $\Phi_e$。
-	- $\mathrm d\Phi_e = \boldsymbol E \cdot \mathrm d\boldsymbol S$
-	- 对于闭合曲面，一般规定曲面的方向为从内向外。
+    - 场强大小等于电场线的数密度，则电场中通过任意曲面的电场线数量称为通过该面的电通量，记作 $\Phi_e$。
+    - $\mathrm d\Phi_e = \boldsymbol E \cdot \mathrm d\boldsymbol S$
+    - 对于闭合曲面，一般规定曲面的方向为从内向外。
 - **高斯定理**
-	- **内容**
-		- 对于任意闭合曲面 $S$，其电通量 $\Phi_e$ 与 $S$ 内包围的净电荷量有 $\Phi_e = \displaystyle\oint_S \boldsymbol E \cdot \mathrm d\boldsymbol S = \dfrac{1}{\varepsilon_0} \displaystyle\sum q$。
-		- 如果 $|\boldsymbol E|$ 和 $\boldsymbol E$ 与 $\mathrm d\boldsymbol S$ 的夹角都相等，则可以把点积换成乘法，并把 $E$ 提取到积分号外。这可以方便地求解 $E$。
-		- 高斯定理只考虑的曲面内的净电荷量，但是曲面上的电场强度是整体合成的，要考虑曲面内外的所有电荷。
-		- 只有在曲面形状和内外电荷分布都具有一定的对称性时，才可以提取 $E$。
-	- **常用的提取情况**
-		- 电荷连续分布情况下，以下几何结构可以提取出 $E$：
-			- 球：球面、球体、有厚度球壳
-			- 柱：无限高度柱面、无限高度柱体、无限高度有厚度柱壳
-			- 平面：无限平面、无限有厚度平面
+    - **内容**
+        - 对于任意闭合曲面 $S$，其电通量 $\Phi_e$ 与 $S$ 内包围的净电荷量有 $\Phi_e = \displaystyle\oint_S \boldsymbol E \cdot \mathrm d\boldsymbol S = \dfrac{1}{\varepsilon_0} \displaystyle\sum q$。
+        - 如果 $|\boldsymbol E|$ 和 $\boldsymbol E$ 与 $\mathrm d\boldsymbol S$ 的夹角都相等，则可以把点积换成乘法，并把 $E$ 提取到积分号外。这可以方便地求解 $E$。
+        - 高斯定理只考虑的曲面内的净电荷量，但是曲面上的电场强度是整体合成的，要考虑曲面内外的所有电荷。
+        - 只有在曲面形状和内外电荷分布都具有一定的对称性时，才可以提取 $E$。
+    - **常用的提取情况**
+        - 电荷连续分布情况下，以下几何结构可以提取出 $E$：
+            - 球：球面、球体、有厚度球壳
+            - 柱：无限高度柱面、无限高度柱体、无限高度有厚度柱壳
+            - 平面：无限平面、无限有厚度平面
 - **电势**
-	- **电势能**
-		- 点电荷产生的电场是保守场，静电力做功与路径无关。因此可以引入电势能。
-		- 静电力做功等于电势能的减少，即 $A_{ab} = -\Delta A = \Delta A_a - \Delta A_b$。
-		- 电势能是相对的，需要选取电势能零点，则 $W_a = A_{a0}$。
-	- **电势**
-		- 电势能包括电荷的性质和电场的性质，而电势只与电场有关。定义 $\varphi = \dfrac{W}{q}$。
-		- 定义电势差 $U_{ab} = \varphi_a - \varphi_b$。
-	- **计算**
-		- 计算电势一般有两种方式：
-			- 按照定义：$\varphi_a = \displaystyle\int_{(a)}^{(0)} \boldsymbol E \cdot \mathrm d\boldsymbol l$。
-			- 叠加法：$\varphi_a = \displaystyle\iiint_V \mathrm d\varphi$。
-		- 电势差计算：$U_{ab} = \varphi_a - \varphi_b = \displaystyle\int_{(a)}^{(b)} \boldsymbol E \cdot \mathrm d\boldsymbol l$。
+    - **电势能**
+        - 点电荷产生的电场是保守场，静电力做功与路径无关。因此可以引入电势能。
+        - 静电力做功等于电势能的减少，即 $A_{ab} = -\Delta A = \Delta A_a - \Delta A_b$。
+        - 电势能是相对的，需要选取电势能零点，则 $W_a = A_{a0}$。
+    - **电势**
+        - 电势能包括电荷的性质和电场的性质，而电势只与电场有关。定义 $\varphi = \dfrac{W}{q}$。
+        - 定义电势差 $U_{ab} = \varphi_a - \varphi_b$。
+    - **计算**
+        - 计算电势一般有两种方式：
+            - 按照定义：$\varphi_a = \displaystyle\int_{(a)}^{(0)} \boldsymbol E \cdot \mathrm d\boldsymbol l$。
+            - 叠加法：$\varphi_a = \displaystyle\iiint_V \mathrm d\varphi$。
+        - 电势差计算：$U_{ab} = \varphi_a - \varphi_b = \displaystyle\int_{(a)}^{(b)} \boldsymbol E \cdot \mathrm d\boldsymbol l$。

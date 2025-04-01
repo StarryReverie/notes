@@ -4,67 +4,67 @@ tags:
   - probability-theory
 ---
 - **基本概念**
-	- **随机现象**
-		- 条件相同时，现象的结果未必相同，如果知道所有的可能结果，则称为随机现象。
-	- **随机试验**
-		- 对随机现象进行一次观察或试验，称为随机试验或试验，用 $E$ 表示。
-		- 特定：可重复性、可预知性（已知所有结果）、随机性。
-	- **样本空间**
-		- 随机试验 $E$ 的所有可能结果组成的集合，称为 $E$ 样本空间，记作 $S=\{\omega | \omega$ 为 $E$ 的所有结果$\}$，$\omega$ 称为样本点。
-		- 一次试验只会出现恰好一个样本点，样本点是互斥的。
-	- **随机事件**
-		- 样本空间中的子集称为随机事件或事件，记作 $A,B,C,\dots$。
-		- 如果随机试验中，一个事件中的样本点出现，则这个事件发生。
-		- 仅由一个样本点构成的事件称为基本事件。
-		- 事件的运算与关系：
-			- 并：$A\cup B,\bigcup\limits_{k=1}^n A_k,\bigcup\limits_{k=1}^{+\infty} A_k$
-			- 交 / 积：$A\cap B,AB,\bigcap\limits_{k=1}^n A_k,\bigcap\limits_{k=1}^{+\infty} A_k$
-			- 差：$A-B$
-			- 包含、互斥、对立
+    - **随机现象**
+        - 条件相同时，现象的结果未必相同，如果知道所有的可能结果，则称为随机现象。
+    - **随机试验**
+        - 对随机现象进行一次观察或试验，称为随机试验或试验，用 $E$ 表示。
+        - 特定：可重复性、可预知性（已知所有结果）、随机性。
+    - **样本空间**
+        - 随机试验 $E$ 的所有可能结果组成的集合，称为 $E$ 样本空间，记作 $S=\{\omega | \omega$ 为 $E$ 的所有结果$\}$，$\omega$ 称为样本点。
+        - 一次试验只会出现恰好一个样本点，样本点是互斥的。
+    - **随机事件**
+        - 样本空间中的子集称为随机事件或事件，记作 $A,B,C,\dots$。
+        - 如果随机试验中，一个事件中的样本点出现，则这个事件发生。
+        - 仅由一个样本点构成的事件称为基本事件。
+        - 事件的运算与关系：
+            - 并：$A\cup B,\bigcup\limits_{k=1}^n A_k,\bigcup\limits_{k=1}^{+\infty} A_k$
+            - 交 / 积：$A\cap B,AB,\bigcap\limits_{k=1}^n A_k,\bigcap\limits_{k=1}^{+\infty} A_k$
+            - 差：$A-B$
+            - 包含、互斥、对立
 - **古典概型**
-	- **定义**
-		- 随机试验有有限个可能结果，每一个基本事件的发生等可能。
-		- $S$ 中有 $n$ 个样本点，$A$ 有 $k$ 个样本点，则 $A$ 发生的概率为 $P(A)=\dfrac{k}{n}$。
-	- **性质**
-		- 非负性：$P(A) \ge 0$
-		- 归一性：$P(S) = 1$
-		- 可加性：若 $A_1, A_2, \dots, A_m$ 互斥，则 $P\left(\bigcup\limits_{i = 1}^m A_i\right)=\sum\limits_{i = 1}^m P(A_i)$
+    - **定义**
+        - 随机试验有有限个可能结果，每一个基本事件的发生等可能。
+        - $S$ 中有 $n$ 个样本点，$A$ 有 $k$ 个样本点，则 $A$ 发生的概率为 $P(A)=\dfrac{k}{n}$。
+    - **性质**
+        - 非负性：$P(A) \ge 0$
+        - 归一性：$P(S) = 1$
+        - 可加性：若 $A_1, A_2, \dots, A_m$ 互斥，则 $P\left(\bigcup\limits_{i = 1}^m A_i\right)=\sum\limits_{i = 1}^m P(A_i)$
 - **几何概型** <span id="v4un1v"></span>
-	- **定义**
-		- 随机试验向可度量区域 $G$ 投一点，点落在 $G$ 中任意可度量区域 $g$ 的可能性只与 $g$ 的度量成正比。
-		- $S=G$，样本点为 $G$ 中的点，$A$ 对应 $g$，则 $P(A) = \dfrac{m(g)}{m(G)}$，$m(\cdot)$ 表示度量（如长度、面积）。
+    - **定义**
+        - 随机试验向可度量区域 $G$ 投一点，点落在 $G$ 中任意可度量区域 $g$ 的可能性只与 $g$ 的度量成正比。
+        - $S=G$，样本点为 $G$ 中的点，$A$ 对应 $g$，则 $P(A) = \dfrac{m(g)}{m(G)}$，$m(\cdot)$ 表示度量（如长度、面积）。
 - **概率公理化定义**
-	- **定义**
-		- 设试验 $E$ 的样本空间为 $S$，事件域为 $\mathcal F$，$P:\mathcal F \longmapsto [0,1],A \mapsto P(A)$，如果满足以下条件，则 $P(A)$ 为 $A$ 的概率：
-			- 非负性：$P(A) \ge 0$
-			- 规范性：$P(S) = 1$
-			- 可列可加性：对任意可列互斥 $A_1,A_2,\dots$，$P\left(\bigcup\limits_{i = 1}^\infty A_i\right)=\sum\limits_{i = 1}^{\infty} P(A_i)$
-	- **性质**
-		- $P(\varnothing)=0$
-		- 有限可加性：对任意互斥 $A_1,A_2,\dots,A_m$，$P\left(\bigcup\limits_{i = 1}^m A_i\right)=\sum\limits_{i = 1}^m P(A_i)$
-		- $P(\overline A) = 1 - P(A)$
-		- 若 $A \subset B$，则 $P(B - A) = P(B) - P(A)$，并且 $P(B) \ge P(A)$
-		- $P(B - A) = P(B - AB) = P(B) - P(AB)$
-		- $P(A \cup B) = P(A) + P(B) - P(AB)$
+    - **定义**
+        - 设试验 $E$ 的样本空间为 $S$，事件域为 $\mathcal F$，$P:\mathcal F \longmapsto [0,1],A \mapsto P(A)$，如果满足以下条件，则 $P(A)$ 为 $A$ 的概率：
+            - 非负性：$P(A) \ge 0$
+            - 规范性：$P(S) = 1$
+            - 可列可加性：对任意可列互斥 $A_1,A_2,\dots$，$P\left(\bigcup\limits_{i = 1}^\infty A_i\right)=\sum\limits_{i = 1}^{\infty} P(A_i)$
+    - **性质**
+        - $P(\varnothing)=0$
+        - 有限可加性：对任意互斥 $A_1,A_2,\dots,A_m$，$P\left(\bigcup\limits_{i = 1}^m A_i\right)=\sum\limits_{i = 1}^m P(A_i)$
+        - $P(\overline A) = 1 - P(A)$
+        - 若 $A \subset B$，则 $P(B - A) = P(B) - P(A)$，并且 $P(B) \ge P(A)$
+        - $P(B - A) = P(B - AB) = P(B) - P(AB)$
+        - $P(A \cup B) = P(A) + P(B) - P(AB)$
 - **条件概率**
-	- **定义**
-		- 设事件 $A,B$，$P(B) > 0$，定义 $B$ 发生的情况下 $A$ 发生的条件概率为 $P(A | B) = \dfrac{P(AB)}{P(B)}$。
-		- 条件概率满足概率定义。
-	- **乘法公式**
-		- 设事件 $A,B$，如果 $P(B) > 0$，则 $P(AB) = P(B)P(A|B)$。如果 $P(A) > 0$，则 $P(AB) = P(A)P(B|A)$。
-		- 推广到多个事件时，只要满足作为条件的概率大于 $0$。
-	- **全概率公式**
-		- 设有事件 $A$ 和若干互斥事件 $B_1, B_2, \dots, B_n$，满足 $B_1 \cup B_2 \cup \cdots \cup B_n = A$，则它们是 $A$ 的一个划分。
-		- $P(A) = \sum\limits_{i = 1}^n P(B_i)P(A|B_i)$
-	- **贝叶斯公式**
-		- $P(A_i|B) = \dfrac{P(A_i)P(B|A_i)}{P(B)} = \dfrac{P(A_i)P(B|A_i)}{\sum\limits_{j = 1}^n P(A_j)P(B|A_j)}$
+    - **定义**
+        - 设事件 $A,B$，$P(B) > 0$，定义 $B$ 发生的情况下 $A$ 发生的条件概率为 $P(A | B) = \dfrac{P(AB)}{P(B)}$。
+        - 条件概率满足概率定义。
+    - **乘法公式**
+        - 设事件 $A,B$，如果 $P(B) > 0$，则 $P(AB) = P(B)P(A|B)$。如果 $P(A) > 0$，则 $P(AB) = P(A)P(B|A)$。
+        - 推广到多个事件时，只要满足作为条件的概率大于 $0$。
+    - **全概率公式**
+        - 设有事件 $A$ 和若干互斥事件 $B_1, B_2, \dots, B_n$，满足 $B_1 \cup B_2 \cup \cdots \cup B_n = A$，则它们是 $A$ 的一个划分。
+        - $P(A) = \sum\limits_{i = 1}^n P(B_i)P(A|B_i)$
+    - **贝叶斯公式**
+        - $P(A_i|B) = \dfrac{P(A_i)P(B|A_i)}{P(B)} = \dfrac{P(A_i)P(B|A_i)}{\sum\limits_{j = 1}^n P(A_j)P(B|A_j)}$
 - **独立性** <span id="b59tln"></span>
-	- **定义**
-		- 对任意事件 $A,B$，若$P(AB)=P(A)P(B)$，则 $A$ 和 $B$ 独立。
-		- 对任意 $n$ 个事件 $A_1, A_2, \dots, A_n$
-			- 若对任意 $k \in [2, n]$ 和 $i_1,i_2,\dots,i_k$，$P(A_{i_1}A_{i_2}\cdots A_{i_k})=P(A_{i_1})P(A_{i_2})\cdots P(A_{i_k})$，则这 $n$ 个事件独立。
-			- 若对任意 $i,j$，$P(A_iA_j) = P(A_i)P(A_j)$，则这 $n$ 个事件两两独立。
-	- **性质**
-		- 如果 $P(A) = 0$ 或者 $P(A) = 1$，则一定独立。
-		- 如果 $A,B$ 独立，则 $A$ 和 $\overline B$、 $\overline A$ 和 $B$、 $\overline A$ 和 $\overline B$ 独立，多个事件仍然成立。
-		- 如果 $A_1, A_2, \dots, A_n$ 独立，则其子集也独立。
+    - **定义**
+        - 对任意事件 $A,B$，若$P(AB)=P(A)P(B)$，则 $A$ 和 $B$ 独立。
+        - 对任意 $n$ 个事件 $A_1, A_2, \dots, A_n$
+            - 若对任意 $k \in [2, n]$ 和 $i_1,i_2,\dots,i_k$，$P(A_{i_1}A_{i_2}\cdots A_{i_k})=P(A_{i_1})P(A_{i_2})\cdots P(A_{i_k})$，则这 $n$ 个事件独立。
+            - 若对任意 $i,j$，$P(A_iA_j) = P(A_i)P(A_j)$，则这 $n$ 个事件两两独立。
+    - **性质**
+        - 如果 $P(A) = 0$ 或者 $P(A) = 1$，则一定独立。
+        - 如果 $A,B$ 独立，则 $A$ 和 $\overline B$、 $\overline A$ 和 $B$、 $\overline A$ 和 $\overline B$ 独立，多个事件仍然成立。
+        - 如果 $A_1, A_2, \dots, A_n$ 独立，则其子集也独立。

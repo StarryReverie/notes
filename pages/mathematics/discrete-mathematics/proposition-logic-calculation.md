@@ -5,57 +5,57 @@ tags:
   - logic-theory
 ---
 - **等值式**
-	- **定义**
-		- 若 $A \leftrightarrow B$ 是[重言式](命题逻辑#^0anp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 <span id="ysze9u"></span>
-	- **常用等值式** <span id="sts2pd"></span>
-		- 双重否定律：$\neg \neg A \Leftrightarrow A$
-		- 幂等律：$A \land A \Leftrightarrow A$，$A \lor A \Leftrightarrow A$
-		- 交换律：$A \land B \Leftrightarrow B \land A$，$A \lor B \Leftrightarrow B \lor A$
-		- 结合律：$(A \land B) \land C \Leftrightarrow A \land (B \land C)$，$(A \lor B) \lor C \Leftrightarrow A \lor (B \lor C)$
-		- 分配律：$(A \land B) \lor C \Leftrightarrow (A \lor C) \land (B \land C)$，$(A \lor B) \land C \Leftrightarrow (A \land C) \lor (B \land C)$
-		- 德摩根律：$\neg (A \land B) \Leftrightarrow \neg A \lor \neg B$，$\neg (A \lor B) \Leftrightarrow \neg A \land \neg B$
-		- 吸收律：$A \land (A \lor B) \Leftrightarrow A$，$A \lor (A \land B) \Leftrightarrow A$
-		- 零律：$A \land 0 \Leftrightarrow 0$，$A \lor 1 \Leftrightarrow 1$
-		- 同一律：$A \land 1 \Leftrightarrow A$，$A \lor 0 \Leftrightarrow A$
-		- 排中律：$A \lor \neg A \Leftrightarrow 1$
-		- 矛盾律：$A \land \neg A \Leftrightarrow 0$
-		- 蕴涵等值式：$A \to B \Leftrightarrow \neg A \lor B$
-		- 等价等值式：$A \leftrightarrow B \Leftrightarrow (A \land B) \lor (\neg A \land \neg B)$
-		- 假言易位：$A \to B \Leftrightarrow \neg B \to \neg A$
-		- 等价否定等值式：$A \leftrightarrow B \Leftrightarrow \neg A \leftrightarrow \neg B$
-		- 归谬论：$(A \to B) \land (A \to \neg B) \to \neg A$
-		- $p \to (q \to r) \Leftrightarrow (p \land q) \to r$
+    - **定义**
+        - 若 $A \leftrightarrow B$ 是[重言式](命题逻辑#^0anp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 <span id="ysze9u"></span>
+    - **常用等值式** <span id="sts2pd"></span>
+        - 双重否定律：$\neg \neg A \Leftrightarrow A$
+        - 幂等律：$A \land A \Leftrightarrow A$，$A \lor A \Leftrightarrow A$
+        - 交换律：$A \land B \Leftrightarrow B \land A$，$A \lor B \Leftrightarrow B \lor A$
+        - 结合律：$(A \land B) \land C \Leftrightarrow A \land (B \land C)$，$(A \lor B) \lor C \Leftrightarrow A \lor (B \lor C)$
+        - 分配律：$(A \land B) \lor C \Leftrightarrow (A \lor C) \land (B \land C)$，$(A \lor B) \land C \Leftrightarrow (A \land C) \lor (B \land C)$
+        - 德摩根律：$\neg (A \land B) \Leftrightarrow \neg A \lor \neg B$，$\neg (A \lor B) \Leftrightarrow \neg A \land \neg B$
+        - 吸收律：$A \land (A \lor B) \Leftrightarrow A$，$A \lor (A \land B) \Leftrightarrow A$
+        - 零律：$A \land 0 \Leftrightarrow 0$，$A \lor 1 \Leftrightarrow 1$
+        - 同一律：$A \land 1 \Leftrightarrow A$，$A \lor 0 \Leftrightarrow A$
+        - 排中律：$A \lor \neg A \Leftrightarrow 1$
+        - 矛盾律：$A \land \neg A \Leftrightarrow 0$
+        - 蕴涵等值式：$A \to B \Leftrightarrow \neg A \lor B$
+        - 等价等值式：$A \leftrightarrow B \Leftrightarrow (A \land B) \lor (\neg A \land \neg B)$
+        - 假言易位：$A \to B \Leftrightarrow \neg B \to \neg A$
+        - 等价否定等值式：$A \leftrightarrow B \Leftrightarrow \neg A \leftrightarrow \neg B$
+        - 归谬论：$(A \to B) \land (A \to \neg B) \to \neg A$
+        - $p \to (q \to r) \Leftrightarrow (p \land q) \to r$
 - **对偶式**
-	- **定义**
-		- 已知命题公式 $A$，则将 $A$ 中的 $\land,\lor$ 取反，$0,1$ 项取反，则得到的新公式 $A^\star$ 是 $A$ 的对偶式。
-	- **性质**
-		- 反演规则：$A(p_1, p_2, \dots, p_n) \Leftrightarrow \neg A^\star (\neg p_1, \neg p_2, \dots, \neg p_n)$
-		- 等值规则：$A \Leftrightarrow B$，则 $A^\star \Leftrightarrow B^\star$
+    - **定义**
+        - 已知命题公式 $A$，则将 $A$ 中的 $\land,\lor$ 取反，$0,1$ 项取反，则得到的新公式 $A^\star$ 是 $A$ 的对偶式。
+    - **性质**
+        - 反演规则：$A(p_1, p_2, \dots, p_n) \Leftrightarrow \neg A^\star (\neg p_1, \neg p_2, \dots, \neg p_n)$
+        - 等值规则：$A \Leftrightarrow B$，则 $A^\star \Leftrightarrow B^\star$
 - **等值演算**
-	- **范式**
-		- **文字**
-			- 命题变项或其否定。
-		- **简单合取 / 析取式**
-			- 有限个文字用合取 / 析取连接的公式。
-			- 简单合取式永假 $\iff$ 同时存在命题变项及其否定。
-			- 简单析取式永真 $\iff$ 同时存在命题变项及其否定。
-		- **析取 / 合取式**
-			- 有限个简单合取 / 析取式用析取 / 合取连接的公式。
-		- **范式存在定理**
-			- 任何命题公式存在范式。
-	- **主范式**
-		- **极小 / 大项** ^nh6buf
-			- 含 $n$ 个命题变项 $p_1,p_2,\dots,p_n$ 的简单合取 / 析取式中，$p_i$ 恰好出现在第 $i$ 位上，则公式为极小 / 大项。
-			- 极小项可以编码为其成真赋值 $a$，记作 $m_a$，极大项可以编码为其成假赋值 $b$，记作 $M_b$。
-		- **主析取 / 合取范式**
-			- 如果范式是简单合取 / 析取式，则这个范式是主范式。
-			- 任何公式都存在唯一的主析取范式和主合取范式。
+    - **范式**
+        - **文字**
+            - 命题变项或其否定。
+        - **简单合取 / 析取式**
+            - 有限个文字用合取 / 析取连接的公式。
+            - 简单合取式永假 $\iff$ 同时存在命题变项及其否定。
+            - 简单析取式永真 $\iff$ 同时存在命题变项及其否定。
+        - **析取 / 合取式**
+            - 有限个简单合取 / 析取式用析取 / 合取连接的公式。
+        - **范式存在定理**
+            - 任何命题公式存在范式。
+    - **主范式**
+        - **极小 / 大项** ^nh6buf
+            - 含 $n$ 个命题变项 $p_1,p_2,\dots,p_n$ 的简单合取 / 析取式中，$p_i$ 恰好出现在第 $i$ 位上，则公式为极小 / 大项。
+            - 极小项可以编码为其成真赋值 $a$，记作 $m_a$，极大项可以编码为其成假赋值 $b$，记作 $M_b$。
+        - **主析取 / 合取范式**
+            - 如果范式是简单合取 / 析取式，则这个范式是主范式。
+            - 任何公式都存在唯一的主析取范式和主合取范式。
 - **消解法**
-	- **规定**
-		- 简单析取式如果含有某个命题变项和它的否定，则可以把这个简单析取式从合取范式中消除。
-	- **消解式**
-		- 设 $C_1 = l \lor C_1', C_2 = l^c \lor C_2'$，$C_1'$ 和 $C_2'$ 不含 $l$ 和 $l^c$，则 $\operatorname{Res}(C_1,C_2) = C_1' \lor C_2'$ 为 $C_1$和 $C_2$ 的消解式。
-			- $C_1 \land C_2$ 与 $\operatorname{Res}(C_1,C_2)$ 的可满足性相同。
-		- 设 $S$ 是一个合取范式，$C_1,C_2,\dots,C_n$ 为简单析取式序列，$C_i$ 为 $S$ 中的简单析取式或其之前的消解结果。则这个序列就是消解序列。
-			- 如果 $C_n=\lambda$，则消解序列是 $S$ 的一个否证，等价于 $S$ 是矛盾式。
-			- 判断 $S$ 是否可满足：从其简单析取式开始，不断选取其中两个并消解，扩充消解序列，直到得到 $\lambda$ 或穷尽，即可得到结果。
+    - **规定**
+        - 简单析取式如果含有某个命题变项和它的否定，则可以把这个简单析取式从合取范式中消除。
+    - **消解式**
+        - 设 $C_1 = l \lor C_1', C_2 = l^c \lor C_2'$，$C_1'$ 和 $C_2'$ 不含 $l$ 和 $l^c$，则 $\operatorname{Res}(C_1,C_2) = C_1' \lor C_2'$ 为 $C_1$和 $C_2$ 的消解式。
+            - $C_1 \land C_2$ 与 $\operatorname{Res}(C_1,C_2)$ 的可满足性相同。
+        - 设 $S$ 是一个合取范式，$C_1,C_2,\dots,C_n$ 为简单析取式序列，$C_i$ 为 $S$ 中的简单析取式或其之前的消解结果。则这个序列就是消解序列。
+            - 如果 $C_n=\lambda$，则消解序列是 $S$ 的一个否证，等价于 $S$ 是矛盾式。
+            - 判断 $S$ 是否可满足：从其简单析取式开始，不断选取其中两个并消解，扩充消解序列，直到得到 $\lambda$ 或穷尽，即可得到结果。

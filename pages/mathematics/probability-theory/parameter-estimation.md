@@ -5,74 +5,74 @@ tags:
   - statistics
 ---
 - **点估计**
-	- **矩估计**
-		- 设总体 $X$，$f(x;\theta_1,\dots,\theta_n)$ 为其概率密度函数或分布列。$\theta_1,\dots,\theta_n$ 未知。
-		- 总体的各阶矩 $\mu_k = E(X^k) = \mu_k(\theta_1,\dots,\theta_n)$。可以通过 $\mu_1,\dots,\mu_n$ 关于 $\theta_1,\dots,\theta_n$ 的方程解出 $\theta_1,\dots,\theta_n$。
-		- 用样本矩 $A_k$ 估计 $\mu_k$，则 $\hat \theta_k = \hat \theta_k(A_1,\dots,A_n)$，称为矩估计量。观测某个样本得到的 $\hat \theta^k$ 称矩估计值。
-	- **最大似然估计**
-		- 已知样本 $X_1,\dots,X_m$ 和其观测值 $x_1,\dots,x_m$。
-		- 定义似然函数 $L(\boldsymbol \theta)=\displaystyle\prod_{i=1}^m f(x_i;\boldsymbol \theta)$。
-		- 求出满足 $L(\boldsymbol \theta)$ 取得最大值的 $\hat{\boldsymbol \theta}$，$\hat{\boldsymbol \theta}(x_1,\dots,x_m)$ 为最大似然估计值，$\hat{\boldsymbol \theta}(X_1,\dots,X_m)$ 为最大似然估计量。
-	- **估计量的评价**
-		- **无偏性**
-			- 若对任意 $\theta\in \Theta$，$X_1,\dots,X_n$ 来自 $\theta$ 为参数的分布，有 $E(\hat \theta(X_1,\dots,X_n)) = \theta$，则 $\hat \theta$ 是 $\theta$ 的无偏估计。
-			- 否则 $E(\hat \theta(X_1,\dots,X_n)) - \theta = b_n \ne 0$，则 $\hat \theta$ 是有偏估计，$b_n$ 为偏差。
-			- 若 $\displaystyle\lim_{n\to +\infty} b_n = 0$，则 $\hat \theta$ 是渐进无偏估计。
-			- $\overline X$ 是 $\mu=E(X)$ 的无偏估计，$S^2$ 是 $\sigma^2=D(X)$ 的无偏估计。
-			- 各阶样本矩 $A_k$ 是对应总体矩 $\mu_k$ 的无偏估计。
-		- **有效性**
-			- $\hat \theta_1,\hat\theta_2$ 是 $\theta\in \Theta$ 的无偏估计，若对任意 $\theta\in\Theta$，都有 $D(\hat\theta_1) \le D(\hat\theta_2)$ 且存在不等号成立，则 $\hat \theta_1$ 比 $\hat\theta_2$ 有效。
-		- **相合性**
-			- $\hat\theta$ 是 $\theta\in\Theta$ 的估计，若对任意 $\theta\in\Theta$，都有 $\hat\theta_n \xrightarrow{P} \theta$，则 $\hat\theta$ 是 $\theta$ 的相合估计。
-			- $\overline X$ 是 $\mu=E(X)$ 的相合估计，$S^2,S_n^2$ 都是是 $\sigma^2=D(X)$ 的相合估计。
-			- 各阶样本矩 $A_k$ 是对应总体矩 $\mu_k$ 的相合估计。
+    - **矩估计**
+        - 设总体 $X$，$f(x;\theta_1,\dots,\theta_n)$ 为其概率密度函数或分布列。$\theta_1,\dots,\theta_n$ 未知。
+        - 总体的各阶矩 $\mu_k = E(X^k) = \mu_k(\theta_1,\dots,\theta_n)$。可以通过 $\mu_1,\dots,\mu_n$ 关于 $\theta_1,\dots,\theta_n$ 的方程解出 $\theta_1,\dots,\theta_n$。
+        - 用样本矩 $A_k$ 估计 $\mu_k$，则 $\hat \theta_k = \hat \theta_k(A_1,\dots,A_n)$，称为矩估计量。观测某个样本得到的 $\hat \theta^k$ 称矩估计值。
+    - **最大似然估计**
+        - 已知样本 $X_1,\dots,X_m$ 和其观测值 $x_1,\dots,x_m$。
+        - 定义似然函数 $L(\boldsymbol \theta)=\displaystyle\prod_{i=1}^m f(x_i;\boldsymbol \theta)$。
+        - 求出满足 $L(\boldsymbol \theta)$ 取得最大值的 $\hat{\boldsymbol \theta}$，$\hat{\boldsymbol \theta}(x_1,\dots,x_m)$ 为最大似然估计值，$\hat{\boldsymbol \theta}(X_1,\dots,X_m)$ 为最大似然估计量。
+    - **估计量的评价**
+        - **无偏性**
+            - 若对任意 $\theta\in \Theta$，$X_1,\dots,X_n$ 来自 $\theta$ 为参数的分布，有 $E(\hat \theta(X_1,\dots,X_n)) = \theta$，则 $\hat \theta$ 是 $\theta$ 的无偏估计。
+            - 否则 $E(\hat \theta(X_1,\dots,X_n)) - \theta = b_n \ne 0$，则 $\hat \theta$ 是有偏估计，$b_n$ 为偏差。
+            - 若 $\displaystyle\lim_{n\to +\infty} b_n = 0$，则 $\hat \theta$ 是渐进无偏估计。
+            - $\overline X$ 是 $\mu=E(X)$ 的无偏估计，$S^2$ 是 $\sigma^2=D(X)$ 的无偏估计。
+            - 各阶样本矩 $A_k$ 是对应总体矩 $\mu_k$ 的无偏估计。
+        - **有效性**
+            - $\hat \theta_1,\hat\theta_2$ 是 $\theta\in \Theta$ 的无偏估计，若对任意 $\theta\in\Theta$，都有 $D(\hat\theta_1) \le D(\hat\theta_2)$ 且存在不等号成立，则 $\hat \theta_1$ 比 $\hat\theta_2$ 有效。
+        - **相合性**
+            - $\hat\theta$ 是 $\theta\in\Theta$ 的估计，若对任意 $\theta\in\Theta$，都有 $\hat\theta_n \xrightarrow{P} \theta$，则 $\hat\theta$ 是 $\theta$ 的相合估计。
+            - $\overline X$ 是 $\mu=E(X)$ 的相合估计，$S^2,S_n^2$ 都是是 $\sigma^2=D(X)$ 的相合估计。
+            - 各阶样本矩 $A_k$ 是对应总体矩 $\mu_k$ 的相合估计。
 - **区间估计**
-	- **枢轴量法**
-		- 对于 $\theta$ 的点估计 $\hat\theta$，若 $P(a\le \theta\le b) \ge 1-\alpha$，则 $[a,b]$ 为 $\theta$ 的置信水平为 $1-\alpha$ 的置信区间。
-		- 枢轴量法用于解决区间估计：
-			- 定义[随机变量](/pages/mathematics/probability-theory/random-variable.md)函数 $G(T,\theta)$ 为枢轴量，其中 $T$ 为与 $\theta$ 有关的点估计。对于特定样本可以求出 $T$。
-			- $G(T,\theta)$ 一般服从一些易于求解分位数的分布，根据置信水平 $1-\alpha$ 确定 $G$ 的置信区间。
-			- $T$ 已知情况下，解出 $G$ 置信区间端点对应的 $\theta$，得到 $\theta$ 的置信区间。
-	- **正态分布参数**
-		- **求 $\mu$ 置信区间，$\sigma^2$ 已知**
-			- 已知 $X_1,X_2,\dots,X_n \sim N(\mu, \sigma^2)$。
-			- 枢轴量 $Z = \dfrac{\overline X - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$。
-			- 置信区间 $\left[\overline X - \dfrac{\sigma}{\sqrt{n}} z_{\alpha/2}, \overline X + \dfrac{\sigma}{\sqrt{n}} z_{\alpha/2} \right]$。
-		- **求 $\mu$ 置信区间，$\sigma^2$ 未知**
-			- 枢轴量 $T = \dfrac{\overline X - \mu}{S/\sqrt{n}} \sim t(n - 1)$。
-			- 置信区间 $\left[\overline X - \dfrac{S}{\sqrt{n}} t_{\alpha/2}(n - 1), \overline X + \dfrac{S}{\sqrt{n}} t_{\alpha/2}(n - 1) \right]$。
-		- **求 $\sigma^2$ 置信区间，$\mu$ 已知**
-			- 枢轴量 $G = \dfrac{n\hat{\sigma}^2}{\sigma^2} = \displaystyle\sum_{i=1}^n \left(\dfrac{X_i - \mu}{\sigma}\right)^2 \sim \chi^2(n)$。
-			- 置信区间 $\left[\dfrac{\sum_{i=1}^n (X_i - \mu)^2}{\chi_{\alpha/2}^2(n)}, \dfrac{\sum_{i=1}^n (X_i - \mu)^2}{\chi_{1 - \alpha/2}^2(n)}\right]$。
-		- **求 $\sigma^2$ 置信区间，$\mu$ 未知**
-			- 枢轴量 $\chi^2 = \dfrac{(n - 1)S^2}{\sigma^2}$。
-			- 置信区间 $\left[\dfrac{\sum_{i=1}^n (X_i - \overline X)^2}{\chi_{\alpha/2}^2(n-1)}, \dfrac{\sum_{i=1}^n (X_i - \overline X)^2}{\chi_{1 - \alpha/2}^2(n-1)}\right]$。
-	- **双正态分布组合**
-		- **求 $\mu_1-\mu_2$ 置信区间，$\sigma_1^2,\sigma_2^2$ 已知**
-			- 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
-			- 枢轴量 $Z = \dfrac{(\overline X - \overline Y) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{\sigma_1^2}{m} + \dfrac{\sigma_2^2}{n}}} \sim N(0, 1)$。
-			- 置信区间 $\left[\overline X - \overline Y \pm z_{\alpha/2}\sqrt{\dfrac{\sigma_1^2}{m} + \dfrac{\sigma_2^2}{n}}\right]$。
-		- **求 $\mu_1-\mu_2$ 置信区间，$\sigma_1^2=\sigma_2^2=\sigma^2$ 未知
-			- 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma^2)$。
-			- 枢轴量 $T = \dfrac{(\overline X - \overline Y) - (\mu_1 - \mu_2)}{S_\omega\sqrt{\dfrac{1}{m} + \dfrac{1}{n}}} \sim t(m+n-2)$。
-			- 置信区间 $\left[\overline X - \overline Y \pm t_{\alpha/2}(m+n-2)S_\omega\sqrt{\dfrac{1}{m} + \dfrac{1}{n}}\right]$。
-		- **求 $\mu_1-\mu_2$ 置信区间，$\sigma_1^2,\sigma_2^2$ 未知，$m=n$
-			- 已知 $X_1,X_2,\dots,X_n \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
-			- 令 $Z_i = X_i - Y_i \sim N(\mu_1 - \mu_2, \sigma_1^2 + \sigma_2^2)$。
-			- 枢轴量 $T = \dfrac{\overline Z - (\mu_1 - \mu_2)}{S_3/\sqrt{n}} \sim t(n-1)$。
-			- 置信区间 $\left[\overline X - \overline Y \pm \dfrac{S_3}{\sqrt{n}} t_{\alpha/2}(n - 1)\right]$。
-		- **求 $\sigma_1^2/\sigma_2^2$ 置信区间，$\mu_1,\mu_2$ 已知**
-			- 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
-			- 枢轴量 $F = \dfrac{(m\hat{\sigma}_1^2/\sigma_1^2) / m}{(n\hat{\sigma}_2^2/\sigma_2^2) / n} = \dfrac{\hat{\sigma}_1^2 / \hat{\sigma}_2^2}{\sigma_1^2 / \sigma_2^2} \sim F(m,n)$。
-			- 置信区间 $\left[ \dfrac{\hat{\sigma}_1^2 / \hat{\sigma}_2^2}{F_{\alpha/2}(m,n)} , \dfrac{\hat{\sigma}_1^2 / \hat{\sigma}_2^2}{F_{1 - \alpha/2}(m,n)} \right]$。
-		- **求 $\sigma_1^2/\sigma_2^2$ 置信区间，$\mu_1,\mu_2$ 未知**
-			- 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
-			- 枢轴量 $F = \dfrac{[(m-1)S_1^2/\sigma_1^2] / (m-1)}{[(n-1)S_2^2/\sigma_2^2] / (n-1)} = \dfrac{S_1^2 / S_2^2}{\sigma_1^2 / \sigma_2^2} \sim F(m-1,n-1)$。
-			- 置信区间 $\left[ \dfrac{S_1^2 / S_2^2}{F_{\alpha/2}(m-1,n-1)} , \dfrac{S_1^2 / S_2^2}{F_{1 - \alpha/2}(m-1,n-1)} \right]$。
-	- **非正态分布参数**
-		- **均匀分布 $U(0,\theta)$**
-			- 枢轴量 $G = \dfrac{X_{(n)}}{\theta}$。
-			- 置信区间 $\left[ X_{(n)},\dfrac{X_{(n)}}{\sqrt[n]{\alpha}} \right]$。
-		- **指数分布 $E(\lambda)$**
-			- 枢轴量 $G = 2n\lambda \overline X \sim \chi^2(2n)$。
-			- 置信区间 $\left[ \dfrac{2n\overline X}{\chi_{\alpha/2}^2(2n)}, \dfrac{2n\overline X}{\chi_{1-\alpha/2}^2(2n)} \right]$。
+    - **枢轴量法**
+        - 对于 $\theta$ 的点估计 $\hat\theta$，若 $P(a\le \theta\le b) \ge 1-\alpha$，则 $[a,b]$ 为 $\theta$ 的置信水平为 $1-\alpha$ 的置信区间。
+        - 枢轴量法用于解决区间估计：
+            - 定义[随机变量](/pages/mathematics/probability-theory/random-variable.md)函数 $G(T,\theta)$ 为枢轴量，其中 $T$ 为与 $\theta$ 有关的点估计。对于特定样本可以求出 $T$。
+            - $G(T,\theta)$ 一般服从一些易于求解分位数的分布，根据置信水平 $1-\alpha$ 确定 $G$ 的置信区间。
+            - $T$ 已知情况下，解出 $G$ 置信区间端点对应的 $\theta$，得到 $\theta$ 的置信区间。
+    - **正态分布参数**
+        - **求 $\mu$ 置信区间，$\sigma^2$ 已知**
+            - 已知 $X_1,X_2,\dots,X_n \sim N(\mu, \sigma^2)$。
+            - 枢轴量 $Z = \dfrac{\overline X - \mu}{\sigma/\sqrt{n}} \sim N(0, 1)$。
+            - 置信区间 $\left[\overline X - \dfrac{\sigma}{\sqrt{n}} z_{\alpha/2}, \overline X + \dfrac{\sigma}{\sqrt{n}} z_{\alpha/2} \right]$。
+        - **求 $\mu$ 置信区间，$\sigma^2$ 未知**
+            - 枢轴量 $T = \dfrac{\overline X - \mu}{S/\sqrt{n}} \sim t(n - 1)$。
+            - 置信区间 $\left[\overline X - \dfrac{S}{\sqrt{n}} t_{\alpha/2}(n - 1), \overline X + \dfrac{S}{\sqrt{n}} t_{\alpha/2}(n - 1) \right]$。
+        - **求 $\sigma^2$ 置信区间，$\mu$ 已知**
+            - 枢轴量 $G = \dfrac{n\hat{\sigma}^2}{\sigma^2} = \displaystyle\sum_{i=1}^n \left(\dfrac{X_i - \mu}{\sigma}\right)^2 \sim \chi^2(n)$。
+            - 置信区间 $\left[\dfrac{\sum_{i=1}^n (X_i - \mu)^2}{\chi_{\alpha/2}^2(n)}, \dfrac{\sum_{i=1}^n (X_i - \mu)^2}{\chi_{1 - \alpha/2}^2(n)}\right]$。
+        - **求 $\sigma^2$ 置信区间，$\mu$ 未知**
+            - 枢轴量 $\chi^2 = \dfrac{(n - 1)S^2}{\sigma^2}$。
+            - 置信区间 $\left[\dfrac{\sum_{i=1}^n (X_i - \overline X)^2}{\chi_{\alpha/2}^2(n-1)}, \dfrac{\sum_{i=1}^n (X_i - \overline X)^2}{\chi_{1 - \alpha/2}^2(n-1)}\right]$。
+    - **双正态分布组合**
+        - **求 $\mu_1-\mu_2$ 置信区间，$\sigma_1^2,\sigma_2^2$ 已知**
+            - 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
+            - 枢轴量 $Z = \dfrac{(\overline X - \overline Y) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{\sigma_1^2}{m} + \dfrac{\sigma_2^2}{n}}} \sim N(0, 1)$。
+            - 置信区间 $\left[\overline X - \overline Y \pm z_{\alpha/2}\sqrt{\dfrac{\sigma_1^2}{m} + \dfrac{\sigma_2^2}{n}}\right]$。
+        - **求 $\mu_1-\mu_2$ 置信区间，$\sigma_1^2=\sigma_2^2=\sigma^2$ 未知
+            - 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma^2)$。
+            - 枢轴量 $T = \dfrac{(\overline X - \overline Y) - (\mu_1 - \mu_2)}{S_\omega\sqrt{\dfrac{1}{m} + \dfrac{1}{n}}} \sim t(m+n-2)$。
+            - 置信区间 $\left[\overline X - \overline Y \pm t_{\alpha/2}(m+n-2)S_\omega\sqrt{\dfrac{1}{m} + \dfrac{1}{n}}\right]$。
+        - **求 $\mu_1-\mu_2$ 置信区间，$\sigma_1^2,\sigma_2^2$ 未知，$m=n$
+            - 已知 $X_1,X_2,\dots,X_n \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
+            - 令 $Z_i = X_i - Y_i \sim N(\mu_1 - \mu_2, \sigma_1^2 + \sigma_2^2)$。
+            - 枢轴量 $T = \dfrac{\overline Z - (\mu_1 - \mu_2)}{S_3/\sqrt{n}} \sim t(n-1)$。
+            - 置信区间 $\left[\overline X - \overline Y \pm \dfrac{S_3}{\sqrt{n}} t_{\alpha/2}(n - 1)\right]$。
+        - **求 $\sigma_1^2/\sigma_2^2$ 置信区间，$\mu_1,\mu_2$ 已知**
+            - 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
+            - 枢轴量 $F = \dfrac{(m\hat{\sigma}_1^2/\sigma_1^2) / m}{(n\hat{\sigma}_2^2/\sigma_2^2) / n} = \dfrac{\hat{\sigma}_1^2 / \hat{\sigma}_2^2}{\sigma_1^2 / \sigma_2^2} \sim F(m,n)$。
+            - 置信区间 $\left[ \dfrac{\hat{\sigma}_1^2 / \hat{\sigma}_2^2}{F_{\alpha/2}(m,n)} , \dfrac{\hat{\sigma}_1^2 / \hat{\sigma}_2^2}{F_{1 - \alpha/2}(m,n)} \right]$。
+        - **求 $\sigma_1^2/\sigma_2^2$ 置信区间，$\mu_1,\mu_2$ 未知**
+            - 已知 $X_1,X_2,\dots,X_m \sim N(\mu_1, \sigma_1^2)$，$Y_1,Y_2,\dots,Y_n \sim N(\mu_2, \sigma_2^2)$。
+            - 枢轴量 $F = \dfrac{[(m-1)S_1^2/\sigma_1^2] / (m-1)}{[(n-1)S_2^2/\sigma_2^2] / (n-1)} = \dfrac{S_1^2 / S_2^2}{\sigma_1^2 / \sigma_2^2} \sim F(m-1,n-1)$。
+            - 置信区间 $\left[ \dfrac{S_1^2 / S_2^2}{F_{\alpha/2}(m-1,n-1)} , \dfrac{S_1^2 / S_2^2}{F_{1 - \alpha/2}(m-1,n-1)} \right]$。
+    - **非正态分布参数**
+        - **均匀分布 $U(0,\theta)$**
+            - 枢轴量 $G = \dfrac{X_{(n)}}{\theta}$。
+            - 置信区间 $\left[ X_{(n)},\dfrac{X_{(n)}}{\sqrt[n]{\alpha}} \right]$。
+        - **指数分布 $E(\lambda)$**
+            - 枢轴量 $G = 2n\lambda \overline X \sim \chi^2(2n)$。
+            - 置信区间 $\left[ \dfrac{2n\overline X}{\chi_{\alpha/2}^2(2n)}, \dfrac{2n\overline X}{\chi_{1-\alpha/2}^2(2n)} \right]$。

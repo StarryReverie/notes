@@ -5,140 +5,140 @@ tags:
   - set-theory
 ---
 - **定义**
-	- 如果一个[集合](/pages/mathematics/discrete-mathematics/set.md)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
-	- $\langle x,y \rangle \in R$ 记作 $xRy$，$\langle x, y \rangle \notin R$ 记作 $x \not R y$。
-	- $A \times B$ 的任何子集定义的二元关系称为 $A$ 到 $B$ 的二元关系，$A=B$ 时称为 $A$ 上的二元关系。
+    - 如果一个[集合](/pages/mathematics/discrete-mathematics/set.md)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
+    - $\langle x,y \rangle \in R$ 记作 $xRy$，$\langle x, y \rangle \notin R$ 记作 $x \not R y$。
+    - $A \times B$ 的任何子集定义的二元关系称为 $A$ 到 $B$ 的二元关系，$A=B$ 时称为 $A$ 上的二元关系。
 - **表示**
-	- **集合表达式**
-	- **关系矩阵**
-	- **关系图**
+    - **集合表达式**
+    - **关系矩阵**
+    - **关系图**
 - **运算**
-	- **域**
-		- 定义域：$\operatorname{dom} R = \{x \mid \exists y (\langle x,y \rangle \in R)\}$
-		- 值域：$\operatorname{ran} R = \{y \mid \exists x (\langle x,y \rangle \in R)\}$
-		- 域： $\operatorname{fld} R = \operatorname{dom} R \cup \operatorname{ran} R$
-	- **逆**
-		- $R^{-1} = \{\langle y, x \rangle \mid \langle x, y \rangle \in R\}$
-	- **复合**
-		- 定义 $R$ 复合 $S$：$R \circ S = \{ \langle x, z \rangle \mid \exists y (\langle x, y \rangle \in R \land \langle y, z \rangle \in S)\}$
-		- $(F \circ G) \circ H = F \circ (G \circ H)$
-		- $(F \circ G)^{-1} = G^{-1} \circ F^{-1}$
-		- $R \circ I_A = I_A \circ R = R$
-		- $F \circ (G \cup H) = (F \circ G) \cup (F \circ H), (G \cup H) \circ F = (G \circ F) \cup (H \circ F)$
-		- $F \circ (G \cap H) \subseteq (F \circ G) \cap (F \circ H), (G \cap H) \circ F \subseteq (G \circ F) \cap (H \circ F)$
-	- **限制**
-		- $R$ 在 $A$ 上的限制：$R \upharpoonright A = \{\langle x, y\rangle \mid xRy \land x \in A\}$。
-		- $R \upharpoonright A \subseteq R$
-		- $R \upharpoonright (A \cup B) = (R \upharpoonright A) \cup (R \upharpoonright B)$
-		- $R \upharpoonright (A \cap B) = (R \upharpoonright A) \cap (R \upharpoonright B)$
-	- **像**
-		- $A$ 在 $R$ 下的像：$R[A] = \operatorname{ran}(R \upharpoonright A)$
-		- $R[A \cup B] = R[A] \cup R[B]$
-		- $R[A \cap B] \subseteq R[A] \cap R[B]$
-	- **幂**
-		- $R$ 是 $A$ 上的关系，$n \in \mathrm {N^*}$。$R^0 = I_A,R^{n+1} = R^n \circ R$。
-		- $R$ 是有限集合时，存在 $s,t\ (s < t)$，使得 $R^s = R^t$。
-	- **闭包**
+    - **域**
+        - 定义域：$\operatorname{dom} R = \{x \mid \exists y (\langle x,y \rangle \in R)\}$
+        - 值域：$\operatorname{ran} R = \{y \mid \exists x (\langle x,y \rangle \in R)\}$
+        - 域： $\operatorname{fld} R = \operatorname{dom} R \cup \operatorname{ran} R$
+    - **逆**
+        - $R^{-1} = \{\langle y, x \rangle \mid \langle x, y \rangle \in R\}$
+    - **复合**
+        - 定义 $R$ 复合 $S$：$R \circ S = \{ \langle x, z \rangle \mid \exists y (\langle x, y \rangle \in R \land \langle y, z \rangle \in S)\}$
+        - $(F \circ G) \circ H = F \circ (G \circ H)$
+        - $(F \circ G)^{-1} = G^{-1} \circ F^{-1}$
+        - $R \circ I_A = I_A \circ R = R$
+        - $F \circ (G \cup H) = (F \circ G) \cup (F \circ H), (G \cup H) \circ F = (G \circ F) \cup (H \circ F)$
+        - $F \circ (G \cap H) \subseteq (F \circ G) \cap (F \circ H), (G \cap H) \circ F \subseteq (G \circ F) \cap (H \circ F)$
+    - **限制**
+        - $R$ 在 $A$ 上的限制：$R \upharpoonright A = \{\langle x, y\rangle \mid xRy \land x \in A\}$。
+        - $R \upharpoonright A \subseteq R$
+        - $R \upharpoonright (A \cup B) = (R \upharpoonright A) \cup (R \upharpoonright B)$
+        - $R \upharpoonright (A \cap B) = (R \upharpoonright A) \cap (R \upharpoonright B)$
+    - **像**
+        - $A$ 在 $R$ 下的像：$R[A] = \operatorname{ran}(R \upharpoonright A)$
+        - $R[A \cup B] = R[A] \cup R[B]$
+        - $R[A \cap B] \subseteq R[A] \cap R[B]$
+    - **幂**
+        - $R$ 是 $A$ 上的关系，$n \in \mathrm {N^*}$。$R^0 = I_A,R^{n+1} = R^n \circ R$。
+        - $R$ 是有限集合时，存在 $s,t\ (s < t)$，使得 $R^s = R^t$。
+    - **闭包**
 - **性质**
-	- **自反**
-		- $\forall x(x \in A \to \langle x, x \rangle \in R)$
-		- 自反的关系矩阵：主对角线全为 $1$。
-		- 自反的关系图：所有结点有自环。
-	- **反自反**
-		- $\forall x(x \in A \to \langle x, x \rangle \notin R)$
-		- 自反和反自反不是对立的。
-		- 反自反的关系矩阵：主对角线全为 $0$。
-		- 反自反的关系图：所有结点没有自环。
-	- **对称**
-		- $\forall x \forall y (x,y \in A \land \langle x, y\rangle \in R \to \langle y, x \rangle \in R)$
-		- 对称的关系矩阵：对称矩阵。
-		- 对称的关系图：任意有边的两个结点之间一定有方向相反的两条边。
-	- **反对称**
-		- $\forall x \forall y (x,y \in A \land \langle x, y\rangle \in R \land \langle y, x \rangle \in R \to x = y)$
-		- 对称和反对称不是对立的。
-		- 反对称的关系矩阵：对角线外元素如果为 $1$，那么对称位置一定为 $0$。
-		- 反对称的关系图：任意有边的两个结点之间一定只有一条边。
-	- **传递**
-		- $\forall x\forall y\forall z(x,y,z \in A \land \langle x, y \rangle \in R \land \langle y, z\rangle \in R \to \langle x, z \rangle \in R)$
-		- 传递的关系矩阵：$M$ 为关系矩阵， $M^2$ 中为 $1$ 的位置在 $M$ 中也为 $1$。
-		- 传递的关系图：任意两个结点，如果有长度大于 $1$ 的路径，则一定有长度为 $1$ 的路径。
+    - **自反**
+        - $\forall x(x \in A \to \langle x, x \rangle \in R)$
+        - 自反的关系矩阵：主对角线全为 $1$。
+        - 自反的关系图：所有结点有自环。
+    - **反自反**
+        - $\forall x(x \in A \to \langle x, x \rangle \notin R)$
+        - 自反和反自反不是对立的。
+        - 反自反的关系矩阵：主对角线全为 $0$。
+        - 反自反的关系图：所有结点没有自环。
+    - **对称**
+        - $\forall x \forall y (x,y \in A \land \langle x, y\rangle \in R \to \langle y, x \rangle \in R)$
+        - 对称的关系矩阵：对称矩阵。
+        - 对称的关系图：任意有边的两个结点之间一定有方向相反的两条边。
+    - **反对称**
+        - $\forall x \forall y (x,y \in A \land \langle x, y\rangle \in R \land \langle y, x \rangle \in R \to x = y)$
+        - 对称和反对称不是对立的。
+        - 反对称的关系矩阵：对角线外元素如果为 $1$，那么对称位置一定为 $0$。
+        - 反对称的关系图：任意有边的两个结点之间一定只有一条边。
+    - **传递**
+        - $\forall x\forall y\forall z(x,y,z \in A \land \langle x, y \rangle \in R \land \langle y, z\rangle \in R \to \langle x, z \rangle \in R)$
+        - 传递的关系矩阵：$M$ 为关系矩阵， $M^2$ 中为 $1$ 的位置在 $M$ 中也为 $1$。
+        - 传递的关系图：任意两个结点，如果有长度大于 $1$ 的路径，则一定有长度为 $1$ 的路径。
 - **闭包**
-	- **定义**
-		- 对于某个关系，扩充这个关系使其满足某关系，新关系是原关系的闭包。
-		- $R$ 的自反 / 对称 / 传递闭包 $R'$ 满足：
-			- $R \subseteq R'$
-			- $R'$ 是自反 / 对称 / 传递关系
-			- 任意包含 $R$ 的自反 / 对称 / 传递关系 $R''$ 满足 $R' \subseteq R''$
-				- 这说明 $R'$ 添加最少的元素到 $R$ 中，在满足关系的条件下不添加元素。
-		- 自反 / 对称 / 传递闭包分布记作 $r(R),s(R),t(R)$
-	- **计算**
-		- $r(R) = R \cup R^0$
-		- $s(R) = R \cup R^{-1}$
-		- $t(R) = R \cup R^2 \cup R^3 \cup \cdots$
-	- **性质**
-		- $R$ 是自反 / 对称 / 传递的 $\iff$ $R$ 为对应的闭包。
-		- $R_1 \subseteq R_2$ 则 $r(R_1) \subseteq r(R_2),s(R_1) \subseteq s(R_2),t(R_1) \subseteq t(R_2)$
-		- 若 $R$ 自反，则 $s(R),t(R)$ 自反。
-		- 若 $R$ 对称，则 $r(R),t(R)$ 对称。
-		- 若 $R$ 传递，则 $r(R)$ 传递。
+    - **定义**
+        - 对于某个关系，扩充这个关系使其满足某关系，新关系是原关系的闭包。
+        - $R$ 的自反 / 对称 / 传递闭包 $R'$ 满足：
+            - $R \subseteq R'$
+            - $R'$ 是自反 / 对称 / 传递关系
+            - 任意包含 $R$ 的自反 / 对称 / 传递关系 $R''$ 满足 $R' \subseteq R''$
+                - 这说明 $R'$ 添加最少的元素到 $R$ 中，在满足关系的条件下不添加元素。
+        - 自反 / 对称 / 传递闭包分布记作 $r(R),s(R),t(R)$
+    - **计算**
+        - $r(R) = R \cup R^0$
+        - $s(R) = R \cup R^{-1}$
+        - $t(R) = R \cup R^2 \cup R^3 \cup \cdots$
+    - **性质**
+        - $R$ 是自反 / 对称 / 传递的 $\iff$ $R$ 为对应的闭包。
+        - $R_1 \subseteq R_2$ 则 $r(R_1) \subseteq r(R_2),s(R_1) \subseteq s(R_2),t(R_1) \subseteq t(R_2)$
+        - 若 $R$ 自反，则 $s(R),t(R)$ 自反。
+        - 若 $R$ 对称，则 $r(R),t(R)$ 对称。
+        - 若 $R$ 传递，则 $r(R)$ 传递。
 - **等价关系** <span id="zwakul"></span>
-	- **定义**
-		- 如果关系自反、对称、传递，则为等价关系。
-	- **等价类**
-		- $R$ 是 $A$ 上等价关系，$x \in A$，定义 $[x]_R = \{y \mid y \in A \land xRy \}$ 为 $x$ 关于 $R$ 的等价类。
-		- 定义 $x \prec y$ 为 $x \preceq y \land x \neq y$。
-		- $\forall x,y\in A$，如果 $xRy$，则 $[x]_R=[y]_R$，否则 $[x]_R \cap [y]_R = \varnothing$。
-		- $\displaystyle\bigcup_{x\in A} [x]_R = A$
-	- **商集**
-		- $R$ 是 $A$ 上等价关系，定义商集 $A/R = \{[x]_R \mid x \in A\}$。
-		- 商集是集合的等价类的集合。
-	- **覆盖、划分**
-		- $A$ 是非空集合，$\pi$ 是 $A$ 的子集族（$\pi \subseteq P(A)$）
-			- 如果 $\varnothing \notin \pi$，$\cup\pi=A$，则 $\pi$ 是 $A$ 的覆盖。
-			- 如果 $\pi$ 是 $A$ 的覆盖，$\forall x\forall y(x,y\in A \land x \neq y \to x \cap y = \varnothing)$，则 $\pi$ 是 $A$ 的划分。
-		- 最大划分是集合本身，最小划分是集合中的每个元素为子集组成。
-		- $R$ 是 $A$ 上等价关系，则 $A/R$ 是 $A$ 的一个划分。
+    - **定义**
+        - 如果关系自反、对称、传递，则为等价关系。
+    - **等价类**
+        - $R$ 是 $A$ 上等价关系，$x \in A$，定义 $[x]_R = \{y \mid y \in A \land xRy \}$ 为 $x$ 关于 $R$ 的等价类。
+        - 定义 $x \prec y$ 为 $x \preceq y \land x \neq y$。
+        - $\forall x,y\in A$，如果 $xRy$，则 $[x]_R=[y]_R$，否则 $[x]_R \cap [y]_R = \varnothing$。
+        - $\displaystyle\bigcup_{x\in A} [x]_R = A$
+    - **商集**
+        - $R$ 是 $A$ 上等价关系，定义商集 $A/R = \{[x]_R \mid x \in A\}$。
+        - 商集是集合的等价类的集合。
+    - **覆盖、划分**
+        - $A$ 是非空集合，$\pi$ 是 $A$ 的子集族（$\pi \subseteq P(A)$）
+            - 如果 $\varnothing \notin \pi$，$\cup\pi=A$，则 $\pi$ 是 $A$ 的覆盖。
+            - 如果 $\pi$ 是 $A$ 的覆盖，$\forall x\forall y(x,y\in A \land x \neq y \to x \cap y = \varnothing)$，则 $\pi$ 是 $A$ 的划分。
+        - 最大划分是集合本身，最小划分是集合中的每个元素为子集组成。
+        - $R$ 是 $A$ 上等价关系，则 $A/R$ 是 $A$ 的一个划分。
 - **偏序关系** <span id="kynj0r"></span>
-	- **定义**
-		- 如果关系自反、反对称、传递，则为偏序关系。记作 $x \preceq y$。
-		- 如果 $x \preceq y \lor y \preceq x$，则 $x,y$ 可比。
-		- 已知 $R$ 为偏序关系，如果 $\forall x,y\in A$，$x,y$ 可比，则 $R$ 为全序关系。
-	- **覆盖、哈斯图**
-		- 如果 $x \prec y$，且不存在 $z$ 使得 $x \prec z \prec y$，则 $y$ 覆盖 $x$。
-		- 哈斯图是简化的偏序关系图。画法：
-			- 如果 $x \prec y$，则 $x$ 在 $y$ 的下方。
-			- 如果 $y$ 覆盖 $x$，则在 $x,y$ 连边。
-		- 哈斯图中，如果 $x,y$ 之间有不折返的路径，则 $x,y$ 可比，如果还有 $x$ 在 $y$ 下层，则 $x \prec y$。
-	- **最值、极值**
-		- 设 $B \subseteq A,y \in B$。
-			- 如果 $\forall x(x \in B \to y \preceq x)$，则 $y$ 是 $B$ 的最小元。
-			- 如果 $\forall x(x \in B \to x \preceq y)$，则 $y$ 是 $B$ 的最大元。
-			- 如果 $\forall x(x \in B \land x \preceq y \to x = y)$，则 $y$ 是 $B$ 的极小元。
-			- 如果 $\forall x(x \in B \land y \preceq x \to x = y)$，则 $y$ 是 $B$ 的极大元。
-		- 最小元和最大元与 $B$ 中所有元素可比，并且具有同样的顺序关系，唯一存在或者不存在。
-		- 极小元和极大元只要求与 $B$ 中可比的元素具有这样的关系，一定存在。
-	- **上下界**
-		- 设 $B \subseteq A,y \in A$。
-			- 如果 $\forall x(x \in B \to y \preceq x)$，则 $y$ 是 $B$ 的下界，其中最大的 $y$ 是下确界。
-			- 如果 $\forall x(x \in B \to x \preceq y)$，则 $y$ 是 $B$ 的上界，其中最小的 $y$ 是上确界。
-		- $B$ 的最小元就是 $B$ 的下确界，最大元就是 $B$ 的上确界。
-		- 上下界都可能不存在。
+    - **定义**
+        - 如果关系自反、反对称、传递，则为偏序关系。记作 $x \preceq y$。
+        - 如果 $x \preceq y \lor y \preceq x$，则 $x,y$ 可比。
+        - 已知 $R$ 为偏序关系，如果 $\forall x,y\in A$，$x,y$ 可比，则 $R$ 为全序关系。
+    - **覆盖、哈斯图**
+        - 如果 $x \prec y$，且不存在 $z$ 使得 $x \prec z \prec y$，则 $y$ 覆盖 $x$。
+        - 哈斯图是简化的偏序关系图。画法：
+            - 如果 $x \prec y$，则 $x$ 在 $y$ 的下方。
+            - 如果 $y$ 覆盖 $x$，则在 $x,y$ 连边。
+        - 哈斯图中，如果 $x,y$ 之间有不折返的路径，则 $x,y$ 可比，如果还有 $x$ 在 $y$ 下层，则 $x \prec y$。
+    - **最值、极值**
+        - 设 $B \subseteq A,y \in B$。
+            - 如果 $\forall x(x \in B \to y \preceq x)$，则 $y$ 是 $B$ 的最小元。
+            - 如果 $\forall x(x \in B \to x \preceq y)$，则 $y$ 是 $B$ 的最大元。
+            - 如果 $\forall x(x \in B \land x \preceq y \to x = y)$，则 $y$ 是 $B$ 的极小元。
+            - 如果 $\forall x(x \in B \land y \preceq x \to x = y)$，则 $y$ 是 $B$ 的极大元。
+        - 最小元和最大元与 $B$ 中所有元素可比，并且具有同样的顺序关系，唯一存在或者不存在。
+        - 极小元和极大元只要求与 $B$ 中可比的元素具有这样的关系，一定存在。
+    - **上下界**
+        - 设 $B \subseteq A,y \in A$。
+            - 如果 $\forall x(x \in B \to y \preceq x)$，则 $y$ 是 $B$ 的下界，其中最大的 $y$ 是下确界。
+            - 如果 $\forall x(x \in B \to x \preceq y)$，则 $y$ 是 $B$ 的上界，其中最小的 $y$ 是上确界。
+        - $B$ 的最小元就是 $B$ 的下确界，最大元就是 $B$ 的上确界。
+        - 上下界都可能不存在。
 -  **映射**
-	- **定义**
-		- 设 $F$ 为[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md)，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[函数](/pages/mathematics/calculus/function.md)。
-		- 如果 $\operatorname{dom}f=A,\operatorname{ran}f \subseteq B$，则 $f$ 为从 $A$ 到 $B$ 的映射，记作 $f:A \to B$。
-		- 从 $A$ 到 $B$ 的所有映射的集合记作 $B^A = \{f \mid f: A \to B\}$。
-		- $f(A_1) = \{f(x) \mid x \in A_1 \}$ 为 $A_1$ 在 $f$ 的像，$f^{-1}(B_1) = \{ x \mid x \in A \land f(x) \in B_1\}$ 为 $B_1$ 在 $f$ 下的完全原像。
-	- **性质**
-		- 若 $\operatorname{ran} f= B$ 则 $f$ 为满射。
-		- 若 $\forall y \in \operatorname{ran} f$ 有唯一 $x \in A \land f(x) = y$，则 $f$ 为单射。
-		- 若 $f$ 是满射和单射，则 $f$ 是双射。
-	- **复合**
-		- 已知 $f: A\to B,g:B\to C$，则 $f \circ g: A \to C$ 即关系的复合。
-		- $f\circ g(x) = g(f(x))$。
-		- 如果 $f,g$ 都是满射 / 单射 / 双射，则 $f\circ g$ 也是满射 / 单射 / 双射。反之不一定成立。
-		- $f\circ I_A = I_A \circ f = f$。
-	- **逆**
-		- 已知 $f: A\to B$，则 $f^{-1}$ 是其作为二元关系的逆。映射的逆不一定是映射。
-		- 如果 $f$ 是单射，则 $f^{-1}$ 是映射，且为 $\operatorname{ran}f \to \operatorname{dom}f$ 的满射。
-		- 如果 $f$ 是满射等价于 $f^{-1}$ 是满射。
+    - **定义**
+        - 设 $F$ 为[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md)，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[函数](/pages/mathematics/calculus/function.md)。
+        - 如果 $\operatorname{dom}f=A,\operatorname{ran}f \subseteq B$，则 $f$ 为从 $A$ 到 $B$ 的映射，记作 $f:A \to B$。
+        - 从 $A$ 到 $B$ 的所有映射的集合记作 $B^A = \{f \mid f: A \to B\}$。
+        - $f(A_1) = \{f(x) \mid x \in A_1 \}$ 为 $A_1$ 在 $f$ 的像，$f^{-1}(B_1) = \{ x \mid x \in A \land f(x) \in B_1\}$ 为 $B_1$ 在 $f$ 下的完全原像。
+    - **性质**
+        - 若 $\operatorname{ran} f= B$ 则 $f$ 为满射。
+        - 若 $\forall y \in \operatorname{ran} f$ 有唯一 $x \in A \land f(x) = y$，则 $f$ 为单射。
+        - 若 $f$ 是满射和单射，则 $f$ 是双射。
+    - **复合**
+        - 已知 $f: A\to B,g:B\to C$，则 $f \circ g: A \to C$ 即关系的复合。
+        - $f\circ g(x) = g(f(x))$。
+        - 如果 $f,g$ 都是满射 / 单射 / 双射，则 $f\circ g$ 也是满射 / 单射 / 双射。反之不一定成立。
+        - $f\circ I_A = I_A \circ f = f$。
+    - **逆**
+        - 已知 $f: A\to B$，则 $f^{-1}$ 是其作为二元关系的逆。映射的逆不一定是映射。
+        - 如果 $f$ 是单射，则 $f^{-1}$ 是映射，且为 $\operatorname{ran}f \to \operatorname{dom}f$ 的满射。
+        - 如果 $f$ 是满射等价于 $f^{-1}$ 是满射。

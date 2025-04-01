@@ -8,38 +8,38 @@ tags:
   - determinant
 ---
 - **特征值**
-	- **定义**
-		- 设 $A$ 是 $n$ 阶[方阵](/pages/mathematics/linear-algrbra/matrix.md#xtm5r3)。如果存在常数 $\lambda$ 和非零向量 $\boldsymbol x$ 使得 $A\boldsymbol x=\lambda\boldsymbol x$，则 $\lambda$ 是 $A$ 的一个特征值，$\boldsymbol x$ 是 $A$ 的一个属于特征值 $\lambda$ 的特征向量。
-		- $n$ 阶方阵有 $n$ 个特征值（可能相同），每个特征值的特征向量都有无穷多个。
-	- **求解**
-		- $A\boldsymbol x=\lambda\boldsymbol x\iff (\lambda I-A)\boldsymbol x=\boldsymbol 0$
-		- 若以上方程有非零解，则需要 $N(\lambda I-A)\ne \{\boldsymbol 0\}$，则 $|\lambda I-A|=0$，此方程的根就是 $A$ 的特征值。
-		- 对于每个特征值 $\lambda$，$N(\lambda I-A)\setminus\{\boldsymbol 0\}$ 就是$A$ 的属于特征值 $\lambda$ 的特征向量集合。
-		- $|\lambda I-A|$ 称为 $A$ 的特征多项式，$|\lambda I-A|=0$ 称为 $A$ 的特征方程。
-	- **性质**
-		- 零矩阵的特征值全为 $0$。
-		- 单位矩阵的特征值全为 $1$。
-		- 矩阵的属于不同特征值的特征向量线性无关。
-		- $\lambda$ 是方阵 $A$ 的特征值，$\boldsymbol x$ 是$A$ 的一个属于特征值 $\lambda$ 的特征向量：
-			- $\forall k$，$k\lambda$ 是 $kA$ 的特征值，$\boldsymbol x$ 是其特征向量；
-			- $\forall m\in \mathrm N^*$，$\lambda^m$ 是 $A^m$ 的特征值，$\boldsymbol x$ 是其特征向量；
-			- $p(x)$ 是一个多项式，则 $p(\lambda)$ 是 $p(A)$ 的特征值，$\boldsymbol x$ 是其特征向量；
-			- 若 $A$ 可逆，则 $\frac{1}{\lambda}$ 是 $A^m$ 的特征值，$\boldsymbol x$ 是其特征向量；
-			- 若 $A$ 可逆，则 $\frac{|A|}{\lambda}$ 是 $A^*$ 的特征值，$\boldsymbol x$ 是其特征向量；
-			- 总体上，对于 $A$ 的任意形式，其特征值就是把该形式中的 $A$ 替换成 $\lambda$（$|A|$ 不替换），$\boldsymbol x$ 仍是其特征向量。
-		- $\lambda_1,\lambda_2,\dots,\lambda_n$ 是 $n$ 阶方阵 $A$ 的特征值：
-			- $tr(A)=\lambda_1+\lambda_2+\cdots+\lambda_n=a_{11}+a_{22}+\cdots+a_{nn}$;
-			- $|A|=\lambda_1\lambda_2\cdots\lambda_n$。
-				- 如果要求一个包含 $A$ 的多项式的[行列式](/pages/mathematics/linear-algrbra/determinant.md)（包括 $A^{-1}$ 与 $A^*$），则可以求出 $A$ 的全部特征值，再计算得出多项式的全部特征值，最后相乘。
-				- 如 $3$ 阶方阵 $A$ 的特征值为 $\lambda_1=1,\lambda_2=-2,\lambda_3=2$，求 $|A^3-2A^2+6I|$。
-					- 设 $p(x)=x^3-2x^2+6$，则 $p(\lambda_1)=5,p(\lambda_2)=-10,p(\lambda_3)=6$ 为 $p(A)=A^3-2A^2+6I$ 的特征值。
-					- $|A^3-2A^2+6I|=|p(A)|=p(\lambda_1)p(\lambda_2)p(\lambda_3)=-300$。
-		- $A$ 与 $A^{\mathrm T}$ 有相同的特征值。
-		- 三角[矩阵](/pages/mathematics/linear-algrbra/matrix.md)的对角元是其全部的特征值。
+    - **定义**
+        - 设 $A$ 是 $n$ 阶[方阵](/pages/mathematics/linear-algrbra/matrix.md#xtm5r3)。如果存在常数 $\lambda$ 和非零向量 $\boldsymbol x$ 使得 $A\boldsymbol x=\lambda\boldsymbol x$，则 $\lambda$ 是 $A$ 的一个特征值，$\boldsymbol x$ 是 $A$ 的一个属于特征值 $\lambda$ 的特征向量。
+        - $n$ 阶方阵有 $n$ 个特征值（可能相同），每个特征值的特征向量都有无穷多个。
+    - **求解**
+        - $A\boldsymbol x=\lambda\boldsymbol x\iff (\lambda I-A)\boldsymbol x=\boldsymbol 0$
+        - 若以上方程有非零解，则需要 $N(\lambda I-A)\ne \{\boldsymbol 0\}$，则 $|\lambda I-A|=0$，此方程的根就是 $A$ 的特征值。
+        - 对于每个特征值 $\lambda$，$N(\lambda I-A)\setminus\{\boldsymbol 0\}$ 就是$A$ 的属于特征值 $\lambda$ 的特征向量集合。
+        - $|\lambda I-A|$ 称为 $A$ 的特征多项式，$|\lambda I-A|=0$ 称为 $A$ 的特征方程。
+    - **性质**
+        - 零矩阵的特征值全为 $0$。
+        - 单位矩阵的特征值全为 $1$。
+        - 矩阵的属于不同特征值的特征向量线性无关。
+        - $\lambda$ 是方阵 $A$ 的特征值，$\boldsymbol x$ 是$A$ 的一个属于特征值 $\lambda$ 的特征向量：
+            - $\forall k$，$k\lambda$ 是 $kA$ 的特征值，$\boldsymbol x$ 是其特征向量；
+            - $\forall m\in \mathrm N^*$，$\lambda^m$ 是 $A^m$ 的特征值，$\boldsymbol x$ 是其特征向量；
+            - $p(x)$ 是一个多项式，则 $p(\lambda)$ 是 $p(A)$ 的特征值，$\boldsymbol x$ 是其特征向量；
+            - 若 $A$ 可逆，则 $\frac{1}{\lambda}$ 是 $A^m$ 的特征值，$\boldsymbol x$ 是其特征向量；
+            - 若 $A$ 可逆，则 $\frac{|A|}{\lambda}$ 是 $A^*$ 的特征值，$\boldsymbol x$ 是其特征向量；
+            - 总体上，对于 $A$ 的任意形式，其特征值就是把该形式中的 $A$ 替换成 $\lambda$（$|A|$ 不替换），$\boldsymbol x$ 仍是其特征向量。
+        - $\lambda_1,\lambda_2,\dots,\lambda_n$ 是 $n$ 阶方阵 $A$ 的特征值：
+            - $tr(A)=\lambda_1+\lambda_2+\cdots+\lambda_n=a_{11}+a_{22}+\cdots+a_{nn}$;
+            - $|A|=\lambda_1\lambda_2\cdots\lambda_n$。
+                - 如果要求一个包含 $A$ 的多项式的[行列式](/pages/mathematics/linear-algrbra/determinant.md)（包括 $A^{-1}$ 与 $A^*$），则可以求出 $A$ 的全部特征值，再计算得出多项式的全部特征值，最后相乘。
+                - 如 $3$ 阶方阵 $A$ 的特征值为 $\lambda_1=1,\lambda_2=-2,\lambda_3=2$，求 $|A^3-2A^2+6I|$。
+                    - 设 $p(x)=x^3-2x^2+6$，则 $p(\lambda_1)=5,p(\lambda_2)=-10,p(\lambda_3)=6$ 为 $p(A)=A^3-2A^2+6I$ 的特征值。
+                    - $|A^3-2A^2+6I|=|p(A)|=p(\lambda_1)p(\lambda_2)p(\lambda_3)=-300$。
+        - $A$ 与 $A^{\mathrm T}$ 有相同的特征值。
+        - 三角[矩阵](/pages/mathematics/linear-algrbra/matrix.md)的对角元是其全部的特征值。
 - **谱半径**
-	- **定义**
-		- 已知 $n$ 阶方阵，定义谱半径为 $\rho(A) = \max\limits_{\lambda \boldsymbol x=A \boldsymbol x} \{\lambda \}$。
-	- **性质**
-		- [2-范数](/pages/mathematics/linear-algrbra/norm.md#xuxoty)：$||A||_2 = \displaystyle\sqrt{\lambda_{\max}(A^{\mathrm T}A)} = \sqrt{\rho(A^{\mathrm T}A)}$
-			- 如果 $A$ 对称，$||A||_2 = \rho(A)$。
-		- 设矩阵序列 $I,A,A^2,A^3,\dots,A^n,\dots$，$\lim\limits_{n \to +\infty} A^n = 0 \iff \rho(A) < 1$
+    - **定义**
+        - 已知 $n$ 阶方阵，定义谱半径为 $\rho(A) = \max\limits_{\lambda \boldsymbol x=A \boldsymbol x} \{\lambda \}$。
+    - **性质**
+        - [2-范数](/pages/mathematics/linear-algrbra/norm.md#xuxoty)：$||A||_2 = \displaystyle\sqrt{\lambda_{\max}(A^{\mathrm T}A)} = \sqrt{\rho(A^{\mathrm T}A)}$
+            - 如果 $A$ 对称，$||A||_2 = \rho(A)$。
+        - 设矩阵序列 $I,A,A^2,A^3,\dots,A^n,\dots$，$\lim\limits_{n \to +\infty} A^n = 0 \iff \rho(A) < 1$

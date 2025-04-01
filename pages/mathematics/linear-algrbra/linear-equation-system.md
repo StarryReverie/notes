@@ -5,53 +5,53 @@ tags:
   - equation
 ---
 - **核心问题**
-	- 解的判别：存在性与唯一性
-	- 求解：解集合
-	- 解的结构：解之间的关系
+    - 解的判别：存在性与唯一性
+    - 求解：解集合
+    - 解的结构：解之间的关系
 - **初等变换**
-	- **定义**
-		- 互换方程组中的第 $i$ 个方程和第 $j$ 个方程。
-		- 将方程组中的第 $i$ 个方程乘上一个非零常数 $h$。
-		- 将方程组中的第 $i$ 个方程的 $k$ 倍加到第 $j$ 个方程。
-	- **性质**
-		- 线性方程组的初等变换将一个方程组变换为另一个同解的方程组。
-		- 线性方程组的初等变换可以与[矩阵的初等行变换](/pages/mathematics/linear-algrbra/matrix.md#kso3bg)对应。
+    - **定义**
+        - 互换方程组中的第 $i$ 个方程和第 $j$ 个方程。
+        - 将方程组中的第 $i$ 个方程乘上一个非零常数 $h$。
+        - 将方程组中的第 $i$ 个方程的 $k$ 倍加到第 $j$ 个方程。
+    - **性质**
+        - 线性方程组的初等变换将一个方程组变换为另一个同解的方程组。
+        - 线性方程组的初等变换可以与[矩阵的初等行变换](/pages/mathematics/linear-algrbra/matrix.md#kso3bg)对应。
 - **高斯消元**
-	- **约定**
-		- 用上面的方程中的未知数消去下面方程中的未知数。
-		- 一个方程中从左到右依次消去未知数。
-	- **目的**
-		- 原方程组化为阶梯形方程组。
-	- **过程**
-		- 线性方程组 $\rightarrow$ 增广矩阵 $\rightarrow$ [阶梯形矩阵](/pages/mathematics/linear-algrbra/matrix.md#tsmjx5) $\rightarrow$ 阶梯形方程组 $\rightarrow$ 回代求解
-	- **解的判定**
-		- 方程组化为阶梯形方程组后，分为以下几种情况：
-			- 无解：有矛盾方程
-			- 有解：无矛盾方程
-				- 唯一解：方程个数等于未知数个数
-				- 无穷多解：方程个数小于未知数个数
-		- 阶梯形方程组不包含 $0=0$ 方程。
-		- 设系数矩阵为 $A_{m\times n}$，增广矩阵为 $\begin{bmatrix}A & \boldsymbol b\end{bmatrix}$，使用秩进行判定：
-			- 无解：$r(A)<r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)$
-			- 有解：$r(A)=r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)$
-				- 唯一解：$r(A)=r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)=n$
-				- 无穷多解：$r(A)=r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)<n$
-		- 对于齐次线性方程组，至少有一个零解，可能有非零解。
-		- 若齐次线性方程组有非零解，即 $r(A)<n$，则其有无穷多个解。
-		- 讨论带参数的阶梯形矩阵的解的情况时，**要看所有的参数，不能只看最后一行。**
-	- **解的结构**
-		- 设系数矩阵为 $A_{m\times n}$，则
-			- 主元未知数的个数等于 $r(A)$；
-			- 自由未知数个数等于 $n-r(A)$。
+    - **约定**
+        - 用上面的方程中的未知数消去下面方程中的未知数。
+        - 一个方程中从左到右依次消去未知数。
+    - **目的**
+        - 原方程组化为阶梯形方程组。
+    - **过程**
+        - 线性方程组 $\rightarrow$ 增广矩阵 $\rightarrow$ [阶梯形矩阵](/pages/mathematics/linear-algrbra/matrix.md#tsmjx5) $\rightarrow$ 阶梯形方程组 $\rightarrow$ 回代求解
+    - **解的判定**
+        - 方程组化为阶梯形方程组后，分为以下几种情况：
+            - 无解：有矛盾方程
+            - 有解：无矛盾方程
+                - 唯一解：方程个数等于未知数个数
+                - 无穷多解：方程个数小于未知数个数
+        - 阶梯形方程组不包含 $0=0$ 方程。
+        - 设系数矩阵为 $A_{m\times n}$，增广矩阵为 $\begin{bmatrix}A & \boldsymbol b\end{bmatrix}$，使用秩进行判定：
+            - 无解：$r(A)<r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)$
+            - 有解：$r(A)=r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)$
+                - 唯一解：$r(A)=r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)=n$
+                - 无穷多解：$r(A)=r\left(\begin{bmatrix}A & \boldsymbol b\end{bmatrix}\right)<n$
+        - 对于齐次线性方程组，至少有一个零解，可能有非零解。
+        - 若齐次线性方程组有非零解，即 $r(A)<n$，则其有无穷多个解。
+        - 讨论带参数的阶梯形矩阵的解的情况时，**要看所有的参数，不能只看最后一行。**
+    - **解的结构**
+        - 设系数矩阵为 $A_{m\times n}$，则
+            - 主元未知数的个数等于 $r(A)$；
+            - 自由未知数个数等于 $n-r(A)$。
 - **解的向量表示**
-	- **约定**
-		- 规定 $A\boldsymbol x=\boldsymbol b$ 的导出方程组为 $A\boldsymbol x=\boldsymbol 0$。
-		- 规定 $N(A)$ 的一组基为 $A\boldsymbol x=\boldsymbol 0$ 的基础解系。
-	- **解的结构**
-		- 若 $\boldsymbol x_0$ 是 $A\boldsymbol x=\boldsymbol b$ 的一个特解，$\boldsymbol x_1,\boldsymbol x_2,\dots,\boldsymbol x_t$ 是 $N(A)$ 的[基](/pages/mathematics/linear-algrbra/vector-space.md#sohrgj)，则方程组的通解是 $\boldsymbol x=\boldsymbol x_0+c_1\boldsymbol x_1+c_2\boldsymbol x_2+\dots+c_t\boldsymbol x_t$。
-		- $t=n-r(A)$
-		- $\boldsymbol x\in\{x_0\}+\operatorname{span}(\boldsymbol x_1,\boldsymbol x_2,\dots,\boldsymbol x_t)$
-	- **性质**
-		- $A\boldsymbol x=\boldsymbol b$ 的任意两个解 $\boldsymbol x_1,\boldsymbol x_2$ 的差 $\boldsymbol x_1-\boldsymbol x_2$ 是 $A\boldsymbol x=\boldsymbol 0$ 的解。
-		- 设 $\boldsymbol x_1,\boldsymbol x_2,\dots,\boldsymbol x_t$ 是 $A\boldsymbol x=\boldsymbol b$ 的解，则 $k_1\boldsymbol x_1+k_2\boldsymbol x_2+\cdots+k_t\boldsymbol x_t$ 也是 $A\boldsymbol x=\boldsymbol b$ 的解。
-			- 常见例子是 $\boldsymbol x_1,\boldsymbol x_2$ 是 $A\boldsymbol x=\boldsymbol b$ 的解，则 $\frac{\boldsymbol x_1+\boldsymbol x_2}{2}$ 也是 $A\boldsymbol x=\boldsymbol b$ 的解。
+    - **约定**
+        - 规定 $A\boldsymbol x=\boldsymbol b$ 的导出方程组为 $A\boldsymbol x=\boldsymbol 0$。
+        - 规定 $N(A)$ 的一组基为 $A\boldsymbol x=\boldsymbol 0$ 的基础解系。
+    - **解的结构**
+        - 若 $\boldsymbol x_0$ 是 $A\boldsymbol x=\boldsymbol b$ 的一个特解，$\boldsymbol x_1,\boldsymbol x_2,\dots,\boldsymbol x_t$ 是 $N(A)$ 的[基](/pages/mathematics/linear-algrbra/vector-space.md#sohrgj)，则方程组的通解是 $\boldsymbol x=\boldsymbol x_0+c_1\boldsymbol x_1+c_2\boldsymbol x_2+\dots+c_t\boldsymbol x_t$。
+        - $t=n-r(A)$
+        - $\boldsymbol x\in\{x_0\}+\operatorname{span}(\boldsymbol x_1,\boldsymbol x_2,\dots,\boldsymbol x_t)$
+    - **性质**
+        - $A\boldsymbol x=\boldsymbol b$ 的任意两个解 $\boldsymbol x_1,\boldsymbol x_2$ 的差 $\boldsymbol x_1-\boldsymbol x_2$ 是 $A\boldsymbol x=\boldsymbol 0$ 的解。
+        - 设 $\boldsymbol x_1,\boldsymbol x_2,\dots,\boldsymbol x_t$ 是 $A\boldsymbol x=\boldsymbol b$ 的解，则 $k_1\boldsymbol x_1+k_2\boldsymbol x_2+\cdots+k_t\boldsymbol x_t$ 也是 $A\boldsymbol x=\boldsymbol b$ 的解。
+            - 常见例子是 $\boldsymbol x_1,\boldsymbol x_2$ 是 $A\boldsymbol x=\boldsymbol b$ 的解，则 $\frac{\boldsymbol x_1+\boldsymbol x_2}{2}$ 也是 $A\boldsymbol x=\boldsymbol b$ 的解。

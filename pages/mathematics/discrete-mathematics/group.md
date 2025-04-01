@@ -5,120 +5,120 @@ tags:
   - algebra
 ---
 - **群**
-	- **定义**
-		- 已知[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md) $V=<A,\circ>$
-			- 若 $\circ$ 满足结合律，则 $V$ 是半群。
-			- 若 $V$ 中存在单位元，则 $V$ 是幺半群 / 独异点。
-			- 若 $A$ 中每个元素都有逆元在 $A$ 中，则 $V$ 是群。
-		- 在群中，$x\circ y$ 可以省略 $\circ$ 为 $xy$，沿用乘法、乘幂等记号。
-	- **分类**
-		- 若群 $G$ 是有穷集，则 $G$ 是有限群，否则是无限群。
-		- 若群 $G$ 只包含单位元，则 $G$ 是平凡群。
-		- 若群 $G$ 的[二元运算](/pages/mathematics/discrete-mathematics/algebraic-system.md#krwh8o)有交换律，则 $G$ 是交换群 / 阿贝尔群。
-	- **性质**
-		- 群的运算满足消去律。
-	- **乘幂**
-		- 已知 $G,a\in G$，定义 $a^n = \left\{\begin{matrix} a^{n-1} a, & n > 0 \\ e, & n = 0 \\ (a^{-1})^{-n}, & n < 0 \end{matrix}\right.$。
-			- $(a^{-1})^{-1} = a$
-			- $(ab)^{-1} = b^{-1}a^{-1}$
-			- $a^m a^n = a^{m + n}$
-			- $(a^m)^n = a^{mn}$
-			- 若 $G$ 为交换群，则 $(ab)^n = a^n b^n$。
-	- **阶**
-		- 已知 $G,a\in G$，若存在最小的 $k$ 使得 $a^k = e$，则 $k$ 为 $a$ 的阶，记作 $|a|=k$，$a$ 为 $k$ 阶元。不存在则 $a$ 为无限阶元。
-		- 已知 $|a| = r$，$b$ 为有限阶元
-			- $a^k = e \iff r \mid k$
-			- $|a^{-1}| = |a| = r$
-			- $|b^{-1}ab| = |a|$
-			- $|ab| = |ba|$
-		- 若 $G$ 为有限群，则 $G$ 中阶大于 $2$ 的元素有偶数个。
+    - **定义**
+        - 已知[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md) $V=<A,\circ>$
+            - 若 $\circ$ 满足结合律，则 $V$ 是半群。
+            - 若 $V$ 中存在单位元，则 $V$ 是幺半群 / 独异点。
+            - 若 $A$ 中每个元素都有逆元在 $A$ 中，则 $V$ 是群。
+        - 在群中，$x\circ y$ 可以省略 $\circ$ 为 $xy$，沿用乘法、乘幂等记号。
+    - **分类**
+        - 若群 $G$ 是有穷集，则 $G$ 是有限群，否则是无限群。
+        - 若群 $G$ 只包含单位元，则 $G$ 是平凡群。
+        - 若群 $G$ 的[二元运算](/pages/mathematics/discrete-mathematics/algebraic-system.md#krwh8o)有交换律，则 $G$ 是交换群 / 阿贝尔群。
+    - **性质**
+        - 群的运算满足消去律。
+    - **乘幂**
+        - 已知 $G,a\in G$，定义 $a^n = \left\{\begin{matrix} a^{n-1} a, & n > 0 \\ e, & n = 0 \\ (a^{-1})^{-n}, & n < 0 \end{matrix}\right.$。
+            - $(a^{-1})^{-1} = a$
+            - $(ab)^{-1} = b^{-1}a^{-1}$
+            - $a^m a^n = a^{m + n}$
+            - $(a^m)^n = a^{mn}$
+            - 若 $G$ 为交换群，则 $(ab)^n = a^n b^n$。
+    - **阶**
+        - 已知 $G,a\in G$，若存在最小的 $k$ 使得 $a^k = e$，则 $k$ 为 $a$ 的阶，记作 $|a|=k$，$a$ 为 $k$ 阶元。不存在则 $a$ 为无限阶元。
+        - 已知 $|a| = r$，$b$ 为有限阶元
+            - $a^k = e \iff r \mid k$
+            - $|a^{-1}| = |a| = r$
+            - $|b^{-1}ab| = |a|$
+            - $|ab| = |ba|$
+        - 若 $G$ 为有限群，则 $G$ 中阶大于 $2$ 的元素有偶数个。
 - **子群**
-	- **定义**
-		- 设 $G$ 为群，非空集 $H \subseteq G$，如果 $H$ 关于 $G$ 中的运算构成群，则 $H$ 是 $G$ 的子群，记作 $H\le G$。
-		- 如果 $H \ne G$，则 $H$ 是 $G$ 的真子群，记作 $H < G$。
-	- **判定**
-		- 充要条件 1：$\forall a,b \in H$ 有 $ab \in H$，且 $\forall a \in H$ 有 $a^{-1} \in H$。
-		- 充要条件 2：$\forall a,b\in H$ 有 $ab^{-1} \in H$。
-		- 充要条件 3：$H$ 是有穷集时，$\forall a,b\in H$ 有 $ab \in H$。
-	- **重要子群**
-		- **元素生成的子群**
-			- 已知 $G$ 为群，$a\in G$，则定义 $<a> = \{a^k \mid k \in \mathrm Z\}$。
-			- 已知 $B \subseteq G$，则定义 $<B> = \cap \{H \mid B \subseteq H \land H \le G \}$。
-		- **中心**
-			- 已知 $G$ 为群，$C = \{ a \mid a \in G \land \forall x \in G (ax = xa)\}$，即 $C$ 包含 $G$ 中所有与其他元素可交换的元素。
-			- 定义 $C$ 为 $G$ 的中心。
-			- 对于交换群，其中心为本身。
-	- **性质**
-		- 已知 $G,H,K$ 为群，$H \le G,K\le G$，则
-			- $H \cap K \le G$
-			- $H \cup K \le G \iff H \subseteq K \lor K \subseteq H$
+    - **定义**
+        - 设 $G$ 为群，非空集 $H \subseteq G$，如果 $H$ 关于 $G$ 中的运算构成群，则 $H$ 是 $G$ 的子群，记作 $H\le G$。
+        - 如果 $H \ne G$，则 $H$ 是 $G$ 的真子群，记作 $H < G$。
+    - **判定**
+        - 充要条件 1：$\forall a,b \in H$ 有 $ab \in H$，且 $\forall a \in H$ 有 $a^{-1} \in H$。
+        - 充要条件 2：$\forall a,b\in H$ 有 $ab^{-1} \in H$。
+        - 充要条件 3：$H$ 是有穷集时，$\forall a,b\in H$ 有 $ab \in H$。
+    - **重要子群**
+        - **元素生成的子群**
+            - 已知 $G$ 为群，$a\in G$，则定义 $<a> = \{a^k \mid k \in \mathrm Z\}$。
+            - 已知 $B \subseteq G$，则定义 $<B> = \cap \{H \mid B \subseteq H \land H \le G \}$。
+        - **中心**
+            - 已知 $G$ 为群，$C = \{ a \mid a \in G \land \forall x \in G (ax = xa)\}$，即 $C$ 包含 $G$ 中所有与其他元素可交换的元素。
+            - 定义 $C$ 为 $G$ 的中心。
+            - 对于交换群，其中心为本身。
+    - **性质**
+        - 已知 $G,H,K$ 为群，$H \le G,K\le G$，则
+            - $H \cap K \le G$
+            - $H \cup K \le G \iff H \subseteq K \lor K \subseteq H$
 - **陪集**
-	- **定义**
-		- 已知 $G,H$ 为群，$H \le G$，$a \in G$。
-		- 定义右陪集 $Ha = \{ ha \mid h \in H \}$，$a$ 为其代表元素。
-		- 定义左陪集为 $aH = \{ah \mid h \in H \}$。
-	- **性质**
-		- 已知 $H \le G$，则
-			- $He=H$，$eH=H$
-			- $\forall a \in H$，$a \in Ha$，$a \in aH$
-			- $\forall a,b \in G$，$a \in Hb \iff ab^{-1} \in H \iff Ha = Hb$，由此给出相等的充要条件。
-			- $\forall a,b \in G$，$a \in bH \iff b^{-1}a \in H \iff aH = bH$
-			- $H$ 在 $G$ 中的左陪集与右陪集数量相等，都记作 $[G:H]$。
-		- 陪集中的任何元素都可以作为其代表元素。
-		- 已知 $G$ 为群，$a,b\in G$，定义[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md) $R$ 满足 $\langle a,b\rangle \in R \iff ab^{-1} \in H$。则 $[a]_R = Ha$。
-			- $\forall a,b\in G$，$Ha = Hb \lor Ha \cap Hb = \varnothing$
-			- $\displaystyle\bigcup_{a\in G} Ha = G$
-			- $\forall a \in G$，$H \approx Ha$
-			- 左陪集有类似性质。
-	- **拉格朗日定理**
-		- 已知 $G,H$ 为群，$H \le G$，则 $|G| = |H|[G:H]$。
-		- 已知 $G$ 为 $n$ 阶群，$a \in G$，则 $|a|$ 是 $n$ 的因子，$|a|^n = e$。
-		- $n$ 为质数时，存在 $a$ 使得 $<a>=G$。
-		- 逆定理不成立。
+    - **定义**
+        - 已知 $G,H$ 为群，$H \le G$，$a \in G$。
+        - 定义右陪集 $Ha = \{ ha \mid h \in H \}$，$a$ 为其代表元素。
+        - 定义左陪集为 $aH = \{ah \mid h \in H \}$。
+    - **性质**
+        - 已知 $H \le G$，则
+            - $He=H$，$eH=H$
+            - $\forall a \in H$，$a \in Ha$，$a \in aH$
+            - $\forall a,b \in G$，$a \in Hb \iff ab^{-1} \in H \iff Ha = Hb$，由此给出相等的充要条件。
+            - $\forall a,b \in G$，$a \in bH \iff b^{-1}a \in H \iff aH = bH$
+            - $H$ 在 $G$ 中的左陪集与右陪集数量相等，都记作 $[G:H]$。
+        - 陪集中的任何元素都可以作为其代表元素。
+        - 已知 $G$ 为群，$a,b\in G$，定义[二元关系](/pages/mathematics/discrete-mathematics/binary-relationship.md) $R$ 满足 $\langle a,b\rangle \in R \iff ab^{-1} \in H$。则 $[a]_R = Ha$。
+            - $\forall a,b\in G$，$Ha = Hb \lor Ha \cap Hb = \varnothing$
+            - $\displaystyle\bigcup_{a\in G} Ha = G$
+            - $\forall a \in G$，$H \approx Ha$
+            - 左陪集有类似性质。
+    - **拉格朗日定理**
+        - 已知 $G,H$ 为群，$H \le G$，则 $|G| = |H|[G:H]$。
+        - 已知 $G$ 为 $n$ 阶群，$a \in G$，则 $|a|$ 是 $n$ 的因子，$|a|^n = e$。
+        - $n$ 为质数时，存在 $a$ 使得 $<a>=G$。
+        - 逆定理不成立。
 - **循环群**
-	- **定义**
-		- 已知 $G$ 为群，如果存在 $a \in G$ 且 $<a> = G$，则 $G$ 为循环群，$a$ 为生成元。
-		- 循环群分为无限循环群和 $n$ 阶循环群。
-	- **性质**
-		- 生成元的个数：
-			- 如果 $G=<a>$ 为无限循环群，则 $G$ 只有两个生成元 $a,a^{-1}$。
-			- 如果 $G=<a>$ 为 $n$ 阶循环群，则 $G$ 的生成元 $b$ 满足 $|b|$ 与 $n$ 互质，个数为 $\varphi(n)$。
-		- 循环群的子群：
-			- 如果 $G=<a>$ 为循环群，则其子群也为循环群。
-			- 如果 $G=<a>$ 为无限循环群，则除 $\{e\}$ 以外的子群都是无限循环群。
-			- 如果 $G=<a>$ 为 $n$ 阶循环群，对每个 $n$ 的正因子 $d$，$G$ 有恰好一个 $d$ 阶子群。
-		- 求出 $n$ 阶循环群 $<a>$ 的所有子群，只要找到所有 $n$ 的所有因子 $d_i$，则子群为 $<a^{n/d_i}>$。
+    - **定义**
+        - 已知 $G$ 为群，如果存在 $a \in G$ 且 $<a> = G$，则 $G$ 为循环群，$a$ 为生成元。
+        - 循环群分为无限循环群和 $n$ 阶循环群。
+    - **性质**
+        - 生成元的个数：
+            - 如果 $G=<a>$ 为无限循环群，则 $G$ 只有两个生成元 $a,a^{-1}$。
+            - 如果 $G=<a>$ 为 $n$ 阶循环群，则 $G$ 的生成元 $b$ 满足 $|b|$ 与 $n$ 互质，个数为 $\varphi(n)$。
+        - 循环群的子群：
+            - 如果 $G=<a>$ 为循环群，则其子群也为循环群。
+            - 如果 $G=<a>$ 为无限循环群，则除 $\{e\}$ 以外的子群都是无限循环群。
+            - 如果 $G=<a>$ 为 $n$ 阶循环群，对每个 $n$ 的正因子 $d$，$G$ 有恰好一个 $d$ 阶子群。
+        - 求出 $n$ 阶循环群 $<a>$ 的所有子群，只要找到所有 $n$ 的所有因子 $d_i$，则子群为 $<a^{n/d_i}>$。
 - **置换群**
-	- **定义**
-		- 设 $S=\{1,2,3,\dots,n\}$，$S$ 上的双射函数 $\sigma:S\to S$ 都是 $n$ 元置换。
-		- 将 $n$ 元置换记作 $\sigma = \begin{pmatrix} 1 & 2 & 3 & \cdots & n\\ \sigma(1) & \sigma(2) & \sigma(3) & \cdots & \sigma(n)\end{pmatrix}$。
-		- 定义置换 $\sigma,\tau$ 的乘法 $\circ$ 为 $\sigma\tau(x)=\tau(\sigma(x))$。
-		- 所有 $n$ 元置换的的群称为 $n$ 元对称群，其子群都称为 $n$ 元置换群。
-		- 若 $n$ 元置换满足 $S$ 的其中 $k$ 个元素有 $\sigma(i_1)=i_2,\sigma(i_2)=i_3,\dots,\sigma(i_{k-1})=i_k,\sigma(i_k)=i_1$，其他元素不变，则 $\sigma$ 为 $k$ 阶轮换。
-		- $k$ 阶轮换表示为 $(i_1\ i_2\ i_3\ \dots\ i_k)$。
-		- 若 $k=2$ 则轮换称为对换。
-	- **性质**
-		- 置换的轮换表示：
-			- 任意的置换可以表示为若干个不交的轮换的乘积。
-			- 如果不考虑每个轮换的内部顺序和轮换之间的顺序，则置换的轮换的表示是唯一的，即每个轮换的组成元素方案唯一。
-			- 置换的轮换可以任意排列，轮换内可以任意循环移动。
-		- 置换的对换表示：
-			- 任意的置换可以表示为若干个对换的乘积。
-			- 对于轮换 $(i_1\ i_2\ i_3\ \dots\ i_k)$，可以表示为 $(i_1\ i_2)(i_1\ i_3)\cdots(i_1\ i_k)$。
-			- 置换的对换表示不唯一，且同一个轮换拆分的对换顺序不能改变。
-		- 置换的对换表示按照对换个数分为奇置换和偶置换，个数分别为 $\dfrac{n!}{2}$。
-		- 所有 $n$ 元偶置换构成的群称为 $n$ 元交错群。
+    - **定义**
+        - 设 $S=\{1,2,3,\dots,n\}$，$S$ 上的双射函数 $\sigma:S\to S$ 都是 $n$ 元置换。
+        - 将 $n$ 元置换记作 $\sigma = \begin{pmatrix} 1 & 2 & 3 & \cdots & n\\ \sigma(1) & \sigma(2) & \sigma(3) & \cdots & \sigma(n)\end{pmatrix}$。
+        - 定义置换 $\sigma,\tau$ 的乘法 $\circ$ 为 $\sigma\tau(x)=\tau(\sigma(x))$。
+        - 所有 $n$ 元置换的的群称为 $n$ 元对称群，其子群都称为 $n$ 元置换群。
+        - 若 $n$ 元置换满足 $S$ 的其中 $k$ 个元素有 $\sigma(i_1)=i_2,\sigma(i_2)=i_3,\dots,\sigma(i_{k-1})=i_k,\sigma(i_k)=i_1$，其他元素不变，则 $\sigma$ 为 $k$ 阶轮换。
+        - $k$ 阶轮换表示为 $(i_1\ i_2\ i_3\ \dots\ i_k)$。
+        - 若 $k=2$ 则轮换称为对换。
+    - **性质**
+        - 置换的轮换表示：
+            - 任意的置换可以表示为若干个不交的轮换的乘积。
+            - 如果不考虑每个轮换的内部顺序和轮换之间的顺序，则置换的轮换的表示是唯一的，即每个轮换的组成元素方案唯一。
+            - 置换的轮换可以任意排列，轮换内可以任意循环移动。
+        - 置换的对换表示：
+            - 任意的置换可以表示为若干个对换的乘积。
+            - 对于轮换 $(i_1\ i_2\ i_3\ \dots\ i_k)$，可以表示为 $(i_1\ i_2)(i_1\ i_3)\cdots(i_1\ i_k)$。
+            - 置换的对换表示不唯一，且同一个轮换拆分的对换顺序不能改变。
+        - 置换的对换表示按照对换个数分为奇置换和偶置换，个数分别为 $\dfrac{n!}{2}$。
+        - 所有 $n$ 元偶置换构成的群称为 $n$ 元交错群。
 - **环**
-	- **定义**
-		- 设 $<R,+,\cdot>$ 为[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md)，若 $<R,+>$ 构成交换群，$<R,\cdot>$ 构成半群，$\cdot$ 关于 $+$ 有分配律，则 $R$ 是环。
-		- $+$ 称为环中的加法，$\cdot$ 称为环中的乘法。
-		- 环中 $+$ 的单位元记作 $0$，$\cdot$ 的单位元记作 $1$。
-		- 环中 $x$ 的加法逆元称为负元，记作 $-x$。
-	- **分类**
-		- 若 $\cdot$ 有交换律，则 $R$ 为交换环。
-		- 若 $\cdot$ 有单位元，则 $R$ 为含幺环。
-		- 若 $\forall a,b \in R$，$ab = 0 \implies a = 0 \lor b = 0$，则 $R$ 为无零因子环。
-		- 若 $R$ 是交换环、含幺环、无零因子环，则 $R$ 是整环。
-		- 若 $R$ 是至少有两个元素的整环，且 $\forall a \in R - \{0\}$ 都存在 $a^{-1}$，则 $R$ 是域。
-	- **性质**
-		- $\mathrm{\boldsymbol Z}$ 是整环，$\mathrm{\boldsymbol Q},\mathrm{\boldsymbol R},\mathrm{\boldsymbol C}$ 是域。
+    - **定义**
+        - 设 $<R,+,\cdot>$ 为[代数系统](/pages/mathematics/discrete-mathematics/algebraic-system.md)，若 $<R,+>$ 构成交换群，$<R,\cdot>$ 构成半群，$\cdot$ 关于 $+$ 有分配律，则 $R$ 是环。
+        - $+$ 称为环中的加法，$\cdot$ 称为环中的乘法。
+        - 环中 $+$ 的单位元记作 $0$，$\cdot$ 的单位元记作 $1$。
+        - 环中 $x$ 的加法逆元称为负元，记作 $-x$。
+    - **分类**
+        - 若 $\cdot$ 有交换律，则 $R$ 为交换环。
+        - 若 $\cdot$ 有单位元，则 $R$ 为含幺环。
+        - 若 $\forall a,b \in R$，$ab = 0 \implies a = 0 \lor b = 0$，则 $R$ 为无零因子环。
+        - 若 $R$ 是交换环、含幺环、无零因子环，则 $R$ 是整环。
+        - 若 $R$ 是至少有两个元素的整环，且 $\forall a \in R - \{0\}$ 都存在 $a^{-1}$，则 $R$ 是域。
+    - **性质**
+        - $\mathrm{\boldsymbol Z}$ 是整环，$\mathrm{\boldsymbol Q},\mathrm{\boldsymbol R},\mathrm{\boldsymbol C}$ 是域。
