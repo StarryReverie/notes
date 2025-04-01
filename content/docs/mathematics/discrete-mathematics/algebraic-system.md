@@ -1,0 +1,53 @@
+---
+tags:
+  - mathematics
+  - discrete-mathematics
+  - algebra
+---
+- **二元运算** <span id="krwh8o"></span>
+    - **定义**
+        - $S$ 为[集合](/notes/docs/mathematics/discrete-mathematics/set)，$f:S\times S \to S$ 称为 $S$ 上的二元运算。
+        - $S$ 中任意两个元素可以运算，且运算结果属于 $S$。
+    - **性质**
+        - 交换律：$x\circ y=y\circ x$
+        - 结合律：$(x\circ y)\circ z=x\circ (y\circ z)$
+        - 分配律：$\circ$ 对 $\star$ 可分配，左分配律 $x\circ(y\star z) = (x\circ y) \star (x\circ z)$，右分配律 $(y\star z)\circ x=(y\circ x)\star(z\circ x)$。
+        - 幂等律：$x\circ x=x$
+        - 吸收律：可交换的 $\circ,\star$ 具有吸收律，$x \circ (x \star y) = x,x \star (x \circ y)=x$
+    - **单位元**
+        - $\circ$ 为 $S$ 上的二元运算，$x\in S$，若存在 $e_l$ 或 $e_r$，且 $e_l\circ x=x$ 或 $x\circ e_r=x$ 则 $e_l$ 为左单位元或 $e_r$ 为右单位元。
+        - 若 $e$ 为左单位元和右单位元，则 $e$ 为唯一的单位元。
+    - **零元**
+        - $\circ$ 为 $S$ 上的二元运算，$x\in S$，若存在 $\theta_l$ 或 $\theta_r$，且 $\theta_l\circ x=\theta_l$ 或 $x\circ \theta_r=\theta_r$ 则 $\theta_l$ 为左零元或 $\theta_r$ 为右零元。
+        - 若 $\theta$ 为左零元和右零元，则 $\theta$ 为零元。
+        - $S$ 中有单位元 $e$ 和零元  $\theta$，若 $|S|>1$，则 $e \ne \theta$。
+    - **逆元**
+        - $\circ$ 为 $S$ 上的二元运算，$x\in S$，若存在 $y_l$ 或 $y_r$，且 $y_l\circ x=e$ 或 $x\circ e_r=e$ 则 $y_l$ 为 $x$ 的左逆元或 $y_r$ 为 $x$ 的右逆元。
+        - 若 $y$ 为 $x$ 的左逆元和右单位元，则 $y$ 为 $x$ 的逆元，并且唯一，记作 $y=x^{-1}$，$x$ 可逆。
+        - 左逆元和右逆元不一定唯一。
+- **代数系统**
+    - **定义**
+        - 已知非空集合 $S$，$k$ 个二元或一元运算 $f_i$，则 $< S,f_1,\dots,f_k >$ 为代数系统，简称代数。
+        - 有时强调代数系统包含某些特定的元素，将其称为代数常数，代数记作 $< S,f_1,\dots,f_k,x_1,x_2,\dots >$。
+    - **子代数**
+        - 已知 $V=< S,f_1,\dots,f_k >$，$B \subseteq S$，若 $B$ 对 $f_i$ 都封闭且包含 $S$ 中所有代数常数，则 $<B,f_1,\dots,f_k>$ 为 $V$ 的子代数。
+        - $V$ 是 $V$ 的最大子代数。
+        - 若 $B$ 仅包含 $V$ 中的代数常数且封闭，则 $B$ 构成的子代数为最小子代数。
+        - $V$ 的最大和最小子代数称为平凡子代数。
+        - 若 $B\ne S$，则 $B$ 构成的子代数为 $V$ 的真子代数。
+    - **积代数**
+        - 已知 $V_1=<A,\circ>,V_2=<B,\star>$，定义 $\langle a_1,b_1\rangle \cdot \langle a_2,b_2\rangle = \langle a_1 \circ a_2, b_1 \star b_2 \rangle$。
+        - $V=<A\times B,\cdot>$ 为 $V_1,V_2$ 的积代数，记作 $V=V_1\times V_2$，$V_1,V_2$ 为 $V$ 的因子代数。
+        - 如果 $V_1,V_2$ 是可交换 / 可结合 / 幂等的，则 $V$ 是可交换 / 可结合 / 幂等的。
+        - 如果 $e_1,e_2$ / $\theta_1,\theta_2$ 分别是 $V_1,V_2$ 的单位元 / 零元，则 $\langle e_1,e_2 \rangle$ / $\langle \theta_1,\theta_2 \rangle$ 是 $V_1\times V_2$ 的单位元 / 零元。
+        - 如果 $x,y$ 是 $V_1,V_2$ 的可逆元素，则 $\langle x,y\rangle$ 是 $V_1\times V_2$ 的可逆元素，$\langle x,y\rangle^{-1}=\langle x^{-1},y^{-1}\rangle$。
+    - **同态和同构**
+        - 已知 $<A,\circ>,<B,\star>$，如果存在 $f:A\to B$ 满足 $f(a \circ b) = f(a) \star f(b)$，则 $A,B$ 同态。
+        - 同态的分类：
+            - 如果 $f$ 是单射，则 $f$ 称为单同态。
+            - 如果 $f$ 是满射，则 $f$ 称为满同态， $V_2$ 是 $V_1$ 的同态像，记作 $A\sim B$。
+            - 如果 $f$ 是双射，则 $f$ 称为同构，记作 $A \cong B$。
+            - 如果 $A=B$，则 $f$ 称为自同态。
+        - 同态可以保持运算律和元素性质
+            - 如果 $\circ$ 满足某运算律，则 $f(V_1)$ 中 $\star$ 也满足（消去律除外）。
+            - 如果 $a$ 是某特殊元素，则 $f(V_1)$ 中 $f(a)$ 也是同种特殊元素。

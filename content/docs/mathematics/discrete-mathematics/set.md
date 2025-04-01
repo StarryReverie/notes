@@ -1,0 +1,63 @@
+---
+tags:
+  - mathematics
+  - discrete-mathematics
+  - set-theory
+---
+- **集合关系**
+    - 子集 $A \subseteq B$：$\forall x(x \in A \to x \in B)$
+    - 相等 $A = B$：$A \subseteq B \land B \subseteq A$
+    - 真子集 $A \subset B$：$A \subseteq B \land A \neq B$
+- **特殊集合**
+    - **空集 $\varnothing$**
+        - 空集是任意集合的子集。
+        - 空集唯一。
+    - **幂集 $P(A)$**
+        - $P(A) = \{x | x \subseteq A\}$，即 $A$ 的所有子集。
+- **集合运算** <span id="qtjafh"></span>
+    - **基本运算** <span id="g6tiqk"></span>
+        - 并 $A \cup B = \{x | x \in A \lor x \in B \}$
+        - 交 $A \cap B = \{x | x \in A \land x \in B \}$
+        - 差 / 相对补集 $A - B = \{x | x \in A \land x \notin B\}$
+        - 对称差 $A \oplus B = (A - B) \cup (B - A)$
+        - 绝对补集 $\sim A = E - A$，$E$ 为全集
+        - 广义并 $\cup A = \bigcup\limits_{x \in A} x$
+        - 广义交 $\cap A = \bigcap\limits_{x\in A} x$，$\cap \varnothing$ 无意义
+        - 笛卡尔积 $A \times B = \{ \langle x,y \rangle | x \in A \land x \in B \}$
+    - **恒等式**
+        - $A \cap B \subseteq A, A \cap B \subseteq B$
+        - $A \subseteq A \cup B, B \subseteq A \cup B$
+        - $A - B = A \cap \sim B \subseteq A$
+        - $A \subseteq B \iff A \cup B = B \iff A \cap B = A \iff A - B = \varnothing$
+        - $A \cap B = \varnothing \iff A - B = A$
+        - $A \oplus B = (A \cap \sim B) \cup (B \cap \sim A) = (A \cup B) - (A \cap B)$
+        - $A \oplus \varnothing = A$
+        - $A \oplus A = \varnothing$
+        - $\cup \varnothing = \varnothing$
+        - 运算律：类比[命题逻辑](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation#sts2pd)
+- **容斥原理**
+    - 设集合 $S$ 定义了 $n$ 条性质，具有第 $i$ 条性质的集合为 $A_i$。
+    - 不具有性质的集合个数为 $\left|\overline{A_1} \cap \overline{A_2} \cap \cdots \cap \overline{A_n}\right| = |S| - \displaystyle\sum\limits_{i = 1}^n (-1)^n \sum_{p_{k} < p_{k+1}} \left|\bigcap_{j=1}^i A_{p_j}\right|$。
+- **势**
+    - **定义**
+        - 集合的势用来度量集合的大小。
+        - 已知集合 $A,B$
+            - 如果存在从 $A$ 到 $B$ 的双射，则 $A,B$ 等势，记作 $A \approx B$。
+            - 如果存在从 $A$ 到 $B$ 的单射，则 $B$ 优势于 $A$，记作 $A \preceq\cdot B$。
+            - 如果 $B \preceq\cdot A \land A \not\approx B$，则 $B$ 真优势于 $A$，记作 $A \prec\cdot B$。
+    - **性质**
+        - 等势是[等价关系](/notes/docs/mathematics/discrete-mathematics/binary-relationship#zwakul)，优势是[偏序关系](/notes/docs/mathematics/discrete-mathematics/binary-relationship#kynj0r)。
+        - $\mathrm Q \approx \mathrm Z \approx \mathrm N \approx \mathrm N \times \mathrm N$。
+        - $\mathrm R \approx [0,1] \approx (0,1) \approx \{0,1\}^{\mathrm N} \approx P(N) \approx$ 任意实数区间。
+        - $\{0,1\}^A \approx P(A)$。
+        - 康托定理：$\mathrm N\not\approx \mathrm R$，$A \not\approx P(A)$。
+        - $N \prec\cdot R,A\prec P(A)$。
+    - **基数**
+        - 自然数的集合定义：
+            - $0$ 定义为 $\varnothing$。
+            - 已知任意自然数 $n$，则 $n+1$ 定义为 $n \cup \{n\}$。
+        - 集合为有穷集 $\iff$ 集合与某自然数等势。如果集合不是有穷集，则是无穷集。
+        - 有穷集的基数为与其等势的自然数，也是其大小。
+        - 定义 $|\mathrm N| = \aleph_0$，$|\mathrm R| = \aleph$。$\aleph_0,\aleph$ 是无穷基数，$\aleph_0$ 是最小的无穷基数。
+        - $|A|=|B| \iff A \approx B$，$|A| \leq |B| \iff A \preceq\cdot B$。
+        - 如果 $|A| \leq \aleph_0$，则 $A$ 是可数集，可以用某种方法数遍集合中的所有元素。

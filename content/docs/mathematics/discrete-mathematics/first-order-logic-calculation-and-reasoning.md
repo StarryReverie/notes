@@ -1,0 +1,63 @@
+---
+tags:
+  - mathematics
+  - discrete-mathematics
+  - logic-theory
+---
+- **等值式**
+    - **定义**
+        - 类似[命题逻辑](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation#ysze9u)中的定义。
+    - **常用等值式**
+        - [命题逻辑的等值式](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation#sts2pd)
+        - 消去量词
+            - 设 $D = \{a_1,a_2,\dots,a_n\}$。
+            - $\forall xA(x) \Leftrightarrow A(a_1) \land A(a_2) \land \cdots \land A(a_n)$
+            -  $\exists xA(x) \Leftrightarrow A(a_1) \lor A(a_2) \lor \cdots \lor A(a_n)$
+        - 量词否定
+            - $\neg \forall x A(x) \Leftrightarrow \exists x \neg A(x)$
+            - $\neg \exists x A(x) \Leftrightarrow \forall x \neg A(x)$
+        - 辖域收缩与扩张
+            - $\forall x(A(x) \land B) \Leftrightarrow \forall xA(x) \land B$
+            - $\forall x(A(x) \lor B) \Leftrightarrow \forall xA(x) \lor B$
+            - $\forall x(A(x) \to B) \Leftrightarrow \exists xA(x) \to B$（特别注意）
+            - $\forall x(B \to A(x)) \Leftrightarrow B \to \forall xA(x)$
+        - 量词分配
+            - $\forall x(A(x) \land B(x)) \Leftrightarrow \forall xA(x) \land \forall xB(x)$
+            - $\exists x(A(x) \lor B(x)) \Leftrightarrow \exists xA(x) \lor \exists xB(x)$
+        - 置换规则
+            - 如果 $A \Leftrightarrow B$，则 $\Phi(A) \Leftrightarrow \Phi(B)$
+        - 换名规则
+            - $A$ 为一公式，将 $A$ 中的某个量词的指导变元、其在辖域中的出现替换为其他符号，新旧公式等值。
+            - 换名规则常用于替换同时约束和自由出现的变项。
+- **前束范式**
+    - 如果公式 $A$ 具有形式 $Q_1x_1Q_2x_2\cdots Q_kx_kB$，$Q_i$ 为量词，$B$ 中无量词，则 $A$ 为前束范式。
+    - 任何公式都存在对应前束范式。
+    - 求解前束范式时，一般需要扩展辖域，需要先用换名规则处理变项。
+- **推理理论**
+    - **推理定律**
+        - **[命题逻辑推理定律](命题逻辑推理#^mi4ocz)**
+        - **一阶逻辑常用等值式**
+        - **常用推理定律**
+            - $\forall xA(x) \lor \forall xB(x) \Rightarrow \forall x(A(x) \lor B(x))$
+            - $\exists x(A(x) \land B(x)) \Rightarrow \exists xA(x) \land \exists xB(x)$
+            - $\forall x(A(x) \to B(x)) \Rightarrow \forall xA(x) \to \forall xB(x)$
+            - $\exists x(A(x) \to B(x)) \Rightarrow \exists xA(x) \to \exists xB(x)$
+        - **全称量词消去规则**
+            - $\forall xA(x) \Rightarrow A(y)$，$y$ 为个体变项，且 $x$ 不在 $A$ 中 $\forall y$ 和 $\exists y$ 的辖域中自由出现。
+                - $A$ 中 $x$ 都会被替换为 $y$，如果 $x$ 自由出现在 $y$ 辖域中，则会出现名字冲突。
+            - $\forall xA(x) \Rightarrow A(c)$，$c$ 为个体常项。
+        - **全称量词引入规则**
+            - $A(y) \Rightarrow \forall xA(x)$，$y$ 不在证明的前提中自由出现。
+                - 如果前提中有 $y$ 自由出现，则 $y$ 被前提约束，无法保证 $y$ 任意性。
+                - 前提中的约束出现 $y$ 被限定作用域为量词辖域，对这里的 $y$ 不影响。
+        - **存在量词消去规则**
+            - $\exists xA(x) \land (A(y) \to B) \Rightarrow B$ 或 $A(y) \to B \Rightarrow \exists xA(x) \to B$，$y$ 不在 $B$ 和证明的前提中自由出现。
+                - 如果前提中有 $y$ 自由出现，则 $y$ 被前提约束，不一定可以使得 $A(y)$ 成立。
+                - 如果 $B$ 中有 $y$ 自由出现，则 $B$ 不一定对所有 $y$ 都为真。
+            - $\exists xA(x) \land (A(c) \to B) \Rightarrow B$ 或 $A(c) \to B \Rightarrow \exists xA(x) \to B$，$c$ 不在 $A,B$ 和证明的前提中自由出现。
+                - 条件原因同上。
+        - **存在量词引入规则**
+            - $A(y) \Rightarrow \exists xA(x)$ 或 $B \to A(y) \Rightarrow B \to \exists xA(x)$，$y$ 不在 $A$ 中的 $\forall x$ 或 $\exists x$ 的辖域中自由出现。
+                - 条件原因同 $\forall+$，防止与 $A$ 中已有 $x$ 冲突。
+            - $A(c) \Rightarrow \exists xA(x)$ 或 $B \to A(c) \Rightarrow B \to \exists xA(x)$，$c$ 不在 $A$ 中的 $\forall x$ 或 $\exists x$ 的辖域中自由出现。
+                - 条件原因同上。

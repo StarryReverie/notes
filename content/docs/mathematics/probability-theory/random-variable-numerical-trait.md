@@ -1,0 +1,44 @@
+---
+tags:
+  - mathematics
+  - probability-theory
+  - random-variable
+---
+- **期望**
+    - **定义**
+        - 对离散型[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\sum_{i=1}^{+\infty} x_i p_i$ 绝对收敛，则该[级数](/notes/docs/mathematics/calculus/series)为其期望 $E(X)$。
+        - 对离散型[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\int_{-\infty}^{+\infty} xf(x)\mathrm dx$ 绝对收敛，则该[定积分](/notes/docs/mathematics/calculus/definite-integral)为其期望 $E(X)$。
+        - 期望不是随机变量，是 $X$ 的数字特征。
+    - **性质**
+        - 已知 $X,Y=g(X)$，则 $E(Y) = E(g(X)) =\displaystyle\int_{-\infty}^{+\infty} g(x) f(x) \mathrm dx$。
+        - 已知 $(X,Y),Z=g(X,Y)$，则 $E(Z) = E(g(X,Y)) = \displaystyle\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} g(x,y) f(x,y) \mathrm dx\mathrm dy$。
+        - $E(aX+b) = a E(X)+b$
+        - $E(X+Y) = E(X) + E(Y)$
+        - $X,Y$ 独立时，$E(XY) = E(X)E(Y)$
+    - **常用期望**
+        - $X \sim b(n,p)$：$E(X) = np$
+        - $X \sim \pi(\lambda)$：$E(X) = \lambda$
+        - $X \sim G(p)$：$E(X) = \dfrac{1}{p}$
+        - $X \sim U(a,b)$：$E(X) = \dfrac{a+b}{2}$
+        - $X \sim E(\lambda)$：$E(X) = \dfrac{1}{\lambda}$
+        - $X \sim N(\mu,\sigma^2)$： $E(X) = \mu$
+- **方差**
+    - **定义**
+        - 已知随机变量，若 $E((X-E(X))^2)$ 存在，则其为方差 $D(X)$。
+        - $D(X)=E(X^2)-E^2(X)$。
+    - **常用方差**
+        - $X \sim b(n,p)$：$D(X) = np(1-p)$
+        - $X \sim \pi(\lambda)$：$D(X) = \lambda$
+        - $X \sim G(p)$：$D(X) = \dfrac{1-p}{p^2}$
+        - $X \sim U(a,b)$：$D(X) = \dfrac{(b-a)^2}{12}$
+        - $X \sim E(\lambda)$：$D(X) = \dfrac{1}{\lambda^2}$
+        - $X \sim N(\mu,\sigma^2)$： $D(X) = \sigma^2$
+- **协方差**
+    - **定义**
+        - $(X,Y)$ 为二维随机变量，若 $E((X - E(X))(Y-E(Y)))$，则其为 $X$ 和 $Y$ 的协方差 $Cov(X,Y)$。
+        - 如果 $Cov(X,Y)=0$，则 $X$ 和 $Y$ 不相关，否则相关。
+    - **性质**
+        - 如果 $X,Y$ 独立，则 $X,Y$ 不相关。反之不一定。
+        - $Cov(X,Y)=E(XY)-E(X)E(Y)$
+        - $D(X+Y)=D(X)+D(Y)+2Cov(X,Y)$
+        - $Cov^2(X,Y) \le D(X)D(Y)$，$X,Y$ 有严格线性关系时取等。

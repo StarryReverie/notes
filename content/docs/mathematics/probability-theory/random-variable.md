@@ -1,0 +1,54 @@
+---
+tags:
+  - mathematics
+  - probability-theory
+  - random-variable
+---
+- **离散型随机变量**
+    - **0-1 分布 $b(1,p)$**
+        - $P(X = k) = (1-p)^{k - 1}p^k\ (k = 0,1)$。
+    - **二项分布 $b(n, p)$**
+        - $X$ 的可能取值为 $0,1,2,\dots,n$，$P(X = k) = C_n^k p^k (1-p)^k$。
+    - **几何分布 $G(p)$**
+        - $X$ 的可能取值集合为 $\mathrm N^*$， $P(X = k) = (1 - p)^{k - 1}p$。
+        - 几何分布具有无记忆性，即 $P(X = m + n | X = m) = P(X = n)$。
+    - **超几何分布 $H(n,M,N)$**
+        - $X$ 的可能取值集合为 $[0, \min\{n, M \}] \cap N^*$， $P(X = k) = \dfrac{C_M^k C_{N - M}^{n - k}}{C_N^n}$。
+    - **泊松分布 $\pi(\lambda)$**
+        - $X$ 的可能取值集合为 $N^*$，$P(X = k) = \dfrac{\lambda^k}{k!} e^{-\lambda}$。
+        - 一段时间和空间中出现的事件的个数服从泊松分布。
+- **分布函数** <span id="rhosgs"></span>
+    - **定义**
+        - 设 $X$ 为一个随机变量，$x \in \mathrm R$，则 $F(x) = P(X \le x)$ 称为分布函数。
+    - **性质**
+        - 单调递增。
+        - 非负，对于任意 $x$，均有 $F(x) \in [0,1]$ 且 $\lim\limits_{x \to -\infty} F(x) = 0,\lim\limits_{x \to +\infty} F(x) = 1$。
+        - 右[连续](函数#^vhnj4q)。
+- **连续型随机变量**
+    - **定义**
+        - 设 $X$ 的分布函数为 $F(x)$，如果存在非负可积函数 $f(x)$，使得 $F(x) = \displaystyle\int_{-\infty}^x f(t)\mathrm dt$，则 $X$ 是连续型随机变量，$f(x)$ 是概率密度函数。
+        - $f(x) \ge 0$  和 $\displaystyle\int_{-\infty}^{+\infty} f(t)\mathrm dt ＝ 1$ 是判断 $f(x)$ 是不是概率密度函数的充要条件。
+    - **均匀分布 $U(a,b)$**
+        - $f(x) = \left\{\begin{matrix}\dfrac{1}{b - a}, & a<x<b \\ 0, & \text{otherwise}\end{matrix}\right.$，$F(x) = \left\{\begin{matrix} 0, & x < a \\ \dfrac{x - a}{b - a}, & a\le x<b \\ 1, & x \ge b\end{matrix}\right.$
+    - **指数分布 $E(\lambda)$**
+        - $f(x) = \left\{\begin{matrix} \lambda e^{-\lambda x}, & x \ge 0 \\ 0, & x < 0 \end{matrix}\right.$，$F(x) = \left\{\begin{matrix} 1 - e^{-\lambda x}, & x \ge 0 \\ 0, & x < 0 \end{matrix}\right.$
+        - 指数分布有无记忆性。
+        - 损坏率不变的事物的寿命、排队时间等服从指数分布。
+        - 如果任意 $t$ 时间内，发生某一个事件的个数 $X \sim \pi(\lambda)$，则任意相邻两个事件的间隔 $T \sim E(\lambda)$。
+    - **正态分布 $N(\mu, \sigma^2)$**
+        - $f(x) = \dfrac{1}{\sqrt{2\pi}\sigma} \exp\left[-\dfrac{(x - \mu)^2}{2\sigma^2}\right]$。
+        - $\mu = 0,\sigma = 1$ 的正态分布称为标准正态分布，其密度函数为 $\varphi(x)$，分布函数为 $\Phi(x)$。
+        - 若 $X \sim N(\mu, \sigma^2)$，则 $\dfrac{X - \mu}{\sigma} \sim N(0, 1), F(x) = \Phi\left(\dfrac{x - \mu}{\sigma}\right)$。
+        - $\Phi(-x) = 1 - \Phi(x)$。
+- **随机变量函数**
+    - **定义**
+        - $y = g(x)$ 是一个已知[函数](/notes/docs/mathematics/calculus/function)，$X,Y$ 是随机变量。
+        - 如果 $X = x$ 时 $Y = g(x)$，则 $Y$ 是 $X$ 的函数，$Y = g(X)$。
+    - **离散型随机变量的函数**
+        - $X$ 是离散型随机变量时，$Y = g(X)$ 一定是离散型随机变量。
+        - 对于不同的 $X = x$ 对应相同 $Y = y$，则把所有对应的概率相加。
+    - **连续型随机变量的函数**
+        - $X$ 是连续型随机变量时，$Y$ 也有可能是离散型的。此时处理方法类似离散型随机变量。
+        - 如果 $y = g(x)$ 单调，则有 $f_Y(y) = \left\{\begin{matrix} f_X(h(y))|h'(y)|, & \alpha < y<\beta\\ 0, & \text{otherwise} \end{matrix}\right.$。
+            - $h(y)$ 为 $g(x)$ 反函数，$\alpha = \min\{h(a),h(b)\},\beta = \max\{h(a),h(b)\}$。
+        - 通用方法：先求 $F_Y(y) = P(g(X) \le y)$，化为用 $x$ 表示后求值，最后求导得到 $f_Y(y)$。

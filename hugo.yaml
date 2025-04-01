@@ -1,0 +1,16 @@
+baseURL: 'https://oosquare.github.io/notes/'
+languageCode: zh-cn
+title: Notes
+theme: hextra
+
+ignoreLogs:
+- warning-goldmark-raw-html
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['$$', '$$']]
+          inline: [['$', '$']]
+        enable: true
