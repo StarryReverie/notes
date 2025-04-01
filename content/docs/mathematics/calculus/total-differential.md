@@ -1,12 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - differential
-  - derivative
-  - limit
-  - function
+title: 全微分
+weight: 2000
+math: true
 ---
+
 - **定义**
     - 设二元函数 $z=f(x,y)$ 在 $(x,y)$ 的某邻域内有定义，当 $x,y$ 有增量 $\Delta x,\Delta y$ 时，函数 $f(x,y)$ 的增量称为全增量：
       $$

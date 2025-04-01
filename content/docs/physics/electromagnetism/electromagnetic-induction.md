@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - electromagnetism
+title: 电磁感应
+weight: 500
+math: true
 ---
+
 - **法拉第电磁感应定律**
     - **内容**
         - 设 $\mathcal E$ 为回路的感应电动势，$\phi$ 为其磁通量，则 $\mathcal E = -\dfrac{\mathrm d\phi}{\mathrm dt}$。

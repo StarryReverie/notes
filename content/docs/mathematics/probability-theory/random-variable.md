@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - random-variable
+title: 随机变量
+weight: 200
+math: true
 ---
+
 - **离散型随机变量**
     - **0-1 分布 $b(1,p)$**
         - $P(X = k) = (1-p)^{k - 1}p^k\ (k = 0,1)$。
@@ -27,7 +27,7 @@ tags:
 - **连续型随机变量**
     - **定义**
         - 设 $X$ 的分布函数为 $F(x)$，如果存在非负可积函数 $f(x)$，使得 $F(x) = \displaystyle\int_{-\infty}^x f(t)\mathrm dt$，则 $X$ 是连续型随机变量，$f(x)$ 是概率密度函数。
-        - $f(x) \ge 0$  和 $\displaystyle\int_{-\infty}^{+\infty} f(t)\mathrm dt ＝ 1$ 是判断 $f(x)$ 是不是概率密度函数的充要条件。
+        - $f(x) \ge 0$  和 $\displaystyle\int_{-\infty}^{+\infty} f(t)\mathrm dt = 1$ 是判断 $f(x)$ 是不是概率密度函数的充要条件。
     - **均匀分布 $U(a,b)$**
         - $f(x) = \left\{\begin{matrix}\dfrac{1}{b - a}, & a<x<b \\ 0, & \text{otherwise}\end{matrix}\right.$，$F(x) = \left\{\begin{matrix} 0, & x < a \\ \dfrac{x - a}{b - a}, & a\le x<b \\ 1, & x \ge b\end{matrix}\right.$
     - **指数分布 $E(\lambda)$**

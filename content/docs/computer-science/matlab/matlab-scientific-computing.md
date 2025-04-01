@@ -1,7 +1,7 @@
 ---
-tags:
-  - programming
-  - matlab
+title: MATLAB 科学计算
+weight: 200
+math: true
 ---
 
 - **符号运算**

@@ -1,11 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - function
-  - derivative
-  - limit
+title: 偏导数
+weight: 1900
+math: true
 ---
+
 - **偏导数**
     - **定义**
         - 设[多元函数](/notes/docs/mathematics/calculus/multivariate-function) $z=f(x,y)$ 在点 $(x_0,y_0)$ 的某邻域内有定义。

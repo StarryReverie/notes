@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - graph-theory
-  - matrix
+title: 图论基础
+weight: 1100
+math: true
 ---
+
 - **图** <span id="xknur9"></span>
     - **定义**
         - **基本内容**

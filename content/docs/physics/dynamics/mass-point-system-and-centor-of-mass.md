@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - mechanics
-  - particle-mechanics
+title: 质点系和质心
+weight: 100
+math: true
 ---
+
 - **质点系**
     - 若干个质点共同组成的系统称为质点系。
     - 质点系中各质点的总体情况可能很复杂，所以研究质点系一般会选取质心。

@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - function
-  - integral
+title: 重积分
+weight: 2100
+math: true
 ---
+
 - **二重积分**
     - **定义**
         - 设[多元函数](/notes/docs/mathematics/calculus/multivariate-function) $f(x,y)$ 在平面有界区域 $D$ 上有定义，将 $D$ 划分为 $\Delta \sigma_i$，设 $\lambda$ 为 $\Delta\sigma_i$ 的直径的最大值，任取 $(\xi_i,\eta_i)\in \Delta\sigma_i$。

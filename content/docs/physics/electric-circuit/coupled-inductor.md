@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - electric-circuits
+title: 耦合电感
+weight: 900
+math: true
 ---
+
 - **耦合电感**
     - **定义**
         - 耦合电感又多个电感组合，一个电感的电流随时间变化，其他电感两端出现感应电压。

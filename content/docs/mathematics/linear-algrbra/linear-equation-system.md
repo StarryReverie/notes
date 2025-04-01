@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - equation
+title: 线性方程组
+weight: 100
+math: true
 ---
+
 - **核心问题**
     - 解的判别：存在性与唯一性
     - 求解：解集合

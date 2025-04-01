@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - electric-circuits
-  - dyncmic-circuits
+title: 正弦稳态电路
+weight: 800
+math: true
 ---
+
 - **定义**
     - 如果电路的激励是正弦的形式，则电路的各变量周期性变化时，电路达到稳态，此时称该电路为正弦稳态电路。
     - 分析正弦稳态电路的电压和电流可以使用和[变换域法](/notes/docs/physics/electric-circuit/electric-circuit-analysis-method#e9iiuf)。

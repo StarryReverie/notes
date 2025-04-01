@@ -1,12 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - quadratic-form
-  - matrix
-  - eigenvalue
-  - eigenvector
+title: 二次型
+weight: 1000
+math: true
 ---
+
 - **定义**
     - 像 $f(x_1,x_2,\dots,f_n)=a_{11}x_1^2+a_{12}x_1x_2+\cdots+a_{1n}x_1x_n\cdots+a_{nn}x_n^2$ 这样的 $n$ 元二次齐次多项式函数，被称为二次型。
     - 二次型可以用矩阵表示：$f(x_1,x_2,\dots,f_n)=f(\boldsymbol x)=\boldsymbol x^{\mathrm T}A\boldsymbol x$。

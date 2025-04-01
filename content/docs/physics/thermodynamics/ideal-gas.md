@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - thermodynamics
+title: 理想气体
+weight: 100
+math: true
 ---
+
 - **温度**
     - **热平衡**
         - 对于两个体系达到热平衡：

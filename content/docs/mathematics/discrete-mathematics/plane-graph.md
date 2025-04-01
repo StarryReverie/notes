@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - graph-theory
+title: 平面图
+weight: 1300
+math: true
 ---
+
 - **平面图**
     - **定义**
         - 可平面图 / 平面图：可以把边无交地画在平面上的[图](/notes/docs/mathematics/discrete-mathematics/graph-basis#xknur9)。

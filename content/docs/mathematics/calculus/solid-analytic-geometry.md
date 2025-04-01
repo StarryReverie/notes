@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - analytical-geometry
-  - vector
+title: 立体解析几何
+weight: 1600
+math: true
 ---
+
 - **平面**
     - **方程**
         - **点法式**

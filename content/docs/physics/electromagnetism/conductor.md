@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - electromagnetism
+title: 导体
+weight: 200
+math: true
 ---
+
 - **静电平衡条件**
     - **定义**
         - 导体内电荷重新分布，最终没有定向运动。

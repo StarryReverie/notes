@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - function
-  - derivative
+title: 多元函数的极值
+weight: 1800
+math: true
 ---
+
 - **无条件极值**
     - **必要条件**
         - 若 $y=f(\boldsymbol x)$ 在 $\boldsymbol x_0$ 处有极值，如果 $\nabla y$ 存在，则 $\left.\nabla y\right|_{\boldsymbol x_0}=\boldsymbol 0$。

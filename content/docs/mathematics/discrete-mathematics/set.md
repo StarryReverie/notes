@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - set-theory
+title: 集合
+weight: 600
+math: true
 ---
+
 - **集合关系**
     - 子集 $A \subseteq B$：$\forall x(x \in A \to x \in B)$
     - 相等 $A = B$：$A \subseteq B \land B \subseteq A$

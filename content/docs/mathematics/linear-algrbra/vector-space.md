@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - vector
-  - vector-space
+title: 向量空间
+weight: 500
+math: true
 ---
+
 - **向量空间**
     - **定义**
         - 设 $V$ 是 $\mathrm F^n$ 的非空子集，如果 $V$ 满足以下条件，则 $V$ 是 $\mathrm F$ 上的向量空间：

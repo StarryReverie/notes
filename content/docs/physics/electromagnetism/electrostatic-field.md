@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - electromagnetism
+title: 静电场
+weight: 100
+math: true
 ---
+
 - **电荷**
     - 分为正、负电荷。
     - 电荷量用 $Q$ 或 $q$ 表示，单位为 $\mathrm C$。

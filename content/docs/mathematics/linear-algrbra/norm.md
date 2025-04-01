@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - vector
-  - matrix
+title: 范数
+weight: 700
+math: true
 ---
+
 - **向量范数**
     - **定义**
         - [向量](/notes/docs/mathematics/linear-algrbra/vector) $\boldsymbol x$ 的范数记作 $||\boldsymbol x||$，满足

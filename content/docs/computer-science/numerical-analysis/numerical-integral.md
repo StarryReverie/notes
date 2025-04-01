@@ -1,9 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
-  - integral
+title: 数值积分
+weight: 700
+math: true
 ---
+
 - **牛顿-柯特斯求积公式**
     - **定义**
         - 已知积分区间 $[a,b]$ 和被积[函数](/notes/docs/mathematics/calculus/function) $f(x)$ 在 $[a,b]$ 上等距的 $n+1$ 个[插值](/notes/docs/computer-science/numerical-analysis/interpolation)节点 $x_0,x_1,\dots,x_n$ 和函数值。

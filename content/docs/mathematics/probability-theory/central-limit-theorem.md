@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - random-variable
+title: 大数定律和中心极限定理
+weight: 500
+math: true
 ---
+
 - **切比雪夫不等式**
     - 对于任意[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$ 和 $\varepsilon > 0$，有
         - $P(|X - E(X)| \ge \varepsilon) \le \dfrac{D(X)}{\varepsilon^2}$。

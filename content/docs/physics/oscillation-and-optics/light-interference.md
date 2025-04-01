@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - optics
+title: 光的干涉
+weight: 400
+math: true
 ---
+
 - **杨氏双缝干涉**
     - **原理图**
         - ![](assets-light-interference/youngs-double-slit-interference.png)

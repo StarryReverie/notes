@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - mechanics
-  - particle-mechanics
+title: 动量和角动量
+weight: 300
+math: true
 ---
+
 - **动量**
     - **动量定理**
         - 质点 / 质点系在一段时间间隔内动量的增量等于合外力在这段时间间隔内的冲量，即

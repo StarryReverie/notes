@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - random-variable
+title: 随机变量的数字特征
+weight: 400
+math: true
 ---
+
 - **期望**
     - **定义**
         - 对离散型[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\sum_{i=1}^{+\infty} x_i p_i$ 绝对收敛，则该[级数](/notes/docs/mathematics/calculus/series)为其期望 $E(X)$。

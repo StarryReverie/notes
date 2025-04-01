@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - graph-theory
+title: 欧拉图和哈密顿图
+weight: 1200
+math: true
 ---
+
 - **欧拉图**
     - **定义**
         - 欧拉通路：经过[图](/notes/docs/mathematics/discrete-mathematics/graph-basis#xknur9)中每条边恰好一次且仅一次行遍所有顶点的通路。

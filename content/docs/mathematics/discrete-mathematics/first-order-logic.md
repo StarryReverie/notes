@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - logic-theory
+title: 一阶逻辑等值演算与推理
+weight: 500
+math: true
 ---
+
 - **定义**
     - 个体词：常项或变项，变项的取值范围称为个体域或论域。
     - 谓词

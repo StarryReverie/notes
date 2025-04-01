@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - formula
-  - inequality
+title: 常用公式与不等式
+weight: 100
+math: true
 ---
+
 - **因式分解**
     - $a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\cdots+ab^{n-2}+b^{n-1})$
     - $a^n-1=(a-1)(a^{n-1}+a^{n-2}\cdots+a+1)$

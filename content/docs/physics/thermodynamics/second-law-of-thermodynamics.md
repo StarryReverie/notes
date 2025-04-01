@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - thermodynamics
+title: 热力学第二定律
+weight: 400
+math: true
 ---
+
 - **热力学第二定律**
     - **自然过程的方向性**
         - 热全部转化为功不能自发进行。

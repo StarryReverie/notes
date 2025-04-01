@@ -1,9 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
-  - equation
+title: 线性方程组的直接解法
+weight: 400
+math: true
 ---
+
 - **消元法**
     - **通用过程**
         - 规定[线性方程组](/notes/docs/mathematics/linear-algrbra/linear-equation-system)为 $A\boldsymbol x = \boldsymbol b$，有 $n$ 个 $n$ 元方程。

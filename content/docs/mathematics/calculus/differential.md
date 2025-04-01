@@ -1,12 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - differential
-  - derivative
-  - limit
-  - function
+title: 微分
+weight: 500
+math: true
 ---
+
 - **定义**
     - 设[函数](/notes/docs/mathematics/calculus/function) $y=f(x)$ 在点 $x$ 的某邻域内有定义，如果函数在点 $x$ 处的增量 $\Delta y=f(x+\Delta x)-f(x)$ 可以表示为 $A(x)\Delta x +o(\Delta x)$，其中 $A(x)$ 只与 $x$ 有关，而与 $\Delta x$ 无关，则称 $f(x)$ 在点 $x$ 是可微的，而 $A(x)\Delta x$ 叫作函数 $f(x)$ 在点 $x$ 处的微分，记作 $\mathrm dy$ 或 $\mathrm df$，即 $\mathrm dy=A(x)\Delta x$。
     - $\mathrm dy$ 是 $\Delta y$ 的线性近似，误差为 $o(\Delta x)$，$\mathrm dy=A(x)\Delta x$ 是 $\Delta y$ 的主要部分，称为 $\Delta y$ 的线性主部。

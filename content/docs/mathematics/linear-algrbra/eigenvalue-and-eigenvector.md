@@ -1,12 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - matrix
-  - eigenvalue
-  - eigenvector
-  - determinant
+title: 特征值与特征向量
+weight: 800
+math: true
 ---
+
 - **特征值**
     - **定义**
         - 设 $A$ 是 $n$ 阶[方阵](/notes/docs/mathematics/linear-algrbra/matrix#xtm5r3)。如果存在常数 $\lambda$ 和非零向量 $\boldsymbol x$ 使得 $A\boldsymbol x=\lambda\boldsymbol x$，则 $\lambda$ 是 $A$ 的一个特征值，$\boldsymbol x$ 是 $A$ 的一个属于特征值 $\lambda$ 的特征向量。

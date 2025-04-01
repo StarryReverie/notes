@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - infinity
-  - limit
+title: 无穷小和无穷大
+weight: 200
+math: true
 ---
+
 - **无穷小**
     - **定义**
         - 若 $\lim\limits_{n\to \infty} a_n = 0$，则称数列 $\{a_n\}$ 为无穷小。

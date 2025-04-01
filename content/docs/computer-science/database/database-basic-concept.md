@@ -3,6 +3,7 @@ title: 数据库基本概念
 weight: 100
 math: true
 ---
+
 - **数据模型**
     - [数据模型](/notes/docs/computer-science/database/data-model)是描述数据的概念和定义，包括数据结构、数据操作、数据完整性约束。
     - 数据模型分为：

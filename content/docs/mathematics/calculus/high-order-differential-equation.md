@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - differential-equation
-  - function
+title: 高阶微分方程
+weight: 1400
+math: true
 ---
+
 - **可降阶高阶微分方程**
     - $y^{(n)}=f(x)$
         - 两边同时加积分号，求不定积分，左边的阶数降低。

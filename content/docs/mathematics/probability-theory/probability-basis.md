@@ -1,8 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
+title: 概率基础
+weight: 100
+math: true
 ---
+
 - **基本概念**
     - **随机现象**
         - 条件相同时，现象的结果未必相同，如果知道所有的可能结果，则称为随机现象。

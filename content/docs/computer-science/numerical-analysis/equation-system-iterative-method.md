@@ -1,9 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
-  - equation
+title: 方程组的迭代解法
+weight: 300
+math: true
 ---
+
 - **简单迭代法**
     - **迭代计算**
         - 已知方程 $\boldsymbol f(\boldsymbol x) = \begin{bmatrix}f_1(\boldsymbol x) \\\vdots \\f_n(\boldsymbol x)\end{bmatrix} = 0$，其中 $\boldsymbol x$ 是 $n$ 维[向量](/notes/docs/mathematics/linear-algrbra/vector)。

@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - electromagnetism
+title: 电介质
+weight: 300
+math: true
 ---
+
 - **电介质的极化**
     - **极化**
         - 把所有分子看作由一个正电荷和一个负电荷组成。如果两者重合，则为无极分子，否则为有极分子。

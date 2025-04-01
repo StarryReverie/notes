@@ -1,7 +1,9 @@
 ---
 title: SQL 语言
 weight: 400
+math: false
 ---
+
 - **数据定义**
     - **模式**
         - **定义**

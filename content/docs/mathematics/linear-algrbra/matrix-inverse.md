@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - matrix
-  - matrix-inversion
+title: 矩阵求逆
+weight: 300
+math: true
 ---
+
 - **矩阵求逆的方法**
     - **定义法**
         - 已知矩阵 $A$，则设出 $A^{-1}$ 的元素，应用逆矩阵定义 $AA^{-1}=I$ 得出方程组，求解方程组即可。

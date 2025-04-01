@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - statistics
+title: 假设检验
+weight: 800
+math: true
 ---
+
 - **定义**
     - 定义要检验的假设为原假设 $H_0$，原假设不成立的假设为备择假设 $H_1$。
     - 只检验参数的假设是否正确则为参数假设检验，否则为非参数假设检验。

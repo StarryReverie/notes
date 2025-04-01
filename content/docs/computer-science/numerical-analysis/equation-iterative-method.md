@@ -1,9 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
-  - equation
+title: 方程的迭代解法
+weight: 200
+math: true
 ---
+
 - **确定初值**
     - **画图法**
     - **扫描法**

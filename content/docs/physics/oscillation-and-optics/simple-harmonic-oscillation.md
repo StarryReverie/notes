@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - oscillation
+title: 简谐振动
+weight: 200
+math: true
 ---
+
 - **定义**
     - **基本概念**
         - 合力为零的位置定义为平衡位置。

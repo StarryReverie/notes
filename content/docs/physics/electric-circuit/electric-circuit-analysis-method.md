@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - electric-circuits
-  - kirchhoffs-law
+title: 电路分析方法
+weight: 300
+math: true
 ---
+
 - **2b 分析法**
     - 假设电路有 $b$ 条支路，$n$ 个节点，则电路每条支路都有电压和电流两个变量。
     - 2b 分析法需要 $2b$ 个方程，包括：

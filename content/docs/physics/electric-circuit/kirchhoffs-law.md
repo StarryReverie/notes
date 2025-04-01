@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - electric-circuits
-  - kirchhoffs-law
+title: 基尔霍夫定律
+weight: 200
+math: true
 ---
+
 - **基尔霍夫电流定律 / KCL**
     - 对于任一集总电路中的任一节点，在任一时刻，流出和流进该节点的所有支路电流的代数和相等，即
       $$

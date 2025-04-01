@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - function
-  - limits
+title: 多元函数
+weight: 1700
+math: true
 ---
+
 - **多元函数定义**
     - 设 $D\in R^n$ 是一个点集，对于 $\forall P(x_1,x_2,\dots,x_n)\in D$。$y$ 按照一定规则 $f$ 总有唯一确定的值与 $P(x_1,x_2,\dots,x_n)$ 对于，则称 $y$ 或 $f$ 为 $x_1,x_2,\dots,x_n$ 或 $P$ 的 $n$ 元函数，记作 $y=f(x_1,x_2,\dots,x_n)$ 或 $z=f(P)$。
     - $x_1,x_2,\dots,x_n$ 为自变量，$y$ 为因变量，$D$ 为定义域。

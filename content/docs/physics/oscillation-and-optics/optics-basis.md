@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - optics
+title: 光学基础
+weight: 300
+math: true
 ---
+
 - **光程**
     - 不同介质的折射率不同，则光传播相同时间的路程也不同。
     - 一束光在真空中波长为 $\lambda$，在折射率为 $n$ 的介质中波长为 $\lambda'$，则

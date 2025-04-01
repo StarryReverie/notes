@@ -1,11 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - integral
-  - function
-  - derivative
+title: 不定积分
+weight: 1000
+math: true
 ---
+
 - **定义**
     - 若 $F(x)$ 是 $f(x)$ 的一个原[函数](/notes/docs/mathematics/calculus/function)，则 $F(x)+C$ 也是 $f(x)$ 的原函数。
     - $f(x)$ 在区间 $I$ 上的所有原函数一般表达式 $F(x)+C$ 称为 $f(x)$ 在区间 $I$ 上的不定积分，记作 $\int f(x)\mathrm dx=F(x)+C$。

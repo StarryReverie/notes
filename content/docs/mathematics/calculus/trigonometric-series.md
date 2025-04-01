@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - series
+title: 三角级数
+weight: 2600
+math: true
 ---
+
 - **三角级数**
     - 三角级数定义为以下的函数项[级数](/notes/docs/mathematics/calculus/series)：
       $$

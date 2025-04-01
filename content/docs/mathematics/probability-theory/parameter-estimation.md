@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - statistics
+title: 参数估计
+weight: 700
+math: true
 ---
+
 - **点估计**
     - **矩估计**
         - 设总体 $X$，$f(x;\theta_1,\dots,\theta_n)$ 为其概率密度函数或分布列。$\theta_1,\dots,\theta_n$ 未知。

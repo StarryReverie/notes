@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - statistics
+title: 数理统计基础
+weight: 600
+math: true
 ---
+
 - **样本**
     - **定义**
         - 已知总体 $X$，$X_1,X_2,\dots,X_n$ 互相[独立](/notes/docs/mathematics/probability-theory/probability-basis#b59tln)，与 $X$ 同分布，则 $X_1,X_2,\dots,X_n$ 是简单随机样本。

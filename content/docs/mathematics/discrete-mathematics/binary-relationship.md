@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - set-theory
+title: 二元关系
+weight: 700
+math: true
 ---
+
 - **定义**
     - 如果一个[集合](/notes/docs/mathematics/discrete-mathematics/set)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
     - $\langle x,y \rangle \in R$ 记作 $xRy$，$\langle x, y \rangle \notin R$ 记作 $x \not R y$。

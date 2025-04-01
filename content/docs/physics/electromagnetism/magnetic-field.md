@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - electromagnetism
+title: 磁场
+weight: 400
+math: true
 ---
+
 - **毕奥-萨伐尓定律**
     - **定义**
         - 取电流元 $I\mathrm d\boldsymbol l$，则其在某出产生 $\mathrm d\boldsymbol B = \dfrac{\mu_0}{4\pi}\dfrac{I\mathrm d\boldsymbol l \times \boldsymbol e_r}{r^2}$。

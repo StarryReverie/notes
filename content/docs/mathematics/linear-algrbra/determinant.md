@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - determinant
-  - matrix
+title: 行列式
+weight: 600
+math: true
 ---
+
 - **定义**
     - 对于方阵 $A=\begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n}\\ a_{21} & a_{22} & \cdots  & a_{2n}\\ \vdots& \vdots & \ddots & \vdots\\ a_{n1} & a_{n2} & \cdots &a_{nn}\end{bmatrix}$，定义 $A$ 的行列式为 $\sum\limits_{p_1,p_2,\dots,p_n}(-1)^{\tau(p_1,p_2,\dots,p_n)}a_{1p_1}a_{2p_2}\cdots a_{np_n}$，其中 $p_1,p_2,\dots,p_n$ 是 $1$ 到 $n$ 的排列，$\tau(p_1,p_2,\dots,p_n)$ 是 $p_1,p_2,\dots,p_n$ 中的逆序对数。
     - $A$ 的行列式记作 $|A|$ 或 $\det A$，$|A|=\begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n}\\ a_{21} & a_{22} & \cdots  & a_{2n}\\ \vdots& \vdots & \ddots & \vdots\\ a_{n1} & a_{n2} & \cdots &a_{nn}\end{vmatrix}$。

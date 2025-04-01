@@ -1,11 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - limit
-  - derivative
-  - function
+title: 洛必达法则
+weight: 800
+math: true
 ---
+
 - **定理**
     - 设 $f(x),g(x)$ 满足以下条件，则 $\lim\limits_{x\to x_0}\frac{f(x)}{g(x)}=\lim\limits_{x\to x_0}\frac{f'(x)}{g'(x)}$：
         - $\lim\limits_{x\to x_0}f(x)=0,\lim\limits_{x\to x_0}g(x)=0$ 或 $\lim\limits_{x\to x_0}f(x)=\infty,\lim\limits_{x\to x_0}g(x)=\infty$;

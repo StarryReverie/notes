@@ -1,7 +1,7 @@
 ---
-tags:
-  - programming
-  - matlab
+title: MATLAB 语言基础
+weight: 100
+math: false
 ---
 
 - **常用基础函数**

@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - algebra
+title: 代数系统
+weight: 800
+math: true
 ---
+
 - **二元运算** <span id="krwh8o"></span>
     - **定义**
         - $S$ 为[集合](/notes/docs/mathematics/discrete-mathematics/set)，$f:S\times S \to S$ 称为 $S$ 上的二元运算。

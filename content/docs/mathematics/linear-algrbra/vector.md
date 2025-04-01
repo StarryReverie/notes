@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - analytical-geometry
-  - vector
+title: 向量
+weight: 400
+math: true
 ---
+
 - **向量**
     - **定义**
         - 设有 $n$ 个数 $a_1,a_2,\cdots,a_n \in F$，列[矩阵](/notes/docs/mathematics/linear-algrbra/matrix) $\begin{bmatrix} a_1\\ a_2\\ \vdots\\a_n\end{bmatrix}=\begin{bmatrix} a_1 & a_2 & \cdots & a_n\end{bmatrix}^{\mathrm T}$ 为 $F$ 上的 $n$ 元向量，$a_i$ 是其第 $i$ 个分量。

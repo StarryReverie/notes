@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - series
+title: 级数
+weight: 2400
+math: true
 ---
+
 - **常数项级数**
     - **定义**
         - 对于数列 $\{a_n\}$，定义其常数项无穷级数为
@@ -56,7 +56,7 @@ tags:
             - 交错级数可以表示为 $\sum\limits_{n=1}^{+\infty}(-1)^{n-1}a_n$ 或 $\sum\limits_{n=1}^{+\infty}(-1)^n a_n$。
         - **性质**
             - **莱布尼茨判别法**
-                - 已知交错级数 $\sum\limits_{n=1}^{+\infty}(-1)^{n-1}a_n$，满足 $\lim\limits_{n\to+\infty}a_n=0$ 且 $a_n$ 单调递减，则级数收敛$，s\le a_1,r_n\le|a_{n+1}|$。
+                - 已知交错级数 $\sum\limits_{n=1}^{+\infty}(-1)^{n-1}a_n$，满足 $\lim\limits_{n\to+\infty}a_n=0$ 且 $a_n$ 单调递减，则级数收敛，$s\le a_1,r_n\le|a_{n+1}|$。
     - **绝对收敛和条件收敛**
         - **定义**
             - 已知一般级数 $\sum\limits_{n=1}^{+\infty}a_n$，定义其绝对值级数为 $\sum\limits_{n=1}^{+\infty}|a_n|$。

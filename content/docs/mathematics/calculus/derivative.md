@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - derivative
-  - function
+title: 导数
+weight: 400
+math: true
 ---
+
 - **定义** <span id="u884j8"></span>
     - 设[函数](/notes/docs/mathematics/calculus/function) $y=f(x)$ 在点 $x_0$ 的某邻域内有定义，当自变量在 $x_0$ 处取得增量 $\Delta x$ 时，函数取得相应的增量 $\Delta y=f(x_0+\Delta x)-f(x_0)$，如果[极限](/notes/docs/mathematics/calculus/limit) $\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$ 存在，则称 $f(x)$ 在 $x_0$ 处可导，且称此极限值为 $f(x_0)$ 在点 $x_0$ 处的导数，记作 $f'(x_0)$，或 $y'\Big|_{x=x_0},\frac{\mathrm dy}{\mathrm dx}\Big|_{x=x_0},\frac{\mathrm df}{\mathrm dx}\Big|_{x=x_0}$。 <span id="ri73aj"></span>
     - $f'(x_0)$ 也可以写成 $\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}$。

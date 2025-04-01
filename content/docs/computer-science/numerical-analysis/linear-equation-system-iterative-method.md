@@ -1,9 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
-  - equation
+title: 线性方程组的迭代解法
+weight: 500
+math: true
 ---
+
 - **简单迭代法**
     - **迭代公式**
         - 已知[线性方程组](/notes/docs/mathematics/linear-algrbra/linear-equation-system) $A\boldsymbol x = \boldsymbol b$。

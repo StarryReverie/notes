@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - electric-circuits
-  - dynamic-electric-circuits
+title: 二阶电路
+weight: 600
+math: true
 ---
+
 - **定义**
     - 如果一个电路包含两个个动态元件（电容和电感），则这个电路就是二阶电路。
     - 在分析方法上，二阶电路与一阶电路相似，都对动态元件外的部分进行等效，使用微分方程表示电路。

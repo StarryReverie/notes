@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - logic-theory
+title: 一阶逻辑
+weight: 400
+math: true
 ---
+
 - **等值式**
     - **定义**
         - 类似[命题逻辑](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation#ysze9u)中的定义。

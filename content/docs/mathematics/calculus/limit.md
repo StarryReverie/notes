@@ -1,11 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - limit
-  - sequence
-  - function
+title: 极限
+weight: 100
+math: true
 ---
+
 - **数列的极限**
     - **定义**
         - 设数列 $\{a_n\}$，$A$ 是一常数，如果对于任意给定的正数 $\varepsilon$，都存在正数 $N$，使得当 $n>N$ 时，恒有 $|a_n-A|<\varepsilon$ 成立，则称数列 $\{a_n\}$ 以 $A$ 为极限，或者称数列 $\{a_n\}$ 收敛于 $A$，记作 $\lim\limits_{n\to \infty} a_n=A$ 或 $a_n\to A(n\to \infty)$。如果数列 $\{a_n\}$ 没有极限，则称数列 $\{a_n\}$ 是发散的。

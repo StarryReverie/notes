@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - algebra
+title: 格
+weight: 1000
+math: true
 ---
+
 - **格**
     - **定义**
         - 偏序格：

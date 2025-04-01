@@ -1,11 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - derivative
-  - differentiation
-  - function
+title: 曲率
+weight: 600
+math: true
 ---
+
 - **弧微分** <span id="lkfh2a"></span>
     - 对曲线的一段弧的长度的[微分](/notes/docs/mathematics/calculus/differential)称为弧微分 $\mathrm ds$。
     - 对平面直角坐标系下的函数 $y=y(x)$：

@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - logic-theory
+title: 命题逻辑等值演算
+weight: 200
+math: true
 ---
+
 - **等值式**
     - **定义**
         - 若 $A \leftrightarrow B$ 是[重言式](命题逻辑#^0anp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 <span id="ysze9u"></span>

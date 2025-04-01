@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - mechanics
-  - particle-mechanics
+title: 牛顿运动定律
+weight: 400
+math: true
 ---
+
 - **牛顿运动定律**
     - **牛顿第一定律**
         - 任何物体，如果没有力作用在它上面，都将保持静止或匀速直线运动状态不变，这个定律也称为惯性定律。

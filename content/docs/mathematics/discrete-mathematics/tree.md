@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - graph-theory
+title: 树
+weight: 1400
+math: true
 ---
+
 - **无向树**
     - **定义**
         - 无向树：连通无回路的无向[图](/notes/docs/mathematics/discrete-mathematics/graph-basis#xknur9)。

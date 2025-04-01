@@ -1,13 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - matrix
-  - eigenvalue
-  - eigenvector
-  - similar-matrix
-  - jordan-form
+title: 相似矩阵
+weight: 900
+math: true
 ---
+
 - **定义**
     - 对于 $n$ 阶方阵 $A,B$，若存在可逆矩阵 $P$ 使得 $P^{-1}AP=B$，则 $A$ 与 $B$ 相似，记作 $A\sim B$，$P$ 是由 $A$ 到 $B$ 的相似变换矩阵。
 - **性质**

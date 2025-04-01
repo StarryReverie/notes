@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - mechanics
-  - rigid-body-mechanics
+title: 刚体的定轴转动
+weight: 600
+math: true
 ---
+
 - **转动惯量**
     - **定义** <span id="essly2"></span>
         - 转动惯量衡量刚体绕某一轴转动的惯性大小。

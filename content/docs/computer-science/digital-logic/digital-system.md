@@ -1,8 +1,9 @@
 ---
-tags:
-  - computer-science
-  - digital-logic
+title: 数字系统
+weight: 100
+math: true
 ---
+
 - **数制**
     - **表示**
         - 二进制：$(1010)_2,1010\mathrm B$

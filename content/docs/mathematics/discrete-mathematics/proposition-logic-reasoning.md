@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - logic-theory
+title: 命题逻辑推理
+weight: 300
+math: true
 ---
+
 - **推理**
     - 设 $A_1,A_2,\dots,A_n,B$ 为命题公式，则 $A_1 \land A_2 \land \cdots \land A_n \to B$ 或 $\{A_1,A_2,\dots,A_n\} \vdash B$ 是一个推理。
     - 若 $A_1 \land A_2 \land \cdots \land A_n \to B$ 永真，则推理是有效的，记作 $A_1 \land A_2 \land \cdots \land A_n \Rightarrow B$ 或 $\{A_1,A_2,\dots,A_n\} \models B$，$B$ 为有效结论。
@@ -25,7 +25,7 @@ tags:
             - 合式公式
             - 推理规则
     - **证明**
-        - 设前提 $A_1,A_2,\dots,A_k$，结论 $B$，公式序列 $C_1,C_2,\dots,C_l ＝ B$。若 $C_i$ 是某个 $A_j$ 或其前面的 $C$ 的结论，则序列是一个证明。
+        - 设前提 $A_1,A_2,\dots,A_k$，结论 $B$，公式序列 $C_1,C_2,\dots,C_l = B$。若 $C_i$ 是某个 $A_j$ 或其前面的 $C$ 的结论，则序列是一个证明。
     - **证明方法**
         - **直接法**
             - 安装证明定义。

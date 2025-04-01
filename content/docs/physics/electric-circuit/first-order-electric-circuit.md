@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - electric-circuits
-  - dynamic-electric-circuits
+title: 一阶电路
+weight: 500
+math: true
 ---
+
 - **定义**
     - 如果一个电路只包含一个动态元件（电容或电感），则这个电路就是一阶电路。
     - 如果动态电路中的有多个同类型动态元件，则可以等效为一个后当作一阶电路处理。
@@ -128,9 +128,9 @@ tags:
           \varepsilon(t)=\left\{\begin{matrix}0, & t<0 \\1, & t\ge 0\end{matrix}\right.
           $$
         - 由此可以定义延时单位阶跃函数定义为 $\varepsilon(t-t_0)$。
-        - 单位阶跃函数可以用于表示开关的闭合，$U_S$ 电压源在 $t=0 是接入电路，则可以表示为 $u_s(t)=U_s\varepsilon(t)$。
+        - 单位阶跃函数可以用于表示开关的闭合，$U_S$ 电压源在 $t=0$ 是接入电路，则可以表示为 $u_s(t)=U_s\varepsilon(t)$。
     - **分段常量函数**
-        - 初值为 $0$（$t\to -\infty）、$n+1$ 段常量函数组成的分段函数可以用 $n$ 个（延时）单位阶跃函数相加表示：
+        - 初值为 $0$（$t\to -\infty$）、$n+1$ 段常量函数组成的分段函数可以用 $n$ 个（延时）单位阶跃函数相加表示：
           $$
           f(t)=\sum_{i=1}^n A_i\varepsilon(t-t_i)\ (t_i\ge 0)
           $$

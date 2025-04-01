@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - function
-  - integral
+title: 曲线积分
+weight: 2200
+math: true
 ---
+
 - **第一类曲线积分**
     - **定义**
         - 设 $L$ 是平面 $xOy$ 上的光滑曲线弧，$f(x,y)$ 在 $L$ 上有界。

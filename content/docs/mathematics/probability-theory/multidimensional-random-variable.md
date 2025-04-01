@@ -1,12 +1,12 @@
 ---
-tags:
-  - mathematics
-  - probability-theory
-  - random-variable
+title: 多维随机变量
+weight: 300
+math: true
 ---
+
 - **联合分布函数**
     - **定义**
-        - 设 $(X,Y)$ 是二维随机变量 / 二维随机[向量](/notes/docs/mathematics/linear-algrbra/vector)，定义联合分布函数 $F(x,y) ＝ P(X \le x,Y \le y)$。
+        - 设 $(X,Y)$ 是二维随机变量 / 二维随机[向量](/notes/docs/mathematics/linear-algrbra/vector)，定义联合分布函数 $F(x,y) = P(X \le x,Y \le y)$。
     - **性质**
         - $F(x,y) \in [0,1]$
         - $\lim\limits_{x \to -\infty} F(x,y_0) = 0$，$\lim\limits_{y \to -\infty} F(x_0,y) = 0$，$x_0,y_0$ 为任意实数或无穷大。

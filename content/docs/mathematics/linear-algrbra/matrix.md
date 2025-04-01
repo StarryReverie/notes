@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - linear-algebra
-  - matrix
+title: 矩阵
+weight: 200
+math: true
 ---
+
 - **初等变换**
     - **初等行变换** <span id="kso3bg"></span>
         - 互换矩阵中的第 $i$ 行和第 $j$ 行：$R_i \leftrightarrow R_j$

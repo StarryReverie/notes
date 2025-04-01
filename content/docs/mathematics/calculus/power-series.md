@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - series
+title: 幂级数
+weight: 2500
+math: true
 ---
+
 - **幂级数**
     - **定义**
         - [级数](/notes/docs/mathematics/calculus/series) $\sum\limits_{n=0}^{+\infty}a_n(x-x_0)^n$ 被称为幂级数。

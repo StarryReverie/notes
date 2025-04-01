@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - differential-equation
-  - function
+title: 一阶微分方程
+weight: 1500
+math: true
 ---
+
 - **求解**
     - **变量可分方程** $\frac{\mathrm dy}{\mathrm dx}=f(x)g(y)$
         - 方法：

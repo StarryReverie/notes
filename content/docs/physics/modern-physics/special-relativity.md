@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - modern-physics
+title: 狭义相对论
+weight: 100
+math: true
 ---
+
 - **洛伦兹变换**
     - 设 $S,S'$ 都是惯性系，对应坐标轴平行，$S'$ 相对 $S$ 的速度为 $u\boldsymbol i$。
     - 设质点在 $S,S'$ 中的时空坐标分别为 $(x,y,z,t),(x',y',z',t')$，则

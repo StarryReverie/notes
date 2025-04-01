@@ -1,8 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
+title: 插值
+weight: 600
+math: true
 ---
+
 - **牛顿基本差商公式**
     - **差商**
         - 定义 $f(x)$ 的差商为 $f[x_0,x_1] = \dfrac{f(x_1)-f(x_0)}{x_1-x_0}$。

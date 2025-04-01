@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - logic-theory
+title: 命题逻辑
+weight: 100
+math: true
 ---
+
 - **命题**
     - **定义** <span id="e9ee8d"></span>
         - 判断结果唯一的陈述句称为命题。

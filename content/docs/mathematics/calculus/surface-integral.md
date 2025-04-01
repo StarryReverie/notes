@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - function
-  - integral
+title: 曲面积分
+weight: 2300
+math: true
 ---
+
 - **第一类曲面积分**
     - **定义**
         - 设 $S$ 是的光滑曲面， $f(x,y,z)$ 在 $S$ 上有界。

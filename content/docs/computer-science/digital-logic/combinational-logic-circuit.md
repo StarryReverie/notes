@@ -1,8 +1,9 @@
 ---
-tags:
-  - computer-science
-  - digital-logic
+title: 组合逻辑电路
+weight: 200
+math: true
 ---
+
 - **二值逻辑和逻辑门**
     - **二值逻辑**
         - 参考[命题逻辑](/notes/docs/mathematics/discrete-mathematics/proposition-logic)和[布尔代数](/notes/docs/mathematics/discrete-mathematics/lattice#l7cahh)。
@@ -11,7 +12,7 @@ tags:
             - 或：$A+B$
             - 非：$\overline A$
     - **逻辑门**
-        - ![](assets-combinational-logic-circuit/gates.png)
+        - ![](gates.png)
         - 逻辑门具有门延时，电路的时钟一般比其大一两个数量级。
     - **定时图**
         - 定时图的横坐标是时间，纵坐标是 $0$ 或 $1$。

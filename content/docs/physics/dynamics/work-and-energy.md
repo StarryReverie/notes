@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - mechanics
-  - particle-mechanics
+title: 功和能
+weight: 500
+math: true
 ---
+
 - **功**
     - **定义**
         - $\boldsymbol F$ 作用于物体，沿 $L$ 运动，一般的定义为
@@ -21,7 +21,7 @@ tags:
               W=\int_L \boldsymbol F\cdot\mathrm d\boldsymbol r=\sum_{i=1}{n}\int_L \boldsymbol F_i\cdot\mathrm d\boldsymbol r
               $$
         - **一对力做功**
-            - 一对力 $\boldsymbol F_1,\boldsymbol F_2（\boldsymbol F_1=-\boldsymbol F_2）$ 分别沿 $L_1$ 和 $L_2$ 对质点 $1$ 和 $2$ 做功。
+            - 一对力 $\boldsymbol F_1,\boldsymbol F_2\ (\boldsymbol F_1=-\boldsymbol F_2)$ 分别沿 $L_1$ 和 $L_2$ 对质点 $1$ 和 $2$ 做功。
             - 设 $A$ 表示初态，此时质点 $1$ 和 $2$ 分别位于 $L_1$ 和 $L_2$，同理设 $B$ 表示末态，质点在终点。
             - 则一对力做的功为
               $$

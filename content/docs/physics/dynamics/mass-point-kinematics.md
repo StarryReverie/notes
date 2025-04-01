@@ -1,9 +1,9 @@
 ---
-tags:
-  - physics
-  - mechanics
-  - particle-mechanics
+title: 质点运动学
+weight: 100
+math: true
 ---
+
 - **运动参量**
     - **位置矢量**
         - **定义**

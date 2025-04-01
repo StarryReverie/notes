@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - differential-equation
-  - function
+title: 线性微分方程
+weight: 1300
+math: true
 ---
+
 - **解的结构**
     - $n$ **阶线性齐次微分方程**
         - 通解是 $n$ 个线性无关的特解的线性组合： $\bar y=C_1y_1+C_2y_2+\cdots+C_ny_n$。

@@ -1,9 +1,9 @@
 ---
-tags:
-  - mathematics
-  - discrete-mathematics
-  - algebra
+title: 群
+weight: 900
+math: true
 ---
+
 - **群**
     - **定义**
         - 已知[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system) $V=<A,\circ>$

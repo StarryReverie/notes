@@ -1,8 +1,9 @@
 ---
-tags:
-  - computer-science
-  - numerical-analysis
+title: 数值计算误差
+weight: 100
+math: true
 ---
+
 - **误差**
     - **定义**
         - $a$ 为计算值，$A$ 为真实值。

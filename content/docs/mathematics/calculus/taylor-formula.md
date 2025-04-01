@@ -1,11 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - derivative
-  - function
-  - formula
+title: 泰勒公式
+weight: 900
+math: true
 ---
+
 - **定义**
     - **带皮亚诺余项的泰勒公式**
         - 设[函数](/notes/docs/mathematics/calculus/function) $f(x)$ 在 $x_0$ 的某邻域有 $n-1$ 阶导数， $x_0$ 处有 $n$ 阶导数，则 $f(x)=\sum\limits_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)$。

@@ -1,10 +1,9 @@
 ---
-tags:
-  - mathematics
-  - calculus
-  - differential-equation
-  - function
+title: 微分方程
+weight: 1200
+math: true
 ---
+
 - **定义**
     - 含有未知函数的导数或微分的方程称为微分方程。
     - 微分方程中所出现的未知函数的最高阶导数的阶数叫作微分方程的阶。
