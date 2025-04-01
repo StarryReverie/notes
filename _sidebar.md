@@ -19,7 +19,7 @@
 		- [插值](/pages/computer-science/numerical-analysis/interpolation)
 		- [数值积分](/pages/computer-science/numerical-analysis/numerical-integral.md)
 - 数学
-	- 微积分
+	- 微积分/数学分析
 		- [极限](/pages/mathematics/calculus/limit.md)
 		- [无穷小和无穷大](/pages/mathematics/calculus/infinitesimal-and-infinite.md)
 		- [函数](/pages/mathematics/calculus/function.md)

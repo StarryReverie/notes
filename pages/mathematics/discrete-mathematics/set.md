@@ -14,7 +14,7 @@ tags:
 		- 空集唯一。
 	- **幂集 $P(A)$**
 		- $P(A) = \{x | x \subseteq A\}$，即 $A$ 的所有子集。
-- **集合运算**
+- **集合运算** <span id="qtjafh"></span>
 	- **基本运算** <span id="g6tiqk"></span>
 	    - 并 $A \cup B = \{x | x \in A \lor x \in B \}$
 	    - 交 $A \cap B = \{x | x \in A \land x \in B \}$
