@@ -12,7 +12,7 @@ math: true
             - 或：$A+B$
             - 非：$\overline A$
     - **逻辑门**
-        - ![](gates.png)
+        - ![](/images/by-name/combinational-logic-circuit/gates.png)
         - 逻辑门具有门延时，电路的时钟一般比其大一两个数量级。
     - **定时图**
         - 定时图的横坐标是时间，纵坐标是 $0$ 或 $1$。

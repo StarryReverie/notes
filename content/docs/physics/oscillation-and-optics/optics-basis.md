@@ -22,4 +22,4 @@ math: true
 - **透镜成像**
     - 任何光线通过凸透镜后都与过光心的平行的光线相交于焦平面。
     - 绘制一条光线的光路时，先作出平行且过光心的辅助光线，作出焦平面，找到交点，最后连接。
-    - ![](assets-optics-basis/lens-imaging.png)
+    - ![](/images/by-name/optics-basis/lens-imaging.png)
