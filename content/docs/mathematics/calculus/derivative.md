@@ -66,7 +66,7 @@ math: true
         - 特别定义 $f^{(0)}(x)$ 为 $f(x)$。
         - 高阶导数从四阶开始使用 $y^{(n)}$ 的形式。
     - **公式**
-        - $(x^m)^{(n)}=A_{m}^{n}x^{m-n}=\left\{\begin{matrix} m(m-1)(m-2)\cdots(m-n+1)x^{m-n}, & m>n\\ m!, & m=n\\ 0, & m<n\end{matrix}\right.(m\in \mathrm N^{*})$
+        - $(x^m)^{(n)}=A_{m}^{n}x^{m-n}=\left\{\begin{matrix} m(m-1)(m-2)\cdots(m-n+1)x^{m-n}, & m > n\\ m!, & m=n\\ 0, & m < n\end{matrix}\right.(m\in \mathrm N^{*})$
         - $(x^\alpha)^{(n)}=\alpha(\alpha-1)(\alpha-2)\cdots(\alpha-n+1)x^{\alpha-n}(\alpha\notin\mathrm N^{*})$
         - $\left(\frac{1}{ax+b}\right)^{(n)}=(-1)^n\frac{a^nn!}{(ax+b)^{n+1}}$
         - $\left(a^{x}\right)^{(n)}=a^x \ln^n a,\left(e^{ax}\right)^{(n)}=a^n e^x$

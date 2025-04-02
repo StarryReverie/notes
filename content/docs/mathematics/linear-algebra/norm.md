@@ -6,7 +6,7 @@ math: true
 
 - **向量范数**
     - **定义**
-        - [向量](/notes/docs/mathematics/linear-algrbra/vector) $\boldsymbol x$ 的范数记作 $||\boldsymbol x||$，满足
+        - [向量](/notes/docs/mathematics/linear-algebra/vector) $\boldsymbol x$ 的范数记作 $||\boldsymbol x||$，满足
             - $||\boldsymbol x||\ge 0$，$||\boldsymbol x|| = 0$ 当且仅当 $\boldsymbol x=\boldsymbol 0$
             - $||a\boldsymbol x||=a||\boldsymbol x||$
             - $||\boldsymbol x + \boldsymbol y|| \le ||\boldsymbol x|| + ||\boldsymbol y||$
@@ -16,7 +16,7 @@ math: true
         - $\infty$-范数：$||\boldsymbol x||_{\infty} = \displaystyle\max_{i = 1}^n \{x_i\}$
 - **矩阵范数** <span id="xuxoty"></span>
     - **定义**
-        - [矩阵](/notes/docs/mathematics/linear-algrbra/matrix) $A$ 的范数记作 $||\boldsymbol A||$，满足
+        - [矩阵](/notes/docs/mathematics/linear-algebra/matrix) $A$ 的范数记作 $||\boldsymbol A||$，满足
             - $||A||\ge 0$，$||A|| = 0$ 当且仅当 $A=0$
             - $||aA||=a||A||$
             - $||A + B|| \le ||A|| + ||B||$

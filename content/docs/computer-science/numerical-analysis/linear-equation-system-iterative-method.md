@@ -6,7 +6,7 @@ math: true
 
 - **简单迭代法**
     - **迭代公式**
-        - 已知[线性方程组](/notes/docs/mathematics/linear-algrbra/linear-equation-system) $A\boldsymbol x = \boldsymbol b$。
+        - 已知[线性方程组](/notes/docs/mathematics/linear-algebra/linear-equation-system) $A\boldsymbol x = \boldsymbol b$。
         - 第一种迭代格式：
             - 原方程组化为 $\boldsymbol x = (I - A)\boldsymbol x + \boldsymbol b$，则迭代公式为 $\boldsymbol x^{(k+1)} = (I - A) \boldsymbol x^{(k)} + \boldsymbol b$。
         - 第二种迭代格式（雅可比迭代法）：
@@ -22,7 +22,7 @@ math: true
         - 以上充分条件的统一表述：$\| M \| < 1$ 时，简单迭代法必定收敛。
         - 另外的误差估计公式：$\|\boldsymbol x^{(k)} - \boldsymbol \alpha\| \le \dfrac{\|M\|}{1 - \|M\|}\|\boldsymbol x^{(k)} - \boldsymbol x^{(k-1)}\|$。
         - 适用于雅可比迭代法的收敛充分条件：
-            - 如果矩阵 $A$ 不可以通过仅交换行和列的[合同变换](/notes/docs/mathematics/linear-algrbra/matrix#rkhrjq)得到形式 $\begin{bmatrix} A & B\\ 0 &D\end{bmatrix}$，则其不可约。
+            - 如果矩阵 $A$ 不可以通过仅交换行和列的[合同变换](/notes/docs/mathematics/linear-algebra/matrix#rkhrjq)得到形式 $\begin{bmatrix} A & B\\ 0 &D\end{bmatrix}$，则其不可约。
             - 如果矩阵 $A$ 的对角线元素满足 $|a_{ii}| \ge \displaystyle\sum_{j\ne i} |a_{ij}|$，则其对角占优。
             - 如果原方程组 $A\boldsymbol x = \boldsymbol b$ 中 $A$ 不可约，则雅可比迭代法收敛。
 - **赛德尔迭代法**

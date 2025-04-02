@@ -27,7 +27,7 @@ math: true
     - **正交替换法**
         - 正交替换法适用于实二次型。
         - 方法：
-            - 对于 $f(\boldsymbol x)=\boldsymbol x^{\mathrm T}A\boldsymbol x$，进行正交[相似对角化](/notes/docs/mathematics/linear-algrbra/similar-matrix#sbr8c0) $Q^{\mathrm T}AQ=\Lambda$。
+            - 对于 $f(\boldsymbol x)=\boldsymbol x^{\mathrm T}A\boldsymbol x$，进行正交[相似对角化](/notes/docs/mathematics/linear-algebra/similar-matrix#sbr8c0) $Q^{\mathrm T}AQ=\Lambda$。
             - $Q$ 作为线性替换矩阵，$\boldsymbol x=Q\boldsymbol y$。
             - $f(\boldsymbol x)=(Q\boldsymbol y)^{\mathrm T}A(Q\boldsymbol y)=\boldsymbol y^{\mathrm T}(Q^{\mathrm T}AQ)\boldsymbol y=\boldsymbol y^{\mathrm T}\Lambda\boldsymbol y=\lambda_1y_1^2+\lambda_2y_2^2+\cdots+\lambda_ny_n^2$。
         - 这也被称为主轴定理。
@@ -64,7 +64,7 @@ math: true
             - $A$ 的特征值全大于 $0$。
     - **判定**
         - 利用以上正定矩阵的性质判断。
-        - 赫尔维兹定理：若 $A$ 的各阶[顺序主子式](/notes/docs/mathematics/linear-algrbra/determinant#pqct6z)均大于 $0$，则 $A$ 是正定矩阵。
+        - 赫尔维兹定理：若 $A$ 的各阶[顺序主子式](/notes/docs/mathematics/linear-algebra/determinant#pqct6z)均大于 $0$，则 $A$ 是正定矩阵。
             - 推论：若 $A$ 的各阶顺序主子式均大于等于 $0$，且其中一个等于 $0$，则 $A$ 是半正定矩阵。
     - **注意事项**
         - $A$ 是正定矩阵的隐含条件是 $A$ 是实对称矩阵。

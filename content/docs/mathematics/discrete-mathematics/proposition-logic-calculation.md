@@ -6,7 +6,7 @@ math: true
 
 - **等值式**
     - **定义**
-        - 若 $A \leftrightarrow B$ 是[重言式](命题逻辑#^0anp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 <span id="ysze9u"></span>
+        - 若 $A \leftrightarrow B$ 是[重言式](/notes/docs/mathematics/discrete-mathematics/proposition-logic#sanp3n)，则 $A$ 与 $B$ 等值，记作 $A \Leftrightarrow B$，称为等值式。 <span id="ysze9u"></span>
     - **常用等值式** <span id="sts2pd"></span>
         - 双重否定律：$\neg \neg A \Leftrightarrow A$
         - 幂等律：$A \land A \Leftrightarrow A$，$A \lor A \Leftrightarrow A$
@@ -44,7 +44,7 @@ math: true
         - **范式存在定理**
             - 任何命题公式存在范式。
     - **主范式**
-        - **极小 / 大项** ^nh6buf
+        - **极小 / 大项** <span id="nh6buf"></span>
             - 含 $n$ 个命题变项 $p_1,p_2,\dots,p_n$ 的简单合取 / 析取式中，$p_i$ 恰好出现在第 $i$ 位上，则公式为极小 / 大项。
             - 极小项可以编码为其成真赋值 $a$，记作 $m_a$，极大项可以编码为其成假赋值 $b$，记作 $M_b$。
         - **主析取 / 合取范式**

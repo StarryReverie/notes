@@ -49,7 +49,7 @@ math: false
         - 字符串是一个整体的变量，不是数组，也不能按下标访问。
 - **控制流**
     - **`if` 条件控制**
-        - ```
+        - ```matlab
           if expression
               statements
           elseif expression
@@ -59,7 +59,7 @@ math: false
           end
           ```
     - **`switch` 条件控制**
-        - ```
+        - ```matlab
           switch switch_expression
              case case_expression
                 statements
@@ -70,8 +70,8 @@ math: false
                 statements
           end
           ```
-    - **`for`  循环控制**
-        - ```
+    - **`for` 循环控制**
+        - ```matlab
           for index = values
               statements
           end
@@ -80,7 +80,7 @@ math: false
         - 每次循环 `index` 会是数组的每一列的值。对于一个 $m\times n$ 矩阵，会循环 $n$ 次，每次获得一个 $m$ 元列向量。
         - 循环中可以使用 `break` 和 `continue` 语句退出循环或跳过当前循环。
     - **`while` 循环控制**
-        - ```
+        - ```matlab
           while expression
               statements
           end

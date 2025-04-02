@@ -19,10 +19,10 @@ math: true
     - **等价**
         - 若矩阵 $A$ 可以通过初等变换化为 $B$，则 $A$ 与 $B$ 等价，记作 $A\cong B$。
     - **相似**
-        - 详见[矩阵相似](/notes/docs/mathematics/linear-algrbra/similar-matrix)页面。
+        - 详见[矩阵相似](/notes/docs/mathematics/linear-algebra/similar-matrix)页面。
     - **合同** <span id="rkhrjq"></span>
         - 对于 $n$ 阶方阵 $A,B$，若存在可逆矩阵 $P$ 使得 $P^{\mathrm T}AP=B$，则 $A$ 与 $B$ 合同，记作 $A\simeq B$。
-        - 合同主要与[二次型](/notes/docs/mathematics/linear-algrbra/quadratic-form)有比较大的联系，二次型 $\boldsymbol x^{\mathrm T}A\boldsymbol x$ 经过非退化线性替换 $\boldsymbol x=P\boldsymbol y$ 得到 $\boldsymbol y^{\mathrm T}B\boldsymbol y$，则 $A\simeq B$。
+        - 合同主要与[二次型](/notes/docs/mathematics/linear-algebra/quadratic-form)有比较大的联系，二次型 $\boldsymbol x^{\mathrm T}A\boldsymbol x$ 经过非退化线性替换 $\boldsymbol x=P\boldsymbol y$ 得到 $\boldsymbol y^{\mathrm T}B\boldsymbol y$，则 $A\simeq B$。
 - **运算**
     - **加法**
         - 设 $A$ 与 $B$ 都是 $m\times n$ 矩阵，则 $A$ 与 $B$ 可以相加，记作 $A+B$。设 $C=A+B$，则 $c_{ij}=a_{ij}+b_{ij}$。
@@ -54,7 +54,7 @@ math: true
                 - 一类证明矩阵可逆的题目通常会给出一个等式和一个要证明可逆的矩阵，此时通常会将等号左边进行因式分解，其中一个为要证明的矩阵，剩下一些无法被分解的，一般是单位矩阵的数乘，移到等号右边。
                 - 如已知 $A^2-2A-3I=0$，证明 $A-4I$ 可逆，则分解为 $(A-4I)(A+2I)=-5I$。
         - **求解**
-            - 见[矩阵求逆](/notes/docs/mathematics/linear-algrbra/matrix-inverse)。
+            - 见[矩阵求逆](/notes/docs/mathematics/linear-algebra/matrix-inverse)。
     - **秩**
         - **定义**
             - 矩阵 $A$ 的阶梯形的非零行个数称为 $A$ 的秩，记作 $r(A)$。
@@ -74,7 +74,7 @@ math: true
             - 若 $r(A_{m\times n})=1$，则 $A$ 可以拆分成一个 $m\times 1$ 矩阵乘 $1\times n$ 矩阵。
         - **极限**
             - 对于矩阵序列 $\{A_n\}$，如果 $\lim\limits_{n \to +\infty} ||A_n - A|| = 0$，则 $\boldsymbol x_n$ 收敛于 $A$，记作 $\lim\limits_{n \to +\infty} A_n = A$。
-            - 此处[范数](/notes/docs/mathematics/linear-algrbra/norm)种类任意。
+            - 此处[范数](/notes/docs/mathematics/linear-algebra/norm)种类任意。
             - $\lim\limits_{n \to +\infty} A_n = A \iff A_n$ 各分量收敛于 $A$ 各分量。
 - **特殊矩阵**
     - **行矩阵**
@@ -141,9 +141,9 @@ math: true
             - **逆**
                 - 使用初等行变换。
                 - 设出分块矩阵的逆矩阵的每个块，列方程组求解。
-                - 利用[公式](矩阵求逆#^7v68w4)。
+                - 利用[公式](/notes/docs/mathematics/linear-algebra/matrix#sv68w4)。
     - **正交矩阵**
         - **定义**
-            - 若 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_n$ 是 $R^n$ 的一个规范正交[基](向量空间#^sohrgj)，则 $Q=\begin{bmatrix} \boldsymbol a_1 & \boldsymbol a_2 & \cdots & \boldsymbol a_n\end{bmatrix}$ 称为正交矩阵。
+            - 若 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_n$ 是 $R^n$ 的一个规范正交[基](/notes/docs/mathematics/linear-algebra/vector-space#sohrgj)，则 $Q=\begin{bmatrix} \boldsymbol a_1 & \boldsymbol a_2 & \cdots & \boldsymbol a_n\end{bmatrix}$ 称为正交矩阵。
         - **性质**
             - $Q$ 为正交矩阵 $\iff Q^{\mathrm T}Q=QQ^{\mathrm T}=I\iff Q^{\mathrm T}=Q^{-1}$

@@ -30,10 +30,10 @@ math: true
         - 求解步骤：
             - 构造拉格朗日中值公式（或柯西中值公式），即 $f(x)-f(x_0)=f'(\xi)(x-x_0)$ 的形式，$x_0$ 很多时候是 $0$。
             - 利用 $\xi\in(\min\{x,x_0\},\max\{x,x_0\})$，讨论 $f'(\xi)(x-x_0)$ 与 $g(x)$ 和 $h(x)$ 的关系。
-        - 如证明 $x>0$ 时，$\frac{x}{1+x}<\ln(1+x)<x$：
+        - 如证明 $x>0$ 时，$\frac{x}{1+x}<\ln(1+x)< x$：
             - 设 $f(x)=\ln(1+x)$，$f'(x)=\frac{1}{1+x}$;
             - $\exists \xi\in(0,x)$，使得 $f(x)=f(x)-f(0)=f'(xi)(x-0)=\frac{x}{1+x}$;
-            - 则 $\frac{1}{1+x}<\frac{1}{1+\xi}<1\implies \frac{x}{1+x}<\ln(1+x)<x$。
+            - 则 $\frac{1}{1+x}<\frac{1}{1+\xi}<1\implies \frac{x}{1+x}<\ln(1+x)< x$。
     - **双变量不等式证明**
         - 适用于 $f(x)-f(y)\le g(x)-g(y)$ 等类似不等式的证明。
         - 求解步骤：

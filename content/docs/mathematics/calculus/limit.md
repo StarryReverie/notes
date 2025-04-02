@@ -55,7 +55,7 @@ math: true
     - **初等函数**
         - 若 $f(x)$ 是初等函数，且 $x_0$ 为定义域内的点，则 $\lim\limits_{x\to x_0} f(x)=f(x_0)$。
     - **分式函数**
-        - $\lim\limits_{x\to \infty} \frac{a_0x^m+a_1x^{m-1}+\cdots +a_m}{b_0x^n+b_1x^{n-1}+\cdots+b_n}=\begin{cases}\frac{a_0}{b_0}, & m=n \\0, & m<n \\ \infty, & m>n \\ \end{cases}$
+        - $\lim\limits_{x\to \infty} \frac{a_0x^m+a_1x^{m-1}+\cdots +a_m}{b_0x^n+b_1x^{n-1}+\cdots+b_n}=\begin{cases}\frac{a_0}{b_0}, & m=n \\0, & m < n \\ \infty, & m >1 n \\ \end{cases}$
     - **复合函数**
         - $\lim\limits_{u\to u_0} f(u)=A$（或 $\infty$），$\lim\limits_{x\to x_0} g(x)=u_0$，且在 $x_0$ 的某去心邻域内有 $g(x)\ne u_0$，则 $\lim\limits_{x\to x_0} (f \circ g)(x)=A$（或 $\infty$）。
 - **定理**

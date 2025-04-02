@@ -7,10 +7,10 @@ math: true
 - **格**
     - **定义**
         - 偏序格：
-            - 设 $<S,\preceq>$ 是[偏序](/notes/docs/mathematics/discrete-mathematics/binary-relationship#kynj0r)集，若 $\forall x,y \in S$ 满足 $\{x,y\}$ 都在 $S$ 存在最小上界和最大下界，则 $S$ 是偏序格。
+            - 设 $\langle S,\preceq \rangle$ 是[偏序](/notes/docs/mathematics/discrete-mathematics/binary-relationship#kynj0r)集，若 $\forall x,y \in S$ 满足 $\{x,y\}$ 都在 $S$ 存在最小上界和最大下界，则 $S$ 是偏序格。
             - 定义保交 $x \lor y$ 为取 $x,y$ 的最小上界，保联 $x \land y$ 为取 $x,y$ 的最大下界。
         - 代数格：
-            - 设 $<S,\star,\circ>$ 为[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system)，$\star,\circ$ 具有交换律、结合律、吸收律，则 $S$ 是代数格。
+            - 设 $\langle S,\star,\circ \rangle$ 为[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system)，$\star,\circ$ 具有交换律、结合律、吸收律，则 $S$ 是代数格。
             - 可以定义 $S$ 中的偏序关系 $\preceq$：$x \preceq y \iff x \circ y = y$。
             - $\land,\lor$ 满足 $x\land y = x \star y,x\lor y = x \circ y$。
         - 偏序格和代数格的定义是等价的，统称为格。
@@ -21,10 +21,10 @@ math: true
         - $a \preceq b \iff a \land b = a \iff a \lor b = b$。
         - 若 $a \preceq b,c \preceq d$，则 $a \land c \preceq b \land d$，$a \lor c \preceq b \lor d$，称为保序性。
         - $a \lor (b \land c) \preceq (a \lor b) \land (a \lor c)$，$(a \land b) \lor (a \land c) \preceq a \land (b \lor c)$，即 $\land,\lor$ 不一定有分配律。
-        - 已知 $<L,\land,\lor>$ 是格，$S \subseteq L$，若 $S$ 关于 $\land,\lor$ 构成格，则 $S$ 是 $L$ 的子格。
+        - 已知 $\langle L,\land,\lor \rangle$ 是格，$S \subseteq L$，若 $S$ 关于 $\land,\lor$ 构成格，则 $S$ 是 $L$ 的子格。
 - **分配格**
     - **定义**
-        - 已知 $<L,\land,\lor>$ 是格，若 $\land,\lor$ 满足分配律，则 $L$ 是分配格。
+        - 已知 $\langle L,\land,\lor \rangle$ 是格，若 $\land,\lor$ 满足分配律，则 $L$ 是分配格。
     - **判定**
         - 钻石格和五角格不是分配格。
         - 格不是分配格 $\iff$ 包含与钻石格或五角格同构的子格。
@@ -52,7 +52,7 @@ math: true
             - 若 $L$ 是有补分配格，则 $L$ 是布尔代数。
             - 因为 $\forall a \in L$ 有唯一补元，则可以定义该补元为 $a'$，$'$ 为求补运算。
         - 定义 2：
-            - 若 $<L,\star,\circ>$ 满足交换律、分配律、同一律、补元律，则 $L$ 为布尔代数。
+            - 若 $\langle L,\star,\circ \rangle$ 满足交换律、分配律、同一律、补元律，则 $L$ 为布尔代数。
             - 同一律：$a \star 1=a$，$a\circ 0=a$
             - 补元律：$a\star a'=0$，$a\circ a'=1$
     - **性质**

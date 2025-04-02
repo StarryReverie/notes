@@ -83,7 +83,7 @@ math: true
         - 单位化：`B = normalize(A)`，将矩阵的列单位化。
 - **多项式**
     - **表示**
-        - MATLAB 中多项式用行[向量](/notes/docs/mathematics/linear-algrbra/vector)表示。
+        - MATLAB 中多项式用行[向量](/notes/docs/mathematics/linear-algebra/vector)表示。
         - 对于多项式 $a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0$，行向量则是多项式的系数 $\begin{bmatrix}a_n & a_{n-1} & \cdots & a_1 & a_0\end{bmatrix}$。
     - **运算**
         - **求值**

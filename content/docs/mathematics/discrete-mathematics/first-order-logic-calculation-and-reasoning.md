@@ -1,6 +1,6 @@
 ---
-title: 一阶逻辑
-weight: 400
+title: 一阶逻辑等值演算与推理
+weight: 500
 math: true
 ---
 
@@ -35,7 +35,7 @@ math: true
     - 求解前束范式时，一般需要扩展辖域，需要先用换名规则处理变项。
 - **推理理论**
     - **推理定律**
-        - **[命题逻辑推理定律](命题逻辑推理#^mi4ocz)**
+        - **[命题逻辑推理定律](/notes/docs/mathematics/discrete-mathematics/proposition-logic-reasoning#mi4ocz)**
         - **一阶逻辑常用等值式**
         - **常用推理定律**
             - $\forall xA(x) \lor \forall xB(x) \Rightarrow \forall x(A(x) \lor B(x))$

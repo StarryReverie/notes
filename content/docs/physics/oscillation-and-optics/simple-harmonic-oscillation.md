@@ -1,6 +1,6 @@
 ---
 title: 简谐振动
-weight: 200
+weight: 100
 math: true
 ---
 

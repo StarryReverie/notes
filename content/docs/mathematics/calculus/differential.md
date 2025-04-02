@@ -8,7 +8,7 @@ math: true
     - 设[函数](/notes/docs/mathematics/calculus/function) $y=f(x)$ 在点 $x$ 的某邻域内有定义，如果函数在点 $x$ 处的增量 $\Delta y=f(x+\Delta x)-f(x)$ 可以表示为 $A(x)\Delta x +o(\Delta x)$，其中 $A(x)$ 只与 $x$ 有关，而与 $\Delta x$ 无关，则称 $f(x)$ 在点 $x$ 是可微的，而 $A(x)\Delta x$ 叫作函数 $f(x)$ 在点 $x$ 处的微分，记作 $\mathrm dy$ 或 $\mathrm df$，即 $\mathrm dy=A(x)\Delta x$。
     - $\mathrm dy$ 是 $\Delta y$ 的线性近似，误差为 $o(\Delta x)$，$\mathrm dy=A(x)\Delta x$ 是 $\Delta y$ 的主要部分，称为 $\Delta y$ 的线性主部。
     - 对 $y=x$，$\Delta y=(x+\Delta x)-x=1\Delta x$，所以记 $\mathrm dx=\Delta x$。此处 $o(\Delta x)$ 一项恒等于 $0$。
-- **性质** ^3ievi2
+- **性质** <span id="sievi2"></span>
     - $\Delta x\to 0$ 时，$\mathrm dy\sim\Delta y$。
     - $f(x)$ 在 $x$ 处可微 $\iff$ $f(x)$ 在 $x$ 处[可导](/notes/docs/mathematics/calculus/derivative#u884j8)。
     - $\mathrm dy=f'(x)\mathrm dx$

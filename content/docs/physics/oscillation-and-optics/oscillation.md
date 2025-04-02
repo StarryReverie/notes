@@ -1,8 +1,9 @@
 ---
-tags:
-  - physics
-  - oscillation
+title: 波动
+weight: 200
+math: true
 ---
+
 - **波动**
     - **定义**
         - 一个物理量的扰动或振动在空间中的传播称为波动，简称波。

@@ -6,9 +6,9 @@ math: true
 
 - **向量**
     - **定义**
-        - 设有 $n$ 个数 $a_1,a_2,\cdots,a_n \in F$，列[矩阵](/notes/docs/mathematics/linear-algrbra/matrix) $\begin{bmatrix} a_1\\ a_2\\ \vdots\\a_n\end{bmatrix}=\begin{bmatrix} a_1 & a_2 & \cdots & a_n\end{bmatrix}^{\mathrm T}$ 为 $F$ 上的 $n$ 元向量，$a_i$ 是其第 $i$ 个分量。
+        - 设有 $n$ 个数 $a_1,a_2,\cdots,a_n \in F$，列[矩阵](/notes/docs/mathematics/linear-algebra/matrix) $\begin{bmatrix} a_1\\ a_2\\ \vdots\\a_n\end{bmatrix}=\begin{bmatrix} a_1 & a_2 & \cdots & a_n\end{bmatrix}^{\mathrm T}$ 为 $F$ 上的 $n$ 元向量，$a_i$ 是其第 $i$ 个分量。
         - 记零向量为 $\boldsymbol 0=\begin{bmatrix}0 \\0 \\\vdots \\0\end{bmatrix}$。
-    - **运算** ^qhvnyd
+    - **运算** <span id="qhvnyd"></span>
         - **加法**
             - 设 $\boldsymbol a=\begin{bmatrix} a_1 & a_2 & \cdots & a_n\end{bmatrix}^{\mathrm T}\in \mathrm F^n,\boldsymbol b=\begin{bmatrix} b_1 & b_2 & \cdots & b_n\end{bmatrix}^{\mathrm T}\in \mathrm F^n$，则 $\boldsymbol a+\boldsymbol b=\begin{bmatrix} a_1+b_1 & a_2+b_2 & \cdots & a_n+b_n\end{bmatrix}^{\mathrm T}$。
         - **数乘**
@@ -18,14 +18,14 @@ math: true
             - 定义 $\boldsymbol a$ 的长度为 $\|a\|=\sqrt{\boldsymbol a^{\mathrm T}\boldsymbol a}$。
         - **极限**
             - 对于向量序列 $\{\boldsymbol x_n\}$，如果 $\lim\limits_{n \to +\infty} ||\boldsymbol x_n - \boldsymbol x|| = 0$，则 $\boldsymbol x_n$ 收敛于 $\boldsymbol x$，记作 $\lim\limits_{n \to +\infty} \boldsymbol x_n = \boldsymbol x$。
-            - 此处[范数](/notes/docs/mathematics/linear-algrbra/norm)种类任意。
+            - 此处[范数](/notes/docs/mathematics/linear-algebra/norm)种类任意。
             - $\lim\limits_{n \to +\infty} \boldsymbol x_n = \boldsymbol x \iff$ $\boldsymbol x_n$ 各分量收敛于 $\boldsymbol x$ 各分量。
     - **关系**
         - **正交**
             - 若 $\boldsymbol a^{\mathrm T}\boldsymbol b=0$，则 $\boldsymbol a$ 与 $\boldsymbol b$ 正交，记作 $\boldsymbol a\perp\boldsymbol b$。
-- **向量组** ^0067dr
+- **向量组** <span id="s067dr"></span>
     - **定义**
-        - $\mathrm F$ 上的[向量空间](/notes/docs/mathematics/linear-algrbra/vector-space) $V$ 上的若干个向量 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_t$ 称为 $V$ 上的一个向量组。
+        - $\mathrm F$ 上的[向量空间](/notes/docs/mathematics/linear-algebra/vector-space) $V$ 上的若干个向量 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_t$ 称为 $V$ 上的一个向量组。
         - 向量组中的向量应当属于同一个向量空间。
         - 向量组中的向量是有序的。
     - **关系**

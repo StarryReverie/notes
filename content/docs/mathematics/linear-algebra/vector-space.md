@@ -9,9 +9,9 @@ math: true
         - 设 $V$ 是 $\mathrm F^n$ 的非空子集，如果 $V$ 满足以下条件，则 $V$ 是 $\mathrm F$ 上的向量空间：
             - 对 $\forall \boldsymbol a,\boldsymbol b\in V$，都有 $\boldsymbol a+\boldsymbol b\in V$
             - 对 $\forall \boldsymbol a\in V,k\in F$，都有 $k\boldsymbol a\in V$
-        - 从定义可以看出，向量空间中[向量线性运算](向量#^qhvnyd)都是封闭的。
+        - 从定义可以看出，向量空间中[向量线性运算](向量#qhvnyd)都是封闭的。
     - **性质**
-        - 零[向量](/notes/docs/mathematics/linear-algrbra/vector)在任何向量空间中。
+        - 零[向量](/notes/docs/mathematics/linear-algebra/vector)在任何向量空间中。
         - 只有零向量的集合也是向量空间。
         - 向量空间的交空间、和空间也是向量空间。但并空间不一定是是向量空间。
     - **关系**
@@ -21,7 +21,7 @@ math: true
             - $\dim V+\dim W=\dim (V+W)$
 - **基** <span id="sohrgj"></span>
     - **定义**
-        - 设 $\mathrm F^n$ 的非空子集 $V$ 是 $\mathrm F$ 上的向量空间。如果 $V$ 中的[向量组](向量#^0067dr) $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 满足以下两个条件，则 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 是 $V$ 的一个基：
+        - 设 $\mathrm F^n$ 的非空子集 $V$ 是 $\mathrm F$ 上的向量空间。如果 $V$ 中的[向量组](向量#s067dr) $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 满足以下两个条件，则 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 是 $V$ 的一个基：
             - $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 线性无关；
             - $V$ 中的任何向量都可以由 $\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_m$ 线性表示。
         - 定义 $V$ 的基的向量个数为 $V$ 的维数，记作 $\dim V$。
@@ -59,7 +59,7 @@ math: true
             - $\operatorname{span}(\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_s)=\operatorname{span}(\boldsymbol b_1,\boldsymbol b_2,\dots,\boldsymbol b_t) \iff \{\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_s\}\cong\{\boldsymbol b_1,\boldsymbol b_2,\dots,\boldsymbol b_t\}$
     - **列空间**
         - **定义**
-            - 由 $m\times n$ [矩阵](/notes/docs/mathematics/linear-algrbra/matrix) $A$ 的列生成的子空间，称为 $A$ 的列空间，记作 $C(A)$。
+            - 由 $m\times n$ [矩阵](/notes/docs/mathematics/linear-algebra/matrix) $A$ 的列生成的子空间，称为 $A$ 的列空间，记作 $C(A)$。
         - **性质**
             - $A\boldsymbol x=\boldsymbol b$ 有解 $\iff \boldsymbol b \in C(A)$
             - $\dim C(A)=r(A)$

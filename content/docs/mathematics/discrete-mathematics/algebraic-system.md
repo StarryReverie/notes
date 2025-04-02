@@ -27,22 +27,22 @@ math: true
         - 左逆元和右逆元不一定唯一。
 - **代数系统**
     - **定义**
-        - 已知非空集合 $S$，$k$ 个二元或一元运算 $f_i$，则 $< S,f_1,\dots,f_k >$ 为代数系统，简称代数。
-        - 有时强调代数系统包含某些特定的元素，将其称为代数常数，代数记作 $< S,f_1,\dots,f_k,x_1,x_2,\dots >$。
+        - 已知非空集合 $S$，$k$ 个二元或一元运算 $f_i$，则 $\langle S,f_1,\dots,f_k \rangle$ 为代数系统，简称代数。
+        - 有时强调代数系统包含某些特定的元素，将其称为代数常数，代数记作 $\langle S,f_1,\dots,f_k,x_1,x_2,\dots \rangle$。
     - **子代数**
-        - 已知 $V=< S,f_1,\dots,f_k >$，$B \subseteq S$，若 $B$ 对 $f_i$ 都封闭且包含 $S$ 中所有代数常数，则 $<B,f_1,\dots,f_k>$ 为 $V$ 的子代数。
+        - 已知 $V=\langle S,f_1,\dots,f_k \rangle$，$B \subseteq S$，若 $B$ 对 $f_i$ 都封闭且包含 $S$ 中所有代数常数，则 $\langle  B,f_1,\dots,f_k  \rangle$ 为 $V$ 的子代数。
         - $V$ 是 $V$ 的最大子代数。
         - 若 $B$ 仅包含 $V$ 中的代数常数且封闭，则 $B$ 构成的子代数为最小子代数。
         - $V$ 的最大和最小子代数称为平凡子代数。
         - 若 $B\ne S$，则 $B$ 构成的子代数为 $V$ 的真子代数。
     - **积代数**
-        - 已知 $V_1=<A,\circ>,V_2=<B,\star>$，定义 $\langle a_1,b_1\rangle \cdot \langle a_2,b_2\rangle = \langle a_1 \circ a_2, b_1 \star b_2 \rangle$。
-        - $V=<A\times B,\cdot>$ 为 $V_1,V_2$ 的积代数，记作 $V=V_1\times V_2$，$V_1,V_2$ 为 $V$ 的因子代数。
+        - 已知 $V_1=\langle A,\circ \rangle,V_2=\langle  B,\star \rangle$，定义 $\langle a_1,b_1\rangle \cdot \langle a_2,b_2\rangle = \langle a_1 \circ a_2, b_1 \star b_2 \rangle$。
+        - $V=\langle A\times B,\cdot \rangle$ 为 $V_1,V_2$ 的积代数，记作 $V=V_1\times V_2$，$V_1,V_2$ 为 $V$ 的因子代数。
         - 如果 $V_1,V_2$ 是可交换 / 可结合 / 幂等的，则 $V$ 是可交换 / 可结合 / 幂等的。
         - 如果 $e_1,e_2$ / $\theta_1,\theta_2$ 分别是 $V_1,V_2$ 的单位元 / 零元，则 $\langle e_1,e_2 \rangle$ / $\langle \theta_1,\theta_2 \rangle$ 是 $V_1\times V_2$ 的单位元 / 零元。
         - 如果 $x,y$ 是 $V_1,V_2$ 的可逆元素，则 $\langle x,y\rangle$ 是 $V_1\times V_2$ 的可逆元素，$\langle x,y\rangle^{-1}=\langle x^{-1},y^{-1}\rangle$。
     - **同态和同构**
-        - 已知 $<A,\circ>,<B,\star>$，如果存在 $f:A\to B$ 满足 $f(a \circ b) = f(a) \star f(b)$，则 $A,B$ 同态。
+        - 已知 $\langle A,\circ \rangle,\langle B,\star \rangle$，如果存在 $f:A\to B$ 满足 $f(a \circ b) = f(a) \star f(b)$，则 $A,B$ 同态。
         - 同态的分类：
             - 如果 $f$ 是单射，则 $f$ 称为单同态。
             - 如果 $f$ 是满射，则 $f$ 称为满同态， $V_2$ 是 $V_1$ 的同态像，记作 $A\sim B$。

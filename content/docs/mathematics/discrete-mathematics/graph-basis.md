@@ -87,7 +87,7 @@ math: true
         - **基本定义**
             - 设 $G = \langle V,E\rangle$ 为无向图，若 $u,v\in V$ 之间存在通路，则 $u,v$ 连通，记作 $u\sim v$。
             - 若 $G$ 是平凡图或任意两个结点都是连通的，则 $G$ 是连通图，否则为非连通图。
-            - 连通关系 $\sim$ 是一个[等价关系](二元关系#^zwakul)，$V_i$ 是 $V$ 的一个等价类，则 $G[V_i]$ 是一个连通分支。
+            - 连通关系 $\sim$ 是一个[等价关系](二元关系#zwakul)，$V_i$ 是 $V$ 的一个等价类，则 $G[V_i]$ 是一个连通分支。
             - $G$ 的连通分支数记作 $p(G)$。$n$ 阶图中，$K_n$ 有最小 $p=1$，$N_n$ 有最大 $p=n$。
             - $u,v$ 之间最短路径的长度为距离 $d(u,v)$，若 $u\not\sim v$，则 $d(u,v)=\infty$。
         - **连通程度**
@@ -128,7 +128,7 @@ math: true
             - 若 $V_1$ 中任意结点都与 $V_2$ 中结点相邻，则 $G$ 为完全二分图，记作 $K_{r,s}$，其中 $|V_1|=r,|V_2|=s$。
         - **性质**
             - $n\ (n\ge 2)$ 阶无向图 $G$ 是二分图 $\iff$ $G$ 中无奇圈。
-- **图的[矩阵](/notes/docs/mathematics/linear-algrbra/matrix)表示**
+- **图的[矩阵](/notes/docs/mathematics/linear-algebra/matrix)表示**
     - **无向图的关联矩阵**
         - **定义**
             - 已知无向图 $G=\langle V,E\rangle$，$V = \{v_1,v_2,\dots,v_n\}$，$E=\{e_1,e_2,\dots,e_m\}$。
@@ -151,4 +151,3 @@ math: true
             - 握手定理：$\displaystyle\sum_{i=1}^n\sum_{j=1}^m 1\{m_{ij}=1\} = \displaystyle\sum_{i=1}^n\sum_{j=-1}^m 1\{m_{ij}=-1\} = d^-_G(v_i) = m$
             -  $e_i$ 与 $e_j$ 是平行边 $\iff$ $M(G)$ 中第 $i$ 列与第 $j$ 列相同。
     - **邻接矩阵**
-        - 

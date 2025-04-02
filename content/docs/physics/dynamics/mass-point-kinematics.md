@@ -102,7 +102,7 @@ math: true
               $$
               \boldsymbol a=\frac{\mathrm d\boldsymbol v}{\mathrm dt}=\frac{\mathrm d}{\mathrm dt}\left(\frac{\mathrm dr}{\mathrm dt}\boldsymbol e_r+r\frac{\mathrm d\theta}{\mathrm dt}\boldsymbol e_\theta\right)=\left[\frac{\mathrm d^2r}{\mathrm dt^2}-r\left(\frac{\mathrm d\theta}{\mathrm dt}\right)^2\right]\boldsymbol e_r+\left(r\frac{\mathrm d^2\theta}{\mathrm dt^2}+2\frac{\mathrm dr}{\mathrm dt}\frac{\mathrm d\theta}{\mathrm dt}\right)\boldsymbol e_\theta
               $$
-    - **角速度** ^i9fcjq
+    - **角速度** <span id="i9fcjq"></span>
         - 设某个质点沿圆心位于 $O$ 点、半径为 $R$ 的圆周做运动，定义角速度为
           $$
           \omega=\lim_{\Delta t\to 0}\frac{\Delta\theta}{\Delta t}=\frac{\mathrm d\theta}{\mathrm dt}
@@ -112,7 +112,7 @@ math: true
           $$
           v=R\omega
           $$
-    - **角加速度** ^8npyim
+    - **角加速度** <span id="snpyim"></span>
         - 角加速度描述角速度变化快慢，定义为
           $$
           \alpha=\lim_{\Delta t\to 0}\frac{\Delta\omega}{\Delta t}=\frac{\mathrm d\omega}{\mathrm dt}

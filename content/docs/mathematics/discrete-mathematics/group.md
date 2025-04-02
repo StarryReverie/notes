@@ -6,7 +6,7 @@ math: true
 
 - **群**
     - **定义**
-        - 已知[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system) $V=<A,\circ>$
+        - 已知[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system) $V=\langle A,\circ \rangle$
             - 若 $\circ$ 满足结合律，则 $V$ 是半群。
             - 若 $V$ 中存在单位元，则 $V$ 是幺半群 / 独异点。
             - 若 $A$ 中每个元素都有逆元在 $A$ 中，则 $V$ 是群。
@@ -42,8 +42,8 @@ math: true
         - 充要条件 3：$H$ 是有穷集时，$\forall a,b\in H$ 有 $ab \in H$。
     - **重要子群**
         - **元素生成的子群**
-            - 已知 $G$ 为群，$a\in G$，则定义 $<a> = \{a^k \mid k \in \mathrm Z\}$。
-            - 已知 $B \subseteq G$，则定义 $<B> = \cap \{H \mid B \subseteq H \land H \le G \}$。
+            - 已知 $G$ 为群，$a\in G$，则定义 $\langle a \rangle = \{a^k \mid k \in \mathrm Z\}$。
+            - 已知 $B \subseteq G$，则定义 $\langle B \rangle = \cap \{H \mid B \subseteq H \land H \le G \}$。
         - **中心**
             - 已知 $G$ 为群，$C = \{ a \mid a \in G \land \forall x \in G (ax = xa)\}$，即 $C$ 包含 $G$ 中所有与其他元素可交换的元素。
             - 定义 $C$ 为 $G$ 的中心。
@@ -73,21 +73,21 @@ math: true
     - **拉格朗日定理**
         - 已知 $G,H$ 为群，$H \le G$，则 $|G| = |H|[G:H]$。
         - 已知 $G$ 为 $n$ 阶群，$a \in G$，则 $|a|$ 是 $n$ 的因子，$|a|^n = e$。
-        - $n$ 为质数时，存在 $a$ 使得 $<a>=G$。
+        - $n$ 为质数时，存在 $a$ 使得 $\langle a \rangle=G$。
         - 逆定理不成立。
 - **循环群**
     - **定义**
-        - 已知 $G$ 为群，如果存在 $a \in G$ 且 $<a> = G$，则 $G$ 为循环群，$a$ 为生成元。
+        - 已知 $G$ 为群，如果存在 $a \in G$ 且 $\langle a \rangle = G$，则 $G$ 为循环群，$a$ 为生成元。
         - 循环群分为无限循环群和 $n$ 阶循环群。
     - **性质**
         - 生成元的个数：
-            - 如果 $G=<a>$ 为无限循环群，则 $G$ 只有两个生成元 $a,a^{-1}$。
-            - 如果 $G=<a>$ 为 $n$ 阶循环群，则 $G$ 的生成元 $b$ 满足 $|b|$ 与 $n$ 互质，个数为 $\varphi(n)$。
+            - 如果 $G=\langle a \rangle$ 为无限循环群，则 $G$ 只有两个生成元 $a,a^{-1}$。
+            - 如果 $G=\langle a \rangle$ 为 $n$ 阶循环群，则 $G$ 的生成元 $b$ 满足 $|b|$ 与 $n$ 互质，个数为 $\varphi(n)$。
         - 循环群的子群：
-            - 如果 $G=<a>$ 为循环群，则其子群也为循环群。
-            - 如果 $G=<a>$ 为无限循环群，则除 $\{e\}$ 以外的子群都是无限循环群。
-            - 如果 $G=<a>$ 为 $n$ 阶循环群，对每个 $n$ 的正因子 $d$，$G$ 有恰好一个 $d$ 阶子群。
-        - 求出 $n$ 阶循环群 $<a>$ 的所有子群，只要找到所有 $n$ 的所有因子 $d_i$，则子群为 $<a^{n/d_i}>$。
+            - 如果 $G=\langle a \rangle$ 为循环群，则其子群也为循环群。
+            - 如果 $G=\langle a \rangle$ 为无限循环群，则除 $\{e\}$ 以外的子群都是无限循环群。
+            - 如果 $G=\langle a \rangle$ 为 $n$ 阶循环群，对每个 $n$ 的正因子 $d$，$G$ 有恰好一个 $d$ 阶子群。
+        - 求出 $n$ 阶循环群 $\langle a \rangle$ 的所有子群，只要找到所有 $n$ 的所有因子 $d_i$，则子群为 $\langle a^{n/d_i} \rangle$。
 - **置换群**
     - **定义**
         - 设 $S=\{1,2,3,\dots,n\}$，$S$ 上的双射函数 $\sigma:S\to S$ 都是 $n$ 元置换。
@@ -110,7 +110,7 @@ math: true
         - 所有 $n$ 元偶置换构成的群称为 $n$ 元交错群。
 - **环**
     - **定义**
-        - 设 $<R,+,\cdot>$ 为[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system)，若 $<R,+>$ 构成交换群，$<R,\cdot>$ 构成半群，$\cdot$ 关于 $+$ 有分配律，则 $R$ 是环。
+        - 设 $\langle R,+,\cdot \rangle$ 为[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system)，若 $\langle R,+ \rangle$ 构成交换群，$\langle R,\cdot \rangle$ 构成半群，$\cdot$ 关于 $+$ 有分配律，则 $R$ 是环。
         - $+$ 称为环中的加法，$\cdot$ 称为环中的乘法。
         - 环中 $+$ 的单位元记作 $0$，$\cdot$ 的单位元记作 $1$。
         - 环中 $x$ 的加法逆元称为负元，记作 $-x$。

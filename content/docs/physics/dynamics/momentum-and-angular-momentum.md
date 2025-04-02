@@ -18,7 +18,7 @@ math: true
       $$
       \boldsymbol M=\boldsymbol r\times\boldsymbol F
       $$
-- **角动量** ^ngvw7q
+- **角动量** <span id="ngvw7q"></span>
     - **定义**
         - 质点相对于某个固定点的角动量 $\boldsymbol L$ 定义为
           $$

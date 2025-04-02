@@ -18,7 +18,7 @@ math: true
         - 如果方阵 $A$ 与对角矩阵相似，即 $X^{-1}AX=\Lambda$，则 $A$ 可以相似对角化。
         - $\Lambda$ 是 $A$ 的特征值为对角元的对角矩阵，$X$ 是 $A$ 的特征向量按列组成的矩阵。
         - $\Lambda$ 中特征值的排列顺序可以改变，特征向量只要与特征值相对应，$\Lambda,X$ 不唯一。
-        - $\Lambda$ 与 $X$ 的每一列要按照[特征值与特征向量](/notes/docs/mathematics/linear-algrbra/eigenvalue-and-eigenvector)的从属关系对应。
+        - $\Lambda$ 与 $X$ 的每一列要按照[特征值与特征向量](/notes/docs/mathematics/linear-algebra/eigenvalue-and-eigenvector)的从属关系对应。
     - **性质**
         - $A^n=X\Lambda^nX^{-1}$
     - **条件**
@@ -27,7 +27,7 @@ math: true
             - 不同特征值对应的特征向量线性无关。
             - 有 $n$ 个不同特征值的 $n$ 阶矩阵可以相似对角化。
         - **重数角度**
-            - 定义 $n$ 阶[矩阵](/notes/docs/mathematics/linear-algrbra/matrix) $A$ 的特征值 $\lambda_i$ 的代数重数 $p_i$ 为特征多项式中 $(x-\lambda_i)$ 的次数，几何重数 $q_i$ 为 $\dim N(\lambda_iI-A)$。
+            - 定义 $n$ 阶[矩阵](/notes/docs/mathematics/linear-algebra/matrix) $A$ 的特征值 $\lambda_i$ 的代数重数 $p_i$ 为特征多项式中 $(x-\lambda_i)$ 的次数，几何重数 $q_i$ 为 $\dim N(\lambda_iI-A)$。
             - 设 $A$ 有 $t$ 个不同的特征值。
             - $A$ 可以相似对角化 $\iff \forall i\le t,p_i=q_i \iff \sum\limits_{i=1}^t q_i=n$。
         - **特殊矩阵角度**

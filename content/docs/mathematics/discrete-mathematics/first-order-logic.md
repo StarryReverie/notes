@@ -1,6 +1,6 @@
 ---
-title: 一阶逻辑等值演算与推理
-weight: 500
+title: 一阶逻辑
+weight: 400
 math: true
 ---
 

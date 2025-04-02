@@ -6,7 +6,7 @@ math: true
 
 - **联合分布函数**
     - **定义**
-        - 设 $(X,Y)$ 是二维随机变量 / 二维随机[向量](/notes/docs/mathematics/linear-algrbra/vector)，定义联合分布函数 $F(x,y) = P(X \le x,Y \le y)$。
+        - 设 $(X,Y)$ 是二维随机变量 / 二维随机[向量](/notes/docs/mathematics/linear-algebra/vector)，定义联合分布函数 $F(x,y) = P(X \le x,Y \le y)$。
     - **性质**
         - $F(x,y) \in [0,1]$
         - $\lim\limits_{x \to -\infty} F(x,y_0) = 0$，$\lim\limits_{y \to -\infty} F(x_0,y) = 0$，$x_0,y_0$ 为任意实数或无穷大。
@@ -21,8 +21,8 @@ math: true
         - **正态分布**
             - 设 $(X,Y)$ 服从正态分布，即 $(X,Y) \sim N(\mu_1,\sigma_1^2;\mu_2,\sigma_2^2;\rho)$。
             - $f(x,y) = \dfrac{1}{2\pi\sigma_1\sigma_2\sqrt{1-\rho^2}} \exp\left( -\dfrac{1}{2(1-\rho^2)} \left[ \dfrac{(x - \mu_1)^2}{\sigma_1^2} - \dfrac{2\rho(x - \mu_1)(y - \mu_2)}{\sigma_1\sigma_2} + \dfrac{(y - \mu_2)^2}{\sigma_2^2} \right] \right)$。
-            - 对于更高维的随机变量，设随机[向量](/notes/docs/mathematics/linear-algrbra/vector) $\boldsymbol X \sim N(\boldsymbol \mu,\Sigma)$，则 $f(\boldsymbol x) = \dfrac{1}{2\pi\sqrt{|\Sigma|}} \exp \left( -\dfrac{(\boldsymbol x - \boldsymbol \mu)^{\mathrm T} \Sigma^{-1} (\boldsymbol x - \boldsymbol \mu)}{2} \right)$。
-            - 二维情况的[矩阵](/notes/docs/mathematics/linear-algrbra/matrix)形式，$\boldsymbol \mu = \begin{bmatrix} \mu_1 \\ \mu_2 \end{bmatrix},\Sigma = \begin{bmatrix} \sigma_1^2 & \rho \sigma_1\sigma_2 \\ \rho \sigma_1\sigma_2 & \sigma_2^2 \end{bmatrix}$。
+            - 对于更高维的随机变量，设随机[向量](/notes/docs/mathematics/linear-algebra/vector) $\boldsymbol X \sim N(\boldsymbol \mu,\Sigma)$，则 $f(\boldsymbol x) = \dfrac{1}{2\pi\sqrt{|\Sigma|}} \exp \left( -\dfrac{(\boldsymbol x - \boldsymbol \mu)^{\mathrm T} \Sigma^{-1} (\boldsymbol x - \boldsymbol \mu)}{2} \right)$。
+            - 二维情况的[矩阵](/notes/docs/mathematics/linear-algebra/matrix)形式，$\boldsymbol \mu = \begin{bmatrix} \mu_1 \\ \mu_2 \end{bmatrix},\Sigma = \begin{bmatrix} \sigma_1^2 & \rho \sigma_1\sigma_2 \\ \rho \sigma_1\sigma_2 & \sigma_2^2 \end{bmatrix}$。
 - **边缘分布函数**
     - **定义**
         - $X,Y$ 是随机变量，分布函数分布为 $F_X(x),F_Y(y)$，它们分别是 $(X,Y)$ 关于 $X,Y$ 的边缘分布函数。

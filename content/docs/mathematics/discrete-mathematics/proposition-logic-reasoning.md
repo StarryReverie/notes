@@ -7,7 +7,7 @@ math: true
 - **推理**
     - 设 $A_1,A_2,\dots,A_n,B$ 为命题公式，则 $A_1 \land A_2 \land \cdots \land A_n \to B$ 或 $\{A_1,A_2,\dots,A_n\} \vdash B$ 是一个推理。
     - 若 $A_1 \land A_2 \land \cdots \land A_n \to B$ 永真，则推理是有效的，记作 $A_1 \land A_2 \land \cdots \land A_n \Rightarrow B$ 或 $\{A_1,A_2,\dots,A_n\} \models B$，$B$ 为有效结论。
-- **推理定律** ^mi4ocz
+- **推理定律** <span id="mi4ocz"></span>
     - 通过[命题逻辑等值演算](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation)得到。
     - 附加律：$A \Rightarrow A \lor B$
     - 化简律：$A \land B \Rightarrow A$
