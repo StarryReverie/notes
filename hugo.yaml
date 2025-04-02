@@ -1,7 +1,24 @@
-baseURL: 'https://oosquare.github.io/notes/'
+baseURL: "https://oosquare.github.io/notes/"
 languageCode: zh-cn
 title: Notes
 theme: hextra
+hasCJKLanguage: true
+defaultContentLanguage: zh-cn
+
+menu:
+  main:
+  - name: 文档
+    weight: 1
+    pageRef: /docs
+  - name: 搜索
+    weight: 2
+    params:
+      type: search
+  - name: GitHub
+    weight: 3
+    url: "https://github.com/oosquare/notes"
+    params:
+      icon: github
 
 markup:
   goldmark:
