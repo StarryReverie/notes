@@ -21,7 +21,7 @@ math: true
         - $\circ$ 为 $S$ 上的二元运算，$x\in S$，若存在 $\theta_l$ 或 $\theta_r$，且 $\theta_l\circ x=\theta_l$ 或 $x\circ \theta_r=\theta_r$ 则 $\theta_l$ 为左零元或 $\theta_r$ 为右零元。
         - 若 $\theta$ 为左零元和右零元，则 $\theta$ 为零元。
         - $S$ 中有单位元 $e$ 和零元  $\theta$，若 $|S|>1$，则 $e \ne \theta$。
-    - **逆元**
+    - **逆元** <span id="opv12f"></span>
         - $\circ$ 为 $S$ 上的二元运算，$x\in S$，若存在 $y_l$ 或 $y_r$，且 $y_l\circ x=e$ 或 $x\circ e_r=e$ 则 $y_l$ 为 $x$ 的左逆元或 $y_r$ 为 $x$ 的右逆元。
         - 若 $y$ 为 $x$ 的左逆元和右单位元，则 $y$ 为 $x$ 的逆元，并且唯一，记作 $y=x^{-1}$，$x$ 可逆。
         - 左逆元和右逆元不一定唯一。
