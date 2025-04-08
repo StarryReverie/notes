@@ -31,6 +31,7 @@ math: true
 		    - 最终每个输出 $D_i$ 为两个译码器对应部分的输出 $D_{h,i / 2^{n_2}}$ 和 $D_{l, i \bmod 2^{n_2}}$ 接与门。
 		    - 不考虑两个译码器内的逻辑门，最终需要 $2^n$ 个与门。
 	    - 一个 $n$-$2^n$ 的译码器使用一个 $\left\lfloor \dfrac{n}{2} \right\rfloor$ 输入的译码器和一个 $\left\lceil \dfrac{n}{2} \right\rceil$ 输入的译码器，门输入成本最低。
+        - ![](/images/by-name/combinational-module/layered-decoder.jpg)
     - **译码器和布尔函数**
     	- $n$ 变量[布尔函数](/notes/docs/computer-science/digital-logic/combinational-logic-circuit#agoh98) $F$ 有 $2^n$ 个最小项，分别对应 $n$-$2^n$ 译码器的各个输出。
     	- 将 $F$ 取值为 $1$ 的最小项对应的译码器输出用或门连接，则或门输出为 $F$。
@@ -48,6 +49,7 @@ math: true
 		- 高位优先级高时，真值表可以改为紧凑真值表。
 			- 有 $m + 1$ 行，全 $0$ 输入时，$V = 0$。
 			- $D_i = 1$ 时，$V = 1$，$D_j\ (j > i) = 0$，$D_j\ (j < i) = \mathrm{X}$，表示取值任意。
+        - ![](/images/by-name/combinational-module/compact-truth-table.jpg)
 - **多路复用器**
     - **定义**
         - $2^n$-$1$ 多路复用器从 $2^n$ 个输入中选择一个，用 $n$ 个选择输入控制。
@@ -57,6 +59,7 @@ math: true
             - 译码器输入接控制输入 $A_i$。
             - 第 $i$ 个与门接译码器输出 $D_i$ 和输入 $I_i$。
             - $2^n$ 输入或门的输入接所有与门，输出为 $Y$。
+        - ![](/images/by-name/combinational-module/mux.jpg)
     - **多重多路复用器**
         - $m$ 重 $2^n$-$1$ 多路复用器从 $2^n$ 个 $m$ 位输入中选择一个。
         - $m$ 重 $2^n$-$1$ 多路复用器的实现：
@@ -80,10 +83,12 @@ math: true
         - 全加器输入两个加数 $X,Y$ 和低位进位 $Z$，输出和 $S$ 和进位 $C$。
         - $S = (X \oplus Y) \oplus Z = \overline X\  \overline Y Z + \overline X Y \overline Z + X \overline Y\ \overline Z + X Y Z$。
         - $C = X Y + (X \oplus Y) Z = X Y + X Z + Y Z$。
+        - ![](/images/by-name/combinational-module/full-adder.jpg)
     - **行波加法器**
         - $n$ 位行波加法器由 $n$ 个全加器组合而成，输入为两个加数 $A(n - 1:0), B(n - 1:0)$，最低位进位 $C_0$，输出和 $S(n - 1:0)$。
         - 定义第 $i\ (i = 0, 1,2,\dots)$ 个全加器的中间进位为 $C_i$。
         - 第 $i + 1$ 个加法器的低位进位输入接 $C_i$。
+        - ![](/images/by-name/combinational-module/adder.jpg)
 - **减法器**
     - **补码**
         - $n$ 位二进制无符号整数 $x$ 的补码是 $2^n - x$，为模 $2^n$ 加法[群](/notes/docs/mathematics/discrete-mathematics/group)的[逆元](/notes/docs/mathematics/discrete-mathematics/algebraic-system#opv12f)。
@@ -93,3 +98,8 @@ math: true
             - 若 $x \ge 0$，则数值位为 $x$ 的二进制表示。
             - 若 $x < 0$，则数值位为 $|x|$ 的 $2^{n - 1}$ 补码的二进制表示。
         - 有符号整数 $x$ 的补码表示（按照无符号整数）的补码是 $-x$ 的补码表示。
+    - **实现**
+        - $n$ 位减法器输入位被减数 $A(n - 1:0)$ 和 减数 $B(n - 1:0)$，输出差 $S(n - 1:0)$。
+        - $n$ 位减法器使用一个 $n$ 位加法器，将 $A$、$B$ 的反接入加法器，同时加法器 $C_0$ 接 $1$。
+        - 可以将加法器与加法器结合，在 $B$ 输入处接异或门控制是否取反，加法器 $C_0$ 接 $0$ 或 $1$。
+        - ![](/images/by-name/combinational-module/combined-adder.jpg)

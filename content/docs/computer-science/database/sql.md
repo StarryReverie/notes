@@ -139,5 +139,24 @@ math: false
 		- 并不是所有的对视图查询都可以用视图消解实现。
 	- **更新**
 		- 实现方法上与视图的查询类似。
+- **权限控制**
+    - **授予**
+        - ```sql
+          GRANT <permission1>, <permission2>, ...
+          ON TABLE <table>|<view>
+          TO <user1>, <user2>, ... | PUBLIC
+          [WITH GRANT OPTION];
+          ```
+        - 可以授予的权限有 `SELECT`、`INSERT`、`UPDATE`、`DELETE` 等。
+        - 可以枚举用户名来指定被授权的用户，也可以使用 `PUBLIC` 指定所有用户。
+        - 只有加上 `WITH GRANT OPTION` 时，被授权用户才可以将权限授予其他用户。
+    - **回收**
+        - ```sql
+          REVOKE <permission1>, <permission2>, ...
+          ON TABLE <table>|<view>
+          FROM <user1>, <user2>, ... | PUBLIC
+          RESTRICT|CASCADE;
+          ```
 - **嵌入式 SQL**
-	- 
+    - 嵌入式 SQL 直接写在编程语言源代码中，由预处理器转换为普通代码。
+	- 游标：SQL 操作集合，而编程语言操作一个元组，在编程语言中可以通过游标来迭代集合元素。
