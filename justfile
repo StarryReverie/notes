@@ -1,7 +1,7 @@
 serve:
     hugo server --buildDrafts
 
-sync: pull save
+sync: commit pull push
 
 save: commit push
 
