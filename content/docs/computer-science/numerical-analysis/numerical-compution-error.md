@@ -12,7 +12,7 @@ math: true
     - **分类**
         - 模型误差
         - 观测误差
-        - 截断误差 / 方法误差：精确公式用近似公式计算产生的误差，如[级数](/notes/docs/mathematics/calculus/series)仅使用前几项计算。 <span id="fmii73"></span>
+        - 截断误差 / 方法误差：精确公式用近似公式计算产生的误差，如[级数](/docs/mathematics/calculus/series)仅使用前几项计算。 <span id="fmii73"></span>
         - 舍入误差：数值计算只能保留有限的字长，舍入产生误差。 <span id="slzgdw"></span>
 - **舍入方法**
     - **截断法**

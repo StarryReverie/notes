@@ -5,7 +5,7 @@ math: true
 ---
 
 - **定义**
-    - 如果一个[集合](/notes/docs/mathematics/discrete-mathematics/set)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
+    - 如果一个[集合](/docs/mathematics/discrete-mathematics/set)为空集或元素都为有序对，则集合是一个二元关系，记作 $R$。
     - $\langle x,y \rangle \in R$ 记作 $xRy$，$\langle x, y \rangle \notin R$ 记作 $x \not R y$。
     - $A \times B$ 的任何子集定义的二元关系称为 $A$ 到 $B$ 的二元关系，$A=B$ 时称为 $A$ 上的二元关系。
 - **表示**
@@ -125,7 +125,7 @@ math: true
         - 上下界都可能不存在。
 -  **映射**
     - **定义**
-        - 设 $F$ 为[二元关系](/notes/docs/mathematics/discrete-mathematics/binary-relationship)，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[函数](/notes/docs/mathematics/calculus/function)。
+        - 设 $F$ 为[二元关系](/docs/mathematics/discrete-mathematics/binary-relationship)，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[函数](/docs/mathematics/calculus/function)。
         - 如果 $\operatorname{dom}f=A,\operatorname{ran}f \subseteq B$，则 $f$ 为从 $A$ 到 $B$ 的映射，记作 $f:A \to B$。
         - 从 $A$ 到 $B$ 的所有映射的集合记作 $B^A = \{f \mid f: A \to B\}$。
         - $f(A_1) = \{f(x) \mid x \in A_1 \}$ 为 $A_1$ 在 $f$ 的像，$f^{-1}(B_1) = \{ x \mid x \in A \land f(x) \in B_1\}$ 为 $B_1$ 在 $f$ 下的完全原像。

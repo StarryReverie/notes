@@ -8,7 +8,7 @@ math: true
     - **变量可分方程** $\frac{\mathrm dy}{\mathrm dx}=f(x)g(y)$
         - 方法：
             - 分离变量 $\frac{\mathrm dy}{g(y)}=f(x)\mathrm dx$；
-            - 两边分别对 $y$ 和 $x$ 求[不定积分](/notes/docs/mathematics/calculus/indefinite-integral) $\int\frac{\mathrm dy}{g(y)}=\int f(x)\mathrm dx$，也就是之间加上积分号，得到通解；
+            - 两边分别对 $y$ 和 $x$ 求[不定积分](/docs/mathematics/calculus/indefinite-integral) $\int\frac{\mathrm dy}{g(y)}=\int f(x)\mathrm dx$，也就是之间加上积分号，得到通解；
             - 若 $g(y)=0$ 有实根 $y=a$，则原方程还有 $y=a$ 一个奇解。
         - 若要求出所有解，要注意奇解可能存在。
     - **齐次方程** $\frac{\mathrm dy}{\mathrm dx}=f\left(\frac{y}{x}\right)$

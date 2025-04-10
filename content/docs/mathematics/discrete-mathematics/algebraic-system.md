@@ -6,7 +6,7 @@ math: true
 
 - **二元运算** <span id="krwh8o"></span>
     - **定义**
-        - $S$ 为[集合](/notes/docs/mathematics/discrete-mathematics/set)，$f:S\times S \to S$ 称为 $S$ 上的二元运算。
+        - $S$ 为[集合](/docs/mathematics/discrete-mathematics/set)，$f:S\times S \to S$ 称为 $S$ 上的二元运算。
         - $S$ 中任意两个元素可以运算，且运算结果属于 $S$。
     - **性质**
         - 交换律：$x\circ y=y\circ x$

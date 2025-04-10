@@ -7,10 +7,10 @@ math: true
 - **格**
     - **定义**
         - 偏序格：
-            - 设 $\langle S,\preceq \rangle$ 是[偏序](/notes/docs/mathematics/discrete-mathematics/binary-relationship#kynj0r)集，若 $\forall x,y \in S$ 满足 $\{x,y\}$ 都在 $S$ 存在最小上界和最大下界，则 $S$ 是偏序格。
+            - 设 $\langle S,\preceq \rangle$ 是[偏序](/docs/mathematics/discrete-mathematics/binary-relationship#kynj0r)集，若 $\forall x,y \in S$ 满足 $\{x,y\}$ 都在 $S$ 存在最小上界和最大下界，则 $S$ 是偏序格。
             - 定义保交 $x \lor y$ 为取 $x,y$ 的最小上界，保联 $x \land y$ 为取 $x,y$ 的最大下界。
         - 代数格：
-            - 设 $\langle S,\star,\circ \rangle$ 为[代数系统](/notes/docs/mathematics/discrete-mathematics/algebraic-system)，$\star,\circ$ 具有交换律、结合律、吸收律，则 $S$ 是代数格。
+            - 设 $\langle S,\star,\circ \rangle$ 为[代数系统](/docs/mathematics/discrete-mathematics/algebraic-system)，$\star,\circ$ 具有交换律、结合律、吸收律，则 $S$ 是代数格。
             - 可以定义 $S$ 中的偏序关系 $\preceq$：$x \preceq y \iff x \circ y = y$。
             - $\land,\lor$ 满足 $x\land y = x \star y,x\lor y = x \circ y$。
         - 偏序格和代数格的定义是等价的，统称为格。

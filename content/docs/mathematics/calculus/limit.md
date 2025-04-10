@@ -12,7 +12,7 @@ math: true
     - **数列极限与子列极限的关系**
         - 如果 $\lim\limits_{n\to \infty} a_n=A$，则对于任意 $\{a_n\}$ 的子列 $\{y_{n_k}\}$，$\lim\limits_{k\to \infty} y_{n_k}=A$。
         - 由逆否命题可知，如果某个数列的子列发散或两个子列收敛于不同的极限，则该数列发散。
-- **[函数](/notes/docs/mathematics/calculus/function)的极限** <span id="ishaoc"></span>
+- **[函数](/docs/mathematics/calculus/function)的极限** <span id="ishaoc"></span>
     - **定义**
         - （$x\to \infty$）设函数 $f(x)$ 在区间 $(-\infty,b]\cup [a,+\infty)$ 上有定义，$A$ 是一常数，如果对于任意给定的正数 $\varepsilon$，都存在正数 $N$，使得当 $|x|>N$ 时，恒有 $|f(x)-A|<\varepsilon$ 成立，则 $A$ 叫做函数 $f(x)$ 当 $x\to \infty$ 时的极限，记作 $\lim\limits_{x\to \infty} = A$，或 $f(x)\to A(x\to \infty)$。
         - 同理还有 $x\to +\infty$ 和 $x\to -\infty$ 时的情况，这三种情况都是 $x$ 趋于无穷大时的情况，不同之处仅在 $x$ 的趋势。

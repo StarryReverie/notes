@@ -5,13 +5,13 @@ math: true
 ---
 
 - **三角级数**
-    - 三角级数定义为以下的函数项[级数](/notes/docs/mathematics/calculus/series)：
+    - 三角级数定义为以下的函数项[级数](/docs/mathematics/calculus/series)：
       $$
       \frac{a_0}{2}+\sum_{n=1}^{+\infty}(a_n\cos nx+b_n\sin nx)
       $$
 - **三角函数系正交性**
     - 三角函数系是 $1,\cos x,\sin x,\cos 2x,\sin 2x,\dots,\cos nx,\sin nx,\dots$。
-    - 定义两个[函数](/notes/docs/mathematics/calculus/function) $f(x),g(x)$ 的内积为
+    - 定义两个[函数](/docs/mathematics/calculus/function) $f(x),g(x)$ 的内积为
       $$
       \langle f(x),g(x)\rangle := \int_{-\pi}^{\pi}f(x)g(x)\mathrm dx
       $$

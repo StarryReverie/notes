@@ -6,9 +6,9 @@ math: true
 
 - **等值式**
     - **定义**
-        - 类似[命题逻辑](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation#ysze9u)中的定义。
+        - 类似[命题逻辑](/docs/mathematics/discrete-mathematics/proposition-logic-calculation#ysze9u)中的定义。
     - **常用等值式**
-        - [命题逻辑的等值式](/notes/docs/mathematics/discrete-mathematics/proposition-logic-calculation#sts2pd)
+        - [命题逻辑的等值式](/docs/mathematics/discrete-mathematics/proposition-logic-calculation#sts2pd)
         - 消去量词
             - 设 $D = \{a_1,a_2,\dots,a_n\}$。
             - $\forall xA(x) \Leftrightarrow A(a_1) \land A(a_2) \land \cdots \land A(a_n)$
@@ -35,7 +35,7 @@ math: true
     - 求解前束范式时，一般需要扩展辖域，需要先用换名规则处理变项。
 - **推理理论**
     - **推理定律**
-        - **[命题逻辑推理定律](/notes/docs/mathematics/discrete-mathematics/proposition-logic-reasoning#mi4ocz)**
+        - **[命题逻辑推理定律](/docs/mathematics/discrete-mathematics/proposition-logic-reasoning#mi4ocz)**
         - **一阶逻辑常用等值式**
         - **常用推理定律**
             - $\forall xA(x) \lor \forall xB(x) \Rightarrow \forall x(A(x) \lor B(x))$

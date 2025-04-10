@@ -10,14 +10,14 @@ math: true
         - 回路绕行方向与回路面的方向关系由右手螺旋定则确定。$\mathcal E>0$ 则感应电动势方向与回路绕行方向相同。
         - 判断方向也可以通过楞次定律：感应电流的效果阻碍磁通量变化。
     - **动生电动势**
-        - 已知导体棒 $L$ 在匀强[磁场](/notes/docs/physics/electromagnetism/magnetic-field) $\boldsymbol B$ 中以速度 $\boldsymbol v$ 运动，则其产生 $\mathcal E = \displaystyle\int_L (\boldsymbol v \times \boldsymbol B) \cdot \mathrm d\boldsymbol l$。
+        - 已知导体棒 $L$ 在匀强[磁场](/docs/physics/electromagnetism/magnetic-field) $\boldsymbol B$ 中以速度 $\boldsymbol v$ 运动，则其产生 $\mathcal E = \displaystyle\int_L (\boldsymbol v \times \boldsymbol B) \cdot \mathrm d\boldsymbol l$。
     - **感生电动势**
         - 已知面为 $S$ 的回路不动，磁场 $\boldsymbol B$ 随时间变化，则产生 $\mathcal E =\displaystyle -\frac{\mathrm d}{\mathrm dt} \iint_S \boldsymbol B \cdot \mathrm d\boldsymbol S = - \iint_S \frac{\partial\boldsymbol B}{\partial t} \cdot \mathrm d\boldsymbol S$。
         - 对于会同时产生动生电动势和感生电动势的情况，直接将两者相加。
     - **感生电场**
         - 感生电场由变化的磁场激发，其场强记作 $\boldsymbol E_k$。
         - 感生电场引起回路的感生电动势，即 $\mathcal E = \displaystyle\oint_L \boldsymbol E_k \cdot \mathrm d\boldsymbol l$。
-        - 感生电场性质不同于[静电场](/notes/docs/physics/electromagnetism/electrostatic-field)，类似于磁场，是有旋无源场。
+        - 感生电场性质不同于[静电场](/docs/physics/electromagnetism/electrostatic-field)，类似于磁场，是有旋无源场。
 - **自感和互感**
     - **自感**
         - 定义线圈的自感 $L = \dfrac{\Psi}{I}$，$\Psi$ 为线圈电流为 $I$ 时通过线圈的磁通量，单位为 $\mathrm H$。

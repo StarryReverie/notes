@@ -17,7 +17,7 @@ math: true
           $$
         - RLC 串联电路一般先求解 $u_C(t)$ 较为方便。
     - **求解**
-        - 根据[二阶常系数线性微分方程](/notes/docs/mathematics/calculus/linear-differential-equation#xp7c9l)的求解方法，将 $u_C(t)$ 的求解分为齐次通解 $u_{C\mathrm h}(t)$ 和特解 $u_{C\mathrm p}(t)$，最后代入初值条件。
+        - 根据[二阶常系数线性微分方程](/docs/mathematics/calculus/linear-differential-equation#xp7c9l)的求解方法，将 $u_C(t)$ 的求解分为齐次通解 $u_{C\mathrm h}(t)$ 和特解 $u_{C\mathrm p}(t)$，最后代入初值条件。
         - 齐次通解实为电路的零输入响应。
         - 根据特征方程 $LCs^2+RCs+1=0$，写出 $u_{C\mathrm h}(t)$ 的形式。
         - $u_{\mathrm{OC}}$ 是常数，则 $u_{C\mathrm p}(t)=u_{\mathrm{OC}}$。

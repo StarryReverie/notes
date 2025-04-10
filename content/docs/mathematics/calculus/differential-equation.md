@@ -12,9 +12,9 @@ math: true
     - 根据未知函数的类型：
         - 是一元函数：常微分方程
         - 是多元函数：偏微分方程
-    - 根据阶数：[一阶微分方程](/notes/docs/mathematics/calculus/first-order-differential-equation)、二阶微分方程等，二阶及以上统称[高阶微分方程](/notes/docs/mathematics/calculus/high-order-differential-equation)。
+    - 根据阶数：[一阶微分方程](/docs/mathematics/calculus/first-order-differential-equation)、二阶微分方程等，二阶及以上统称[高阶微分方程](/docs/mathematics/calculus/high-order-differential-equation)。
     - 根据未知函数的次数：
-        - 均为线性：[线性微分方程](/notes/docs/mathematics/calculus/linear-differential-equation)
+        - 均为线性：[线性微分方程](/docs/mathematics/calculus/linear-differential-equation)
         - 其他
     - 解的分类：
         - 特解：不含有任意常数的解

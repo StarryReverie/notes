@@ -14,7 +14,7 @@ math: true
         - 设函数 $f(x)$ 在区间 $I$ 上有定义，如果 $\exists M_1$，使得对 $\forall x\in I$，都有 $f(x)\le M_1$，则称函数 $f(x)$ 在区间 $I$ 上有上界。如果 $\exists M_2$，使得对 $\forall x\in I$，都有 $f(x)\ge M_2$，则称函数 $f(x)$ 在区间 $I$ 上有下界。
     - **单调性**
         - 设函数 $f(x)$ 在区间 $I$ 上有定义，如果对 $\forall x_1,x_2 \in I$，$x_1< x_2$，都有 $f(x_1)<f(x_2)$，则称 $f(x)$ 在区间 $I$ 上是单调递增的。如果对 $\forall x_1,x_2 \in I$，$x_1< x_2$，都有 $f(x_1)>f(x_2)$，则称 $f(x)$ 在区间 $I$ 上是单调递减的。单调递增函数与单调递减函数统称单调函数。
-        - 可以使用[导数研究函数单调性](/notes/docs/mathematics/calculus/derivative#erqbub)。
+        - 可以使用[导数研究函数单调性](/docs/mathematics/calculus/derivative#erqbub)。
     - **奇偶性**
         - 设函数 $f(x)$ 的定义域 $D$ 关于原点对称，如果 $\forall x \in D$，都有 $f(-x)=f(x)$，则称 $f(x)$ 为偶函数。如果 $\forall x \in D$，都有 $f(-x)=-f(x)$，则称 $f(x)$ 为奇函数。
     - **周期性**
@@ -46,7 +46,7 @@ math: true
             - **介值定理**
                 - 设函数 $f(x)$ 在 $[a,b]$ 上连续，$m=\min\limits_{x\in[a,b]}\{f(x)\}$，$M=\max\limits_{x\in[a,b]}\{f(x)\}$，则对 $\forall \mu$，只要 $m\le\mu\le M$，则 $\exists\xi\in(a,b)$，使得 $f(\xi)=\mu$。
     - **凹凸性**
-        - 详见[导数研究凹凸性](/notes/docs/mathematics/calculus/derivative#tc59gd)页面。
+        - 详见[导数研究凹凸性](/docs/mathematics/calculus/derivative#tc59gd)页面。
     - **渐近线**
         - **定义**
             - 当曲线上的点沿曲线无限远离原点时，与某一直线的距离趋于 $0$，则称该直线为该曲线的一条渐近线。

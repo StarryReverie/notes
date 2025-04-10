@@ -23,7 +23,7 @@ math: true
     - **性质**
         - 单调递增。
         - 非负，对于任意 $x$，均有 $F(x) \in [0,1]$ 且 $\lim\limits_{x \to -\infty} F(x) = 0,\lim\limits_{x \to +\infty} F(x) = 1$。
-        - 右[连续](/notes/docs/mathematics/calculus/function#vhnj4q)。
+        - 右[连续](/docs/mathematics/calculus/function#vhnj4q)。
 - **连续型随机变量**
     - **定义**
         - 设 $X$ 的分布函数为 $F(x)$，如果存在非负可积函数 $f(x)$，使得 $F(x) = \displaystyle\int_{-\infty}^x f(t)\mathrm dt$，则 $X$ 是连续型随机变量，$f(x)$ 是概率密度函数。
@@ -42,7 +42,7 @@ math: true
         - $\Phi(-x) = 1 - \Phi(x)$。
 - **随机变量函数**
     - **定义**
-        - $y = g(x)$ 是一个已知[函数](/notes/docs/mathematics/calculus/function)，$X,Y$ 是随机变量。
+        - $y = g(x)$ 是一个已知[函数](/docs/mathematics/calculus/function)，$X,Y$ 是随机变量。
         - 如果 $X = x$ 时 $Y = g(x)$，则 $Y$ 是 $X$ 的函数，$Y = g(X)$。
     - **离散型随机变量的函数**
         - $X$ 是离散型随机变量时，$Y = g(X)$ 一定是离散型随机变量。

@@ -23,7 +23,7 @@ math: true
           $$
     - **注意事项**
         - 多元极限中 $P\to P_0$ 的方式是任意的，如果存在不同的方式使得 $\lim_{P\to P_0} f(P)$ 不同，则 $\lim_{P\to P_0} f(P)$ 不存在。
-        - 一元[极限](/notes/docs/mathematics/calculus/limit)的方法在此时仍然适用，只需要是对一个整体应用这些方法。
+        - 一元[极限](/docs/mathematics/calculus/limit)的方法在此时仍然适用，只需要是对一个整体应用这些方法。
 - **连续性**
     - **定义**
         - 设 $f(P)$ 在 $P_0$ 的某去心邻域内有定义，若
@@ -32,7 +32,7 @@ math: true
           $$
           则 $f(P)$ 在 $P_0$ 处连续。
     - **性质**
-        - 与一元函数[连续性](/notes/docs/mathematics/calculus/function#oi6fm3)类似，有以下性质：
+        - 与一元函数[连续性](/docs/mathematics/calculus/function#oi6fm3)类似，有以下性质：
             - 有界性：如果函数 $f(P)$ 在有界闭区域 $D$ 上连续，则 $f(P)$ 在区域 $D$ 上有界，即存在正数 $M$，使对 $\forall P\in D$，都有
               $$
               |f(P)|\le M

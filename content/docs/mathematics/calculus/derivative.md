@@ -5,7 +5,7 @@ math: true
 ---
 
 - **定义** <span id="u884j8"></span>
-    - 设[函数](/notes/docs/mathematics/calculus/function) $y=f(x)$ 在点 $x_0$ 的某邻域内有定义，当自变量在 $x_0$ 处取得增量 $\Delta x$ 时，函数取得相应的增量 $\Delta y=f(x_0+\Delta x)-f(x_0)$，如果[极限](/notes/docs/mathematics/calculus/limit) $\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$ 存在，则称 $f(x)$ 在 $x_0$ 处可导，且称此极限值为 $f(x_0)$ 在点 $x_0$ 处的导数，记作 $f'(x_0)$，或 $y'\Big|_{x=x_0},\frac{\mathrm dy}{\mathrm dx}\Big|_{x=x_0},\frac{\mathrm df}{\mathrm dx}\Big|_{x=x_0}$。 <span id="ri73aj"></span>
+    - 设[函数](/docs/mathematics/calculus/function) $y=f(x)$ 在点 $x_0$ 的某邻域内有定义，当自变量在 $x_0$ 处取得增量 $\Delta x$ 时，函数取得相应的增量 $\Delta y=f(x_0+\Delta x)-f(x_0)$，如果[极限](/docs/mathematics/calculus/limit) $\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$ 存在，则称 $f(x)$ 在 $x_0$ 处可导，且称此极限值为 $f(x_0)$ 在点 $x_0$ 处的导数，记作 $f'(x_0)$，或 $y'\Big|_{x=x_0},\frac{\mathrm dy}{\mathrm dx}\Big|_{x=x_0},\frac{\mathrm df}{\mathrm dx}\Big|_{x=x_0}$。 <span id="ri73aj"></span>
     - $f'(x_0)$ 也可以写成 $\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}$。
     - 如果以上极限不存在，则 $f(x)$ 在 $x_0$ 不可导。
     - 与极限类似，可以定义左导数 $f'_-(x_0)$ 和右导数 $f'_+(x_0)$。
@@ -13,7 +13,7 @@ math: true
     - 如果 $f(x)$ 在 $(a,b)$ 上的每一点都可导，则 $f(x)$ 在 $(a,b)$ 上可导。
     - 如果 $f(x)$ 在 $(a,b)$ 上的每一点都可导，在 $a$ 右可导，在 $b$ 左可导，则 $f(x)$ 在 $[a,b]$ 上可导。
 - **性质**
-    - **与[连续性](/notes/docs/mathematics/calculus/function#vhnj4q)的关系**
+    - **与[连续性](/docs/mathematics/calculus/function#vhnj4q)的关系**
         - 如果 $f(x)$ 在 $x_0$ 处可导，则 $f(x)$ 在 $x_0$ 处连续。
             - 逆命题不一定成立。
             - 如果 $f(x)$ 在 $x_0$ 处不连续，则 $f(x)$ 在 $x_0$ 处不可导。
@@ -75,7 +75,7 @@ math: true
         - $(uv)^{(n)}=\sum\limits_{k=0}^{n}C_{n}^{k}u^{(n-k)}v^{(k)}$
 - **应用**
     - **微分中值定理**
-        - 详见[微分中值定理](/notes/docs/mathematics/calculus/differential-mean-theorem)页面。
+        - 详见[微分中值定理](/docs/mathematics/calculus/differential-mean-theorem)页面。
     - **研究函数单调性、极值、最值** <span id="erqbub"></span>
         - **单调的充分条件**
             - 设函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导：
@@ -123,4 +123,4 @@ math: true
                 - 得出 $f''(x)>0$；
                 - 证明完毕。
         - **曲率**
-            - 详见[曲率](/notes/docs/mathematics/calculus/curvature)页面。
+            - 详见[曲率](/docs/mathematics/calculus/curvature)页面。

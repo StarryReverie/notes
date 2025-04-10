@@ -6,8 +6,8 @@ math: true
 
 - **简单迭代法**
     - **迭代计算**
-        - 已知方程 $\boldsymbol f(\boldsymbol x) = \begin{bmatrix}f_1(\boldsymbol x) \\\vdots \\f_n(\boldsymbol x)\end{bmatrix} = 0$，其中 $\boldsymbol x$ 是 $n$ 维[向量](/notes/docs/mathematics/linear-algebra/vector)。
-        - 将其变换为 $\boldsymbol x = \boldsymbol\varphi(\boldsymbol x)$ 的形式，则 $\boldsymbol x^{(n + 1)} = \boldsymbol\varphi(\boldsymbol x^{(n)})$ 是[迭代公式](/notes/docs/computer-science/numerical-analysis/equation-iterative-method#hx4z72)。 
+        - 已知方程 $\boldsymbol f(\boldsymbol x) = \begin{bmatrix}f_1(\boldsymbol x) \\\vdots \\f_n(\boldsymbol x)\end{bmatrix} = 0$，其中 $\boldsymbol x$ 是 $n$ 维[向量](/docs/mathematics/linear-algebra/vector)。
+        - 将其变换为 $\boldsymbol x = \boldsymbol\varphi(\boldsymbol x)$ 的形式，则 $\boldsymbol x^{(n + 1)} = \boldsymbol\varphi(\boldsymbol x^{(n)})$ 是[迭代公式](/docs/computer-science/numerical-analysis/equation-iterative-method#hx4z72)。 
         - 如果 $\lim\limits_{n \to +\infty} \boldsymbol x^{(n)} = \boldsymbol\alpha$ 存在，则 $\boldsymbol\alpha$ 为方程组的根。 
     - **收敛条件**
         - 记 $a_{ij} = \max\limits_{x \in \mathrm R^n}\left|\dfrac{\partial\varphi_i}{\partial x_j}\right|_{\boldsymbol x}$。

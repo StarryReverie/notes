@@ -6,10 +6,10 @@ math: true
 
 - **样本**
     - **定义**
-        - 已知总体 $X$，$X_1,X_2,\dots,X_n$ 互相[独立](/notes/docs/mathematics/probability-theory/probability-basis#b59tln)，与 $X$ 同分布，则 $X_1,X_2,\dots,X_n$ 是简单随机样本。
+        - 已知总体 $X$，$X_1,X_2,\dots,X_n$ 互相[独立](/docs/mathematics/probability-theory/probability-basis#b59tln)，与 $X$ 同分布，则 $X_1,X_2,\dots,X_n$ 是简单随机样本。
         - $n$ 为样本容量。
     - **样本分布**
-        - 已知总体 $X$ 和[分布函数](/notes/docs/mathematics/probability-theory/random-variable#rhosgs)，样本 $X_1,X_2,\dots,X_n$。
+        - 已知总体 $X$ 和[分布函数](/docs/mathematics/probability-theory/random-variable#rhosgs)，样本 $X_1,X_2,\dots,X_n$。
         - $F(x_1,x_2,\dots,x_n)=\displaystyle\prod_{i=1}^n F(x_i)$。
 - **统计量**
     - **定义**
@@ -47,7 +47,7 @@ math: true
         - 已知 $X_1,\dots,X_m$ 来自 $N(\mu_1,\sigma_1^2)$，$Y_1,\dots,Y_n$ 来自 $N(\mu_2,\sigma_2^2)$，两者独立，则 $\dfrac{S_1^2/S_2^2}{\sigma_1^2/\sigma_2^2} \sim F(m-1,n-1)$。
 - **分位数**
     - **定义**
-        - 已知[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$ 与其分布函数 $F_X(x)$，给定 $p,\alpha \in (0,1)$
+        - 已知[随机变量](/docs/mathematics/probability-theory/random-variable) $X$ 与其分布函数 $F_X(x)$，给定 $p,\alpha \in (0,1)$
             - 定义满足 $F_X(x_p) = p$ 的 $x_p$ 为 $p$ 分位数。
             - 定义满足 $1-F_X(x_\alpha) = \alpha$ 的 $x_\alpha$ 为上 $\alpha$ 分位数。
     - **性质**

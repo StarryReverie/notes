@@ -94,7 +94,7 @@ math: false
             - `WHERE EXISTS (SELECT * FROM ... WHERE <predicate>)` 表示 $\exists x P(x)$ 的语义。
             - `WHERE NOT EXISTS (SELECT * FROM WHERE NOT <predicate>)` 表示 $\forall x P(x)$ 的语义。
     - **集合查询**
-        - `UNION`、`INTERSECT`、`MINUS`、`EXCEPT` 表示[集合运算](/notes/docs/mathematics/discrete-mathematics/set#qtjafh)。
+        - `UNION`、`INTERSECT`、`MINUS`、`EXCEPT` 表示[集合运算](/docs/mathematics/discrete-mathematics/set#qtjafh)。
         - 只有 `UNION` 是标准的 SQL 操作。
         - 集合运算要求两个关系的元组相同。
         - `<query1> UNION [ALL] <query2>` 将两个查询的结果取并集。
@@ -106,7 +106,7 @@ math: false
 		  ```
 		- 属性的元组可以与表定义的顺序不同，不强制要求的属性可以省略。
 		- 被插入的元组可以是字面的元组，也可以是 `SELECT` 子查询。
-		- 无法满足[完整性约束](/notes/docs/computer-science/database/relational-database#masdfo)的元组不会被插入。
+		- 无法满足[完整性约束](/docs/computer-science/database/relational-database#masdfo)的元组不会被插入。
 	- **修改**
 		- ```sql
 		  UPDATE <table> SET <colum> = <expression> [WHERE <predicate>];

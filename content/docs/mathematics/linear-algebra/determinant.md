@@ -53,5 +53,5 @@ math: true
             - $r(A)=n-1\implies r(A^*)=1$
             - $r(A)\le n-2\implies r(A^*)=0$
 - **克拉默法则** <span id="yd927p"></span>
-    - 对于[线性方程组](/notes/docs/mathematics/linear-algebra/linear-equation-system) $A\boldsymbol x=\boldsymbol b$，若 $|A|\ne 0$，则该方程组的解为 $\boldsymbol x=\frac{1}{|A|}\begin{bmatrix}D_1\\D_2\\\vdots\\D_n\end{bmatrix}$，其中 $D_i$ 表示把 $A$ 的第 $i$ 列替换为 $\boldsymbol b$ 的矩阵的行列式。
+    - 对于[线性方程组](/docs/mathematics/linear-algebra/linear-equation-system) $A\boldsymbol x=\boldsymbol b$，若 $|A|\ne 0$，则该方程组的解为 $\boldsymbol x=\frac{1}{|A|}\begin{bmatrix}D_1\\D_2\\\vdots\\D_n\end{bmatrix}$，其中 $D_i$ 表示把 $A$ 的第 $i$ 列替换为 $\boldsymbol b$ 的矩阵的行列式。
     - 克拉默法则只能用于求解 $n$ 个 $n$ 元方程组成的方程组，即 $A$ 是方阵。

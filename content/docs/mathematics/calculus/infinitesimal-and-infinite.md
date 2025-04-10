@@ -9,7 +9,7 @@ math: true
         - 若 $\lim\limits_{n\to \infty} a_n = 0$，则称数列 $\{a_n\}$ 为无穷小。
         - 若 $\lim\limits_{x\to x_0} f(x)=0$，则称 $f(x)$ 为 $x\to x_0$ 时的无穷小。
         - 其他情况类似。
-    - **无穷小和[函数极限](/notes/docs/mathematics/calculus/limit#ishaoc)的关系**
+    - **无穷小和[函数极限](/docs/mathematics/calculus/limit#ishaoc)的关系**
         - $\lim f(x)=A \iff f(x)=A+\alpha(x)$，其中 $\lim \alpha(x)=0$。
     - **性质**
         - 有限个无穷小的代数和是无穷小。

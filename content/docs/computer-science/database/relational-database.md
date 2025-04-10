@@ -27,7 +27,7 @@ math: true
             - 关系模型提供检验的机制，不需要应用程序检验。
 - **关系代数**
     - **传统集合运算**
-        - 参考[集合](/notes/docs/mathematics/discrete-mathematics/set#g6tiqk)中的内容。主要常用的有交、并、差、笛卡尔积。
+        - 参考[集合](/docs/mathematics/discrete-mathematics/set#g6tiqk)中的内容。主要常用的有交、并、差、笛卡尔积。
     - **选择**
         - 已知关系 $R(A_1,A_2,\dots,A_n)$，元组 $t\in R$，规定：
             - $t[A_i]$ 表示 $t$ 中对应 $A_i$ 的分量

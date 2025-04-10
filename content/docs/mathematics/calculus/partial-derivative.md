@@ -6,12 +6,12 @@ math: true
 
 - **偏导数**
     - **定义**
-        - 设[多元函数](/notes/docs/mathematics/calculus/multivariate-function) $z=f(x,y)$ 在点 $(x_0,y_0)$ 的某邻域内有定义。
+        - 设[多元函数](/docs/mathematics/calculus/multivariate-function) $z=f(x,y)$ 在点 $(x_0,y_0)$ 的某邻域内有定义。
         - 将 $y$ 固定为 $y_0$，而 $x$ 在 $x_0$ 处取得增量 $\Delta x$ 时，函数 $f(x,y)$ 所产生相应的增量定义为偏增量：
           $$
           \Delta_x z=f(x_0+\Delta x,y_0)-f(x_0,y_0)
           $$
-        - 如果以下[极限](/notes/docs/mathematics/calculus/limit)存在：
+        - 如果以下[极限](/docs/mathematics/calculus/limit)存在：
           $$
           \lim_{\Delta x\to 0}\frac{\Delta_x z}{\Delta x}=\lim_{\Delta x\to 0}\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}
           $$
@@ -84,7 +84,7 @@ math: true
               \frac{\partial w}{\partial z}=f_3'\cdot (-2z)
               $$
     - **全微分形式的不变性**
-        - 设 $z=f(u,v)$，不论 $u,v$ 是自变量还是中间变量，[全微分](/notes/docs/mathematics/calculus/total-differential)都可以写成
+        - 设 $z=f(u,v)$，不论 $u,v$ 是自变量还是中间变量，[全微分](/docs/mathematics/calculus/total-differential)都可以写成
           $$
           \mathrm dz=\frac{\partial z}{\partial u}\mathrm du+\frac{\partial z}{\partial v}\mathrm dv
           $$

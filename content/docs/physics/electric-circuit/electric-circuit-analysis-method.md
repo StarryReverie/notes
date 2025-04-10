@@ -124,17 +124,17 @@ math: true
         - 电路由两个单口网络组成，如果单口网络的端口电压为 $u_0$，端口电流为 $i_0$，则任意单口网络的端口都可以用 $u_0$ 电压源或 $i_0$ 电流源替换，而对单口网络内部无影响。
         - 单口网络的 VCR 只与自身结构有关，外部的元件只要满足电压电流相等即可。
     - **等效电路**
-        - 见[等效电路](/notes/docs/physics/electric-circuit/equivalent-electric-circuit)。
+        - 见[等效电路](/docs/physics/electric-circuit/equivalent-electric-circuit)。
     - **最大功率传递定理**
         - 要求解电路中（无源）一部分的功率，可以将电路分解为含源单口网络和负载部分单口网络。
-        - 负载部分用电阻 $R_{\mathrm L}$ 代表，含源单口网络利用[戴维南定理](/notes/docs/physics/electric-circuit/equivalent-electric-circuit#x67b2w)（$u_{\mathrm{OC}},R_{\mathrm o}$）或[诺顿定理](/notes/docs/physics/electric-circuit/equivalent-electric-circuit#nifovy)（$i_{\mathrm{SC}},R_{\mathrm o}$）简化。
+        - 负载部分用电阻 $R_{\mathrm L}$ 代表，含源单口网络利用[戴维南定理](/docs/physics/electric-circuit/equivalent-electric-circuit#x67b2w)（$u_{\mathrm{OC}},R_{\mathrm o}$）或[诺顿定理](/docs/physics/electric-circuit/equivalent-electric-circuit#nifovy)（$i_{\mathrm{SC}},R_{\mathrm o}$）简化。
         - 当 $R_{\mathrm L}=R_{\mathrm o}$ 时，负载的功率最大，此时称为最大功率匹配，$\eta=50\%$，最大功率为
           $$
           p_{\max}=\frac{u_{\mathrm{OC}}^2}{4R_{\mathrm L}}=4R_{\mathrm L}i_{\mathrm{SC}}^2
           $$
 - **变换域法** <span id="e9iiuf"></span>
     - **定义**
-        - 对于正弦稳态电路，可以通过将各变量变换为[相量](/notes/docs/physics/electric-circuit/phasor)，然后求解。
+        - 对于正弦稳态电路，可以通过将各变量变换为[相量](/docs/physics/electric-circuit/phasor)，然后求解。
         - 这种方法被称为变换域法。
     - **阻抗**
         - 对于一线性元件，其满足一定的 VCR 关系 $f(u,i)=0$。变换为相量后，如果满足 $\dot{U}_m=Z\dot{I}_m$，则定义 $Z$ 为这个元件的阻抗。

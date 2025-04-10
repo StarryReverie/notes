@@ -7,7 +7,7 @@ math: true
 - **确定初值**
     - **画图法**
     - **扫描法**
-        - 在有根区间中，选定一个步长 $h$，用[零点定理](/notes/docs/mathematics/calculus/function#fkxb1e)确定当前区间 $[x_0,x_0 + h]$ 内是否有根，并令 $x_0 \longleftarrow x_0 + h$，判断下一个区间。
+        - 在有根区间中，选定一个步长 $h$，用[零点定理](/docs/mathematics/calculus/function#fkxb1e)确定当前区间 $[x_0,x_0 + h]$ 内是否有根，并令 $x_0 \longleftarrow x_0 + h$，判断下一个区间。
         - 如果 $h$ 过大可能漏掉根，如果过小则计算量大。
     - **二分法**
         - 不断切分当前区间 $[a,b]$，进入有根的子区间，并继续寻找。
@@ -24,7 +24,7 @@ math: true
             - 大范围收敛：任意位置都可以收敛。
             - 局部收敛：收敛速度更块，但需要初值接近根。
         - **收敛的充分条件**
-            -  如果在 $[a, b]$ 上 $\varphi(x)$ [可导](/notes/docs/mathematics/calculus/derivative#ri73aj)，且满足 $|\varphi'(x)| \le q < 1$，则迭代过程收敛。
+            -  如果在 $[a, b]$ 上 $\varphi(x)$ [可导](/docs/mathematics/calculus/derivative#ri73aj)，且满足 $|\varphi'(x)| \le q < 1$，则迭代过程收敛。
             - $q$ 在此处保证 $|\varphi'(x)|$ 不是收敛于 $1$。
             - $q$ 越小则收敛越快。
             - 实际应用中，$[a,b]$ 长度较小，$|\varphi'(x)|$ 变化较小，所以只判断 $|\varphi(x_0)|<1$。
@@ -37,8 +37,8 @@ math: true
             - $|x_n - \alpha| \le \dfrac{q^n}{1 - q}|x_1 - x_0|$，该公式可以估计 $n$。
             - $|x_n - \alpha| \le \dfrac{|\varphi(x_n)|}{m},m \le |\varphi'(x)|$。
     - **误差分析**
-        - 上界公式确定[截断误差](/notes/docs/computer-science/numerical-analysis/numerical-compution-error#fmii73)。
-        - 迭代方法的[舍入误差](/notes/docs/computer-science/numerical-analysis/numerical-compution-error#slzgdw)只计算最后一次迭代产生的误差。
+        - 上界公式确定[截断误差](/docs/computer-science/numerical-analysis/numerical-compution-error#fmii73)。
+        - 迭代方法的[舍入误差](/docs/computer-science/numerical-analysis/numerical-compution-error#slzgdw)只计算最后一次迭代产生的误差。
 - **常用迭代公式**
     - **构造迭代公式**
         - **构造法 1**

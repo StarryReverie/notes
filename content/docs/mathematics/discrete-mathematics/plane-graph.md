@@ -6,7 +6,7 @@ math: true
 
 - **平面图**
     - **定义**
-        - 可平面图 / 平面图：可以把边无交地画在平面上的[图](/notes/docs/mathematics/discrete-mathematics/graph-basis#xknur9)。
+        - 可平面图 / 平面图：可以把边无交地画在平面上的[图](/docs/mathematics/discrete-mathematics/graph-basis#xknur9)。
         - 平面嵌入：画出的无边相交的平面图。
         - 非平面图：无平面嵌入的无向图。
     - **性质**
@@ -50,7 +50,7 @@ math: true
         - $G$ 是平面图 $\iff$ $G$ 中不含与 $K_5$ 或 $K_{3,3}$ 同胚的子图。
         - $G$ 是平面图 $\iff$ $G$ 中不含可以收缩为 $K_5$ 或 $K_{3,3}$ 的子图。
     - **其他方法**
-        - 见[欧拉公式相关定理](/notes/docs/mathematics/discrete-mathematics/plane-graph#p9gf0n)。
+        - 见[欧拉公式相关定理](/docs/mathematics/discrete-mathematics/plane-graph#p9gf0n)。
 - **平面图的对偶图**
     - **定义**
         - 已知 $G$ 为平面嵌入，按照以下方式构造对偶图 $G^*$

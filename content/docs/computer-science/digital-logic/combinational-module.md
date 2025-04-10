@@ -10,7 +10,7 @@ math: true
         - $F = 0$ 用 $F$ 接地表示，$F = 1$ 用 $F$ 接 $V_{\mathrm{CC}}$ 或 $V_{\mathrm{DD}}$ 表示。
         - $F = \overline X$ 时，在 $X$ 和 $F$ 之间接非门。
     - **多位函数**
-        - 输入变量 $X$ 有 $n$ 个位时，可以表示用[向量](/notes/docs/mathematics/linear-algebra/vector) $X(n - 1:0)$ 表示，特定分量用 $X_i, X(i), X(i:j)$ 表示。
+        - 输入变量 $X$ 有 $n$ 个位时，可以表示用[向量](/docs/mathematics/linear-algebra/vector) $X(n - 1:0)$ 表示，特定分量用 $X_i, X(i), X(i:j)$ 表示。
 - **使能**
     - 使能控制输入信号传递到输出端是否被屏蔽，被屏蔽时输出保持为一个非使能值。
     - 使用与门实现使能：$F = X \cdot \mathrm{EN}$，$\mathrm{EN} = 1$ 时 $F = X$，否则 $F = 0$。
@@ -33,7 +33,7 @@ math: true
 	    - 一个 $n$-$2^n$ 的译码器使用一个 $\left\lfloor \dfrac{n}{2} \right\rfloor$ 输入的译码器和一个 $\left\lceil \dfrac{n}{2} \right\rceil$ 输入的译码器，门输入成本最低。
         - ![](/images/by-name/combinational-module/layered-decoder.jpg)
     - **译码器和布尔函数**
-    	- $n$ 变量[布尔函数](/notes/docs/computer-science/digital-logic/combinational-logic-circuit#agoh98) $F$ 有 $2^n$ 个最小项，分别对应 $n$-$2^n$ 译码器的各个输出。
+    	- $n$ 变量[布尔函数](/docs/computer-science/digital-logic/combinational-logic-circuit#agoh98) $F$ 有 $2^n$ 个最小项，分别对应 $n$-$2^n$ 译码器的各个输出。
     	- 将 $F$ 取值为 $1$ 的最小项对应的译码器输出用或门连接，则或门输出为 $F$。
 - **编码器**
 	- **定义**
@@ -91,7 +91,7 @@ math: true
         - ![](/images/by-name/combinational-module/adder.jpg)
 - **减法器**
     - **补码**
-        - $n$ 位二进制无符号整数 $x$ 的补码是 $2^n - x$，为模 $2^n$ 加法[群](/notes/docs/mathematics/discrete-mathematics/group)的[逆元](/notes/docs/mathematics/discrete-mathematics/algebraic-system#opv12f)。
+        - $n$ 位二进制无符号整数 $x$ 的补码是 $2^n - x$，为模 $2^n$ 加法[群](/docs/mathematics/discrete-mathematics/group)的[逆元](/docs/mathematics/discrete-mathematics/algebraic-system#opv12f)。
         - $x$ 的补码的二进制计算方法：对 $x$ 按位取反再加 $1$。
         - $n$ 位二进制有符号整数 $x$ 的补码表示法：
             - 最高位为符号位，$0$ 表示正数或 $0$，$1$ 表示负数，剩下的为数值位。

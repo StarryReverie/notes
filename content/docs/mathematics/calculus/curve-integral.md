@@ -21,7 +21,7 @@ math: true
           \oint_L f(x,y)\mathrm ds
           $$
     - **性质**
-        - 类比[重积分的性质](/notes/docs/mathematics/calculus/multiple-integral#c6nt3c)。
+        - 类比[重积分的性质](/docs/mathematics/calculus/multiple-integral#c6nt3c)。
     - **计算**
         - 若 $f(x,y)$ 在 $L$ 上连续，$L:\left\{\begin{matrix}x=\varphi(t)\\ y=\psi(t)\end{matrix}\right.\ (a\le t\le b)$，$\varphi(t),\psi(t)$ 在 $[a,b]$ 上可导，则
           $$

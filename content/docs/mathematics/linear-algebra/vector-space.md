@@ -11,7 +11,7 @@ math: true
             - 对 $\forall \boldsymbol a\in V,k\in F$，都有 $k\boldsymbol a\in V$
         - 从定义可以看出，向量空间中[向量线性运算](向量#qhvnyd)都是封闭的。
     - **性质**
-        - 零[向量](/notes/docs/mathematics/linear-algebra/vector)在任何向量空间中。
+        - 零[向量](/docs/mathematics/linear-algebra/vector)在任何向量空间中。
         - 只有零向量的集合也是向量空间。
         - 向量空间的交空间、和空间也是向量空间。但并空间不一定是是向量空间。
     - **关系**
@@ -59,7 +59,7 @@ math: true
             - $\operatorname{span}(\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_s)=\operatorname{span}(\boldsymbol b_1,\boldsymbol b_2,\dots,\boldsymbol b_t) \iff \{\boldsymbol a_1,\boldsymbol a_2,\dots,\boldsymbol a_s\}\cong\{\boldsymbol b_1,\boldsymbol b_2,\dots,\boldsymbol b_t\}$
     - **列空间**
         - **定义**
-            - 由 $m\times n$ [矩阵](/notes/docs/mathematics/linear-algebra/matrix) $A$ 的列生成的子空间，称为 $A$ 的列空间，记作 $C(A)$。
+            - 由 $m\times n$ [矩阵](/docs/mathematics/linear-algebra/matrix) $A$ 的列生成的子空间，称为 $A$ 的列空间，记作 $C(A)$。
         - **性质**
             - $A\boldsymbol x=\boldsymbol b$ 有解 $\iff \boldsymbol b \in C(A)$
             - $\dim C(A)=r(A)$

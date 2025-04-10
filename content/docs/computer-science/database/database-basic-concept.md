@@ -5,7 +5,7 @@ math: true
 ---
 
 - **数据模型**
-    - [数据模型](/notes/docs/computer-science/database/data-model)是描述数据的概念和定义，包括数据结构、数据操作、数据完整性约束。
+    - [数据模型](/docs/computer-science/database/data-model)是描述数据的概念和定义，包括数据结构、数据操作、数据完整性约束。
     - 数据模型分为：
         - 概念模型：按用户观点对数据和信息建模，和计算机如何表示无关。
         - 逻辑模型：按计算机观点对数据建模，与 DBMS 的实现有关。

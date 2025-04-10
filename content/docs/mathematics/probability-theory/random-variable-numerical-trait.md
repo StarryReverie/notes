@@ -6,8 +6,8 @@ math: true
 
 - **期望**
     - **定义**
-        - 对离散型[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\sum_{i=1}^{+\infty} x_i p_i$ 绝对收敛，则该[级数](/notes/docs/mathematics/calculus/series)为其期望 $E(X)$。
-        - 对离散型[随机变量](/notes/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\int_{-\infty}^{+\infty} xf(x)\mathrm dx$ 绝对收敛，则该[定积分](/notes/docs/mathematics/calculus/definite-integral)为其期望 $E(X)$。
+        - 对离散型[随机变量](/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\sum_{i=1}^{+\infty} x_i p_i$ 绝对收敛，则该[级数](/docs/mathematics/calculus/series)为其期望 $E(X)$。
+        - 对离散型[随机变量](/docs/mathematics/probability-theory/random-variable) $X$，如果 $\displaystyle\int_{-\infty}^{+\infty} xf(x)\mathrm dx$ 绝对收敛，则该[定积分](/docs/mathematics/calculus/definite-integral)为其期望 $E(X)$。
         - 期望不是随机变量，是 $X$ 的数字特征。
     - **性质**
         - 已知 $X,Y=g(X)$，则 $E(Y) = E(g(X)) =\displaystyle\int_{-\infty}^{+\infty} g(x) f(x) \mathrm dx$。

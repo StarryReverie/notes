@@ -9,7 +9,7 @@ math: true
         - 定义 $f(x)$ 的差商为 $f[x_0,x_1] = \dfrac{f(x_1)-f(x_0)}{x_1-x_0}$。
         - 定义 $f(x)$ 的 $n$ 阶差商为 $f[x_0,\dots,x_n] = \dfrac{f[x_0,\dots,x_{n-1}] - f[x_1,\dots,x_n]}{x_n-x_0}$。
         - 差商中任意几个点的顺序可以随意交换，即 $f[\dots,x_i,\dots,x_j,\dots] = [\dots,x_j,\dots,x_i,\dots]$。
-        - 差商可以看作[导数](/notes/docs/mathematics/calculus/derivative)的离散形式。
+        - 差商可以看作[导数](/docs/mathematics/calculus/derivative)的离散形式。
     - **差商表**
         - ![](/images/by-name/interpolation/difference-quotient-table.png)
     - **公式**
@@ -19,7 +19,7 @@ math: true
     - **余式**
         - $R_n(x) = f(x) - P_n(x) = f[x_0,\dots,x_n,x]\displaystyle\prod_{i=0}^n(x-x_i)$。
         - 在给定区间中，存在 $\xi$ 使得 $f[x_0,\dots,x_n,x] = \dfrac{f^{(n+1)}(\xi)}{(n+1)!}$，即 $R_n(x) = \dfrac{f^{(n+1)}(\xi)}{(n+1)!}\displaystyle\prod_{i=0}^n(x-x_i)$。
-        - 当 $x_0,\dots,x_n$ 趋于同一个值时，$R_n(x)$ 则为[泰勒公式](/notes/docs/mathematics/calculus/taylor-formula)的拉格朗日余式。
+        - 当 $x_0,\dots,x_n$ 趋于同一个值时，$R_n(x)$ 则为[泰勒公式](/docs/mathematics/calculus/taylor-formula)的拉格朗日余式。
         - 在给定区间中，如果 $|f^{(n+1)}(x)|$ 有上界 $M$，则估计 $|R_n(x)| \le \dfrac{M}{(n+1)!}\displaystyle\prod_{i=0}^n(x-x_i)$。
 - **牛顿前插 / 后插公式**
     - **差分**
@@ -54,7 +54,7 @@ math: true
         - $L_2(x) = \dfrac{t^2 - t}{2} y_{i-1} + (1-t^2) y_i + \dfrac{t^2 + t}{2} y_{i+1}$
 - **埃尔米特插值公式**
     - **定义**
-        - 埃尔米特插值公式根据给定的函数值和一定的[导数](/notes/docs/mathematics/calculus/derivative)值插值，多项式同时满足函数值和导数值条件。
+        - 埃尔米特插值公式根据给定的函数值和一定的[导数](/docs/mathematics/calculus/derivative)值插值，多项式同时满足函数值和导数值条件。
     - **牛顿型**
         - 若 $x_i$ 有 $m_i$ 阶导数作为条件，则在差商表中 $x_i$ 重复 $m_i+1$ 次。
         - 重复 $x_i$ 的差商用导数代替，即 $f[x_i,x_i] = f'(x_i),f[x_i,x_i,x_i]=f''(x_i)$ 等。

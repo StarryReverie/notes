@@ -12,7 +12,7 @@ math: true
           $$
     - **动量守恒**
         - 若质点系所受合外力为零，则质点系的动量守恒。
-        - 动量守恒适用于惯性系和[质心系](/notes/docs/physics/dynamics/mass-point-system-and-centor-of-mass#stv368)。
+        - 动量守恒适用于惯性系和[质心系](/docs/physics/dynamics/mass-point-system-and-centor-of-mass#stv368)。
 - **力矩**
     - 作用于质点上的力相对于某个固定点的力矩 $\boldsymbol M$ 定义为
       $$
@@ -34,6 +34,6 @@ math: true
           $$
           \int_{t_1}^{t_2}\boldsymbol M\mathrm dt=\boldsymbol L_1-\boldsymbol L_2
           $$
-        - 角动量定理的形式与[牛顿第二定律](/notes/docs/physics/dynamics/newtons-law-of-motion#t9cc9r)和动量定理很相似，一个处理转动，一个处理平动。
+        - 角动量定理的形式与[牛顿第二定律](/docs/physics/dynamics/newtons-law-of-motion#t9cc9r)和动量定理很相似，一个处理转动，一个处理平动。
     - **角动量守恒**
         - 与动量守恒类似，当系统的合力矩为零时，系统的角动量守恒。

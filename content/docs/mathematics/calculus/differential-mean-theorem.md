@@ -6,7 +6,7 @@ math: true
 
 - **内容**
     - **罗尔中值定理**
-        - 如果[函数](/notes/docs/mathematics/calculus/function) $f(x)$ 在闭区间 $[a,b]$ 上连续，在开区间 $(a,b)$ 内[可导](/notes/docs/mathematics/calculus/derivative#ri73aj)，并且满足 $f(a)=f(b)$，则至少存在一点 $\xi\in(a,b)$，使得 $f'(\xi)=0$。
+        - 如果[函数](/docs/mathematics/calculus/function) $f(x)$ 在闭区间 $[a,b]$ 上连续，在开区间 $(a,b)$ 内[可导](/docs/mathematics/calculus/derivative#ri73aj)，并且满足 $f(a)=f(b)$，则至少存在一点 $\xi\in(a,b)$，使得 $f'(\xi)=0$。
     - **拉格朗日中值定理**
         - 如果函数 $f(x)$ 在闭区间 $[a,b]$ 上连续，在开区间 $(a,b)$ 内可导，则至少存在一点 $\xi\in(a,b)$，使得 $f'(\xi)=\frac{f(b)-f(a)}{b-a}$。该等式被称为拉格朗日中值公式。
         - 拉格朗日中值公式也有以下两种形式：
@@ -40,4 +40,4 @@ math: true
             - 构造合适的函数 $F(x),G(x)$，可以将不等式转化为 $\frac{F(x)-F(y)}{G(x)-G(y)}\le C$ 等形式;
             - 根据柯西中值定理构造 $H(x)=\frac{F'(x)}{G'(x)}$，讨论 $H(x)$ 的取值与 $C$ 的关系。
     - **洛必达法则**
-        - 详见[洛必达法则](/notes/docs/mathematics/calculus/lhopitals-law)页面。
+        - 详见[洛必达法则](/docs/mathematics/calculus/lhopitals-law)页面。

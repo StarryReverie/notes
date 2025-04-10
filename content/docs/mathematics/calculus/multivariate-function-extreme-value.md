@@ -9,7 +9,7 @@ math: true
         - 若 $y=f(\boldsymbol x)$ 在 $\boldsymbol x_0$ 处有极值，如果 $\nabla y$ 存在，则 $\left.\nabla y\right|_{\boldsymbol x_0}=\boldsymbol 0$。
         - 此时 $\boldsymbol x_0$ 是驻点。
     - **充分条件**
-        - 设 $y=f(\boldsymbol x)$ 在 $\boldsymbol x_0$ 的某邻域内连续，且有一阶和二阶连续[偏导数](/notes/docs/mathematics/calculus/partial-derivative)，则根据以下分类确定 $\boldsymbol x_0$ 处是否有极值：
+        - 设 $y=f(\boldsymbol x)$ 在 $\boldsymbol x_0$ 的某邻域内连续，且有一阶和二阶连续[偏导数](/docs/mathematics/calculus/partial-derivative)，则根据以下分类确定 $\boldsymbol x_0$ 处是否有极值：
             - $\left.\nabla y\right|_{\boldsymbol x_0}\ne \boldsymbol 0$：不是极值
             - $\left.\nabla y\right|_{\boldsymbol x_0}\ne \boldsymbol 0$
                 - $\left.\nabla^2 y\right|_{\boldsymbol x_0}$ 正定：是极小值
