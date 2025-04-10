@@ -123,7 +123,7 @@ math: true
             - 如果 $\forall x(x \in B \to x \preceq y)$，则 $y$ 是 $B$ 的上界，其中最小的 $y$ 是上确界。
         - $B$ 的最小元就是 $B$ 的下确界，最大元就是 $B$ 的上确界。
         - 上下界都可能不存在。
--  **映射**
+- **映射**
     - **定义**
         - 设 $F$ 为[二元关系](/docs/mathematics/discrete-mathematics/binary-relationship)，对于 $\forall x \in \operatorname{dom} F$，有唯一 $y \in \operatorname{ran} F$ 与其对应，则 $F$ 为映射或[函数](/docs/mathematics/calculus/function)。
         - 如果 $\operatorname{dom}f=A,\operatorname{ran}f \subseteq B$，则 $f$ 为从 $A$ 到 $B$ 的映射，记作 $f:A \to B$。

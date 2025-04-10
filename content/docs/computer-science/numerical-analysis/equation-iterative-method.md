@@ -24,7 +24,7 @@ math: true
             - 大范围收敛：任意位置都可以收敛。
             - 局部收敛：收敛速度更块，但需要初值接近根。
         - **收敛的充分条件**
-            -  如果在 $[a, b]$ 上 $\varphi(x)$ [可导](/docs/mathematics/calculus/derivative#ri73aj)，且满足 $|\varphi'(x)| \le q < 1$，则迭代过程收敛。
+            - 如果在 $[a, b]$ 上 $\varphi(x)$ [可导](/docs/mathematics/calculus/derivative#ri73aj)，且满足 $|\varphi'(x)| \le q < 1$，则迭代过程收敛。
             - $q$ 在此处保证 $|\varphi'(x)|$ 不是收敛于 $1$。
             - $q$ 越小则收敛越快。
             - 实际应用中，$[a,b]$ 长度较小，$|\varphi'(x)|$ 变化较小，所以只判断 $|\varphi(x_0)|<1$。

@@ -26,30 +26,30 @@ math: true
         - 2-4 译码器有 $2$ 位输入 $A_1, A_0$，有 $4$ 位输出 $D_0, D_1, D_2, D_3$。
             - $D_0 = \overline{A_1}\ \overline{A_0}$，$D_1 = \overline{A_1} A_0$，$D_2 = A_1 \overline{A_0}$，$D_3 = A_1 A_0$。
     - **分级组合译码器**
-	    - 一个 $n$-$2^n$ 的译码器可以由 $n_1$-$2^{n_1}$ 译码器和 $n_2$-$2^{n_2}$ 译码器组成，$n_1 + n_2 = n$。
-		    - 将 $n$ 位二进制输入 $A(n - 1:0)$ 拆分为 $n_1$ 位的高位部分 $A(n - 1:n_2)$ 和 $A(n_2 - 1:0)$ 位的低位部分，分别接入两个译码器。
-		    - 最终每个输出 $D_i$ 为两个译码器对应部分的输出 $D_{h,i / 2^{n_2}}$ 和 $D_{l, i \bmod 2^{n_2}}$ 接与门。
-		    - 不考虑两个译码器内的逻辑门，最终需要 $2^n$ 个与门。
-	    - 一个 $n$-$2^n$ 的译码器使用一个 $\left\lfloor \dfrac{n}{2} \right\rfloor$ 输入的译码器和一个 $\left\lceil \dfrac{n}{2} \right\rceil$ 输入的译码器，门输入成本最低。
-        - ![](/images/by-name/combinational-module/layered-decoder.jpg)
+        - 一个 $n$-$2^n$ 的译码器可以由 $n_1$-$2^{n_1}$ 译码器和 $n_2$-$2^{n_2}$ 译码器组成，$n_1 + n_2 = n$。
+            - 将 $n$ 位二进制输入 $A(n - 1:0)$ 拆分为 $n_1$ 位的高位部分 $A(n - 1:n_2)$ 和 $A(n_2 - 1:0)$ 位的低位部分，分别接入两个译码器。
+            - 最终每个输出 $D_i$ 为两个译码器对应部分的输出 $D_{h,i / 2^{n_2}}$ 和 $D_{l, i \bmod 2^{n_2}}$ 接与门。
+            - 不考虑两个译码器内的逻辑门，最终需要 $2^n$ 个与门。
+        - 一个 $n$-$2^n$ 的译码器使用一个 $\left\lfloor \dfrac{n}{2} \right\rfloor$ 输入的译码器和一个 $\left\lceil \dfrac{n}{2} \right\rceil$ 输入的译码器，门输入成本最低。
+        - ![Layered Decoder](/images/by-name/combinational-module/layered-decoder.jpg)
     - **译码器和布尔函数**
-    	- $n$ 变量[布尔函数](/docs/computer-science/digital-logic/combinational-logic-circuit#agoh98) $F$ 有 $2^n$ 个最小项，分别对应 $n$-$2^n$ 译码器的各个输出。
-    	- 将 $F$ 取值为 $1$ 的最小项对应的译码器输出用或门连接，则或门输出为 $F$。
+        - $n$ 变量[布尔函数](/docs/computer-science/digital-logic/combinational-logic-circuit#agoh98) $F$ 有 $2^n$ 个最小项，分别对应 $n$-$2^n$ 译码器的各个输出。
+        - 将 $F$ 取值为 $1$ 的最小项对应的译码器输出用或门连接，则或门输出为 $F$。
 - **编码器**
-	- **定义**
-		- 编码器是译码器的逆过程。
-		- $m$ 个输入、$n$ 个输出的编码器记作 $m$-$n$ 编码器。输入记作 $D_i$，输出记作 $A_i$。
-	- **普通编码器**
-		- 普通的 $m$-$n$ 编码器假设 $m$ 个输入中任何时刻都有且仅有一个位为 $1$。
-		- 输出使用或门连接输入，若某输入为 $1$ 时当前输出应为 $1$，则或门要连接这个输入。
-		- 如果普通编码器有多个输入为 $1$，则最终输出结果是每个 $1$ 输入单独出现时的结果取或。
-	- **优先编码器**
-		- 优先编码器定义了输入的优先级（一般是高位优先级高），多个输入为 $1$ 时编码高优先级输入。
-		- 优先编码器除了编码输出，还有 $V$ 输出，表示是否有值输入，用所有输入的或实现。
-		- 高位优先级高时，真值表可以改为紧凑真值表。
-			- 有 $m + 1$ 行，全 $0$ 输入时，$V = 0$。
-			- $D_i = 1$ 时，$V = 1$，$D_j\ (j > i) = 0$，$D_j\ (j < i) = \mathrm{X}$，表示取值任意。
-        - ![](/images/by-name/combinational-module/compact-truth-table.jpg)
+    - **定义**
+        - 编码器是译码器的逆过程。
+        - $m$ 个输入、$n$ 个输出的编码器记作 $m$-$n$ 编码器。输入记作 $D_i$，输出记作 $A_i$。
+    - **普通编码器**
+        - 普通的 $m$-$n$ 编码器假设 $m$ 个输入中任何时刻都有且仅有一个位为 $1$。
+        - 输出使用或门连接输入，若某输入为 $1$ 时当前输出应为 $1$，则或门要连接这个输入。
+        - 如果普通编码器有多个输入为 $1$，则最终输出结果是每个 $1$ 输入单独出现时的结果取或。
+    - **优先编码器**
+        - 优先编码器定义了输入的优先级（一般是高位优先级高），多个输入为 $1$ 时编码高优先级输入。
+        - 优先编码器除了编码输出，还有 $V$ 输出，表示是否有值输入，用所有输入的或实现。
+        - 高位优先级高时，真值表可以改为紧凑真值表。
+            - 有 $m + 1$ 行，全 $0$ 输入时，$V = 0$。
+            - $D_i = 1$ 时，$V = 1$，$D_j\ (j > i) = 0$，$D_j\ (j < i) = \mathrm{X}$，表示取值任意。
+        - ![Compact Truth Table](/images/by-name/combinational-module/compact-truth-table.jpg)
 - **多路复用器**
     - **定义**
         - $2^n$-$1$ 多路复用器从 $2^n$ 个输入中选择一个，用 $n$ 个选择输入控制。
@@ -59,7 +59,7 @@ math: true
             - 译码器输入接控制输入 $A_i$。
             - 第 $i$ 个与门接译码器输出 $D_i$ 和输入 $I_i$。
             - $2^n$ 输入或门的输入接所有与门，输出为 $Y$。
-        - ![](/images/by-name/combinational-module/mux.jpg)
+        - ![Mux](/images/by-name/combinational-module/mux.jpg)
     - **多重多路复用器**
         - $m$ 重 $2^n$-$1$ 多路复用器从 $2^n$ 个 $m$ 位输入中选择一个。
         - $m$ 重 $2^n$-$1$ 多路复用器的实现：
@@ -83,12 +83,12 @@ math: true
         - 全加器输入两个加数 $X,Y$ 和低位进位 $Z$，输出和 $S$ 和进位 $C$。
         - $S = (X \oplus Y) \oplus Z = \overline X\  \overline Y Z + \overline X Y \overline Z + X \overline Y\ \overline Z + X Y Z$。
         - $C = X Y + (X \oplus Y) Z = X Y + X Z + Y Z$。
-        - ![](/images/by-name/combinational-module/full-adder.jpg)
+        - ![Full Adder](/images/by-name/combinational-module/full-adder.jpg)
     - **行波加法器**
         - $n$ 位行波加法器由 $n$ 个全加器组合而成，输入为两个加数 $A(n - 1:0), B(n - 1:0)$，最低位进位 $C_0$，输出和 $S(n - 1:0)$。
         - 定义第 $i\ (i = 0, 1,2,\dots)$ 个全加器的中间进位为 $C_i$。
         - 第 $i + 1$ 个加法器的低位进位输入接 $C_i$。
-        - ![](/images/by-name/combinational-module/adder.jpg)
+        - ![Adder](/images/by-name/combinational-module/adder.jpg)
 - **减法器**
     - **补码**
         - $n$ 位二进制无符号整数 $x$ 的补码是 $2^n - x$，为模 $2^n$ 加法[群](/docs/mathematics/discrete-mathematics/group)的[逆元](/docs/mathematics/discrete-mathematics/algebraic-system#opv12f)。
@@ -102,7 +102,7 @@ math: true
         - $n$ 位减法器输入位被减数 $A(n - 1:0)$ 和 减数 $B(n - 1:0)$，输出差 $S(n - 1:0)$。
         - $n$ 位减法器使用一个 $n$ 位加法器，将 $A$、$B$ 的反接入加法器，同时加法器 $C_0$ 接 $1$。
         - 可以将加法器与加法器结合，在 $B$ 输入处接异或门控制是否取反，加法器 $C_0$ 接 $0$ 或 $1$。
-        - ![](/images/by-name/combinational-module/combined-adder.jpg)
+        - ![Combined Adder](/images/by-name/combinational-module/combined-adder.jpg)
 - **递增器**
     - 使用加法器实现：
         - 令 $B_0 = 1, B_i = 0\ (i > 0), C_0 = 0$。

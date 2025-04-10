@@ -12,7 +12,7 @@ math: true
         - 消去量词
             - 设 $D = \{a_1,a_2,\dots,a_n\}$。
             - $\forall xA(x) \Leftrightarrow A(a_1) \land A(a_2) \land \cdots \land A(a_n)$
-            -  $\exists xA(x) \Leftrightarrow A(a_1) \lor A(a_2) \lor \cdots \lor A(a_n)$
+            - $\exists xA(x) \Leftrightarrow A(a_1) \lor A(a_2) \lor \cdots \lor A(a_n)$
         - 量词否定
             - $\neg \forall x A(x) \Leftrightarrow \exists x \neg A(x)$
             - $\neg \exists x A(x) \Leftrightarrow \forall x \neg A(x)$

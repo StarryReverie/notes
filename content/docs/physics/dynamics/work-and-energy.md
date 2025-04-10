@@ -108,5 +108,3 @@ math: true
           $$
           E_{\mathrm pAB}=E_{\mathrm pAO}-E_{\mathrm pBO}
           $$
-
-

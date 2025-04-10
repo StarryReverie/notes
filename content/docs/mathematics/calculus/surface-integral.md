@@ -34,7 +34,7 @@ math: true
     - **计算**
         - **分别计算法**
             - $$
-              \iint_S X(x,y,z)\mathrm dy\mathrm dz=\pm\iint_{D_{yz}} X(x(y,z),y,z)\mathrm dy\mathrm dz 
+              \iint_S X(x,y,z)\mathrm dy\mathrm dz=\pm\iint_{D_{yz}} X(x(y,z),y,z)\mathrm dy\mathrm dz
               $$
             - 当 $S$ 取前侧时，取正号，否则取负号。投影到其他平面时，如果侧面是指向轴的正方向，则取正号。
         - **统一计算法**

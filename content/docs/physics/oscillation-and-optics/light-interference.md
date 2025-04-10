@@ -6,7 +6,7 @@ math: true
 
 - **杨氏双缝干涉**
     - **原理图**
-        - ![](/images/by-name/light-interference/youngs-double-slit-interference.png)
+        - ![Youngs Double-slit Interference](/images/by-name/light-interference/youngs-double-slit-interference.png)
     - **光程差分布**
         - 亮纹中心： $\delta=\pm k\lambda,k\in \mathrm N^*$
         - 暗纹中心： $\delta=\pm\frac{2k-1}{2}\lambda,k\in \mathrm N^*$
@@ -18,7 +18,7 @@ math: true
         - 任意相邻两个条纹之间的距离 $\Delta x=\frac{D}{d}\lambda$ 。
 - **劈尖干涉**
     - **原理图**
-        - ![image.png](/images/by-name/light-interference/wedge-interference.png)
+        - ![Wedge Interference](/images/by-name/light-interference/wedge-interference.png)
     - **光程差分布**
         - 在劈的厚度为 $e$ 的位置，上下表面两束光的光程差为 $\delta=2ne+\delta'$，$\delta'$ 为额外光程差。
         - $\delta'$ 取决于两束光是否有半波损失，如果都有或都没有，则取 $0$，否则取 $\frac{\lambda}{2}$。

@@ -164,11 +164,11 @@ math: true
               \left\{\begin{matrix}
               x=x(u,v)\\
               y=y(u,v)\\
-              z=z(u,v)              
+              z=z(u,v)
               \end{matrix}\right.
               $$
     - **曲线在坐标面的投影**
-        - 设曲线的方程 $C$ 为              
+        - 设曲线的方程 $C$ 为
           $$
           \left\{\begin{matrix}
           F(x,y,z)=0\\
@@ -180,7 +180,7 @@ math: true
           $$
           \left\{\begin{matrix}
           \phi(x,y)=0\\
-          z=0              
+          z=0
           \end{matrix}\right.
           $$
         - 若 $F(x,y,z)=0,G(x,y,z)=0$ 中有一个已经没有含 $z$，则该方程可以直接作为投影柱面方程。

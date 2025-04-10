@@ -149,5 +149,5 @@ math: true
             - $M(G)$ 中每一列的和 $\displaystyle\sum_{i=1}^n m_{ij} = 0$，恰好分别存在一个 $1,-1$。
             - $M(G)$ 中每一行有 $\displaystyle\sum_{j=1}^m 1\{m_{ij}=1\} = d^+_G(v_i)$，$\displaystyle\sum_{j=-1}^m 1\{m_{ij}=-1\} = d^-_G(v_i)$。
             - 握手定理：$\displaystyle\sum_{i=1}^n\sum_{j=1}^m 1\{m_{ij}=1\} = \displaystyle\sum_{i=1}^n\sum_{j=-1}^m 1\{m_{ij}=-1\} = d^-_G(v_i) = m$
-            -  $e_i$ 与 $e_j$ 是平行边 $\iff$ $M(G)$ 中第 $i$ 列与第 $j$ 列相同。
+            - $e_i$ 与 $e_j$ 是平行边 $\iff$ $M(G)$ 中第 $i$ 列与第 $j$ 列相同。
     - **邻接矩阵**
