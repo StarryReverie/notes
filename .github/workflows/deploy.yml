@@ -40,6 +40,15 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Check Markdown Style
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          config: .markdownlint.json
+          globs: |
+            README.md
+            archetypes/**/*.md
+            content/**/*.md
+
       - name: Build
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
