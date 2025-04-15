@@ -66,7 +66,7 @@ math: false
               DROP INDEX <index>;
               ```
     - **视图**
-        - a
+        - 见下文。
 - **数据查询**
     - **通用语法**
         - ```sql
