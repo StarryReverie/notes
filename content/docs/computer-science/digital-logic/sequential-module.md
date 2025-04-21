@@ -1,0 +1,44 @@
+---
+title: 时序逻辑模块
+weight: 400
+math: true
+---
+
+- **锁存器**
+    - **性质**
+        - 锁存器是透明的，输入改变后输出就会改变。
+    - **常用模块**
+        - **$\text{SR}$ 锁存器**
+            - $\text{SR}$ 锁存器是使用或非门的锁存器。
+            - ![sr-latch](/images/by-name/sequential-module/sr-latch.jpg)
+            - $S = 0, R = 0$ 是锁存器保持状态，$R = 1$ 时改状态为 $0$，$S = 1$ 时改状态为 $1$。
+            - $R = 0, S = 0$ 是非法状态。
+        - **$\overline{\text{S}}\ \overline{\text{R}}$ 锁存器**
+            - $\overline{\text{S}}\ \overline{\text{R}}$ 锁存器是使用与非门的锁存器。
+            - ![s-inv-r-inv-latch](/images/by-name/sequential-module/s-inv-r-inv-latch.jpg)
+            - $S = 1, R = 1$ 是锁存器保持状态，$R = 0$ 时改状态为 $0$，$S = 1$ 时改状态为 $1$。
+            - $R = 0, S = 0$ 是非法状态。
+        - **带控制输入 $\text{SR}$ 锁存器**
+            - ![input-controlled-sr-latch](/images/by-name/sequential-module/input-controlled-sr-latch.jpg)
+        - **$\text{D}$ 锁存器**
+            - 将 $\text{SR}$ 锁存器的 $S,R$ 输入统一用 $D$ 控制，得到 $\text{D}$ 锁存器。
+            - ![d-latch](/images/by-name/sequential-module/d-latch.jpg)
+            - $S = D, R = \overline{D}$。
+- **触发器**
+    - **性质**
+        - 触发器在一个时钟周期内状态只改变一次，输出不立刻改变。
+        - 脉冲触发器在时钟信号为特定值时可以改变状态，边沿触发器在时钟信号变化时改变状态。
+    - **分类**
+        - **主从 $\text{SR}$ 触发器**
+            - 主从 $\text{SR}$ 触发器是脉冲触发器。
+            - 主从 $\text{SR}$ 触发器由两个 $\text{SR}$ 锁存器组成，连接相反的时钟信号。
+                - 输入侧的是主锁存器，输出侧的是从锁存器。
+                - 主从 $\text{SR}$ 触发器的状态是从锁存器的状态。
+            - ![master-slave-sr-flip-flop](/images/by-name/sequential-module/master-slave-sr-flip-flop.jpg)
+            - 上图为正脉冲主从 $\text{SR}$ 触发器
+                - $C = 1$ 时接受输入，处于有效状态，但不改变输出。
+                - $C = 0$ 时处于无效状态，由 $C = 1$ 变换到 $C = 0$ 时更新输出。
+            - 负脉冲版本只要接入取反时钟信号。
+        - **$\text{D}$ 触发器**
+            - $\text{D}$ 触发器是边沿触发器。
+            - $\text{D}$ 触发器由输入侧 $\text{D}$ 锁存器和输出侧 $\text{SR}$ 锁存器组成，连接相反的时钟信号。
