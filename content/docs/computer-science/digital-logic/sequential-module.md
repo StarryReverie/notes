@@ -42,3 +42,13 @@ math: true
         - **$\text{D}$ 触发器**
             - $\text{D}$ 触发器是边沿触发器。
             - $\text{D}$ 触发器由输入侧 $\text{D}$ 锁存器和输出侧 $\text{SR}$ 锁存器组成，连接相反的时钟信号。
+            - ![d-flip-flop](/images/by-name/sequential-module/d-flip-flop.png)
+            - 上图为正边沿 $\text{D}$ 触发器，负边沿版本只要去掉时钟信号取反。
+            - 正边沿 $\text{D}$ 触发器是标准触发器。
+    - **直接输入**
+        - 触发器有时需要进行初始化，此过程不依赖于时钟，需要使用直接输入。
+        - ![direct-input](/images/by-name/sequential-module/direct-input.png)
+        - 在时钟信号和正常端口的字母前后标数字，表示信号与时钟的依赖关系。
+        - 直接输入为异步信号，不标数字。
+    - **标准符号**
+        - ![standard-symbols](/images/by-name/sequential-module/standard-symbols.png)
