@@ -1,0 +1,47 @@
+---
+title: 数字硬件实现
+weight: 600
+math: false
+---
+
+- **CMOS 电路工艺**
+    - **模型**
+        - CMOS 晶体管包括三个极：源级、漏极、栅级，栅级控制源级是否与漏极导通。
+        - n 沟道晶体管：漏极为 $1$ 时导通，记作 $X:X$（栅级接入 $X$）或 $\overline{X}:\overline{X}$（栅级接入 $\overline{X}$）。
+        - p 沟道晶体管：漏极为 $0$ 时导通，记作 $X:\overline{X}$（栅级接入 $X$）或 $\overline{X}:X$（栅级接入 $\overline{X}$）。
+    - **开关电路**
+        - 将 CMOS 电路的导通状态用接入栅级的变量表示，n 沟道与栅级相同，p 沟道相反。
+        - 电路串联则变量做与运算，电路并联则变量做或运算。
+        - n 沟道和电路 p 沟道电路有对偶性质，串并联的对偶按照与或的对偶。
+        - 反电路通过取原电路对偶再把所有晶体管改变类型（n 沟道变为 p 沟道或反过来，栅级接入的变量不变）。
+    - **CMOS 门结构**
+        - ![cmos-gate](/images/by-name/digital-hardware-implementation/cmos-gate.png)
+        - n 沟道接 $0$，p 沟道接 $1$。
+        - 对函数 $F$ 设计门结构，先设计 $\overline{F}$ 的 n 沟道电路接 $0$，再用对偶性质取反得到 p 沟道电路接 $1$。
+- **编程技术**
+    - **分类**
+        - 固化编程
+            - 熔丝
+            - 反熔丝
+            - 掩膜编程
+        - 可重复编程
+            - 编程点的存储单元：易失性
+            - 晶体管开关：不易失性
+    - **可编程器件**
+        - **只读存储器（ROM）**
+            - ![rom](/images/by-name/digital-hardware-implementation/rom.png)
+            - 固定与阵列，可编程或阵列。
+            - 由译码器提供最小项。
+            - 无需电路优化，但电路成本最高。
+        - **可编程阵列逻辑（PAL）**
+            - ![pal](/images/by-name/digital-hardware-implementation/pal.png)
+            - 可编程与阵列，固定或阵列。
+            - 单输出两级优化，共享积之和。
+            - 有多级电路实现更复杂逻辑。
+            - $n$ 输入 $m$ 输出 PAL 有 $n$ 个缓冲非门、$mk$ 个与门、$m$ 个或门。
+        - **可编程逻辑阵列（PLA）**
+            - ![pla](/images/by-name/digital-hardware-implementation/pla.png)
+            - 可编程与阵列、或阵列。
+            - 多输出两级优化，每个函数用最少乘积项，函数间共享乘积项。
+            - 可反相输出。
+            - $n$ 输入 $m$ 输出 PAL 有 $n$ 个缓冲非门、$k$ 个与门、$m$ 个或门、$m$ 个异或门。
