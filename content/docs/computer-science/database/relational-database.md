@@ -30,7 +30,7 @@ math: true
         - 参考[集合](/docs/mathematics/discrete-mathematics/set#g6tiqk)中的内容。主要常用的有交、并、差、笛卡尔积。
     - **选择**
         - 已知关系 $R(A_1,A_2,\dots,A_n)$，元组 $t\in R$，规定：
-            - $t[A_i]$ 表示 $t$ 中对应 $A_i$ 的分量
+            - $t[A_i]$ 表示 $t$ 中对应 $A_i$ 的分量。
             - 若 $A={A_{i_1},A_{i_2},\dots,A_{i_k}}$，则 $t[A]$ 表示 $t$ 中 $A$ 中所有属性对应的分量
         - 定义 $R$ 的选择为在 $R$ 中选择满足谓词 $F$ 的元组的集合，记作 $\sigma_F(R)$。
         - $\sigma_F(R) = \{t \mid t \in R \land F(t)\}$
@@ -46,3 +46,5 @@ math: true
         - 等值连接的一种特殊形式是自然连接：$R \Join S$ 中比较 $R,S$ 中共同的属性集，并去除重复列。
     - **除**
         - 已知关系 $R(X,Y),S(Y,Z)$，$X,Y,Z$ 为属性集，定义除 $R\div S$ 为所有 $x \in t_R[X]$ 满足 $\Pi_Y(S) \subseteq \Pi_Y(\sigma_{t_R[X] = x}(R))$
+- **设计**
+    - 参考[关系数据库设计](/docs/computer-science/database/relational-database-design)。
