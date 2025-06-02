@@ -72,7 +72,7 @@ math: true
     - **通路和回路**
         - **定义**
             - 设 $G = \langle V,E\rangle$ 为无向标定图，结点与边的交替序列 $\mathcal\Gamma = v_{i_0}e_{j_1}v_{i_1}e_{j_2}v_{i_2}\dots e_{j_l}v_{j_l}$ 称为 $v_{i_0}$ 到 $v_{i_l}$ 的通路。
-            - 若 $\mathcal\Gamma$ 中 $v_{i_0}=v_{i_l}$，则 $\mathcal\Gamma$ 称为回路。
+            - 若 $\mathcal\Gamma$ 中 $v_{i_0}=v_{i_l}$，则 $\mathcal\Gamma$ 称为回路。<span id="oiwnrg"></span>
             - 若 $\mathcal\Gamma$ 中边都不同，则 $\mathcal\Gamma$ 是简单通路，否则有边重复出现，$\mathcal\Gamma$ 为复杂通路。
             - 若 $\mathcal\Gamma$ 中边都不同且 $v_{i_0}=v_{i_l}$，则 $\mathcal\Gamma$ 是简单回路，否则有边重复出现，$\mathcal\Gamma$ 为复杂回路。
             - 若 $\mathcal\Gamma$ 中所有点和边都不同，则 $\mathcal\Gamma$ 是初级通路 / 路径。
