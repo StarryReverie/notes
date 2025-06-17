@@ -6,8 +6,8 @@ math: true
 
 - **函数依赖**
     - **定义**
-        - 已知元组 $U$ 和[关系](/docs/computer-science/database/relational-database#fjalge) $R(U)$，$X, Y \subseteq U$。
-        - 若对任意 $t_1, t_2 \in R(U)$，$t_1[X] = t_2[X]$ 时 $t_1[Y] = t_2[Y]$，则 $X$ 函数决定 $Y$，$Y$ 函数依赖于 $X$，记作 $\mathrm{FD}\ X \to Y$。
+        - 已知元组 $U$、关系模式 $R(U)$ 和[关系](/docs/computer-science/database/relational-database#fjalge) $r(R)$，$X, Y \subseteq U$。
+        - 若对任意 $t_1, t_2 \in r$，$t_1[X] = t_2[X]$ 时 $t_1[Y] = t_2[Y]$，则 $X$ 函数决定 $Y$，$Y$ 函数依赖于 $X$，记作 $\mathrm{FD}\ X \to Y$。
     - **分类**
         - **平凡和非平凡**
             - 已知 $\mathrm{FD}\ X \to Y$，如果 $Y \not\subseteq X$，则其为非平凡函数依赖，否则为平凡函数依赖。
@@ -20,6 +20,16 @@ math: true
             - 已知 $\mathrm{FD}\ X \to Y$，$\mathrm{FD}\ Y \to Z$，则 $\mathrm{FD}\ X \to X$。
             - 如果 $Y \not\to X$，则 $\mathrm\ X \to Z$ 为传递函数依赖，否则为直接函数依赖。
             - 直接函数依赖中 $X, Y$ 一一对应，$X, Z$ 之间的依赖关系可以与 $Y$ 无关。
+- **多值依赖**
+    - **定义**
+        - 已知元组 $U$、关系模式 $R(U)$ 和关系 $r(R)$，$X, Y \subset U, Z = U - X - Y$。
+        - 若对任意 $s, t \in R$ 满足 $s[X] = t[X]$，都存在 $u \in R$ 满足 $u[X] = s[X] = t[X], u[Y] = s[Y], u[Z] = t[Z]$，则有多值依赖 $X \to \to Y$。
+        - 等价定义：对任意 $x \in \Pi_X(r)$，都存在一组 $\{y_1, y_2, \dots\} \subseteq \Pi_Y(r)$ 与其对应，与 $Z$ 无关，$(x, z_1), (x, z_2), \dots$ 对应相同的一组 $\{y_1, y_2, \dots\}$。
+    - **分类**
+        - 若 $X \to \to Y, Z = U - X - Y \subseteq \varnothing$，则 $X \to \to Y$ 是平凡多值依赖，否则是非平凡多值依赖。
+    - **性质**
+        - 对称性：若 $X \to \to Y$, 则 $X \to \to Z = U - X - Y$。
+        - 传递性：若 $X \to \to Y, Y \to \to Z$，则 $X \to \to Z - Y$。
 - **范式**
     - **1NF**
         - 若关系模式 $R$ 的每一个属性对应的值域都不可再分，则 $R$ 满足 1NF，记作 $R \in \mathrm{1NF}$。
@@ -31,3 +41,12 @@ math: true
     - **3NF**
         - 已知 $R \in \mathrm{1NF}$，若 $R$ 中所有非主属性都直接依赖于每个候选键，则 $R \in \mathrm{3NF}$。
         - 如果 $R \in \mathrm{3NF}$ 则 $R \in \mathrm{2NF}$，$\mathrm{3NF} \subset {2NF}$。
+    - **BCNF**
+        - 已知 $R \in \mathrm{1NF}$，若 $R$ 中所有属性都直接依赖于每个候选键，则 $R \in \mathrm{BCNF}$。
+        - 等价定义：$R \in \mathrm{1NF}$ 的所有函数依赖 $F: X \to Y$ 都满足 $X$ 包含一个候选键，则 $R \in \mathrm{BCNF}$。
+        - $\mathrm{BCNF} \subset \mathrm{3NF}$。
+        - 3NF 仅解决非主属性的传递函数依赖问题，BCNF 解决了所有传递函数依赖问题，是函数依赖范围内的最高范式。
+    - **4NF**
+        - 已知 $R \in \mathrm{1NF}$，若 $R$ 中任意多值依赖 $X \to \to Y$ 满足 $X$ 包含键，则 $R \in \mathrm{4NF}$。
+        - $\mathrm{4NF} \subset \mathrm{BCNF}$。
+        - 4NF 解决了非平凡非函数依赖的多值依赖，4NF 所允许的非平凡多值依赖实际上是函数依赖。
