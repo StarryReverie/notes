@@ -25,7 +25,7 @@ math: true
             - 求原函数的对偶式再将每个变量取反。
     - **标准形式**
         - 标准形式是最小项 / [极小项](/docs/mathematics/discrete-mathematics/proposition-logic-calculation#nh6buf)的和或最大项 / [极大项](/docs/mathematics/discrete-mathematics/proposition-logic-calculation#nh6buf)的积。
-        - 最小项之和可以记作 $\sum m(x_1,x_2,\dots)$，最大项之积可以记作 $\prod m(x_1,x_2,\dots)$。
+        - 最小项之和可以记作 $\sum m(x_1,x_2,\dots)$，最大项之积可以记作 $\prod M(x_1,x_2,\dots)$。
         - 对标准形式进行化简，可以得到积之和和和之积。
 - **卡诺图和两级电路优化**
     - **电路的成本标准**
@@ -69,7 +69,7 @@ math: true
     - **映射为与非门电路**
         - 映射规则：
             - 非门可以看作单输入的与非门和或非门。
-            - 与门展开为 $\overline{\operatorname{NAND}(X_1, X_2, \dots)}$。
+            - 与门展开为 $\operatorname{NAND}(X_1, X_2, \dots)$。
             - 或门展开为 $\overline{\operatorname{NAND}(\overline X_1, \overline X_2, \dots)}$。
             - 可以将非门推过并联电路的分支点，干路上的一个非门和每个支路上都有一个非门可以互相转化。
             - 在同一条路上的两个非门可以压缩。
@@ -77,6 +77,6 @@ math: true
     - **映射为或非门电路**
         - 映射规则：
             - 非门可以看作单输入的或非门。
-            - 与门展开为 $\overline{\operatorname{NOR}(\overline X_1, \overline X_2, \dots)}$。
+            - 与门展开为 $\operatorname{NOR}(\overline X_1, \overline X_2, \dots)$。
             - 或门展开为 $\overline{\operatorname{NOR}(X_1, X_2, \dots)}$。
             - 其他与“映射为与非门电路”类似。

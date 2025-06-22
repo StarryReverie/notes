@@ -17,7 +17,7 @@ math: true
             - $\overline{\text{S}}\ \overline{\text{R}}$ 锁存器是使用与非门的锁存器。
             - ![s-inv-r-inv-latch](/images/by-name/sequential-module/s-inv-r-inv-latch.jpg)
             - $S = 1, R = 1$ 是锁存器保持状态，$R = 0$ 时改状态为 $0$，$S = 1$ 时改状态为 $1$。
-            - $R = 0, S = 0$ 是非法状态。
+            - $R = 1, S = 1$ 是非法状态。
         - **带控制输入 $\text{SR}$ 锁存器**
             - ![input-controlled-sr-latch](/images/by-name/sequential-module/input-controlled-sr-latch.jpg)
         - **$\text{D}$ 锁存器**

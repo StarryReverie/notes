@@ -17,7 +17,7 @@ math: true
             - 已知 $\mathrm{FD}\ X \to Y$，如果任意 $X' \subset X$ 都没有 $\mathrm{FD}\ X' \to Y$，则其为完全函数依赖，否则为部分函数依赖。
             - 完全函数依赖 $X$ 的每一部分都是必要的，部分函数依赖只要一部分 $X$ 就可以决定 $Y$。
         - **传递和直接**
-            - 已知 $\mathrm{FD}\ X \to Y$，$\mathrm{FD}\ Y \to Z$，则 $\mathrm{FD}\ X \to X$。
+            - 已知 $\mathrm{FD}\ X \to Y$，$\mathrm{FD}\ Y \to Z$，则 $\mathrm{FD}\ X \to Z$。
             - 如果 $Y \not\to X$，则 $\mathrm\ X \to Z$ 为传递函数依赖，否则为直接函数依赖。
             - 直接函数依赖中 $X, Y$ 一一对应，$X, Z$ 之间的依赖关系可以与 $Y$ 无关。
 - **多值依赖**
