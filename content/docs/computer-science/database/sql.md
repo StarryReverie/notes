@@ -116,7 +116,7 @@ math: false
 - **视图**
     - **定义**
         - ```sql
-          CREATE VIEW <view> [<column1>, <column2>, ...]
+          CREATE VIEW <view> [(<column1>, <column2>, ...)]
             AS <subquery>
             [WITH CHECK OPTION];
           ```
