@@ -43,4 +43,4 @@ math: false
 - **LWP**
     - LWP 即 Light Weight Process，与内核线程一一对应。
     - 进程可以申请多个 LWP，LWP 可以并发执行多个用户级线程。
-    - Linux 的线程是 LWP。
+    - Linux 的线程是 LWP
