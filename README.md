@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Justin Chen's notes collection website](https://oosquare.github.io/notes).
+[Justin Chen's notes collection website](https://starryreverie.github.io/notes).
 
 Hugo-based open source notes for mathematics, computer science and more, featuring backlinks and mindmap-style organization.
 
