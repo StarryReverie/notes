@@ -67,5 +67,21 @@ math: true
         - 如果两个 $w$ 位整数相乘，则精确表示结果需要 $2w$ 位。
     - **移位实现的乘除法**
         - $x$ `<<` $k = x 2^k$
-        - $x$ `>>` $k = \left\lfloor \dfrac{x}{2^k} \right\rfloor$
+        - $x$ `>>` $k = \left\lfloor \dfrac{x}{2^k} \right\rfloor$          
         - 对于有符号数，实现向 $0$ 取整除法：$(x + (2^k - 1))$ `>>` $k$。
+- **浮点数**
+    - **编码**
+        - IEEE 754 浮点数的二进制表示分为三部分：符号位 $s$、阶码 $E$、尾数 $M$，表示 $(-1)^s M 2^E$。
+        - 精度：
+            - 单精度：32 位，阶码用 8 位，尾数用 23 位。
+            - 双精度：64 位，阶码用 11 位，尾数用 52 位。
+        - Normalized Value：
+            - $Exp$ 为全 $0$ 和 全 $1$ 时，浮点数是 Normalized Value。
+            - 阶码用偏置编码指数，$E = Exp - \Delta$，其中 $\Delta = 2^{k - 1} - 1$，$k$ 为阶码长度。
+            - 尾数表示为 $M = 1.[Frac]$，$[Frac]$ 直接使用尾数部分的二进制串。
+        - Denormalized Value：
+            - $Exp$ 全为 $0$ 时，浮点数是 Denormalized Value。
+            - 阶码表示为 $E = 1 - \Delta$。
+            - 尾数表示为 $M = 0.[Frac]$。
+        - 无穷大：$Exp$ 全为 $1$，$Frac$ 为全 $0$。
+        - NaN：$Exp$ 全为 $1$，$Frac$ 不为全 $0$
