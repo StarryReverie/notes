@@ -11,7 +11,7 @@ math: true
             - 定义无向图 $G=\langle V,E \rangle$，满足
                 - $V$ 为非空有穷集，称为点集，元素称为结点，记作 $V(G)$。
                 - $E$ 为 $V\operatorname{\&}V$ 的有穷多重子集，称为边集，元素称为无向边，记作 $E(G)$。
-            - 定义有向图 $D=\langle V,E \rangle$，满足
+            - 定义有向图 $D=\langle V,E \rangle$，满足 <span id="argago"></span>
                 - $V$ 与无向图定义相同。
                 - $E$ 为 $V\times V$ 的有穷多重子集。
             - 定义图的结点数为图的阶，$n$ 个结点的图称为 $n$ 阶图，$|V(G)| = n$。
