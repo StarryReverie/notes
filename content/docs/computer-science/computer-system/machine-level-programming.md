@@ -4,7 +4,7 @@ weight: 200
 math: false
 ---
 
-- **x86-64 汇编（AT&T 语法）**
+- **x86-64 汇编基础部分**
     - **数据类型**
         - 整数按照长度分类：
             - 1 字节：`b`
@@ -96,3 +96,160 @@ math: false
                 - `not? <D>`，表示 `<D> = ~<D>`。
                 - `inc? <D>`，表示 `<D> += 1`。
                 - `dec? <D>`，表示 `<D> -= 1`。
+- **控制**
+    - **条件码**
+        - **条件码寄存器**
+            - 条件码寄存器保存上一条运算指令的结果的相关属性。
+            - 常用条件码寄存器
+                - `CF`：结果最高位发生进位时为 `1`。
+                - `ZF`：结果为 `0` 时为 `1`。
+                - `SF`：把结果看作补码，结果为负数时为 `1`。
+                - `OF`：把运算看作补码上的运算，发生溢出时为 `1`。
+        - **使用条件码判断**
+            - 判断无符号整数 `a` 和 `b` 大小：
+                - 得到 `a - b` 结果的条件码，用 `CF` 和 `ZF` 判断。
+                - `CF == 1` 则 `a < b`，`CF == 0 && ZF == 0` 则 `a > b`。
+            - 判断补码整数 `a` 和 `b` 大小：
+                - 得到 `a - b` 结果的条件码，用 `SF`、`OF` 和 `ZF` 判断。
+                - `SF ^ OF == 1` 则 `a < b`，`SF ^ OF == 0 && ZF == 0` 则 `a > b`。
+            - 判断整数 `a` 和 `b` 是否相等：
+                - 得到 `a - b` 结果的条件码，`ZF == 1` 时 `a == b`。
+            - 判断整数 `a` 是否等于 `0`：
+                - 得到 `a & a` 结果的条件码，`ZF == 1` 时 `a == 0`。
+        - **修改条件码指令**
+            - `cmp? <Sb>, <Sa>`：`?` 是数据长度，根据`<Sa> - <Sb>` 设置条件码。
+                - 比较 `a <cmp> b`，使用 `cmp? b, a`，需要注意顺序。
+            - `cmp? <Sa>, <Sb>`：`?` 是数据长度，根据`<Sa> & <Sb>` 设置条件码。
+        - **提取条件码指令**
+            - 所有提取条件码的指令接受一个操作数，操作数为单字节，设置为 `0` 或 `1`。
+            - `ZF` 系列：
+                - `sete <D>` 或 `setz <D>`：结果等于 0，`<D> = ZF`。
+                - `setne <D>` 或 `setnz <D>`：结果不等于 0，`<D> = ~ZF`。
+            - `SF` 系列：
+                - `sets <D>`：结果为负数，`<D> = SF`。
+                - `setns <D>`：结果为 `0` 或正数，`<D> = ~SF`。
+            - 无符号整数系列：
+                - `set{a,ae,b,be} <D>` 或 `setn{be,b,ae,a} <D>`
+                - 使用 `CF`、`ZF`。
+            - 补码整数系列：
+                - `set{g,ge,l,le} <D>` 或 `setn{le,l,ge,g} <D>`
+                - 使用 `OF`、`SF`、`ZF`。
+    - **跳转**
+        - **跳转指令**
+            - 无条件跳转：
+                - `jmp <L>`：跳转到 `<L>` 这个指令，`<L>` 是标签或者地址。
+                - `jmp *<D>`：`*` 是固定格式，目标地址从 `<D>` 中读取。
+            - 条件跳转：与 `set*` 相对应，值为 `1` 时跳转。
+                - `j{e,ne} <L>` 或 `jz/jnz <L>`
+                - `j{s,ns} <L>`
+                - `j{a,ae,b,be} <L>` 或 `jn{be,b,ae,a} <L>`
+                - `j{g,ge,l,le} <L>` 或 `jn{le,l,ge,g} <L>`
+    - **控制结构**
+        - **`if`-`else`**
+            - 给定 C 语言结构：
+              ```c
+              // <start>
+              if (/* <cond> */) {
+                  // <block1>
+              } else {
+                  // <block2>
+              }
+              // <end>
+              ```
+            - 转换为：
+              ```asm
+                  # <start>
+                  # jump to `END` if the condition is false.
+                  # <block1>
+                  jmp END
+              ELSE:
+                  # <block2>
+              END:
+                  # <end>
+              ```
+        - **`?:` 表达式**
+            - `?:` 表达式除了使用 `if`-`else` 实现，也可以使用条件移动指令：
+                - `cmov{e,ne} <S>, <D>` 或 `cmov{z,nz} <S>, <D>`
+                - `cmov{s,ns} <S>, <D>`
+                - `cmov{a,ae,b,be} <S> <D>` 或 `cmovn{be,b,ae,a} <S> <D>`
+                - `cmov{g,ge,l,le} <S> <D>` 或 `cmovn{le,l,ge,g} <S> <D>`
+            - 给定 C 语言结构：
+              ```c
+              // <start>
+              var = /* <cond> */ ? val1 : val2;
+              // <end>
+              ```
+            - 转换为：
+              ```asm
+                  # <start>
+                  # calculate `val1` and assign it to `var`
+                  # calculate `val2` and assign it to `val2`
+                  # move `val2` to `var` if the `<cond>` is true
+                  # <end>
+              ```
+        - **`do`-`while`**
+            - 给定 C 语言结构：
+              ```c
+              // <start>
+              do {
+                  // <body>
+              } while (/* cond */);
+              // <end>
+              ```
+            - 转换为：
+              ```asm
+                  # <start>
+              LOOP:
+                  # <body>
+                  # jump to `LOOP` if the `<cond>` is true
+              ```
+        - **`while`**
+            - 给定 C 语言结构：
+              ```c
+              // <start>
+              while (/* <cond> */) {
+                  // <body>
+              }
+              // <end>
+              ```
+            - 转换为：
+              ```asm
+                  # <start>
+                  jmp COND
+              LOOP:
+                  # <body>
+              COND:
+                  # jump to `LOOP` if the `<cond>` is true
+                  # <end>
+              ```
+            - 或者转换为（提前判断条件+`do`-`while`）：
+              ```asm
+                  # <start>
+                  # jump to `END` if the `<cond>` is false
+              LOOP:
+                  # <body>
+                  # jump to `LOOP` if the `<cond>` is true
+              END:
+                  # <end>
+              ```
+        - **`for`**
+            - 给定 C 语言结构：
+              ```c
+              // <start>
+              for (/* <init> */; /* <cond> */; /* <next> */) {
+                  // <body>
+              }
+              // <end>
+              ```
+            - 转换为：
+              ```asm
+                  # <start>
+                  # <init>
+                  jmp COND
+              LOOP:
+                  # <body>
+                  # <next>
+              COND:
+                  # jump to `LOOP` if the `<cond>` is true
+                  # <end>
+              ```
