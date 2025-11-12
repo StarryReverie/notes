@@ -77,7 +77,7 @@ math: true
             - 单精度：32 位，阶码用 8 位，尾数用 23 位。
             - 双精度：64 位，阶码用 11 位，尾数用 52 位。
         - Normalized Value：
-            - $Exp$ 为全 $0$ 和 全 $1$ 时，浮点数是 Normalized Value。
+            - $Exp$ 不为全 $0$ 和不为全 $1$ 时，浮点数是 Normalized Value。
             - 阶码用偏置编码指数，$E = Exp - \Delta$，其中 $\Delta = 2^{k - 1} - 1$，$k$ 为阶码长度。
             - 尾数表示为 $M = 1.[Frac]$，$[Frac]$ 直接使用尾数部分的二进制串。
         - Denormalized Value：
