@@ -1,0 +1,81 @@
+---
+title: CPU 实现
+weight: 300
+math: false
+---
+
+- **Y86-64 指令集**
+    - 通用寄存器与 x86-64 的基本相同，除了没有 `%r16`。
+    - 标志位包括 `ZF`、`SF`、`OF`。
+    - 多字节数据采用小端序存储。
+    - 可用指令
+      ![Y86-64 Instructions](/images/by-name/cpu-implementation/y86-64-instructions.png)
+    - `cmovXX` 和 `jXX` 中的 `XX` 都是指各种偏序关系。
+- **HCL**
+    - **数据类型**
+        - 布尔型：`bool a`。
+        - 整数型：`int a`，不指定长度。
+    - **表达式**
+        - 逻辑运算：`a && b`、`a || b`、`!a`。
+        - 关系运算：`a < b`、`a > b`、`a <= b`、`a >= b`、`a == b`、`a != b`。
+        - 集合运算：`a in { b, c, d }`。
+        - 多路选择：`[ a: A; b: B ]`，按照顺序判断 `:` 前的条件是否成立，成立时 `:` 后的表达式就是整个表达式的值。
+- **顺序处理器**
+    - **执行流程**
+        - 取指：从内存读取指令。
+        - 译码：读取寄存器。
+        - 执行：计算值或地址。
+        - 访存：读取或写入内存。
+        - 写回：写入寄存器。
+    - **Y86-64 实现**
+        - **`OPq rA, rB`**
+            - 取指：`icode:ifun <- M[PC], rA:rB <- M[PC + 1], valP <- PC + 2`。
+            - 译码：`valA <- R[rA], valB <- R[rB]`。
+            - 执行：`valE <- valA OP valB, set CC`。
+            - 访存：无。
+            - 写回：`R[rB] <- valE`。
+            - 更新 PC：`PC <- valP`。
+        - **`rmmovq rA, D(rB)`**
+            - 取指：`icode:_ <- M[PC], rA:rB <- M[PC + 1], valC <- M[PC + 2..PC + 10], valP <- PC + 10`。
+            - 译码：`valA <- R[rA], valB <- R[rB]`。
+            - 执行：`valE <- valC + valB`，这里地址相加可以直接使用 ALU。
+            - 访存：`M[valE..valE + 8] <- valA`。
+            - 写回：无。
+            - 更新 PC：`PC <- valP`。
+        - **`popq rA`**
+            - 取指：`icode:_ <- M[PC], rA:_ <- M[PC + 1], valP <- PC + 2`。
+            - 译码：`valA <- R[%rsp], valB <- R[%rsp]`。
+            - 执行：`valE <- valB + 8`。
+            - 访存：无。
+            - 写回：`R[rA] <- valA, R[%rsp] <- valE`。
+            - 更新 PC：`PC <- valP`。
+        - **`cmovXX rA, rB`**
+            - 取指：`icode:ifun <- M[PC], rA:rB <- M[PC + 1], valP <- PC + 2`。
+            - 译码：`valA <- R[rA], valB <- 0`。
+            - 执行：`valE <- valA + valB, if !cmov_cond(CC, ifun) { rB <- 0xF }`。
+                - 使用 `valB` 为 `0` 并相加应该是为了简化逻辑，不需要考虑不经过 ALU 的情况。
+                - `0xF` 不存在一个对应的寄存器，也就是不修改任何寄存器。
+            - 访存：无。
+            - 写回：`R[rB] <- valE`。
+            - 更新 PC：`PC <- valP`。
+        - **`jXX Dest`**
+            - 取指：`icode:ifun <- M[PC], valC <- M[PC + 1..PC + 9], valP <- PC + 9`。
+            - 译码：无。
+            - 执行：`cond <- jump_cond(CC, ifun)`。
+            - 访存：无。
+            - 写回：无。
+            - 更新 PC：`PC <- cond ? valC : valP`。
+        - **`call Dest`**
+            - 取指：`icode:_ <- M[PC], valC <- M[PC + 1..PC + 9], valP <- PC + 9`。
+            - 译码：`valA <- R[%rsp]`。
+            - 执行：`valE <- valA - 8`。
+            - 访存：`M[valE..valE + 8] <- valP`。
+            - 写回：`R[%rsp] <- valE`。
+            - 更新 PC：`PC <- valC`。
+        - **`ret`**
+            - 取指：`icode:_ <- M[PC], valP <- PC + 1`。
+            - 译码：`valA <- R[%rsp], valB <- R[%rsp]`。
+            - 执行：`valE <- valA + 8`。
+            - 访存：`valM <- M[valB..valB + 8]`。
+            - 写回：`R[%rsp] <- valE`。
+            - 更新 PC：`PC <- valM`。
