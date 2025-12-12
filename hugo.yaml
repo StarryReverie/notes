@@ -1,4 +1,4 @@
-baseURL: "https://oosquare.github.io/notes/"
+baseURL: "https://starryreverie.github.io/notes/"
 languageCode: zh-cn
 title: Notes
 theme: hextra
@@ -16,7 +16,7 @@ menu:
       type: search
   - name: GitHub
     weight: 3
-    url: "https://github.com/oosquare/notes"
+    url: "https://github.com/StarryReverie/notes"
     params:
       icon: github
 
