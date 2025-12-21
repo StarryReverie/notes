@@ -16,6 +16,20 @@ math: false
             - 陷阱：如系统调用、断点、特殊指令等。
             - 故障：如缺页、保护异常。
             - 故障：如非法指令。
+- **进程控制**
+    - **概念**
+        - 参考[进程](/docs/computer-science/operating-system/process)。
+    - **常用系统调用**
+        - `pid_t getpid()`：获取当前进程 PID。
+        - `pid_t getppid()`：获取父进程 PID。
+        - `pid_t fork()`：复制当前进程，在父进程和子进程中返回，父进程返回子进程 PID，子进程返回 `0`。错误返回 `-1`。调用一次，返回两次。
+        - `void exit(int status)`：退出进程，状态为 `status`。调用一次，从不返回。
+        - `int wait(int *child_status)`：等待任意一个子进程终止，返回子进程的返回值，在 `child_status` 中填充详细状态信息。
+        - `pid_t waitpid(pid_t pid, int *status, int options)`：等待特定 PID 的子进程终止。
+        - `int execve(char *filename, char *argv[], char *envp[])`：运行位于 `filename` 的程序，替换当前进程上下文为目标进程。调用一次，正常运行则不返回。
+    - **进程图**
+        - ![Fork](/images/by-name/exceptional-control-flow/fork.png)
+        - ![Wait](/images/by-name/exceptional-control-flow/wait.png)
 - **信号** <span id="qnfiug"></span>
     - **常见信号**
         - `SIGINT`：中断程序运行，在 shell 中由 `^C` 触发，默认终止程序运行。
