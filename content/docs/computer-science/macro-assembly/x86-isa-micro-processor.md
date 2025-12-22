@@ -74,4 +74,95 @@ math: false
                 - 第 15~3 位：表示 GDT 中的索引。
                 - 第 2 位 `TI`：即 Table Indicator，表示用于在 GDT（`TI` 为 `0`）或 LDT 中查询。
                 - 第 1~0 位 `RPL`：即 Requested Privilege Level。
+            - 地址用 `selector:offset` 来指定，真正的段基址需要通过查询获得。
         - **段描述符**
+            - 段描述符共 64 位，包括基址、限长、其他信息位。
+            - 按照从上往下地址增加的顺序表示段描述符结构（内存上的真实结构，无需小端序转换）：
+            - ![Segment Descriptor](/images/by-name/x86-isa-micro-processor/segment-descriptor.png)
+            - 第 5 字节第 7 位 `P`：即 Present，表示此段是否在内存中，与虚拟内存机制相关。
+            - 第 5 字节第 6~5 位 `DPL`：描述特权级，即 Descriptor Privilege Level，决定访问此段的权限。
+            - 第 5 字节第 4 位 `S`：即 System，粗略划分描述符的类型。
+                - `S == 0` 时，描述符为系统描述符或门描述符，这里的其他结构含义可能不再适用。
+                - `S == 1` 时，描述符对应为代码段、数据段、堆栈段。
+            - 第 5 字节第 3~1 位 `Type`：表示描述符的具体类型信息。
+                - `S == 1` 时，第 3 位为 `E`，表示 Executable，第 2~1 位由 `E` 决定。
+                    - `E == 0` 时，`Type` 表示 `E:ED:W`，此段表示非代码段，不可以执行代码。
+                        - `ED`：即 Expansion Direction，确定扩展的方向，基本上为 `0`，即向高地址扩展。
+                        - `W`：即 Writable，为 `1` 时可写。
+                    - `E == 1` 时，`Type` 表示 `E:C:R`，此时段表示代码段，可以执行代码，必定只读。
+                        - `C`：即 Conforming，一致位。为 `1` 时，此段即使是高特权级，也可以被低特权级执行。
+                        - 代码段 `C == 1` 时，其他高特权级代码不可以调用此段，低特权级代码调用此段不提升特权级。
+                        - `R`：即 Readable，为 `1` 时可读。`C == 0` 时按照 `R` 控制权限。
+            - 第 5 字节第 0 位 `A`：即 Accessed。
+            - 第 4 字节第 7 位 `G`：即 Granularity，表示限长的单位。
+                - `G == 0` 时，以字节为单位，有效偏移量最大为长度减 `1`，即等于限长。
+                - `G == 1` 时，以页为单位，段的可用页数为限长加 `1`，有效偏移量最大为最后一页的最后地址。
+            - 第 4 字节第 6 位 `D`：即 Default Operand Size，`D == 1` 时为 32 位，否则 16 位。
+            - 段描述符具有专用的缓存，段寄存器不变时，可以加速读取。
+        - **全局描述符表**
+            - 即 Global Descriptor Table（GDT），主要存放段描述符，也可以存放门描述符。
+            - GDT 全局只有一个，表基址和限长存放在 `GDTR` 中。
+            - 从 GDT 访问段内地址：
+            - ![Segment Access Using GDT](/images/by-name/x86-isa-micro-processor/gdt-segment.png)
+        - **局部描述符表**
+            - 即 Local Descriptor Table（LDT）。LDT 每个任务一个。
+            - 表基址和限长编码在一个段描述符中，`LDTR` 存放引用此段描述符的段选择符。
+            - 查询 LDT 信息：
+            - ![Lookup LDT](/images/by-name/x86-isa-micro-processor/ldt-lookup.png)
+    - **保护模式页式管理**
+        - **页表描述符**
+            - 页表描述符结构（内存上的真实结构，无需小端序转换）：
+            - ![Page Table Entry](/images/by-name/x86-isa-micro-processor/page-table-entry.png)
+            - 第 0 字节第 6 位 `D`：即 Dirty，是否向其中写入过内容。
+            - 第 0 字节第 5 位 `A`：即 Accessed，是否访问过。
+            - 第 0 字节第 2 位 `U/S`：即 User/Supervisor，为 `0` 时只有 OS 可以访问。
+            - 第 0 字节第 1 位 `R/W`：即 Readonly/Writable，为 `1` 时可写。OS 任何时候都可写。
+            - 第 0 字节第 0 位 `P`：即 Present，是否存在内存中。
+            - 第 1 字节第 3~1 位 `AVL`：即 Available，供 OS 自行决定如何使用。
+        - **页表结构**
+            - 32 位地址分为 3 部分，第 31~22 位为页目录索引，第 21~12 位为页表索引，剩下为页内偏移。
+            - 地址转换过程：
+            - ![Paging Address Translation](/images/by-name/x86-isa-micro-processor/paging-address-translation.png)
+            - 多级页表中，读写等保护取各级页表的描述符中更严格的一个。
+    - **保护模式段页式管理**
+        - 先段式转换，在页式转换。
+        - 段式内存管理不再是主要作用，所有进程的使用同样的段，所有段是同样的基址和限长，即平坦模式。
+        - 进程的地址空间通过页式管理隔离。
+- **任务管理**
+    - **任务环境**
+        - 每个任务有独立的代码段、数据段、4 个堆栈段（对应 4 个特权级）。
+        - 每个任务都有一个 LDT，构成一个局部地址空间。
+    - **任务状态段**
+        - 即 Task State Segment，一种 x86 ISA 规定的特殊结构，保存每个任务的上下文。
+        - TSS 总长 104 字节。
+        - ![TSS](/images/by-name/x86-isa-micro-processor/tss.png)
+        - TSS 在 GDT 中存有对应的 TSS 描述符，属于系统描述符（`S == 0`）。
+        - TR 存有当前任务的选择符，可以引用到 GDT 中的描述符。
+    - **直接任务切换**
+        - 若目标任务的 TSS 对应的选择符为 `selector`，则通过 `CALL selector:offset` 实现切换。
+        - `offset` 无实际作用，真正的目标代码位置由目标任务 TSS 保存的 IP 确定。
+        - ![Direct Task Switch](/images/by-name/x86-isa-micro-processor/direct-task-switch.png)
+    - **门**
+        - **门描述符**
+            - 属于系统描述符（`S == 0`），具体有 4 种类型，通过系统描述符的 `Type` 区分。
+            - ![Gate Descriptor](/images/by-name/x86-isa-micro-processor/gate-descriptor.png)
+            - 门包括调用门、任务门、中断门、陷阱门，都是实现了某种调用或跳转。
+            - 门描述符的段选择符和偏移用于指定跳转的目标。
+        - **调用门**
+            - 若门描述符对应的选择符为 `selector`，则通过 `CALL selector:offset` 可以调用指定的门。
+            - 通过门调用时，`offset` 无实际作用，真正的跳转目标在门描述符种。
+            - 通过调用门可以暂时提升特权级执行目标代码，返回后特权级还是低的。
+            - 调用的参数需要复制到目标堆栈，参数个数记录在门描述符中，参数占用大小为个数乘字长。
+            - ![Call Gate](/images/by-name/x86-isa-micro-processor/call-gate.png)
+        - **任务门**
+            - 门描述符中，段选择符部分引用某个 TSS 段描述符，偏移不使用（与直接任务切换相同）。
+            - 通过 `CALL` 或 `JMP`，实现间接任务切换（与调用门类似）。
+            - ![Task Gate](/images/by-name/x86-isa-micro-processor/task-gate.png)
+        - **中断门**
+            - 门描述符指向中断处理程序，位于 IDT。
+        - **陷阱门**
+            - 门描述符指向故障/陷阱等异常处理程序，位于 IDT。
+- **保护机制**
+    - **特权级**
+        - Current Privilege Level：当前正在执行代码的特权级，当前 `CS` 中的最低 2 位。
+        - Descriptor Privilege Level：
