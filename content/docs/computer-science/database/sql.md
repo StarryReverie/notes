@@ -106,7 +106,7 @@ math: false
         - 无法满足[完整性约束](/docs/computer-science/database/relational-database#masdfo)的元组不会被插入。
     - **修改**
         - ```sql
-          UPDATE <table> SET <colum> = <expression> [WHERE <predicate>];
+          UPDATE <table> SET <column> = <expression> [WHERE <predicate>];
           ```
         - 与查询相同，`WHERE` 子句中可以加入子查询。
     - **删除**

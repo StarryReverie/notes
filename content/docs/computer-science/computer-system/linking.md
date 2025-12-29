@@ -51,9 +51,9 @@ math: false
                   long offset;
                   long type:32, symbol:32;
                   long addend;
-              } Elf64_Rela;
+              } Elf64_Rela; // spellchecker:disable-line
               ```
-            - 每一处符号引用都会被转换为 `Elf64_Rela`，供链接器做重定位处理。
+            - 每一处符号引用都会被转换为 `Elf64_Rela`，供链接器做重定位处理。 <!-- spellchecker:disable-line -->
             - `offset` 表示此引用相对于段起始地址的偏移量。
             - `type` 表示重定位的类型：
                 - `R_X86_64_32`：32 位绝对地址引用。

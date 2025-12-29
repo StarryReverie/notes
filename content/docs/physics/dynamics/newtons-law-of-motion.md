@@ -18,9 +18,11 @@ math: true
           $$
     - **牛顿第三定律**
         - 物体间的作用力成对出现，两者大小相等，方向相反，即
+          <!-- spellchecker:disable-begin -->
           $$
           \boldsymbol F_{AB}=-\boldsymbol F_{BA}
           $$
+          <!-- spellchecker:disable-end -->
     - **注意事项**
         - 牛顿运动定律只在惯性系中成立。
 - **非惯性参考系**

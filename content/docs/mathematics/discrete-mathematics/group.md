@@ -30,7 +30,7 @@ math: true
             - $a^k = e \iff r \mid k$
             - $|a^{-1}| = |a| = r$
             - $|b^{-1}ab| = |a|$
-            - $|ab| = |ba|$
+            - $|ab| = |ba|$  <!-- spellchecker:disable-line -->
         - 若 $G$ 为有限群，则 $G$ 中阶大于 $2$ 的元素有偶数个。
 - **子群**
     - **定义**

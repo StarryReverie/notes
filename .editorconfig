@@ -9,5 +9,7 @@ indent_style = space
 
 [*.md]
 trim_trailing_whitespace = false
-indent_style = space
 indent_size = 4
+
+[*.toml]
+indent_size = 2

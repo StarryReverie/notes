@@ -1,0 +1,15 @@
+[files]
+extend-exclude = [
+  "*.svg",
+  "themes/**/*",
+]
+
+[default]
+extend-ignore-re = [
+  # Disable spell checker for one line
+  "(?Rm)^.*(#|//)\\s*spellchecker:disable-line$",
+  "(?Rm)^.*<!--\\s*spellchecker:disable-line\\s*-->$",
+  # Disable spell checker for one block
+  "(?s)(#|//)\\s*spellchecker:disable-begin.*?\\n\\s*(#|//)\\s*spellchecker:disable-end",
+  "(?s)<!--\\s*spellchecker:disable-begin\\s*-->.*?\\n\\s*<!--\\s*spellchecker:disable-end\\s*-->",
+]
