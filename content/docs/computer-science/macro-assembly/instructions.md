@@ -1,7 +1,7 @@
 ---
 title: 指令系统
 weight: 200
-math: false
+math: true
 ---
 
 - **寻址方式**
@@ -202,7 +202,7 @@ math: false
             - 段内间接转移，跳转到 `<SRC>` 中存储的地址。
         - **`JZ/JNZ/JE/JNE/JC/JNC/JO/JNO/JP/JNP/JPE/JPO <LABEL>`**
             - 根据标志位条件跳转。
-        - **`JA/JNA/JB/JNB/JL/JNL/JG/JNG/JLE/JNLE/JGE/JNGE <LABEL>`**
+        - **`JA/JNA/JB/JNB/JAE/JNAE/JBE/JNBE/JL/JNL/JG/JNG/JLE/JNLE/JGE/JNGE <LABEL>`**
             - 根据标志位条件跳转，比较大小。
         - **`JCX/JECX <LABEL>`**
             - 当 `CX` 或 `ECX` 为 `0` 时，跳转到 `<LABEL>`。
@@ -245,3 +245,46 @@ math: false
             - `REP`：类似 `LOOP`。
             - `REPZ`：类似 `LOOPZ`。
             - `REPNZ`：类似 `LOOPNZ`。
+- **浮点数操作**
+    - **寄存器**
+        - 浮点数使用专用的寄存器，80 位，编号为 `FPR0`~`FPR7`。
+        - 浮点寄存器以栈的形式操作，引用使用 `ST(i)`，其中 `i` 表示从栈顶开始从 `0` 计数的下标，`ST(0)` 为栈顶。
+    - **指令**
+        - **杂项**
+            - `FINIT`：初始化 FPU。使用 FPU 前都要调用。
+            - `FLDCW <SRC>`：从 `<SRC>` 加载 FPU 控制字。
+            - `FSTCW <DST>`：保存 FPU 控制字到 `<DST>`。
+            - `FCLEX`：清楚浮点异常。
+            - `FNOP`：空操作。
+        - **传送**
+            - `FLD <SRC>`：把 `<SRC>` 加载到 `ST(0)`。
+            - `FST <DST>`：把 `ST(0)` 存储到 `<DST>`，`ST(0)` 不出栈。
+            - `FSTP <DST>`：把 `ST(0)` 存储到 `<DST>`，`ST(0)` 随后出栈。
+        - **常数加载**
+            - `FLD1`：加载 `1.0` 到 `ST(0)`。
+            - `FLDZ`：加载 `0.0` 到 `ST(0)`。
+            - `FLDPI`：加载 $\pi$ 到 `ST(0)`。
+            - `FLDL2T`：加载 $\log_2 10$ 到 `ST(0)`。
+            - `FLDL2E`：加载 $\log_2 e$ 到 `ST(0)`。
+            - `FLDLG2`：加载 $\lg 2$ 到 `ST(0)`。
+            - `FLDLN2`：加载 $\ln 2$ 到 `ST(0)`。
+        - **运算**
+            - `FADD [[<DST>, ]<SRC>]`：相加。
+                - 如果完全省略参数，则 `ST(0)` 加到 `ST(1)`，随后 `ST(0)` 出栈。
+                - 如果只省略 `<DST>` 保留 `<SRC>`，则 `<SRC>` 加到 `ST(0)`，不出栈。
+                - 不省略时，则 `<SRC>` 加到 `<DST>`，不出栈。
+            - `FADDP ST(i), ST(0)`：`ST(0)` 加到 `ST(i)`，随后 `ST(0)` 出栈。
+            - `FSUB/FSUBP/FMUL/FMULP/FDIV/FDIVP`：类似 `FADD/FADDP`。
+            - `FPREM`：计算 `ST(0)` 对 `ST(1)` 取模，保存在 `ST(0)`。
+            - `FABS`：计算 `ST(0)` 的绝对值，保存在 `ST(0)`。
+            - `FCHS`：计算 `ST(0)` 的相反数，保存在 `ST(0)`。
+            - `FSQRT`：计算 `ST(0)` 的算术平方根，保存在 `ST(0)`。
+            - `FSCALE`：计算 2 的 `ST(0)` 次幂，保存在 `ST(0)`。
+            - `FSIN`：计算 `ST(0)` 的正弦，保存在 `ST(0)`。
+            - `FCOS`：计算 `ST(0)` 的余弦，保存在 `ST(0)`。
+            - `FPTAN`：计算 `ST(0)` 的正切，保存在 `ST(0)`。
+            - `FPATAN`：计算 `ST(0)` 的反正切，保存在 `ST(0)`。
+            - `F2XM1`：计算 2 的 `ST(0)` 次幂减 1，保存在 `ST(0)`。
+        - **比较**
+            - `FCOM [<SRC>]`：比较 `ST(0)` 与 `<SRC>` 的大小，如果省略 `<SRC>`，则用 `ST(1)`。
+            - `FCOMP [<SRC>]`：类似 `FCOM`，完成比较后 `ST(0)` 出栈。
