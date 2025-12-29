@@ -245,7 +245,3 @@ math: false
             - `REP`：类似 `LOOP`。
             - `REPZ`：类似 `LOOPZ`。
             - `REPNZ`：类似 `LOOPNZ`。
-- **伪指令**
-    - **取地址**
-        - `OFFSET <VAR>`：取变量 `<VAR>` 的偏移地址，类似 C 语言的 `&<VAR>`。
-        - `SEG <VAR>`：取变量 `<VAR>` 所在段基址。
