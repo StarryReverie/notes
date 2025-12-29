@@ -71,9 +71,9 @@ math: false
         - **段选择符**
             - 段寄存器在保护模式下保存段选择符，不直接保存段基址。
             - 段选择符共 16 位，包括：
-                - 第 15~3 位：表示 GDT 中的索引。
+                - 第 15\~3 位：表示 GDT 中的索引。
                 - 第 2 位 `TI`：即 Table Indicator，表示用于在 GDT（`TI` 为 `0`）或 LDT 中查询。
-                - 第 1~0 位 `RPL`：即 Requested Privilege Level。
+                - 第 1\~0 位 `RPL`：即 Requested Privilege Level。
             - 地址用 `selector:offset` 来指定，真正的段基址需要通过查询获得。
         - **段描述符**
             - 段描述符共 64 位，包括基址、限长、其他信息位。
@@ -81,12 +81,12 @@ math: false
             - 按照从上往下地址增加的顺序表示段描述符结构（内存上的真实结构，无需小端序转换）：
             - ![Segment Descriptor](/images/by-name/x86-isa-micro-processor/segment-descriptor.png)
             - 第 5 字节第 7 位 `P`：即 Present，表示此段是否在内存中，与虚拟内存机制相关。
-            - 第 5 字节第 6~5 位 `DPL`：描述特权级，即 Descriptor Privilege Level，决定访问此段的权限。
+            - 第 5 字节第 6\~5 位 `DPL`：描述特权级，即 Descriptor Privilege Level，决定访问此段的权限。
             - 第 5 字节第 4 位 `S`：即 System，粗略划分描述符的类型。
                 - `S == 0` 时，描述符为系统描述符或门描述符，这里的其他结构含义可能不再适用。
                 - `S == 1` 时，描述符对应为代码段、数据段、堆栈段。
-            - 第 5 字节第 3~1 位 `Type`：表示描述符的具体类型信息。
-                - `S == 1` 时，第 3 位为 `E`，表示 Executable，第 2~1 位由 `E` 决定。
+            - 第 5 字节第 3\~1 位 `Type`：表示描述符的具体类型信息。
+                - `S == 1` 时，第 3 位为 `E`，表示 Executable，第 2\~1 位由 `E` 决定。
                     - `E == 0` 时，`Type` 表示 `E:ED:W`，此段表示非代码段，不可以执行代码。
                         - `ED`：即 Expansion Direction，确定扩展的方向，基本上为 `0`，即向高地址扩展。
                         - `W`：即 Writable，为 `1` 时可写。
@@ -119,9 +119,9 @@ math: false
             - 第 0 字节第 2 位 `U/S`：即 User/Supervisor，为 `0` 时只有 OS 可以访问。
             - 第 0 字节第 1 位 `R/W`：即 Readonly/Writable，为 `1` 时可写。OS 任何时候都可写。
             - 第 0 字节第 0 位 `P`：即 Present，是否存在内存中。
-            - 第 1 字节第 3~1 位 `AVL`：即 Available，供 OS 自行决定如何使用。
+            - 第 1 字节第 3\~1 位 `AVL`：即 Available，供 OS 自行决定如何使用。
         - **页表结构**
-            - 32 位地址分为 3 部分，第 31~22 位为页目录索引，第 21~12 位为页表索引，剩下为页内偏移。
+            - 32 位地址分为 3 部分，第 31\~22 位为页目录索引，第 21\~12 位为页表索引，剩下为页内偏移。
             - 地址转换过程：
             - ![Paging Address Translation](/images/by-name/x86-isa-micro-processor/paging-address-translation.png)
             - 多级页表中，读写等保护取各级页表的描述符中更严格的一个。
