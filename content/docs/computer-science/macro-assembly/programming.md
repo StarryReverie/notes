@@ -60,6 +60,10 @@ math: false
         - `END [<ENTRY-POINT>]`。
         - 遇到此伪指令后，汇编器停止处理文件。
         - `<ENTRY-POINT>` 是可选的，只需要在要指定程序入口时使用。
+    - **`EXTERN`**
+        - 在变量前加上，则表示此变量来源于其他单元。
+    - **`PUBLIC`**
+        - 在变量前加上，则表示其他单元可以引用此变量。
     - **函数声明**
         - `<FUNC-NAME> PROTO [<CALLING-CONVENTION>] :<ARG1-TYPE>, :<ARG2-TYPE>, ...`。
         - 不需要声明返回类型，返回值通过 `AX` 传递。
