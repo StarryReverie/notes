@@ -1,0 +1,81 @@
+---
+title: 词法分析
+weight: 200
+math: true
+---
+
+- **正规式与正规集**
+    - **基本定义**
+        - 字母表/符合集：字符的集合，元素称为符号。用 $\Sigma$ 表示。
+        - 字符串/符合串：字母表中的符号连接成的任意有穷序列。用小写希腊字母表示，$\varepsilon$ 为空串。
+        - 串长度：用 $|\alpha|$ 表示。
+    - **运算**
+        - 字符串连接：$\alpha\beta$
+        - 字符串幂：$\alpha^n$
+        - 串集合乘：$AB = \{ \alpha\beta \mid \alpha \in A, \beta \in B \}$
+        - 串集合幂：$A^n$
+        - 串集合正闭包：$A^+ = A^1 \cup A^2 \cup A^3 \cup \cdots$
+        - 串集合自反闭包：$A^* = A^1 \cup A^2 \cup A^3 \cup \cdots$
+    - **正规式**
+        - $\varepsilon$ 和 $\varnothing$ 是正规式，正规集分别为 $\{ \varepsilon \}$ 和 $\varnothing$。
+        - 对于任意 $a \in \Sigma$，$a$ 是正规式，正规集为 $\{ a \}$。
+        - 对于任意正规式 $\alpha, \beta$（对应 $A, B$），$\alpha \beta$、$\alpha | \beta$ 是正规式，正规集分别为 $AB$ 和 $A \cup B$。
+        - 对于任意正规式 $\alpha$（对应 $A$），$\alpha^*$ 是正规式，正规集分别为 $A*$。
+    - **正规集**
+        - 一个正规式描述一个正规集，正规集可以有多个正规式。
+        - 如果 $A = B$，则 $\alpha$ 与 $\beta$ 等价。
+- **有限自动机**
+    - **确定性有限自动机**
+        - 即 DFA，定义为 $M = (Q, \Sigma, f, q_0, Z)$。
+            - $Q$：状态集合。
+            - $\Sigma$：字母表。
+            - $f$：转移函数 $f: Q \times \Sigma \to Q$。
+            - $q_0$：起始状态。
+            - $Z$：接受状态集，如果 DFA 在其中停止，则字符串被接受，否则被拒绝。
+        - DFA $M$ 接受的串集合称为语言 $L(M)$。
+        - 如果 $L(M_1) = L(M_2)$，则 $M_1$ 与 $M_2$ 等价，记作 $M_1 = M_2$。
+        - 状态表中，第一行状态为起始状态，带 $*$ 为接受状态。
+        - DFA 与正规式等价。
+    - **非确定性有限状态机**
+        - 即 NFA，定义为 $M = (Q, \Sigma, f, q_0, Z)$。
+            - $f$：转移函数 $f: Q \times (\Sigma \cup \{ \varepsilon \} \to 2^Q$。
+            - 其他：同 DFA。
+        - NFA 读入一个字符，可能转移到多个状态，统一用一个集合表示。
+        - NFA 可以不读入字符而转移 $\varepsilon$。
+        - NFA 识别串，只要有一种被接受的可能的状态路径，就算接受。
+        - NFA 等价定义与 DFA 相同。NFA 和 DFA 一定等价。
+- **NFA 确定化**
+    - **定义**
+        - $\operatorname{\varepsilon-closure}(I)$：已知 $I \subseteq Q$，则 $\operatorname{\varepsilon-closure}(I) = I \cup \left( \bigcup_{q \in \operatorname{\varepsilon-closure}} f(q, \varepsilon) \right)$。
+            - 即在 $I$ 中通过零或任意次 $\varepsilon$ 转移可以到达的所有状态。
+        - $I_a$：已知 $I \subseteq Q$，则 $I_a = \operatorname{\varepsilon-closure}(\{ p | p \in f(q, a), q \in \operatorname{\varepsilon-closure}(I) \})$。
+            - 即通过任意次 $\varepsilon$ 和恰好一次 $a$ 转移可以到达的所有状态。
+    - **子集法**
+        - 从原起始状态 $q_0$ 开始，求 $q'_0 = \operatorname{\varepsilon-closure}(q_0) \in Q'$。
+        - 对任意 $q' \in Q', c \in \Sigma$，$f'(q', c) = I_a(q')$。
+            - 即对于当前子集状态 $q'$，对每个字母求 $I_c(q')$，把子集子集加入新状态集合。
+        - 重新命名状态。
+- **DFA 化简**
+    - **定义**
+        - 无关状态：输入任意字符串都无法到达的状态。
+        - 等价状态：已知 $q_1$ 和 $q_2$，如果对于任意 $\alpha$，从 $q_1$ 或 $q_2$ 出发都同时到达接受或拒绝状态，则等价。
+        - 最简：DFA 不存在无关状态，任意两个状态不等价，则称为最小/规约的 DFA，状态数最少。
+    - **删除无关状态**
+        - 标记处理法。
+        - 由子集法确定化 NFA 得到的 DFA 不存在无关状态。
+    - **删除等价状态**
+        - 如果 $q_1$ 和 $q_2$ 经过字符串 $\alpha$ 后到达不同接受和拒绝状态，则 $q_1$ 和 $q_2$ 被 $\alpha$ 区分。
+        - $Z$ 和 $Q - Z$ 被 $\varepsilon$ 区分。
+        - 得到所有等价状态：
+            - 从 $\pi_0 = \{ Z, Q - Z \}$ 开始，尝试不断划分每一个集合。
+            - 对于 $S \in \pi_i$，如果 $S$ 中状态输入 $c \in \Sigma$ 到达的状态不都属于同一个 $\pi_i$ 中的集合，则按照目的状态拆分 $S$，得到 $\pi_{i + 1}$。
+            - 重复直到所有集合不可再拆分，同一集合内状态等价。
+            - 令状态子集为新状态，则得到最小 DFA。
+- **正规式与自动机转换**
+    - **NFA 转正规式**
+        - 构造虚拟状态节点 $q_s, q_z$，连接 $q_s \to q_0, q_i \to q_z\ (q_i \in Z)$。
+        - 按照规则转换：![NFA to Regex](/images/by-name/lexical-analysis/nfa-to-regex.png)
+        - 只剩下 $q_s, q_z$ 时，边上表达式即结果。
+    - **正规式转 NFA**
+        - 构造虚拟状态节点 $q_s, q_z$，$q_s \to q_z$ 上为源正规式。
+        - 按照规则转换：![Regex to NFA](/images/by-name/lexical-analysis/regex-to-nfa.png)
