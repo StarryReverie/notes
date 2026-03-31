@@ -1,6 +1,6 @@
 ---
 title: 词法分析
-weight: 200
+weight: 100
 math: true
 ---
 
