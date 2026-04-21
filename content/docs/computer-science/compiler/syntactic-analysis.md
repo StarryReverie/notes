@@ -45,3 +45,50 @@ math: true
         - 常见原因：
             - 运算符优先级不明确。
             - 运算符结合性不明确。
+- **自上而下分析**
+    - **文法变换**
+        - **直接左递归消除**
+            - 对于 $A \to A \alpha | \beta$，则变换为 $A \to \beta A'$，$A' \to \alpha A' | \varepsilon$。
+            - 对于 $A \to A \alpha_1 | \cdots | A \alpha_n | \beta_1 | \cdots | \beta_m$，则变换为 $A \to \beta_1 A' | \cdots | \beta_m A' $，$A' \to \alpha_1 A' | \cdots | \alpha_2 A' | \varepsilon$。
+        - **间接左递归消除**
+            - 按顺序枚举所有非终结符 $A_1, \dots, A_n$，对于 $A_i$：
+                - 对于 $A_j\ (j < i)$，如果 $A_i \to A_j \alpha$，则带入 $A_j$ 的产生式到 $A_i$ 中。
+                - 消除带入后的 $A_i$ 产生式的直接左递归。
+        - **回溯消除**
+            - **FIRST**
+                - $\mathrm{FIRST}(\alpha) = \{ a \mid \alpha \Rightarrow a \beta, a \in V_T \}$。即 $\alpha$ 推导的所有句子的开头。
+                    - 如果 $a \Rightarrow \varepsilon$，则 $\varepsilon \in \mathrm{FIRST}(\alpha)$，反之也成立。
+                - 文法不带回溯的条件：对于 $G$ 中任意非终结符 $A \to \alpha_1 | \cdots | \alpha_n$，$\mathrm{FIRST}(\alpha1), \dots, \mathrm{FIRST}(\alpha_n)$ 两两无交集。
+                - 文法不带回溯的候选式选择：对于 $A \to \alpha_1 | \cdots | \alpha_n$ 和当前符号 $a$，选择满足 $a \in \mathrm{FIRST}(\alpha_i)$ 的 $\alpha_i$。
+                - $\mathrm{FIRST}$ 的构造是自下而上的。
+            - **消除方法**
+                - 如果 $\mathrm{FIRST}(\alpha_i)$ 和 $\mathrm{FIRST}(\alpha_j)$ 有交集，则交集部分就是左公因子。
+                - 将两个候选式分别拆分出交集部分 $\beta$ 和剩余部分 $\alpha_i', \alpha_j'$，$A \to \beta (\alpha_i' | \alpha_j') | \cdots$。
+    - **递归下降**
+        - 按照文法编写函数，每个非终结符对应一个函数，对候选式的推导就是调用函数。
+    - **LL(1)**
+        - **算法过程**
+            - LL(1) 算法包括：
+                - 总控程序：算法本身。
+                - 分析栈：存放待分析单词。
+                - 分析表 $M(A, a)$：$A$ 为非终结符，$a$ 为单词，$M(A, a)$ 表示识别 $a$ 需要的产生式 $A \to \alpha$。如果是空则表示出错。
+            - 初始时，分析栈从底部存放结束标志和 $S$。
+            - 设栈顶为 $X$，当前单词为 $a$，循环：
+                - 若 $X$ 是非终结符：
+                    - 若 $M(X, a)$ 非空，则根据 $M(X, a)$ 选取产生式，把 $X$ 出栈，把 $M(X, a)$ 倒序入栈。
+                    - 若 $M(X, a)$ 为空，出错。
+                - 若 $X$ 是终结符：
+                    - 若 $X = a$ 为结束标志，则完全识别成功。
+                    - 若 $X = a$ 且不为结束标志，则识别 $a$ 成功，出栈 $X$，读取下一个输入。
+                    - 若 $X \ne a$，则出错。
+        - **FOLLOW**
+            - $FOLLOW(A) = \{ a \mid \dots A a \dots \in L(G(S)), a \in V_T \}$，即语言中在 $A$ 后的所有可能的非终结符 $a$。
+            - 计算方法：
+                - $\mathrm{FOLLOW}(S) = \#$
+                - 对于 $A \to \alpha B \beta$，$\mathrm{FIRST}(\beta) \subseteq \mathrm{FOLLOW}(B)$。
+                - 对于 $A \to \alpha B$ 或 $A \to \alpha B \beta$ 且 $\varepsilon \in \mathrm{FIRST}(\beta)$，则 $\mathrm{FOLLOW}(A) \subseteq \mathrm{FOLLOW}(B)$。
+                - 自上而下计算。
+        - **分析表构造**
+            - 对于 $A \to \alpha_1 | \cdots | \alpha_n$：
+                - 若 $a \in \mathrm{FIRST}(\alpha_i)$，则 $M(A, a) = A \to \alpha_i$。
+                - 若 $\varepsilon \in \mathrm{FIRST}(\alpha_i)$ 且 $a \in \mathrm{FOLLOW}(A)$，则 $M(A, a) = A \to \alpha_i$。
