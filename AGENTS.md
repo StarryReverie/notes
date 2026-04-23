@@ -19,3 +19,4 @@
         - [content-structure.md](agents/specifications/notes/content-structure.md)：笔记内容的确定性结构规则
 - `workflows/`：操作工作流定义
     - [validate-agent-documentation.md](agents/workflows/validate-agent-documentation.md)：验证 Agent 文档合规性
+    - [validate-note.md](agents/workflows/validate-note.md)：验证笔记合规性
