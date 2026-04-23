@@ -1,7 +1,12 @@
 {
-    "no-inline-html": false,
-    "ul-indent": { "indent": 4 },
     "blanks-around-fences": false,
     "blanks-around-tables": false,
-    "line-length": false
+    "line-length": false,
+    "no-inline-html": false,
+    "no-duplicate-heading": {
+        "siblings_only": true
+    },
+    "ul-indent": {
+        "indent": 4
+    }
 }
