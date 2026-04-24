@@ -34,6 +34,7 @@
             - [file-organization.md](agents/specifications/meta/file-organization.md)：Agent 文档的文件组织规则
             - [cross-referencing.md](agents/specifications/meta/cross-referencing.md)：跨文件引用的维护规则
             - [markdown-style.md](agents/specifications/meta/markdown-style.md)：Markdown 文件 Lint 规则
+            - [python-execution.md](agents/specifications/meta/python-execution.md)：Python 脚本执行环境与依赖处理
         - `notes/`：笔记内容相关的规范
             - [frontmatter.md](agents/specifications/notes/frontmatter.md)：Frontmatter 字段定义、类型、默认值
             - [naming.md](agents/specifications/notes/naming.md)：文件和目录命名规则
