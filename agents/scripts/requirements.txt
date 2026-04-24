@@ -1,0 +1,6 @@
+# PDF text extraction
+pymupdf
+
+# PDF OCR mode (requires system Tesseract + Poppler)
+pytesseract
+pdf2image

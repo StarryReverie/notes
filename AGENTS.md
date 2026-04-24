@@ -47,3 +47,9 @@
         - [validate-agent-documentation.md](agents/workflows/validate-agent-documentation.md)：验证 Agent 文档合规性
         - [validate-note.md](agents/workflows/validate-note.md)：检查笔记是否符合 `agents/specifications/notes/` 下所有规范
         - [update-writing-style.md](agents/workflows/update-writing-style.md)：根据用户修改迭代写作风格规范
+        - [preprocess-resource.md](agents/workflows/preprocess-resource.md)：预处理非纯文本资源，从中提取文本、整理排版
+    - `scripts/`：Agent 调用的辅助脚本
+        - [convert-docx-to-md.py](agents/scripts/convert-docx-to-md.py)：DOCX -> Markdown
+        - [convert-pptx-to-md.py](agents/scripts/convert-pptx-to-md.py)：PPTX -> Markdown
+        - [convert-pdf-to-md.py](agents/scripts/convert-pdf-to-md.py)：PDF -> Markdown，支持文本和 OCR
+        - [requirements.txt](agents/scripts/requirements.txt)：Python 依赖清单
