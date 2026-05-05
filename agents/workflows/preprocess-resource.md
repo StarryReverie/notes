@@ -18,7 +18,7 @@
     - `.docx` → `agents/scripts/convert-docx-to-md.py`
     - `.pptx` → `agents/scripts/convert-pptx-to-md.py`
     - `.pdf` → `agents/scripts/convert-pdf-to-md.py`
-- 使用 `uv run` 执行脚本，输出保存为 `.resources/{basename}.raw.md`
+- 使用 Python 执行脚本（优先直接使用 `python`，其次尝试 `uv run`），输出保存为 `.resources/{basename}.raw.md`
 - 对于 PDF 文件，先以默认文本模式提取，检查结果是否稀疏（大量空白、字符极少）。若稀疏则以 `--ocr` 模式重新提取并覆盖 `.raw.md`。由于 Subagent 仅负责转换，Subagent 应当尽量避免读取直接转换结果，以提高效率。
 - 返回 `.raw.md` 文件路径
 

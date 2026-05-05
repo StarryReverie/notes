@@ -1,5 +1,5 @@
 {
-  description = "Blog Environment";
+  description = "Notes Environment";
 
   inputs = {
     flake-compat = {
@@ -30,11 +30,19 @@
         { pkgs, ... }:
         {
           devShells.default = pkgs.mkShellNoCC {
-            packages = with pkgs; [
-              hugo
-              just
-              nixfmt
-              nixfmt-tree
+            packages = [
+              pkgs.hugo
+              pkgs.just
+              pkgs.nixfmt
+              pkgs.nixfmt-tree
+              pkgs.pandoc
+              pkgs.poppler-utils
+              (pkgs.python3.withPackages (pypkgs: [
+                pypkgs.pymupdf
+                pypkgs.pytesseract
+                pypkgs.pdf2image
+              ]))
+              pkgs.tesseract
             ];
           };
         };
