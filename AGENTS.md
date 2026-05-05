@@ -48,6 +48,7 @@
         - [validate-note.md](agents/workflows/validate-note.md)：检查笔记是否符合 `agents/specifications/notes/` 下所有规范
         - [update-writing-style.md](agents/workflows/update-writing-style.md)：根据用户修改迭代写作风格规范
         - [preprocess-resource.md](agents/workflows/preprocess-resource.md)：预处理非纯文本资源，从中提取文本、整理排版
+        - [review-and-record.md](agents/workflows/review-and-record.md)：对话式复习与笔记记录
     - `scripts/`：Agent 调用的辅助脚本
         - [convert-docx-to-md.py](agents/scripts/convert-docx-to-md.py)：DOCX -> Markdown
         - [convert-pptx-to-md.py](agents/scripts/convert-pptx-to-md.py)：PPTX -> Markdown
