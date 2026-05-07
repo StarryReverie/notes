@@ -33,6 +33,7 @@
             packages = [
               pkgs.hugo
               pkgs.just
+              pkgs.markdownlint-cli
               pkgs.nixfmt
               pkgs.nixfmt-tree
               pkgs.pandoc
