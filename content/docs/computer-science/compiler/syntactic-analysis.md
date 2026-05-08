@@ -82,7 +82,7 @@ math: true
                     - 若 $X = a$ 且不为结束标志，则识别 $a$ 成功，出栈 $X$，读取下一个输入。
                     - 若 $X \ne a$，则出错。
         - **FOLLOW**
-            - $FOLLOW(A) = \{ a \mid \dots A a \dots \in L(G(S)), a \in V_T \}$，即语言中在 $A$ 后的所有可能的非终结符 $a$。
+            - $\mathrm{FOLLOW}(A) = \{ a \mid \dots A a \dots \in L(G(S)), a \in V_T \}$，即语言中在 $A$ 后的所有可能的非终结符 $a$。
             - 计算方法：
                 - $\mathrm{FOLLOW}(S) = \#$
                 - 对于 $A \to \alpha B \beta$，$\mathrm{FIRST}(\beta) \subseteq \mathrm{FOLLOW}(B)$。
@@ -92,3 +92,43 @@ math: true
             - 对于 $A \to \alpha_1 | \cdots | \alpha_n$：
                 - 若 $a \in \mathrm{FIRST}(\alpha_i)$，则 $M(A, a) = A \to \alpha_i$。
                 - 若 $\varepsilon \in \mathrm{FIRST}(\alpha_i)$ 且 $a \in \mathrm{FOLLOW}(A)$，则 $M(A, a) = A \to \alpha_i$。
+- **自下而上分析**
+    - **基本概念**
+        - 短语：若 $S \xRightarrow{*} \alpha A \delta$ 且 $A \xRightarrow{+} \beta$，则 $\beta$ 是句型 $\alpha \beta \delta$ 相对于 $A$ 的短语。
+            - 从语法树上理解，即选取非终结符节点 $A$，则其子树所有叶子节点按顺序排列是短语。
+            - 一般省略句型，使用整个输入串作为分析的句型。
+        - 直接短语：$A \to \beta$，即在短语基础上，只需要一步推导。
+            - 从语法树上理解，即 $A$ 的子节点都是叶子节点。
+        - 句柄：最左边的直接短语。
+    - **LR 分析**
+        - LR 分析类方法使用 LR 分析器，分析器算法都相同，区别在于分析表的构造方法。
+        - LR 分析器结构：
+            - 输入串
+            - 分析栈：元素为符号和状态的二元组。
+            - 分析表：
+                - 每一行对应一个状态，每一列对应一个符号。终结符的列是 ACTION 表，非终结符的列是 GOTO 表。
+                - $\mathrm{ACTION}(Q_i, x_j)$ 的取值：
+                    - $S_{Q_k}$：移进操作，输入串指针向前移动一位，转换到状态 $Q_k$。
+                    - $r_{k}$：规约操作，选取第 $k$ 个产生式 $A \to \dots x_{j - 1} x_j$，弹出所有匹配的符号和状态，插入产生式左部和 $\mathrm{GOTO}(Q_i, A)$。
+                    - 接受：分析成功。
+                    - 错误：遇到无法识别的符号。
+                - $\mathrm{GOTO}(Q_i, A_j)$ 的取值：
+                    - $Q_k$：规约操作中要转移的下一个状态。
+                    - 空：$Q_i$ 状态下不可能规约 $A_j$，分析表构造正确时不可能到达这里。
+        - 分析的基本方法：不断规约句柄，无法规约时则移进，最终规约到开始符号。
+    - **LR(0)**
+        - **LR(0) 项目**
+            - 把所有产生式的候选式插入圆点，则为 LR(0) 项目。
+                - 对于开始符号 $S$，额外增加 $S' \to \bullet S$ 和 $S' \to S \bullet$。
+                - 对于 $A \to \varepsilon$，改为 $A \to \bullet$。
+                - 对于 $A \to a b$，改为 $A \to \bullet a b$、$A \to a \bullet b$、$A \to a b \bullet$。
+                - 对于 $A \to B | C$，则分别改 $A \to B$ 和 $A \to C$。
+            - $\bullet$ 用于表示这个候选式中，$\bullet$ 前面的部分已经在分析栈中，后面的部分还没有。
+            - 项目的分类：
+                - 接受项目：$S' \to S \bullet$，表示整体分析成功。
+                - 规约项目：$A \to \alpha \bullet$，其中 $\alpha \ne S$。
+                    - 分析栈中是可归前缀，后缀就是句柄 $\alpha$，表示可以规约。
+                - 移进项目：$A \to \alpha \bullet a \beta$，其中 $a \in V_T$。
+                    - 分析栈中是活前缀，后缀不是句柄，可以继续读 $a$，表示可以移进。
+                - 待约项目：$A \to \alpha \bullet B \beta$，其中 $B \in V_N$。
+                    - 需要先规约后面的输入到 $B$，才能获得可归前缀 $\alpha B \beta$。
