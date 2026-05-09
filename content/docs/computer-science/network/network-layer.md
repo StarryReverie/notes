@@ -87,7 +87,7 @@ math: true
         - Version：IP 协议版本，IPv4 = 4。
         - IHL：头部长度，以 4 字节为单位。
         - Total Length：整个数据报长度。
-        - Identification：标识符，用于分片重组。
+        - Identification：标识符，用于分片重组，总长 2 B。
         - Flags：分片标志，MF = 1 表示还有后续分片，MF = 0 表示最后一片。
         - Fragment Offset：分片偏移量，以 8 字节为单位。
         - TTL：最大剩余跳数，每经路由器减 1，归零时丢弃。
@@ -118,3 +118,43 @@ math: true
         - 内部用私有地址，对外共用一个公网 IP，通过端口号区分连接。
         - 私有地址范围：`10.0.0.0/8`、`172.16.0.0/12`、`192.168.0.0/16`。
         - 出站时替换源地址为 NAT 地址和新端口号，入站时根据 NAT 转换表还原。
+- **IP 转发**
+    - **路由表结构**
+        - 路由表中不保存整个完整的路由路径，只记录下一跳。
+        - 一行包括：
+            - 目的地址范围：使用 CIDR 表示。
+            - 下一跳：如果可以直接发送给目的，则无需下一跳。
+            - 接口：从哪个接口发送。
+            - Metric：对于开销的测量，作为优先级机制，值越小优先级越高。
+        - 一般路由表包括默认路由，地址范围为 `0.0.0.0/0`，下一跳指向互联网的路径。
+    - **转发过程**
+        - 对于目的 IP，尝试和每一行匹配：
+            - 使用 CIDR 的前缀构造掩码，掩码操作后如果与 CIDR 中的地址相等，则匹配。
+            - 如果有多个匹配的行，则选取前缀最长的一行。
+            - 如果仍然有多个匹配的行，则选取 Metric 最小的一行。
+- **网络层其他协议**
+    - **ICMP**
+        - 基于 IP，PDU 存放于 IP 分组的数据中。
+        - 提供 IP 状态和错误的交流和报告服务。
+        - PDU 包括 Type、Code、Checksum、Content。
+            - Type = 3：Destination Unreachable。
+            - Type = 8：Echo。
+            - Type = 0：Echo Reply。
+    - **ARP**
+        - 用于根据 IP 地址确定 IP 地址对应的 MAC 地址。
+        - 基于数据链路层，PDU 存放于数据链路层帧中。
+        - PDU 包括的重要字段：
+            - Source Hardware Address：发送者的 MAC 地址。
+            - Source Protocol Address：发送者的 IP 地址。
+            - Target Hardware Address：目标的 MAC 地址。如果未知，则为全 0。
+            - Target Protocol Address：目标的 IP 地址。
+        - ARP 表结构：
+            - IP Address
+            - Hardware Address
+            - Age：经过制定时间后删除此行。
+        - ARP 请求过程：
+            - 构造 ARP 请求，填写自己的 IP 地址、MAC 地址、目标的 IP 地址，目标的 MAC 地址填全 0。
+            - 装入数据链路层帧中，目标 MAC 地址为广播地址 `FF:FF:FF:FF:FF:FF`，发送。
+        - ARP 相应过程：
+            - 构造 ARP 相应，发送者和目标相关字段相反，发送者 MAC 地址填写自己的 MAC 地址。
+            - 装入数据链路层帧中，目标 MAC 地址为原请求者地址，发送。
