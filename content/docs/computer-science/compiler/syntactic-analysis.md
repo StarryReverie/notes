@@ -100,6 +100,8 @@ math: true
         - 直接短语：$A \to \beta$，即在短语基础上，只需要一步推导。
             - 从语法树上理解，即 $A$ 的子节点都是叶子节点。
         - 句柄：最左边的直接短语。
+        - 活前缀：规范句型的前缀，且此前缀的末端不超过句柄的末端。
+        - 可行前缀：最长的活前缀，后缀就是句柄。
     - **LR 分析**
         - LR 分析类方法使用 LR 分析器，分析器算法都相同，区别在于分析表的构造方法。
         - LR 分析器结构：
@@ -109,7 +111,7 @@ math: true
                 - 每一行对应一个状态，每一列对应一个符号。终结符的列是 ACTION 表，非终结符的列是 GOTO 表。
                 - $\mathrm{ACTION}(Q_i, x_j)$ 的取值：
                     - $S_{Q_k}$：移进操作，输入串指针向前移动一位，转换到状态 $Q_k$。
-                    - $r_{k}$：规约操作，选取第 $k$ 个产生式 $A \to \dots x_{j - 1} x_j$，弹出所有匹配的符号和状态，插入产生式左部和 $\mathrm{GOTO}(Q_i, A)$。
+                    - $r_{k}$：规约操作，选取第 $k$ 个产生式 $A \to \dots x_{j - 1} x_j$，弹出所有匹配的符号和状态，插入产生式左部和 $\mathrm{GOTO}(Q_l, A)$，其中 $Q_l$ 是弹出后的栈顶。
                     - 接受：分析成功。
                     - 错误：遇到无法识别的符号。
                 - $\mathrm{GOTO}(Q_i, A_j)$ 的取值：
@@ -132,3 +134,30 @@ math: true
                     - 分析栈中是活前缀，后缀不是句柄，可以继续读 $a$，表示可以移进。
                 - 待约项目：$A \to \alpha \bullet B \beta$，其中 $B \in V_N$。
                     - 需要先规约后面的输入到 $B$，才能获得可归前缀 $\alpha B \beta$。
+    - **构造 LR(0) 状态**
+        - **方法 1**
+            - 找出所有的项目后，给每个项目分配编号。
+            - 构造 NFA，NFA 识别所有的活前缀：
+                - 起始状态为 $S' \to \bullet S$，表示没有扫描和匹配任意的符号。
+                - 接受状态为所有的规约项目对应的状态。
+                - 如果存在 $A_i \to \alpha \bullet X \beta$ 和 $A_j \to \alpha X \bullet \beta$，则连边 $A_j \in \delta(A_i, X)$。
+                    - 这表示扫描符号 $X$ 可以转移状态。
+                - 如果存在 $A_i \to \alpha \bullet X \beta$ 和 $X \to \bullet \delta$，则连边 $X \in \delta(A_i, \varepsilon)$。
+                    - 这表示不消费符号而先进入规约 $X$ 的状态。
+            - 使用子集法确定化 NFA：
+                - 得到的 DFA 的每个节点则为 $LR(0)$ 项目的集合，称为项目集。
+                - DFA 的节点集合称为项目集规范族。
+        - **方法 2**
+            - 定义项目集闭包 $\operatorname{closure}(I)$：
+                - $I \subseteq \operatorname{closure}(I)$。
+                - 如果存在 $A_i \to \alpha \bullet X \beta \in \operatorname{closure}(I)$ 和 $X \to \bullet \delta$，则 $X \to \bullet \delta \in \operatorname{closure}(I)$。
+                    - 这与方法一 $X \in \delta(A_i, \varepsilon)$ 含义类似。
+                - 项目集闭包也是项目集，$I$ 中的状态可以不需要消费符号而转移到 $\operatorname{closure}(I)$，类似于单向的“等价”。
+            - 定义 $\operatorname{GO}(I, X)$ 为从 $I$ 中的项目消费 $X$ 可以到达的其他项目组成的项目集。
+                - $\operatorname{GO}(I, X) = \operatorname{closure}(I')$。
+                - 如果存在 $A_i \to \alpha \bullet X \beta \in I$ 和 $A_j \to \alpha X \bullet \beta$，则 $A_j \to \alpha X \bullet \beta \in I'$。
+                    - 类似方法 1 中的 $A_j \in \delta(A_i, X)$。
+            - 构造整个项目集规范族：
+                - 从 $I = \{S' \to \bullet S\}$ 开始，计算 $\operatorname{closure}(I)$。
+                - 对于所有的 $X$，计算 $\operatorname{GO}(I, X)$。
+                - 重复上一步，用上一步得出的 $I$ 继续计算。
