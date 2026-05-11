@@ -50,7 +50,7 @@ math: true
             - 即在 $I$ 中通过零或任意次 $\varepsilon$ 转移可以到达的所有状态。
         - $I_a$：已知 $I \subseteq Q$，则 $I_a = \operatorname{\varepsilon-closure}(\{ p | p \in f(q, a), q \in \operatorname{\varepsilon-closure}(I) \})$。
             - 即通过任意次 $\varepsilon$ 和恰好一次 $a$ 转移可以到达的所有状态。
-    - **子集法**
+    - **子集法** <span id="fanuhg"></span>
         - 从原起始状态 $q_0$ 开始，求 $q'_0 = \operatorname{\varepsilon-closure}(q_0) \in Q'$。
         - 对任意 $q' \in Q', c \in \Sigma$，$f'(q', c) = I_a(q')$。
             - 即对于当前子集状态 $q'$，对每个字母求 $I_c(q')$，把子集子集加入新状态集合。
