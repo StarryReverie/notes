@@ -167,8 +167,9 @@ math: true
             - 对于当前状态/项目集 $I_i$：
                 - 如果项目集为一个接受项目，则填写 $\operatorname{ACTION}(i, \#) = \text{accept}$。
                 - 如果项目集为一个规约项目，则填写整行 $\operatorname{ACTION}(i, *) = r_t$，其中 $t$ 为对应的候选式编号。
-                - 对于终结符 $a$ 的状态转移 $\operatorname{GO}(I_i, a) = I_j$，则填写 $\operatorname{ACTION}(i, a) = S_j$。
-                - 对于非终结符 $X$ 的状态转移 $\operatorname{GO}(I_i, X) = I_j$，则填写 $\operatorname{GOTO}(i, X) = j$。
+                - 复制 $\operatorname{GO}$ 到 $\operatorname{ACTION}$ 和 $\operatorname{GOTO}$。
+                    - 对于终结符 $a$ 的状态转移 $\operatorname{GO}(I_i, a) = I_j$，填写 $\operatorname{ACTION}(i, a) = S_j$。
+                    - 对于非终结符 $X$ 的状态转移 $\operatorname{GO}(I_i, X) = I_j$，填写 $\operatorname{GOTO}(i, X) = j$。
             - LR(0) 中，规约项目、接受项目是互斥性的，可能存在以下冲突：
                 - 移进-规约冲突
                 - 规约-规约冲突
@@ -179,3 +180,32 @@ math: true
             - 设规约项目为 $A \to \alpha \bullet \in I_i$，仅对所有的 $c \in \operatorname{FOLLOW}(A)$ 填写 $\operatorname{ACTION}(i, c) = r_t$。
             - 项目集中可以存在多个规约项目，只要各自对应的 $\operatorname{FOLLOW}(*)$ 不交。
         - 项目冲突类别与 LR(0) 相同，冲突条件为 $\operatorname{FOLLOW}(*)$ 相交。
+    - **LR(1)**
+        - **LR(1) 项目**
+            - LR(1) 项目由 LR(0) 项目和一个搜索符组成，记作 $[A \to \alpha, a]$。
+                - $a \in \{ \# \} \cup V_T$。
+                - 对于规约项目，只能在当前读入符号是 $a$ 时才可以规约。
+            - 有效项目：若 $[A \to \alpha \bullet \beta, a]$ 对活前缀 $\gamma$ 有效，当且仅当：
+                - 存在规范推导 $S \xRightarrow{*} \delta A \omega \xRightarrow{*} \delta \alpha \beta \omega$，其中 $\gamma = \delta \alpha$，
+                - $a \in \operatorname{FIRST}(\omega)$ 或 $\omega = \varepsilon$ 时 $a = \#$。
+            - LR(1) 项目包括了搜索符，在规约时更加精确，可以完全避免规约冲突。
+        - **构造 LR(1) 状态机**
+            - 定义项目集闭包 $\operatorname{closure}(I)$ 为：
+                - $I \subseteq \operatorname{closure}(I)$。
+                - 如果存在 $[A_i \to \alpha \bullet X \beta, a] \in \operatorname{closure}(I)$ 和 $[X \to \bullet \delta, b]$ 且 $b \in \operatorname{FIRST}(X \beta)$，则 $[X \to \bullet \delta, b] \in \operatorname{closure}(I)$。
+                    - $A_i \to \alpha \bullet X \beta$ 依赖 $X \to \bullet \delta$ 的规约，所以后者的搜索符需要在 $X \beta$ 的最前面。
+            - 定义 $\operatorname{GO}(I, X) = \operatorname{closure}(I')$
+                - 如果存在 $[A_i \to \alpha \bullet X \beta, a] \in I$ 和 $[A_j \to \alpha X \bullet \beta, a]$，则 $[A_j \to \alpha X \bullet \beta, a] \in I'$。
+                    - $\operatorname{GO}$ 不涉及规约，所以搜索符不变。
+            - 构造 LR(1) 状态机的方法与 LR(0) 一样，区别只有 $\operatorname{closure}(I)$ 和 $\operatorname{GO}(I, X)$。
+        - **构造 LR(1) 分析表**
+            - 考虑每个项目集 $I_i$ 中的每一个项目：
+                - 如果是接受项目，同 LR(0)。
+                - 如果是规约项目 $[A_j \to \alpha \bullet, a]$，填写 $\operatorname{ACTION}(I_i, a) = r_t$。
+                    - 仅根据搜索符 $a$ 精确填写第 $a$ 列。
+                - 同 LR(0) 复制 $\operatorname{GO}$ 到 $\operatorname{ACTION}$ 和 $\operatorname{GOTO}$。
+            - LR(1) 不存在冲突。
+    - **LALR(1)**
+        - LR(1) 中的两个项目集如果核心项目相同，则为同心项目集。
+        - LALR(1) 合并所有的同心项目集，搜索符取所有的并集。
+        - LALR(1) 仅可能存在规约-规约冲突，其他特性继承 LR(1)。
