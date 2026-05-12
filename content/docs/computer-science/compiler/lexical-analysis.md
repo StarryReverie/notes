@@ -38,7 +38,7 @@ math: true
         - DFA 与正规式等价。
     - **非确定性有限状态机**
         - 即 NFA，定义为 $M = (Q, \Sigma, f, q_0, Z)$。
-            - $f$：转移函数 $f: Q \times (\Sigma \cup \{ \varepsilon \} \to 2^Q$。
+            - $f$：转移函数 $f: Q \times (\Sigma \cup \{ \varepsilon \}) \to 2^Q$。
             - 其他：同 DFA。
         - NFA 读入一个字符，可能转移到多个状态，统一用一个集合表示。
         - NFA 可以不读入字符而转移 $\varepsilon$。

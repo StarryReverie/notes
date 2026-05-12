@@ -45,7 +45,7 @@ math: true
         - 常见原因：
             - 运算符优先级不明确。
             - 运算符结合性不明确。
-- **自上而下分析**
+- **自上而下分析** <span id="mvirhf"></span>
     - **文法变换**
         - **直接左递归消除**
             - 对于 $A \to A \alpha | \beta$，则变换为 $A \to \beta A'$，$A' \to \alpha A' | \varepsilon$。
@@ -92,7 +92,7 @@ math: true
             - 对于 $A \to \alpha_1 | \cdots | \alpha_n$：
                 - 若 $a \in \mathrm{FIRST}(\alpha_i)$，则 $M(A, a) = A \to \alpha_i$。
                 - 若 $\varepsilon \in \mathrm{FIRST}(\alpha_i)$ 且 $a \in \mathrm{FOLLOW}(A)$，则 $M(A, a) = A \to \alpha_i$。
-- **自下而上分析**
+- **自下而上分析** <span id="gahnqf"></span>
     - **基本概念**
         - 短语：若 $S \xRightarrow{*} \alpha A \delta$ 且 $A \xRightarrow{+} \beta$，则 $\beta$ 是句型 $\alpha \beta \delta$ 相对于 $A$ 的短语。
             - 从语法树上理解，即选取非终结符节点 $A$，则其子树所有叶子节点按顺序排列是短语。
