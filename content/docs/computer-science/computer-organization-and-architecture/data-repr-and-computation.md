@@ -7,14 +7,14 @@ math: true
 - **数据表示**
     - **定点数**
         - 分为原码、反码、补码、移码。
-        - 原码、反码、补码参考[《计算机系统》的数据表示](/docs/computer-science/computer-system/data-representation.md#ajafjv)。
+        - 原码、反码、补码参考[《计算机系统》的数据表示](/docs/computer-science/computer-system/data-representation#ajafjv)。
         - 移码为把所有原始值统一加上一个偏移量，存储的是偏移后的值。常用于浮点数的阶码表示。
         - 这里的定点数既包括整数，也包括小数。
             - 表示整数的定点数不写小数点。
             - 表示小数的定点数中，小数点固定在最左边的数字后面。
     - **浮点数**
         - 由尾数和阶码组成，尾数一般使用原码或补码，需要带有符号位，阶码一般使用补码或移码。
-        - IEEE 754 标准参考[《计算机系统》的数据表示](/docs/computer-science/computer-system/data-representation.md#nvijob)。
+        - IEEE 754 标准参考[《计算机系统》的数据表示](/docs/computer-science/computer-system/data-representation#nvijob)。
         - 本课程中的浮点数一般不使用 IEEE 754，而使用尾数为补码、阶码为补码的表示。
     - **自定义数据表示**
         - 带标志符数据：数据不仅有原来的值，还有额外标志位表示类型信息、功能信息等。
