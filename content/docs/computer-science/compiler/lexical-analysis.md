@@ -74,8 +74,8 @@ math: true
 - **正规式与自动机转换**
     - **NFA 转正规式**
         - 构造虚拟状态节点 $q_s, q_z$，连接 $q_s \to q_0, q_i \to q_z\ (q_i \in Z)$。
-        - 按照规则转换：![NFA to Regex](/images/by-name/lexical-analysis/nfa-to-regex.png)
+        - 按照规则转换：![NFA to Regex](/images/docs/computer-science/compiler/lexical-analysis/nfa-to-regex.png)
         - 只剩下 $q_s, q_z$ 时，边上表达式即结果。
     - **正规式转 NFA**
         - 构造虚拟状态节点 $q_s, q_z$，$q_s \to q_z$ 上为源正规式。
-        - 按照规则转换：![Regex to NFA](/images/by-name/lexical-analysis/regex-to-nfa.png)
+        - 按照规则转换：![Regex to NFA](/images/docs/computer-science/compiler/lexical-analysis/regex-to-nfa.png)

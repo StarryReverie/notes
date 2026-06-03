@@ -34,7 +34,7 @@ math: false
             - 访问超单元时给出二维索引：
                 - 先通过 Row access strobe 选择行，把此行复制到行缓冲。
                 - 在通过 Column access strobe 选择列，把缓冲区中的列复制到数据总线。
-            - 多组二维单元组成内存模块：![Memory Module](/images/by-name/storage-hierarchy/memory-module.png)
+            - 多组二维单元组成内存模块：![Memory Module](/images/docs/computer-science/computer-system/storage-hierarchy/memory-module.png)
 - **磁盘**
     - **结构**
         - 磁盘有多个盘片，每个盘片有两个表面。
@@ -88,4 +88,4 @@ math: false
 - **内存山丘**
     - 内存山丘是三维图，以循环访问步长和总访问大小为 x 轴和 y 轴，以吞吐量为 z 轴。
     - 循环访问步长控制空间局部性，总访问大小控制时间局部性。
-    - ![Memory Mountain](/images/by-name/storage-hierarchy/memory-mountain.png)
+    - ![Memory Mountain](/images/docs/computer-science/computer-system/storage-hierarchy/memory-mountain.png)

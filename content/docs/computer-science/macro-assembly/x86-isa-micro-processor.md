@@ -79,7 +79,7 @@ math: false
             - 段描述符共 64 位，包括基址、限长、其他信息位。
             - 基址 32 位，限长 16 位。
             - 按照从上往下地址增加的顺序表示段描述符结构（内存上的真实结构，无需小端序转换）：
-            - ![Segment Descriptor](/images/by-name/x86-isa-micro-processor/segment-descriptor.png)
+            - ![Segment Descriptor](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/segment-descriptor.png)
             - 第 5 字节第 7 位 `P`：即 Present，表示此段是否在内存中，与虚拟内存机制相关。
             - 第 5 字节第 6\~5 位 `DPL`：描述特权级，即 Descriptor Privilege Level，决定访问此段的权限。
             - 第 5 字节第 4 位 `S`：即 System，粗略划分描述符的类型。
@@ -104,16 +104,16 @@ math: false
             - 即 Global Descriptor Table（GDT），主要存放段描述符，也可以存放门描述符。
             - GDT 全局只有一个，表基址和限长存放在 `GDTR` 中。
             - 从 GDT 访问段内地址：
-            - ![Segment Access Using GDT](/images/by-name/x86-isa-micro-processor/gdt-segment.png)
+            - ![Segment Access Using GDT](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/gdt-segment.png)
         - **局部描述符表**
             - 即 Local Descriptor Table（LDT）。LDT 每个任务一个。
             - 表基址和限长编码在一个段描述符中，`LDTR` 存放引用此段描述符的段选择符。
             - 查询 LDT 信息：
-            - ![Lookup LDT](/images/by-name/x86-isa-micro-processor/ldt-lookup.png)
+            - ![Lookup LDT](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/ldt-lookup.png)
     - **保护模式页式管理**
         - **页表描述符**
             - 页表描述符结构（内存上的真实结构，无需小端序转换）：
-            - ![Page Table Entry](/images/by-name/x86-isa-micro-processor/page-table-entry.png)
+            - ![Page Table Entry](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/page-table-entry.png)
             - 第 0 字节第 6 位 `D`：即 Dirty，是否向其中写入过内容。
             - 第 0 字节第 5 位 `A`：即 Accessed，是否访问过。
             - 第 0 字节第 2 位 `U/S`：即 User/Supervisor，为 `0` 时只有 OS 可以访问。
@@ -123,7 +123,7 @@ math: false
         - **页表结构**
             - 32 位地址分为 3 部分，第 31\~22 位为页目录索引，第 21\~12 位为页表索引，剩下为页内偏移。
             - 地址转换过程：
-            - ![Paging Address Translation](/images/by-name/x86-isa-micro-processor/paging-address-translation.png)
+            - ![Paging Address Translation](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/paging-address-translation.png)
             - 多级页表中，读写等保护取各级页表的描述符中更严格的一个。
     - **保护模式段页式管理**
         - 先段式转换，在页式转换。
@@ -136,18 +136,18 @@ math: false
     - **任务状态段**
         - 即 Task State Segment，一种 x86 ISA 规定的特殊结构，保存每个任务的上下文。
         - TSS 以段的形式存在，前 104 B 为固定格式，剩下部分存放任务的额外信息，包括 IO 许可位图。
-        - ![TSS](/images/by-name/x86-isa-micro-processor/tss.png)
+        - ![TSS](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/tss.png)
         - IO 许可位图偏移量从 TSS 起始开始计算。
         - TSS 在 GDT 中存有对应的 TSS 描述符，属于系统描述符（`S == 0`）。
         - TR 存有当前任务的选择符，可以引用到 GDT 中的描述符。
     - **直接任务切换**
         - 若目标任务的 TSS 对应的选择符为 `selector`，则通过 `CALL selector:offset` 实现切换。
         - `offset` 无实际作用，真正的目标代码位置由目标任务 TSS 保存的 IP 确定。
-        - ![Direct Task Switch](/images/by-name/x86-isa-micro-processor/direct-task-switch.png)
+        - ![Direct Task Switch](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/direct-task-switch.png)
     - **门**
         - **门描述符**
             - 属于系统描述符（`S == 0`），具体有 4 种类型，通过系统描述符的 `Type` 区分。
-            - ![Gate Descriptor](/images/by-name/x86-isa-micro-processor/gate-descriptor.png)
+            - ![Gate Descriptor](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/gate-descriptor.png)
             - 门包括调用门、任务门、中断门、陷阱门，都是实现了某种调用或跳转。
             - 门描述符的段选择符和偏移用于指定跳转的目标。
         - **调用门**
@@ -155,11 +155,11 @@ math: false
             - 通过门调用时，`offset` 无实际作用，真正的跳转目标在门描述符种。
             - 通过调用门可以暂时提升特权级执行目标代码，返回后特权级还是低的。
             - 调用的参数需要复制到目标堆栈，参数个数记录在门描述符中，参数占用大小为个数乘字长。
-            - ![Call Gate](/images/by-name/x86-isa-micro-processor/call-gate.png)
+            - ![Call Gate](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/call-gate.png)
         - **任务门**
             - 门描述符中，段选择符部分引用某个 TSS 段描述符，偏移不使用（与直接任务切换相同）。
             - 通过 `CALL` 或 `JMP`，实现间接任务切换（与调用门类似）。
-            - ![Task Gate](/images/by-name/x86-isa-micro-processor/task-gate.png)
+            - ![Task Gate](/images/docs/computer-science/macro-assembly/x86-isa-micro-processor/task-gate.png)
         - **中断门**
             - 门描述符指向中断处理程序，位于 IDT。
         - **陷阱门**

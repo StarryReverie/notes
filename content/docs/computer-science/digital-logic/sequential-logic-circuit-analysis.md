@@ -12,7 +12,7 @@ math: true
     - 每一行对应每一个状态，列分为下一状态部分和输出部分，其中每一列对应一个输入，若为 Moore 型，输出部分只有一列。
     - 将状态和输入组合按照格雷码排列，则可以直接得到卡诺图。
     - 其中的无效状态用叉表示。
-    - ![state-table](/images/by-name/sequential-logic-circuit-analysis/state-table.png)
+    - ![state-table](/images/docs/computer-science/digital-logic/sequential-logic-circuit-analysis/state-table.png)
 - **状态图**
     - **定义**
         - 状态图中每个结点是状态，有向边代表对应输入的状态转移。
@@ -39,7 +39,7 @@ math: true
         - 状态机图是状态图的改进。
         - 状态机图用布尔函数表示转移或输出条件，函数取值为 $1$ 对应的输入可以转移或输出。
         - 状态机图中变量有默认值 $0$，写出变量时此变量输出 $1$。
-        - ![state-machine-graph](/images/by-name/sequential-logic-circuit-analysis/state-machine-graph.png)
+        - ![state-machine-graph](/images/docs/computer-science/digital-logic/sequential-logic-circuit-analysis/state-machine-graph.png)
     - **转移行为**
         - 条件转移：布尔函数表示转移条件。
         - 无条件转移：转移条件为 $1$。
@@ -49,5 +49,5 @@ math: true
         - 转移条件依赖（TCD）输出：在状态转移时输出。
         - 转移和输出条件依赖（TCOD）输出：在状态转移时输出，变量输出与输入有关。
     - **状态机表**
-        - ![state-machine-table](/images/by-name/sequential-logic-circuit-analysis/state-machine-table.png)
+        - ![state-machine-table](/images/docs/computer-science/digital-logic/sequential-logic-circuit-analysis/state-machine-table.png)
         - 对于依赖转移条件的输出，在最后加上 `*`。

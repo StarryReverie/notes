@@ -10,19 +10,19 @@ math: true
     - **常用模块**
         - **$\text{SR}$ 锁存器**
             - $\text{SR}$ 锁存器是使用或非门的锁存器。
-            - ![sr-latch](/images/by-name/sequential-module/sr-latch.jpg)
+            - ![sr-latch](/images/docs/computer-science/digital-logic/sequential-module/sr-latch.jpg)
             - $S = 0, R = 0$ 是锁存器保持状态，$R = 1$ 时改状态为 $0$，$S = 1$ 时改状态为 $1$。
             - $R = 0, S = 0$ 是非法状态。
         - **$\overline{\text{S}}\ \overline{\text{R}}$ 锁存器**
             - $\overline{\text{S}}\ \overline{\text{R}}$ 锁存器是使用与非门的锁存器。
-            - ![s-inv-r-inv-latch](/images/by-name/sequential-module/s-inv-r-inv-latch.jpg)
+            - ![s-inv-r-inv-latch](/images/docs/computer-science/digital-logic/sequential-module/s-inv-r-inv-latch.jpg)
             - $S = 1, R = 1$ 是锁存器保持状态，$R = 0$ 时改状态为 $0$，$S = 1$ 时改状态为 $1$。
             - $R = 1, S = 1$ 是非法状态。
         - **带控制输入 $\text{SR}$ 锁存器**
-            - ![input-controlled-sr-latch](/images/by-name/sequential-module/input-controlled-sr-latch.jpg)
+            - ![input-controlled-sr-latch](/images/docs/computer-science/digital-logic/sequential-module/input-controlled-sr-latch.jpg)
         - **$\text{D}$ 锁存器**
             - 将 $\text{SR}$ 锁存器的 $S,R$ 输入统一用 $D$ 控制，得到 $\text{D}$ 锁存器。
-            - ![d-latch](/images/by-name/sequential-module/d-latch.jpg)
+            - ![d-latch](/images/docs/computer-science/digital-logic/sequential-module/d-latch.jpg)
             - $S = D, R = \overline{D}$。
 - **触发器**
     - **性质**
@@ -34,7 +34,7 @@ math: true
             - 主从 $\text{SR}$ 触发器由两个 $\text{SR}$ 锁存器组成，连接相反的时钟信号。
                 - 输入侧的是主锁存器，输出侧的是从锁存器。
                 - 主从 $\text{SR}$ 触发器的状态是从锁存器的状态。
-            - ![master-slave-sr-flip-flop](/images/by-name/sequential-module/master-slave-sr-flip-flop.jpg)
+            - ![master-slave-sr-flip-flop](/images/docs/computer-science/digital-logic/sequential-module/master-slave-sr-flip-flop.jpg)
             - 上图为正脉冲主从 $\text{SR}$ 触发器
                 - $C = 1$ 时接受输入，处于有效状态，但不改变输出。
                 - $C = 0$ 时处于无效状态，由 $C = 1$ 变换到 $C = 0$ 时更新输出。
@@ -42,13 +42,13 @@ math: true
         - **$\text{D}$ 触发器**
             - $\text{D}$ 触发器是边沿触发器。
             - $\text{D}$ 触发器由输入侧 $\text{D}$ 锁存器和输出侧 $\text{SR}$ 锁存器组成，连接相反的时钟信号。
-            - ![d-flip-flop](/images/by-name/sequential-module/d-flip-flop.png)
+            - ![d-flip-flop](/images/docs/computer-science/digital-logic/sequential-module/d-flip-flop.png)
             - 上图为正边沿 $\text{D}$ 触发器，负边沿版本只要去掉时钟信号取反。
             - 正边沿 $\text{D}$ 触发器是标准触发器。
     - **直接输入**
         - 触发器有时需要进行初始化，此过程不依赖于时钟，需要使用直接输入。
-        - ![direct-input](/images/by-name/sequential-module/direct-input.png)
+        - ![direct-input](/images/docs/computer-science/digital-logic/sequential-module/direct-input.png)
         - 在时钟信号和正常端口的字母前后标数字，表示信号与时钟的依赖关系。
         - 直接输入为异步信号，不标数字。
     - **标准符号**
-        - ![standard-symbols](/images/by-name/sequential-module/standard-symbols.png)
+        - ![standard-symbols](/images/docs/computer-science/digital-logic/sequential-module/standard-symbols.png)

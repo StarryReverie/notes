@@ -6,13 +6,13 @@ math: true
 
 - **UDP**
     - **结构**
-        - ![UDP Packet Format](/images/by-name/transport-layer/udp-packet-format.png)
+        - ![UDP Packet Format](/images/docs/computer-science/network/transport-layer/udp-packet-format.png)
         - 按顺序为源端口、目的端口、UDP 总长、校验和。
         - 在排除了分组的情况下，UDP 长度为 IP 长度减 IP 头长度。
         - 校验和的伪首部包括了 IP 头的部分。
 - **TCP**
     - **结构**
-        - ![TCP Packet Format](/images/by-name/transport-layer/tcp-packet-format.png)
+        - ![TCP Packet Format](/images/docs/computer-science/network/transport-layer/tcp-packet-format.png)
         - 序列号：4 字节，以字节为单位，表示数据载荷中第一个字节的偏移量。
         - 确认：4 字节，同样以字节为单位，为累积语义，表示期待接受的下一段的数据的首字节偏移量。
         - 窗口大小：用于表示自己接下来可以接收的数据大小。
@@ -69,7 +69,7 @@ math: true
                 - 每次接收到一个 ACK 后就给 $cwnd$ 增加 $\dfrac{1}{cwnd}$。
                     - 效果为为每轮结束后，$cwnd$ 加 $1$，线性增长。
                 - 如果遇到超时，则认为发生拥塞，$ssthresh$ 减半，重回慢启动过程，重传丢失的部分。
-            - ![Tahoe](/images/by-name/transport-layer/tahoe.png)
+            - ![Tahoe](/images/docs/computer-science/network/transport-layer/tahoe.png)
         - **Tahoe + Fast Retransmit**
             - 拥塞避免阶段，如果遇到三个重复的 ACK，则跳过超时等待，重新进入慢启动过程。
         - **Reno**

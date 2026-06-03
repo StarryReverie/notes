@@ -28,8 +28,8 @@ math: false
         - `pid_t waitpid(pid_t pid, int *status, int options)`：等待特定 PID 的子进程终止。
         - `int execve(char *filename, char *argv[], char *envp[])`：运行位于 `filename` 的程序，替换当前进程上下文为目标进程。调用一次，正常运行则不返回。
     - **进程图**
-        - ![Fork](/images/by-name/exceptional-control-flow/fork.png)
-        - ![Wait](/images/by-name/exceptional-control-flow/wait.png)
+        - ![Fork](/images/docs/computer-science/computer-system/exceptional-control-flow/fork.png)
+        - ![Wait](/images/docs/computer-science/computer-system/exceptional-control-flow/wait.png)
 - **信号** <span id="qnfiug"></span>
     - **常见信号**
         - `SIGINT`：中断程序运行，在 shell 中由 `^C` 触发，默认终止程序运行。

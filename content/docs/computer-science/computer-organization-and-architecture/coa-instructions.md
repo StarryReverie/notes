@@ -14,7 +14,7 @@ math: true
         - 独立编址：每个部件一个地址空间，访问需要使用不同的指令。
         - 隐含编址：对使用者透明，无需显式使用地址，如 cache。
 - **寻址**
-    - 简单的寻址：![Addressing](/images/by-name/coa-instructions/addressing.png)
+    - 简单的寻址：![Addressing](/images/docs/computer-science/computer-organization-and-architecture/coa-instructions/addressing.png)
     - 相对寻址中，用于计算的 PC 的值是下一个指令的地址，因为当前指令已经读取。
         - 转移指令一般使用相对寻址。
     - 多级间接寻址：根据多级间接标志确定是否找到有效地址，`0` 则找到有效地址，`1` 则按间接方式访问当前存储的地址。
@@ -29,7 +29,7 @@ math: true
         - **定长编码**
             - 所有指令的操作码长度相同。
         - **扩展操作码**
-            - ![Extended Opcode](/images/by-name/coa-instructions/extended-opcode.png)
+            - ![Extended Opcode](/images/docs/computer-science/computer-organization-and-architecture/coa-instructions/extended-opcode.png)
         - **Huffman 编码**
             - 使用 Huffman 树构造。
             - 操作码长度不规整，移码困难。

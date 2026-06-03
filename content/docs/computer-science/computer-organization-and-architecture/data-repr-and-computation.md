@@ -29,8 +29,8 @@ math: true
             - 理论上可以完全展开到 $C_0$，延迟为 $2ty$，但是逻辑门数量爆炸。
             - 一般仅部分展开。
         - 多级先行进位加法：
-            - ![Two Level CLA Equation](/images/by-name/data-repr-and-computation/two-level-cla-equation.png)
-            - ![Two Level CLA Circuit](/images/by-name/data-repr-and-computation/two-level-cla-circuit.png)
+            - ![Two Level CLA Equation](/images/docs/computer-science/computer-organization-and-architecture/data-repr-and-computation/two-level-cla-equation.png)
+            - ![Two Level CLA Circuit](/images/docs/computer-science/computer-organization-and-architecture/data-repr-and-computation/two-level-cla-circuit.png)
     - **溢出判断**
         - 单符号位：
             - 运算前两数均为正数，运算后结果为负数，则发生正溢。
@@ -53,7 +53,7 @@ math: true
                 - $10$：$A$ 加上 $X$ 的相反数，即按位取反后加 $1$。
             - $A$、$C$ 和额外一位整体右移一位。
             - 循环进行操作，相加 $n + 1$ 次，移位 $n$ 次。
-        - ![Booth Multiplication](/images/by-name/data-repr-and-computation/booth-multiplication.png)
+        - ![Booth Multiplication](/images/docs/computer-science/computer-organization-and-architecture/data-repr-and-computation/booth-multiplication.png)
     - **补码加减交替除法**
         - 给定两个小数点后 $n$ 位的定点数 $X, Y$，计算得到两个小数点后 $n$ 的定点数商 $Q$ 和余数 $r$。
         - 使用的寄存器：
@@ -68,7 +68,7 @@ math: true
                 - 若新部分余数与除数符号不同，商的最低位写 $0$。
             - $A$、$C$ 整体左移一位。
             - 循环执行，重复 $n + 1$ 次加法，重复 $n$ 次移位。按照上面的规则上商 $n$ 次，最后一次上商固定为 $1$。
-        - ![Division](/images/by-name/data-repr-and-computation/division.png)
+        - ![Division](/images/docs/computer-science/computer-organization-and-architecture/data-repr-and-computation/division.png)
     - **浮点数加减**
         - 对齐阶码，小阶扩大为大阶。
         - 对阶后尾数加减。
@@ -90,4 +90,4 @@ math: true
 - **ALU 设计**
     - 主要考虑加法器设计。
     - 三级分组先行进位加法器：
-    - ![Three Level CLA Circuit](/images/by-name/data-repr-and-computation/three-level-cla-circuit.png)
+    - ![Three Level CLA Circuit](/images/docs/computer-science/computer-organization-and-architecture/data-repr-and-computation/three-level-cla-circuit.png)

@@ -9,7 +9,7 @@ math: false
     - 标志位包括 `ZF`、`SF`、`OF`。
     - 多字节数据采用小端序存储。
     - 可用指令
-      ![Y86-64 Instructions](/images/by-name/cpu-implementation/y86-64-instructions.png)
+      ![Y86-64 Instructions](/images/docs/computer-science/computer-system/cpu-implementation/y86-64-instructions.png)
     - `cmovXX` 和 `jXX` 中的 `XX` 都是指各种偏序关系。
 - **HCL**
     - **数据类型**
@@ -82,7 +82,7 @@ math: false
 - **流水线处理器**
     - **基本思想**
         - 在基本的 5 个阶段前插入寄存器，每个周期执行一个阶段。
-        - ![Pipeline Architecture](/images/by-name/cpu-implementation/pipeline-architecture.png)
+        - ![Pipeline Architecture](/images/docs/computer-science/computer-system/cpu-implementation/pipeline-architecture.png)
         - 分支预测策略：
             - 不跳转的指令：PC 的下一个值。
             - `call`、无条件跳转：目标地址。

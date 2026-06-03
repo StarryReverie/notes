@@ -49,7 +49,7 @@ math: true
             - 就绪态：不在 CPU 上运行，但是没有等待的资源，可以随时被 CPU 继续执行。
             - 终止态：进程已经正常或异常结束，但是相关数据没有被清理，仍然驻留在系统中。
         - **转移**
-            - ![process-state-transition](/images/by-name/process/process-state-transition.svg)
+            - ![process-state-transition](/images/docs/computer-science/operating-system/process/process-state-transition.svg)
             - 运行态 to 阻塞态：启动 IO 设备，导致进程需要等待。
             - 阻塞态 to 就绪态：IO 完成，设备发生中断，中断处理程序把阻塞进程改为就绪。
             - 运行态 to 就绪态：调度被抢占或进程主动让出。

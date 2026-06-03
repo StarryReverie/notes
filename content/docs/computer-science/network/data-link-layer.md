@@ -54,7 +54,7 @@ math: true
                 - 等待发送的帧，接收到后，根据序列号确认不是重复的帧、没有检测到错误，然后发送一个 ACK。
                 - 如果接收到重复的帧，则重新传输前一个 ACK。
         - **计算**
-            - ![Stop and Wait](/images/by-name/data-link-layer/stop-and-wait.png)。
+            - ![Stop and Wait](/images/docs/computer-science/network/data-link-layer/stop-and-wait.png)。
             - 如果忽略处理时间、ACK 发送时间，利用率简化为 $\dfrac{t_{\text{trans}}}{t_{\text{trans}} + 2 t_{\text{prop}}} = \dfrac{t_{\text{trans}}}{t_{\text{trans}} + t_{\text{RTT}}} = \dfrac{1}{1 + 2\alpha}, \alpha = \dfrac{t_{\text{prop}}}{t_{\text{trans}}}$。
     - **GBN**
         - **原理**
