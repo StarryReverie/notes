@@ -68,10 +68,10 @@ math: true
             - 拥塞避免：
                 - 每次接收到一个 ACK 后就给 $cwnd$ 增加 $\dfrac{1}{cwnd}$。
                     - 效果为为每轮结束后，$cwnd$ 加 $1$，线性增长。
-                - 如果遇到超时，则认为发生拥塞，$ssthresh$ 减半，重回慢启动过程，重传丢失的部分。
+                - 如果遇到超时，则认为发生拥塞，$ssthresh$ 缩减为 $\max\{ 2 MSS, cwnd / 2\}$，重回慢启动过程，重传丢失的部分。
             - ![Tahoe](/images/docs/computer-science/network/transport-layer/tahoe.png)
         - **Tahoe + Fast Retransmit**
             - 拥塞避免阶段，如果遇到三个重复的 ACK，则跳过超时等待，重新进入慢启动过程。
         - **Reno**
-            - 拥塞避免阶段，如果遇到三个重复的 ACK，则跳过超时等待，$ssthresh$ 减半，不进入慢启动过程，而是 $cwnd$ 重置为新的 $ssthresh$。
+            - 拥塞避免阶段，如果遇到三个重复的 ACK，则跳过超时等待，$ssthresh$ 缩减，不进入慢启动过程，而是 $cwnd$ 重置为新的 $ssthresh$。
             - 如果遇到超时，仍然重回慢启动过程。
