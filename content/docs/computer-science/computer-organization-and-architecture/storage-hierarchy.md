@@ -50,7 +50,7 @@ math: true
         - **比较对法**
             - 对于任意两个块 $i, j$（无顺序），记录一个标志触发器 $T_{ij}$，$1$ 时表示 $i$ 比 $j$ 更靠最近被使用过。
             - 推导每个块最久没有被访问过的逻辑表达式，在这个情况下需要淘汰这个块。
-            - ![LRU Paired Comparison](/images/docs/computer-science/computer-organization-and-architecture/storage-hierarchy/lru-paired-comparison.png)。
+            - ![LRU Paired Comparison](/images/docs/computer-science/computer-organization-and-architecture/storage-hierarchy/lru-paired-comparison.png)
             - 有 $n$ 个块时，需要 $\dfrac{n (n - 1)}{2}$ 个触发器，$n$ 个与门作为是否最久未访问的输出，与门需要 $n - 1$ 个门输入端。
 - **虚拟存储**
     - 参考[《操作系统》的虚拟内存](/docs/computer-science/operating-system/memory-management#kfjqlj)。

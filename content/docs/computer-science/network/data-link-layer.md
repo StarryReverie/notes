@@ -102,7 +102,7 @@ math: true
                 - 1-persistent：持续监听，空闲立即发送。冲突概率高。
                 - non-persistent：忙时随机等待后再监听。冲突少但延迟大。
                 - p-persistent：持续监听，空闲时以概率 $p$ 发送，以概率 $1-p$ 等待一个 $t_{prop}$ 后再监听。
-        - **CSMA/CD**
+        - **CSMA/CD** <span id="ngqhgn"></span>
             - 即冲突检测。
             - 采用 1-persistent 策略：持续监听，空闲立即发送。
             - 边发边听：检测到冲突立刻停止并发 jam 信号。
