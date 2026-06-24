@@ -20,38 +20,38 @@ math: true
             - 总线带宽 $=$ 总线宽度 $\times$ 总线频率。
     - **控制方式**
         - **集中仲裁方式**
-                - **链式查询**
-                    - ![Chain Query](/images/docs/computer-science/computer-organization-and-architecture/io/chain-query.png)
-                    - 步骤：
-                        - 设备通过 BR 向控制器请求使用总线。
-                        - 控制器通过 BG 发出授权，BG 按照链的方式串联各个设备。
-                        - 每个设备如果受到授权且需要使用，则截获授权，通过 BS 通知控制器总线忙。
-                        - 每个设备如果不需要使用，则把授权传递给下一个设备。
-                    - 优点：控制线少、容易扩充。
-                    - 缺点：故障敏感、高优先级部件饿死低优先级部件。
-                - **计数器查询**
-                    - ![Timer Query](/images/docs/computer-science/computer-organization-and-architecture/io/timer-query.png)
-                    - 与链式查询类似，区别在于控制器自行轮询各个设备，通过 $\lceil \log_2 N \rceil$ 个线控制选择哪个设备。
-                    - 优点：优先级方式灵活，可以顺序或循环使用各个部件。
-                    - 缺点：控制线较多，需要 $2 + \lceil \log_2 N \rceil$。
-                - **独立请求**
-                    - ![Separate Query](/images/docs/computer-science/computer-organization-and-architecture/io/separate-query.png)
-                    - 每个部件独立使用一个 BR 请求使用，请求在控制器排队。
-                    - 控制器按照优先级选择部件，通过单独的 BG 批准此部件。
-                    - 优点：响应速度快、控制最灵活。
-                    - 缺点：控制线多，需要 $2N + 1$，控制电路复杂。
-            - **分布式仲裁方式**
-                - **自举分布式**
-                    - 每个设备需要使用总线时发出请求。
-                    - 总线仲裁时，每个设备检测是否有比自己优先级更高的设备请求：
-                        - 没有：发出总线忙，占用总线。
-                        - 有：暂停使用总线。
-                - **冲突避免分布式**
-                    - 类似 [CSMA/CD](/docs/computer-science/network/data-link-layer#ngqhgn)。
-                - **并行竞争分布式**
-                    - 总线上的每个设备都有一个唯一的仲裁号。
-                    - 需要使用总线的设备把自己的仲裁号发送到仲裁线上。
-                    - 每个设备根据并行竞争仲裁算法，决定在一定时间段后占用总线还是撤销仲裁号。
+            - **链式查询**
+                - ![Chain Query](/images/docs/computer-science/computer-organization-and-architecture/io/chain-query.png)
+                - 步骤：
+                    - 设备通过 BR 向控制器请求使用总线。
+                    - 控制器通过 BG 发出授权，BG 按照链的方式串联各个设备。
+                    - 每个设备如果受到授权且需要使用，则截获授权，通过 BS 通知控制器总线忙。
+                    - 每个设备如果不需要使用，则把授权传递给下一个设备。
+                - 优点：控制线少、容易扩充。
+                - 缺点：故障敏感、高优先级部件饿死低优先级部件。
+            - **计数器查询**
+                - ![Timer Query](/images/docs/computer-science/computer-organization-and-architecture/io/timer-query.png)
+                - 与链式查询类似，区别在于控制器自行轮询各个设备，通过 $\lceil \log_2 N \rceil$ 个线控制选择哪个设备。
+                - 优点：优先级方式灵活，可以顺序或循环使用各个部件。
+                - 缺点：控制线较多，需要 $2 + \lceil \log_2 N \rceil$。
+            - **独立请求**
+                - ![Separate Query](/images/docs/computer-science/computer-organization-and-architecture/io/separate-query.png)
+                - 每个部件独立使用一个 BR 请求使用，请求在控制器排队。
+                - 控制器按照优先级选择部件，通过单独的 BG 批准此部件。
+                - 优点：响应速度快、控制最灵活。
+                - 缺点：控制线多，需要 $2N + 1$，控制电路复杂。
+        - **分布式仲裁方式**
+            - **自举分布式**
+                - 每个设备需要使用总线时发出请求。
+                - 总线仲裁时，每个设备检测是否有比自己优先级更高的设备请求：
+                    - 没有：发出总线忙，占用总线。
+                    - 有：暂停使用总线。
+            - **冲突避免分布式**
+                - 类似 [CSMA/CD](/docs/computer-science/network/data-link-layer#ngqhgn)。
+            - **并行竞争分布式**
+                - 总线上的每个设备都有一个唯一的仲裁号。
+                - 需要使用总线的设备把自己的仲裁号发送到仲裁线上。
+                - 每个设备根据并行竞争仲裁算法，决定在一定时间段后占用总线还是撤销仲裁号。
 - **中断**
     - **条件**
         - CPU 接受到中断请求信号。

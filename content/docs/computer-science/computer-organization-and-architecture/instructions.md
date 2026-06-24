@@ -32,7 +32,7 @@ math: true
             - ![Extended Opcode](/images/docs/computer-science/computer-organization-and-architecture/instructions/extended-opcode.png)
         - **Huffman 编码**
             - 使用 Huffman 树构造。
-            - 操作码长度不规整，移码困难。
+            - 操作码长度不规整，译码困难。
     - **对地址码的优化**
         - 区分寻址方式，不同寻址方式需要的地址长度不同，如寄存器比完整地址更短、段内跳转只需要段内地址。
         - 多操作数指令用短操作码。
