@@ -10,12 +10,15 @@ menu:
   - name: 文档
     weight: 1
     pageRef: /docs
-  - name: 搜索
+  - name: 科研
     weight: 2
+    pageRef: /researching
+  - name: 搜索
+    weight: 3
     params:
       type: search
   - name: GitHub
-    weight: 3
+    weight: 4
     url: "https://github.com/StarryReverie/notes"
     params:
       icon: github
