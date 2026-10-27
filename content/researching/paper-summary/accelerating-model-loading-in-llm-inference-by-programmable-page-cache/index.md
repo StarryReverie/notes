@@ -1,0 +1,95 @@
+---
+title: Accelerating Model Loading in LLM Inference by Programmable Page Cache
+math: true
+---
+
+- **1 Introduction**
+    - 问题
+        - 模型很大，启动延迟高。
+        - 单纯使用本地文件系统不能利用好存储和互联网络硬件。
+        - 使用定制硬件来存储和加载模型，导致兼容性问题。
+    - 成果
+        - Programmable page Cache (PPC)
+            - 无需定制内核和特殊硬件。
+            - 灵活性高，可自定义策略。
+            - 轻量级且高性能。
+        - Routing File System (RFS)：PPC 框架中的内核文件系统部分。
+        - Cache Policy Runtime (CPRT)：PPC 框架中的用户态扩展机制。
+        - Model-Accelerated IO (MAIO)：基于 PPC 实现的一个策略，适用于模型加载。
+- **2 Background and Motivation**
+    - **2.1 Model Loading and Goal**
+        - LLM 推理框架应该作为黑箱处理。
+        - 优化不能修改内核。
+        - 优化不需求特殊硬件。
+    - **2.2 Cache Policy**
+        - 内核默认策略的缺陷：
+            - 内核的默认预取机制不能完全利用 SSD。
+            - 数据加载不够精确，不知道需求数据的 XPU。
+            - 模型加载的 IO 过程有时间局部性，但是现有缓存驱逐策略没有利用这个性质。
+    - **2.3 Motivation**
+        - 实现目标：
+            - 非侵入性
+            - 灵活性
+            - 轻量级
+        - 实现思路：
+            - RFS 作为内核态中的文件系统，拦截模型加载过程中的读取请求，传递给 CPRT 做决策。
+            - CPRT 可定制策略，按照策略决定缓存加载和驱逐行为。
+            - CPRT 决策后再使用底层文件系统完成工作。
+    - **3 Programmable Page Cache**
+        - **3.0**
+            - API 包括：
+                - `mount -ppc`：在 `ppc_path` 提供服务，包装 `base_path`。
+                - `reg_policy()`：配置 `ppc_path`，使用在 `policy_path` 的动态库策略和配置 `config`。
+                - `rm_policy()`：删除 `ppc_path` 的策略。
+        - **3.1 Routing File System**
+            - 与底层文件系统保持相同结构。
+            - 目前只支持只读访问。
+            - 拦截 FS API 访问，通过 Userspace Procedure Call (Call) 调用 CPRT。
+            - `mount`/`umount`：
+                - 创建超级块并与底层超级块关联。
+                - 初始化 UPC 相关设备。
+            - `open`/`close`：
+                - 检查 `dentry` 缓存，获取底层 FS 对应的路径。
+                - 在底层 FS 中打开文件并在 RFS 中记录和管理。
+            - `read`：
+                - 查询底层 inode。
+                - 检查 VFS 缓存，如果未命中，则通过 UPC 通知 CPRT 进行获取。
+                - 读取。
+            - `mmap`：
+                - 创建 VMA 并设置为缺页。
+                - 访问某地址时，如果缺页，则加载这一页。
+                - 缺页情况下，类似 `read` 过程。
+                - 创建页面到 VFS 缓存的页表映射。
+            - UPC 是非阻塞的，且使用每个核心的队列。
+        - **3.2 Cache Policy Runtime**
+            - 执行器：
+                - 使用线程池处理 UPC 调用。
+                - 策略实现相关回调函数定制行为。
+                - `ppc_init()` 在注册策略时被调用。未实现时为无操作。
+                - `ppc_exit()` 在删除时被调用。未实现时为无操作。
+                - `ppc_prefetch()` 实现预取逻辑，基于读取请求的相关信息，可以统计以及返回实际可以读取的 IO 操作列表。未实现时回退类似内核的默认策略。
+                - `ppc_evict()` 在内存占用过高时被调用，返回可以驱逐的项的列表。未实现时回退到内核默认策略。
+            - 缓存管理器：
+                - 缓存管理器完成实际的预取和驱逐操作。
+                - 接受 `ppc_prefetch()` 和 `ppc_evict()` 的结果，但不一定完全使用。
+                - 根据系统条件决定是否执行操作。
+            - 驱逐使用 `fadvise` 来释放页。
+            - 页加载器使用线程池，可以利用 XPU 亲和性，且加载可中断。
+        - **3.3 Security and Reliability**
+            - 不跨越内核边界。
+            - 不修改原始数据。
+            - 对错误容忍度高。
+            - 保证崩溃时的一致性。
+    - **4 Case Study: Model-Accelerated I/O**
+        - **4.1 Model Loading Optimized Policy**
+            - 实现：
+                - 对于每种特定模型的服务，把相关参数编码为 ID，用于唯一确定。
+                - 为每种服务定制模型加载 IO 模板策略，对于这个模型专门优化。
+                - 如果请求启动的模型服务没有对应模板，则实时收集加载过程中的特征。
+                - 基于可中断的预取机制，无需确定预取大小，只要设置为最大值，依赖中断停止预取。
+                - MAIO 可以控制数据被加载到的内存位置，所以可以利用上 XPU 亲和性。
+                - 阅后即焚式的驱逐，利用模型数据加载就留存在 XPU 的内存的性质，提前释放通用内存中的缓存。
+            - 对比：
+                - 预测式：对每个模型的加载过程特殊优化，比通用式预测更精确。
+                - 经验式：比其更适用于模型加载。
+                - LLM 框架式：硬件兼容性好，闲置带宽利用率高，多了驱逐策略。
